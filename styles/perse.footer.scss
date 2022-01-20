@@ -1,0 +1,57 @@
+$BG : #f6f2ef;
+$CR: #ed8a84;
+$BP: 750px;
+body{
+    background: $BG;
+}
+.footer{
+    background: $BG;
+    p{
+        margin: 0;
+    }
+}
+
+
+//sp
+@media screen and (max-width: $BP) {
+    .pfooter{
+        width: 100vw;
+        background: $BG;
+        margin: 0 auto;
+        &__copy{
+            color: $CR;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}
+
+//tablet　画面サイズが750pxからはこのスタイルを読む
+@media screen and (min-width: $BP+1) {
+    .pfooter{
+        width: 100vw;
+        background: $BG;
+        margin: 0 auto;
+        &__copy{
+            color: $CR;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}
+
+//PCTablet 画面サイズが990pxからはこのスタイルを読む
+@media screen and (min-width: 990px) {
+    .pfooter{
+        min-height: 500px;
+        background: $BG;
+        width: 1120px;
+        margin: 0 auto;
+        &__copy{
+            color: $CR;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    
+}

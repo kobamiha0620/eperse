@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#" lang="{{ request.locale.iso_code }}>
+<head>
+  <meta charset=" UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript">
+    var _ua = (function (u) {
+        return {
+            Tablet: (u.indexOf("windows") != -1 && u.indexOf("touch") != -1) ||
+                u.indexOf("ipad") != -1 ||
+                (u.indexOf("android") != -1 && u.indexOf("mobile") == -1) ||
+                (u.indexOf("firefox") != -1 && u.indexOf("tablet") != -1) ||
+                u.indexOf("kindle") != -1 ||
+                u.indexOf("silk") != -1 ||
+                u.indexOf("playbook") != -1,
+            Mobile: (u.indexOf("windows") != -1 && u.indexOf("phone") != -1) ||
+                u.indexOf("iphone") != -1 ||
+                u.indexOf("ipod") != -1 ||
+                (u.indexOf("android") != -1 && u.indexOf("mobile") != -1) ||
+                (u.indexOf("firefox") != -1 && u.indexOf("mobile") != -1) ||
+                u.indexOf("blackberry") != -1
+        }
+    })(window.navigator.userAgent.toLowerCase());
+    if (_ua.Mobile) {
+        document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0">');
+    } else {
+        document.write('<meta name="viewport" content="width=1280">');
+    }
+</script>
+
+<link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+<link rel="preconnect" href="https://monorail-edge.shopifysvc.com">
+
+{%- if canonical_url != blank  -%}
+<link rel="canonical" href="{{ canonical_url }}">
+{%- endif -%}
+{%- if settings.favicon != blank -%}
+<link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+{%- endif -%}
+{%- capture seo_title -%}
+{%- if request.page_type == 'search' and search.performed == true -%}
+{{ 'general.search.heading' | t: count: search.results_count }}:
+{{ 'general.search.results_with_count' | t: terms: search.terms, count: search.results_count }}
+{%- else -%}
+{{ page_title }}
+{%- endif -%}
+{%- if current_tags -%}
+{%- assign meta_tags = current_tags | join: ', ' -%} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+{%- endif -%}
+{%- if current_page != 1 -%}
+&ndash; {{ 'general.meta.page' | t: page: current_page }}
+{%- endif -%}
+{%- assign escaped_page_title = page_title | escape -%}
+{%- unless escaped_page_title contains shop.name -%}
+&ndash; {{ shop.name }}
+{%- endunless -%}
+{%- endcapture -%}
+<title>{{ seo_title | strip }}</title>
+{%- if page_description -%}
+<meta name="description" content="{{ page_description | escape }}">
+{%- endif -%}
+{% include 'social-meta-tags' %}
+{% include 'css-variables' %}
+{%- if request.page_type contains 'customers/' -%}
+<script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="format-detection" content="telephone=no">
+<script type="text/javascript">
+    if (window.MSInputMethodContext && document.documentMode) {
+        var scripts = document.getElementsByTagName('script')[0];
+        var polyfill = document.createElement("script");
+        polyfill.defer = true;
+        polyfill.src = "{{ 'ie11CustomProperties.min.js' | asset_url }}";
+
+        scripts.parentNode.insertBefore(polyfill, scripts);
+    }
+</script>
+
+<link rel="stylesheet" type="text/css" media="all" href="{{ 'main.css' | asset_url }}">
+
+
+</head>
+
+<body class="template-{{ request.page_type | handle }}">
+    <div id="loading"></div>
+    <div class="cursor"></div>
+    <div class="follower"></div>
+    <div id="wrapper" class="
+  {% if template == 'index' %}
+  home
+  {% elsif template == 'blog' %}
+  news
+  {% endif %}
+  {% if template == 'product.booster-oil' %}
+  product_01 detail-product
+  {% elsif template == 'product.moisture-serum' %}
+  product_02 detail-product
+  {% elsif template == 'product.set-package' %}
+  product_03 detail-product
+  {% elsif page.handle == 'about' %}
+  about
+  {% elsif page.handle == 'faq' %}
+  faq
+  {% elsif page.handle == 'contact' %}
+  products
+  {% elsif page.handle == 'products' %}
+  products
+  {% elsif page.handle == 'privacy-policy' %}
+  privacy
+  {% elsif page.handle == 'sctl' %}
+  sctl
+  {% elsif page.handle == 'rule' %}
+  rule
+  {% elsif page.handle == 'company' %}
+  company
+  {% endif %}
+  ">
+        <div id="clickBlocker"></div>
+
+
+        <header>
+            <div class="inner">
+                <div class="col-logo">
+                    <p class="logo tx headMenu">
+                        <a href="javascript:void(0);">Menu</a>
+                    </p>
+                </div>
+                <!-- /.col-logo -->
+
+                <div class="col-nav">
+                    <p class="parent"><a href="{{ routes.root_url }}pages/products">View the products</a></p>
+                    <ul class="productNav">
+                        <li><a href="{{ routes.root_url }}products/booster-oil">BOOSTER OIL</a></li>
+                        <li><a href="{{ routes.root_url }}products/moisture-serum">MOISTURE SERUM</a></li>
+                        <li><a href="{{ routes.root_url }}products/set-package">SET PACKAGE</a></li>
+                    </ul>
+                    <!-- /.productNav -->
+                </div>
+                <!-- /.col-nav -->
+
+                <div class="col-EcNav">
+
+                    <p><a href="{{ routes.cart_url }}">Cart</a></p>
+
+                </div>
+                <!-- /.colEc -->
+            </div>
+            <!-- /.inner -->
+        </header>
+        <!-- /header -->
+        <div class="headMask">
+            <span class="head"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 10"
+                    style="enable-background:new 0 0 10 10;" xml:space="preserve">
+                    <path class="st0" d="M10,0H0v10C0,4.5,4.5,0,10,0z" />
+                </svg>
+            </span>
+            <span class="head"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 10"
+                    style="enable-background:new 0 0 10 10;" xml:space="preserve">
+                    <path class="st0" d="M0,0l10,0v10C10,4.5,5.5,0,0,0z" />
+                </svg>
+            </span>
+        </div>
+        <!-- /.headMask -->
+
+        <div id="mainNav">
+            <span class="clickArea"></span>
+            <div class="inner">
+                <div class="cel">
+                    <div class="inner">
+
+                        <p class="logoNav">
+                            <a href="{{ routes.root_url }}">
+
+
+
+                                <img data-src="{{ 'logo-tui_01.svg' | file_url }}" alt="tui" class="lazyload">
+
+
+                            </a>
+                        </p>
+
+                        <div class="mainNavSec">
+                            <div class="inner">
+
+                                <div class="mainMenu">
+                                    <nav>
+                                        <ul class="parent">
+                                            <li>
+                                                <a href="{{ routes.root_url }}pages/products/">Products</a>
+                                                <ul class="child">
+                                                    <li><a href="{{ routes.root_url }}products/booster-oil">BOOSTER
+                                                            OIL</a></li>
+                                                    <li><a href="{{ routes.root_url }}products/moisture-serum">MOISTURE
+                                                            SERUM</a></li>
+                                                    <li><a href="{{ routes.root_url }}products/set-package">SET
+                                                            PACKAGE</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="{{ routes.root_url }}pages/about">About us</a></li>
+                                            <li><a href="{{ routes.root_url }}blogs/news">News</a></li>
+                                            <li><a href="{{ routes.root_url }}pages/faq">FAQ</a></li>
+                                            <li><a href="{{ routes.root_url }}pages/contact">Contact</a></li>
+                                        </ul>
+                                        <ul class="smallMenu">
+                                            <li><a href="{{ routes.root_url }}pages/company">会社概要</a></li>
+                                            <li><a href="{{ routes.root_url }}pages/sctl">特定商取引法に基づく表記</a></li>
+                                            <li><a href="{{ routes.root_url }}pages/privacy-policy">プライバシーポリシー</a></li>
+                                            <li><a href="{{ routes.root_url }}pages/rule">利用規約</a></li>
+                                            <li><a href="{{ routes.root_url }}account">My page</a></li>
+                                            <li><a href="https://www.instagram.com/tui_beauty_official/"
+                                                    target="_blank">Instagram</a></li>
+                                            <li><a href="https://twitter.com/tui_beauty" target="_blank">Twitter</a>
+                                            </li>
+                                        </ul>
+                                        <!-- /.smallMenu -->
+                                    </nav>
+                                </div>
+                                <!-- /.mainMenu -->
+
+                            </div>
+                            <!-- /.inner -->
+                        </div>
+                        <!-- /.mainNavSec -->
+                    </div>
+                    <!-- /.inner -->
+                </div>
+                <!-- /.cel -->
+            </div>
+            <!-- /.inner -->
+            <div class="closeBtn">
+
+
+
+                <img data-src="{{ 'icon-close.svg' | file_url }}" alt="tui" class="lazyload">
+
+
+            </div>
+            <!-- /.closeBtn -->
+        </div>
+        <!-- /#mainNav -->
+
+        <div class="hiddenParts">
+            {{content_for_header}}
+        </div>
+
+        {{ content_for_layout }}
+</body>
+
+</html>

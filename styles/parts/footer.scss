@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+$BG: #f6f2ef;
+$CR: #ed8a84;
+$BP: 750px;
+body{
+    background: $BG;
+}
+
+.footer{
+    background: $BG;
+    width: 100vw;
+    padding: 76px 0;
+    p{
+        margin: 0;
+    }
+    ul{
+        list-style-type: none;
+
+    }
+    &__copy{
+        color: $CR;
+        text-align: center;
+    }
+    &__list{
+        display: flex;
+        justify-content: center;
+        margin: 0 0 30px;
+        li{
+            padding: 20px;
+        }
+        a{
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: $CR;
+        }
+    }
+}
+
+
+//sp
+@media screen and (max-width: $BP) {
+    .footer{
+        width: 100vw;
+        margin: 0 auto;
+
+    }
+}
+
+
+//tablet　画面サイズが750pxからはこのスタイルを読む
+@media screen and (min-width: $BP+1) {
+
+}
+
+
+//PCTablet 画面サイズが990pxからはこのスタイルを読む
+@media screen and (min-width: 990px) {
+    .footer{
+        &__inner{
+            width: 1120px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        &__copy{
+            color: $CR;
+            display: block;
+        }
+    }
+    
+}

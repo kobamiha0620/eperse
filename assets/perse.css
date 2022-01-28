@@ -1,0 +1,159 @@
+footer html, footer body, footer div, footer span, footer object, footer iframe, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, footer blockquote, footer pre, footer abbr, footer address, footer cite, footer code, footer del, footer dfn, footer em, footer img, footer ins, footer kbd, footer q, footer samp, footer small, footer strong, footer sub, footer sup, footer var, footer b, footer i, footer dl, footer dt, footer dd, footer ol, footer ul, footer li, footer fieldset, footer form, footer label, footer legend, footer table, footer caption, footer tbody, footer tfoot, footer thead, footer tr, footer th, footer td, footer article, footer aside, footer canvas, footer details, footer figcaption, footer figure, footer footer, footer header, footer hgroup, footer menu, footer nav, footer section, footer summary, footer time, footer mark, footer audio, footer video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+footer article, footer aside, footer details, footer figcaption, footer figure, footer footer, footer header, footer hgroup, footer menu, footer nav, footer section {
+  display: block;
+}
+
+footer nav ul {
+  list-style: none;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer blockquote, footer q {
+  quotes: none;
+}
+
+footer blockquote:before, footer blockquote:after, footer q:before, footer q:after {
+  content: "";
+  content: none;
+}
+
+footer a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+footer ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+footer mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+footer del {
+  text-decoration: line-through;
+}
+
+footer abbr[title], footer dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+footer table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+footer hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+footer input, footer select {
+  vertical-align: middle;
+}
+
+footer * {
+  box-sizing: border-box !important;
+  line-height: 1;
+}
+
+body {
+  background: #f6f2ef;
+}
+
+.footer {
+  background: #f6f2ef;
+  width: 100vw;
+  padding: 76px 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer__copy {
+  color: #ed8a84;
+  text-align: center;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 30px;
+}
+
+.footer__list li {
+  padding: 20px;
+}
+
+.footer__list a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #ed8a84;
+}
+
+@media screen and (max-width: 750px) {
+  .footer {
+    width: 100vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 990px) {
+  .footer__inner {
+    width: 1120px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .footer__copy {
+    color: #ed8a84;
+    display: block;
+  }
+}
+body {
+  background: #f6f2ef;
+}
+
+#wrapper #homeTop {
+  display: none;
+}
+
+.home #homeTop {
+  display: block !important;
+}
+
+@media screen and (min-width: 990px) {
+  .overflow-hidden-tablet {
+    overflow: hidden;
+  }
+}

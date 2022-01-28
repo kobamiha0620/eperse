@@ -21,5 +21,9 @@
     "gulp-sass": "^5.1.0",
     "node-sass": "^7.0.1",
     "sass": "^1.49.0"
+  },
+  "devDependencies": {
+    "gulp-sass-glob": "^1.1.0",
+    "node-reset-scss": "^1.0.1"
   }
 }

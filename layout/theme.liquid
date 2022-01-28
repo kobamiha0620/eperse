@@ -109,6 +109,7 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'perse.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -136,10 +137,45 @@
     {% section 'announcement-bar' %}
     {% section 'header' %}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+      <div id="wrapper" class="{% if template == 'index' %}home{% elsif template == 'blog' %}
+      news
+      {% endif %}
+      {% if template == 'product.booster-oil' %}
+      product_01 detail-product
+      {% elsif template == 'product.moisture-serum' %}
+      product_02 detail-product
+      {% elsif template == 'product.set-package' %}
+      product_03 detail-product
+      {% elsif page.handle == 'about' %}
+      about
+      {% elsif page.handle == 'faq' %}
+      faq
+      {% elsif page.handle == 'contact' %}
+      products
+      {% elsif page.handle == 'products' %}
+      products
+      {% elsif page.handle == 'privacy-policy' %}
+      privacy
+      {% elsif page.handle == 'sctl' %}
+      sctl
+      {% elsif page.handle == 'rule' %}
+      rule
+      {% elsif page.handle == 'company' %}
+      company
+      {% endif %}
+      ">
       {{ content_for_layout }}
+
+      <div class="homeTop" id="homeTop" style="height: 2000px; background: #eee;">
+        topページ
+
+        
+      </div>
+      </div>
     </main>
 
-    {% section 'footer' %}
+    <!-- フッター -->
+    {% section 'footer_perse' %}
 
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>

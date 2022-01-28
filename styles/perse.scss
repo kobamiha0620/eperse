@@ -1,0 +1,54 @@
+@charset "utf-8";
+@import "_reset";
+@import 'parts/**/*.scss';
+
+$BG: #f6f2ef;
+$CR: #ed8a84;
+$BP: 750px;
+body{
+    background: $BG;
+}
+
+#wrapper{
+    #homeTop{
+        display: none;
+    }
+}
+
+.home{
+    #homeTop{
+        display: block!important;
+    }
+}
+
+
+
+
+
+//sp
+@media screen and (max-width: $BP) {
+
+}
+
+//tablet　画面サイズが750pxからはこのスタイルを読む
+@media screen and (min-width: $BP+1) {
+
+}
+
+//PCTablet 画面サイズが990pxからはこのスタイルを読む
+@media screen and (min-width: 990px) {
+
+    
+}
+// .hiddenParts{
+//     display: none;
+// }
+// .grid-view-item__link.hiddenParts{
+//     display: block;
+// }
+
+@media screen and (min-width: 990px) {
+    .overflow-hidden-tablet {
+      overflow: hidden;
+    }
+  }

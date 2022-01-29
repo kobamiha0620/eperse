@@ -15,6 +15,7 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "2022.3.1(WED)12:00〜発売開始",
               "color_scheme": "accent-1",
@@ -69,6 +70,38 @@
           "enable_country_selector": false,
           "enable_language_selector": false,
           "payment_enable": false
+        }
+      },
+      "footer_perse": {
+        "type": "footer_perse",
+        "blocks": {
+          "footer_perse-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "footer_perse-1": {
+            "type": "text",
+            "settings": {
+              "heading": "Heading",
+              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "footer_perse-0",
+          "footer_perse-1"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "newsletter_enable": true,
+          "newsletter_heading": "Subscribe to our emails",
+          "show_social": false,
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true
         }
       }
     },

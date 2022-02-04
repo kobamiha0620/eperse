@@ -16,19 +16,9 @@
         "show_vendor": false,
         "show_rating": false
       }
-    },
-    "16439755439248e41f": {
-      "type": "instafeed",
-      "settings": {
-        "heading_font": "helvetica_n4",
-        "heading_size": 20,
-        "feed_width": 100,
-        "html_area": ""
-      }
     }
   },
   "order": [
-    "featured_products",
-    "16439755439248e41f"
+    "featured_products"
   ]
 }

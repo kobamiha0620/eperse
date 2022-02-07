@@ -17,6 +17,12 @@
         "show_rating": false
       }
     },
+    "1644228072528280ab": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": ""
+      }
+    },
     "1643978356489413d1": {
       "type": "instafeed",
       "settings": {
@@ -29,6 +35,7 @@
   },
   "order": [
     "featured_products",
+    "1644228072528280ab",
     "1643978356489413d1"
   ]
 }

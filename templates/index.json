@@ -36,7 +36,7 @@
         "heading_font": "helvetica_n4",
         "heading_size": 20,
         "feed_width": 100,
-        "html_area": "<div id=\"js-footer\"><\/div>\n    <div class=\"footer__fluid\">\n      <p class=\"footer__fluid--txt\">\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0618\/4593\/0220\/files\/fluid_txt.png\" alt=\"\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0618\/4593\/0220\/files\/fluid_txt.png\" alt=\"loop2\">\n      <\/p>\n    <\/div>\n\n      <p class=\"footer__insta--ttl\">#perse<\/p>"
+        "html_area": "<div class=\"footer__fluid\">\n      <p class=\"footer__fluid--txt\">\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0618\/4593\/0220\/files\/fluid_txt.png\" alt=\"\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0618\/4593\/0220\/files\/fluid_txt.png\" alt=\"loop2\">\n      <\/p>\n    <\/div>\n\n      <div class=\"footer__insta--wrap\"><p class=\"footer__insta--ttl\">#perse<\/p><\/div>"
       }
     }
   },

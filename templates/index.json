@@ -24,6 +24,12 @@
         "custom_liquid": ""
       }
     },
+    "1644229712a74d3afa": {
+      "type": "page",
+      "settings": {
+        "page": "home"
+      }
+    },
     "1643978356489413d1": {
       "type": "instafeed",
       "settings": {
@@ -32,18 +38,12 @@
         "feed_width": 100,
         "html_area": ""
       }
-    },
-    "1644229712a74d3afa": {
-      "type": "page",
-      "settings": {
-        "page": "home"
-      }
     }
   },
   "order": [
     "featured_products",
     "1644228072528280ab",
-    "1643978356489413d1",
-    "1644229712a74d3afa"
+    "1644229712a74d3afa",
+    "1643978356489413d1"
   ]
 }

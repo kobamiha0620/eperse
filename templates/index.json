@@ -38,12 +38,19 @@
         "feed_width": 100,
         "html_area": "<div class=\"footer__fluid\">\n      <p class=\"footer__fluid--txt\">\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0618\/4593\/0220\/files\/fluid_txt.png\" alt=\"\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0618\/4593\/0220\/files\/fluid_txt.png\" alt=\"loop2\">\n      <\/p>\n    <\/div>\n\n      <div class=\"footer__insta--wrap\"><p class=\"footer__insta--ttl\">#perse<\/p><\/div>"
       }
+    },
+    "16442370952639d861": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"footer__insta\">\n\n    <div class=\"footer__icon\">\n      <a href=\"https:\/\/www.instagram.com\/perseofficial\/\" target=\"_blank\" class=\"footer__insta--link\">follow us on Instagram<\/a>\n      <div class=\"footer__icon--scroll\">\n        <span class=\"footer__icon--left\" id=\"js-left\"><\/span>\n        <span class=\"footer__icon--right\" id=\"js-right\"><\/span>\n      <\/div>\n    <\/div>\n    <\/div>"
+      }
     }
   },
   "order": [
     "featured_products",
     "1644228072528280ab",
     "1644229712a74d3afa",
-    "1643978356489413d1"
+    "1643978356489413d1",
+    "16442370952639d861"
   ]
 }

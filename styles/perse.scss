@@ -2,44 +2,112 @@
 @import "_reset";
 @import 'parts/**/*.scss';
 
-$BG: #f6f2ef;
-$CR: #ed8a84;
-$BP: 750px;
-body{
+body {
     background: $BG;
 }
 
-#wrapper{
-    #homeTop{
+#wrapper {
+    #homeTop {
         display: none;
     }
 }
 
-.home{
-    #homeTop{
-        display: block!important;
+.home {
+    #homeTop {
+        display: block !important;
     }
 }
 
+.pereseLogo {
+    white-space: nowrap;
+    text-indent: -9999px;
+    background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/logo.svg') no-repeat 0 0;
+    display: block;
+    width: 136px;
+    height: 40px;
+    background-size: 100% auto;
+    margin-top: 0.5rem;
+}
 
+.header-wrapper {
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    top: 50px;
+    display: block;
+    &.fixed{
+        display: none;
+    }
+    &.active {
+        top: 0px;
+    }
+}
 
+.header {
+    &__notice {
+        font-size: 12px;
+        color: #FFF;
+        background: $CR;
+        height: 50px;
+        margin: 0;
+        display: flex;
+        align-items: center;
 
+        span {
+            // max-width: $PCW;
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            padding: 0 5rem;
+            letter-spacing: 0.1;
+        }
+    }
+}
 
 //sp
 @media screen and (max-width: $BP) {
+    .pereseLogo {
+        width: 101px;
+        height: 29px;
+        background-size: 100% auto;
+        margin-top: 1.5rem;
+    }
 
+    .header-wrapper {
+        top: 33px;
+        height: 75px;
+
+        &.active {
+            top: 0px;
+        }
+    }
+
+    .header {
+        &__notice {
+            font-size: 12px;
+            height: 33px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+
+            span {
+                max-width: 100%;
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                letter-spacing: 0.1;
+            }
+        }
+    }
 }
 
 //tablet　画面サイズが750pxからはこのスタイルを読む
-@media screen and (min-width: $BP+1) {
-
-}
+@media screen and (min-width: $BP+1) {}
 
 //PCTablet 画面サイズが990pxからはこのスタイルを読む
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 990px) {}
 
-    
-}
 // .hiddenParts{
 //     display: none;
 // }
@@ -49,6 +117,244 @@ body{
 
 @media screen and (min-width: 990px) {
     .overflow-hidden-tablet {
-      overflow: hidden;
+        overflow: hidden;
     }
-  }
+}
+
+.menu_bg {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    mix-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.42);
+    z-index: 2;
+    display: none;
+    text-indent: -9999px;
+    white-space: nowrap;
+}
+
+.header--middle-left {
+    position: relative;
+}
+
+header-drawer {
+    position: absolute;
+    right: 50px;
+}
+
+.header-wrapper--border-bottom {
+    border: none !important;
+}
+
+.header__icons {
+    padding-right: 60px;
+}
+
+
+//sp
+@media screen and (max-width: $BP) {
+    .header__icons {
+        padding-right: 40px;
+    }
+
+    header-drawer {
+        position: absolute;
+        right: 10px;
+    }
+}
+
+.menu-drawer__navigation {
+    padding-bottom: 10px !important;
+    padding-top: 0 !important;
+}
+
+.menu-drawer-close {
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    color: $CR;
+    font-size: 1rem;
+    width: 34px;
+    height: 38px;
+    ;
+    margin: 0 0 0 auto;
+    padding: 0;
+    cursor: pointer;
+
+    span {
+        display: inline-block;
+        padding: 10px 0;
+        margin: 0 auto;
+        width: 20px;
+        height: 20px;
+
+        &::before {
+            display: block;
+            content: "";
+            width: 20px !important;
+            height: 1px;
+            background: $CR;
+            transform: rotate(-45deg);
+        }
+
+        &::after {
+            display: block;
+            content: "";
+            width: 20px !important;
+            height: 1px;
+            background: $CR;
+            transform: rotate(45deg);
+        }
+
+    }
+}
+
+.menu-drawer__navWrap {
+    height: 67px;
+    padding: 22px;
+    width: 100%;
+    text-align: right;
+}
+
+.menu-drawer__inner-container {
+    overflow-y: scroll !important;
+}
+
+#shopify-section-announcement-bar {
+    z-index: 0;
+}
+
+.header-wrapper.gradient {
+    background: none !important;
+}
+
+.header__icon {
+    color: #F08984;
+
+    svg {
+        color: #F08984 !important;
+        fill: #F08984 !important;
+    }
+}
+
+.st0 {
+    fill: #F08984;
+}
+
+.announcement-bar {
+    height: 50px;
+    align-items: center;
+    display: flex;
+
+    p {
+        text-align: left;
+    }
+}
+
+#MainContent {
+    padding-top: 65px;
+    width: 100vw;
+    margin: 0 auto;
+    &.adjustment {
+        padding-top: 0;
+    }
+
+    #wrapper {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .main {
+        &__sns {
+            position: fixed;
+            right: 36px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 22px;
+            height: 224px;
+            display: block;
+            &.fixed{
+                display: none;
+            }
+            a {
+                display: block;
+                white-space: nowrap;
+                text-indent: -9999px;
+                width: 22px;
+                height: 22px;
+                margin-bottom: 35px;
+                
+            }
+
+            &--tw {
+                background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/icon_twitter.svg') no-repeat 0 0;
+                background-size: 100% auto;
+
+            }
+
+            &--insta {
+                background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/icon_insta.svg') no-repeat 0 0;
+                background-size: 100% auto;
+            }
+
+            &--line {
+                background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/icon_line.svg') no-repeat 0 0;
+                background-size: 100% auto;
+            }
+
+            &--youtube {
+                background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/icon_youtube.svg') no-repeat 0 0;
+                background-size: 100% auto;
+                margin-bottom: 0;
+            }
+        }
+        &__logo{
+            display: inline-block;
+            text-indent: -9999px;
+            white-space: nowrap;
+            background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/mainlogo.png') no-repeat 0 0;
+            background-size: 100% auto;
+            width: 14px;
+            height: 244px;
+            position: fixed;
+            left: 46px;
+            top: 50%;
+            transform: translateY(-50%);
+            &.fixed{
+                display: none; 
+            }
+        }
+    }
+}
+
+//sp
+@media screen and (max-width: $BP) {
+    .announcement-bar {
+        justify-content: center;
+        height: 33px;
+
+        p {
+            text-align: center;
+        }
+    }
+    #wrapper {
+        width: 100vw;
+    }
+    #MainContent{
+        .main__logo{
+            position: absolute;
+            left: 3.46vw;
+            width: 2.774vw;
+            height: 47.73vw;
+        }
+        .main__sns{
+            display: none;
+        }
+    }
+
+}
+.spaced-section{
+    margin: 0!important;
+}

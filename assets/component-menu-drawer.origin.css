@@ -13,13 +13,12 @@
     var(--viewport-height, 100vh) - (var(--header-bottom-position, 100%))
   );
   top: 100%;
-  right: 0;
+  left: 0;
   background: rgba(var(--color-foreground), 0.5);
   opacity: 0;
   visibility: hidden;
-  z-index: 4;
+  z-index: 2;
   transition: opacity 0s, visibility 0s;
-  height: 100vh;
 }
 
 menu-drawer > details[open] > summary::before {
@@ -30,21 +29,18 @@ menu-drawer > details[open] > summary::before {
 }
 
 .menu-drawer {
-  position: fixed;
-  background: #F7F2EF;
-  transform: translateX(200%);
-
+  position: absolute;
+  transform: translateX(-100%);
   visibility: hidden;
-  z-index: 5!important;
-  right: 0;
-  top: 0;
+  z-index: 3;
+  left: 0;
+  top: 100%;
   width: calc(100vw - 4rem);
   padding: 0;
   border: 0.1rem solid rgba(var(--color-foreground), 0.2);
   border-left: 0;
   background-color: rgb(var(--color-background));
   overflow-x: hidden;
-
 }
 
 .js .menu-drawer {
@@ -52,7 +48,6 @@ menu-drawer > details[open] > summary::before {
   height: calc(
     var(--viewport-height, 100vh) - (var(--header-bottom-position, 100%))
   );
-  height: 100vh;
 }
 
 .js details[open] > .menu-drawer,
@@ -70,7 +65,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 @media screen and (min-width: 750px) {
   .menu-drawer {
-    width: 41.5rem;
+    width: 40rem;
   }
 
   .no-js .menu-drawer {
@@ -244,9 +239,4 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .menu-drawer .list-social__link {
   padding: 1.3rem 1.25rem;
-}
-
-.overflow-hidden-tablet  .menu_bg{
-  display: block;
-  z-index: 4;
 }

@@ -14,6 +14,11 @@
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+      <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
     {%- endunless -%}
 
     <title>
@@ -127,6 +132,8 @@
       document.documentElement.classList.add('shopify-design-mode');
     }
     </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+
   </head>
 
   <body class="gradient">
@@ -136,7 +143,15 @@
 
     {% section 'announcement-bar' %}
     {% section 'header' %}
+    
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+      <div class="main__sns">
+        <a href="" target="_bland" rel="noopenner" class="main__sns--tw">twitter</a>
+        <a href="https://www.instagram.com/perseofficial/" target="_bland" rel="noopenner" class="main__sns--insta">insta</a>
+        <a href="" target="_bland" rel="noopenner" class="main__sns--line">line</a>
+        <a href="https://www.youtube.com/channel/UCiJkV6aSJpX9xEJUu00tVlw" target="_bland" rel="noopenner" class="main__sns--youtube">youtube</a>
+      </div>
+      <div class="main__logo" id="mainRlogo">produce by yoshiyuki nd michi</div>
       <div id="wrapper" class="{% if template == 'index' %}home{% elsif template == 'blog' %}
       news
       {% endif %}
@@ -162,19 +177,19 @@
       rule
       {% elsif page.handle == 'company' %}
       company
-      {% endif %}
-      ">
+      {% endif %}">
+
+
+      {%- if template == 'index' -%}
+      {% include 'persehome' %}
+  
+      {%- endif -%}
       {{ content_for_layout }}
-
-      <div class="homeTop" id="homeTop" style="height: 2000px; background: #eee;">
-        topページ
-
-        
-      </div>
-      </div>
+    </div>
     </main>
+        
 
-    <!-- フッター -->
+
     {% section 'footer_perse' %}
 
     <ul hidden>
@@ -208,9 +223,9 @@
         playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
       }
     </script>
-
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
   </body>
 </html>

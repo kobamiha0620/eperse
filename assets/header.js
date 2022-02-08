@@ -90,6 +90,7 @@ $(window).scroll(function () {
     if ($(window).scrollTop() > 33) {
         $(".header-wrapper").addClass("active");
         $("#MainContent").addClass('adjustment');
+        
     } else {
         $(".header-wrapper").removeClass("active");
         $("#MainContent").removeClass('adjustment');

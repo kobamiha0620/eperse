@@ -10,15 +10,15 @@
 
 //tablet　画面サイズが750pxからはこのスタイルを読む
 @media screen and (min-width: $BP+1) {
-.home{
+    .home{
 
-}
+    }
 }
 
 
 //PCTablet 画面サイズが990pxからはこのスタイルを読む
 @media screen and (min-width: 990px) {
-.home{
-    
-} 
+    .home{
+        
+    } 
 }

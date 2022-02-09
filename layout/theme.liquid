@@ -132,6 +132,8 @@
       document.documentElement.classList.add('shopify-design-mode');
     }
     </script>
+
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
 
   </head>
@@ -181,14 +183,13 @@
 
 
       {%- if template == 'index' -%}
-      {% include 'persehome' %}
+      {% render 'persehome' %}
   
       {%- endif -%}
       {{ content_for_layout }}
     </div>
     </main>
         
-
 
     {% section 'footer' %}
 

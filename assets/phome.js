@@ -79,26 +79,65 @@ $(function(){
             }
         });
     });
+
+    $(window).scroll(function (){
+      $('.fadein_block').each(function(){
+          var elemPos = $(this).offset().top;
+          var scroll = $(window).scrollTop();
+          var windowHeight = $(window).height();
+          var target = $('.fadein_block');
+          var speed = 600;
+          if(scroll > elemPos - windowHeight){
+              target.find('.fadein01').addClass('scrollin');
+              setTimeout(function(){
+                  target.find('.fadein02').addClass('scrollin');
+                  setTimeout(function(){
+                      target.find('.fadein03').addClass('scrollin');
+                      setTimeout(function(){
+                          target.find('.fadein04').addClass('scrollin');
+                          setTimeout(function(){
+                              target.find('.fadein05').addClass('scrollin');
+                              setTimeout(function(){
+                                  target.find('.fadein06').addClass('scrollin');
+                              },speed);
+                          },speed);
+                      },speed);
+                  },speed);
+              },speed);
+          }
+      });
+  });
 });
 
 
-$(window).on('load scroll', function() {
-    add_class_in_scrolling($('.phome__produce--lblc'));
-});
- 
+
 // スクロールで要素が表示された時にclassを付与する
 function add_class_in_scrolling(target) {
-    var winScroll = $(window).scrollTop();
-    var winHeight = $(window).height();
-    var scrollPos = winScroll + winHeight;
- 
-    if(target.offset().top < scrollPos) {
+    let winScroll = $(window).scrollTop();
+    let winHeight = $(window).height();
+    let scrollPos = winScroll + winHeight;
+    if (target.length) {
+      var menuPos = target.offset().top;
+    }
+    if(menuPos < scrollPos) {
         setTimeout(function(){
             target.addClass('is-show');
-        },1000);
+        }, 600);
         
     }
 }
+
+$(window).on('load scroll', function() {
+  add_class_in_scrolling($('.phome__produce--lblc'));
+  add_class_in_scrolling($('.product__intro'));
+  add_class_in_scrolling($('.product__intro--art'));
+  add_class_in_scrolling($('.product__nude--02'));
+  add_class_in_scrolling($('.product__nude--03a'));
+  add_class_in_scrolling($('.product__nude--03b'));
+  add_class_in_scrolling($('.product__nude--04'));
+
+  
+});
 
 class ParallaxEffectBackground {
     constructor() {

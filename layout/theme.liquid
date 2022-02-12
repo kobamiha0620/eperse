@@ -132,8 +132,6 @@
       document.documentElement.classList.add('shopify-design-mode');
     }
     </script>
-
-
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
 
   </head>
@@ -147,6 +145,11 @@
     {% section 'header' %}
     
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+
+
+      {% if template contains 'cart' %}
+        <div id="perseCart">
+      {%- endif -%}
       <div class="main__sns">
         <a href="" target="_bland" rel="noopenner" class="main__sns--tw">twitter</a>
         <a href="https://www.instagram.com/perseofficial/" target="_bland" rel="noopenner" class="main__sns--insta">insta</a>
@@ -154,38 +157,46 @@
         <a href="https://www.youtube.com/channel/UCiJkV6aSJpX9xEJUu00tVlw" target="_bland" rel="noopenner" class="main__sns--youtube">youtube</a>
       </div>
       <div class="main__logo" id="mainRlogo">produce by yoshiyuki nd michi</div>
+
+      {% if template contains 'cart' %}
+      </div>
+      {%- endif -%}
       <div id="wrapper" class="{% if template == 'index' %}home{% elsif template == 'blog' %}
       news
       {% endif %}
-      {% if template == 'product.booster-oil' %}
-      product_01 detail-product
-      {% elsif template == 'product.moisture-serum' %}
-      product_02 detail-product
-      {% elsif template == 'product.set-package' %}
-      product_03 detail-product
-      {% elsif page.handle == 'about' %}
-      about
-      {% elsif page.handle == 'faq' %}
-      faq
-      {% elsif page.handle == 'contact' %}
-      products
-      {% elsif page.handle == 'products' %}
-      products
-      {% elsif page.handle == 'privacy-policy' %}
-      privacy
-      {% elsif page.handle == 'sctl' %}
-      sctl
-      {% elsif page.handle == 'rule' %}
-      rule
-      {% elsif page.handle == 'company' %}
-      company
-      {% endif %}">
-
+        {% if template == 'product.booster-oil' %}
+        product_01 detail-product
+        {% elsif template == 'product.moisture-serum' %}
+        product_02 detail-product
+        {% elsif template == 'product.set-package' %}
+        product_03 detail-product
+        {% elsif page.handle == 'about' %}
+        about
+        {% elsif page.handle == 'faq' %}
+        faq
+        {% elsif page.handle == 'cart' %}
+        cart
+        {% elsif page.handle == 'contact' %}
+        products
+        {% elsif page.handle == 'products' %}
+        products
+        {% elsif page.handle == 'privacy-policy' %}
+        privacy
+        {% elsif page.handle == 'sctl' %}
+        sctl
+        {% elsif page.handle == 'rule' %}
+        rule
+        {% elsif page.handle == 'company' %}
+        company
+        {% endif %}">
 
       {%- if template == 'index' -%}
       {% render 'persehome' %}
-  
+
       {%- endif -%}
+
+
+
       {{ content_for_layout }}
     </div>
     </main>

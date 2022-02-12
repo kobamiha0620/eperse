@@ -342,12 +342,10 @@ header-drawer {
     #wrapper {
         width: 100vw;
     }
+
     #MainContent{
         .main__logo{
-            position: absolute;
-            left: 3.46vw;
-            width: 2.774vw;
-            height: 47.73vw;
+            display: none;
         }
         .main__sns{
             display: none;
@@ -357,4 +355,18 @@ header-drawer {
 }
 .spaced-section{
     margin: 0!important;
+}
+
+.cart-count-bubble{
+    width: 8px;
+    height: 8px;
+    left :27px;
+    bottom: 10px;
+    span{
+        font-size: 0;
+    }
+}
+
+#perseCart{
+    display: none;
 }

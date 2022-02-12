@@ -122,7 +122,7 @@ function add_class_in_scrolling(target) {
     if(menuPos < scrollPos) {
         setTimeout(function(){
             target.addClass('is-show');
-        }, 600);
+        }, 500);
         
     }
 }
@@ -135,9 +135,14 @@ $(window).on('load scroll', function() {
   add_class_in_scrolling($('.product__nude--03a'));
   add_class_in_scrolling($('.product__nude--03b'));
   add_class_in_scrolling($('.product__nude--04'));
-
-  
+  add_class_in_scrolling($('.product__rose--01fvc'));
+  add_class_in_scrolling($('.product__rose--02d'));
+  add_class_in_scrolling($('.product__rose--02e'));
+  add_class_in_scrolling($('.product__rose--03'));
+  add_class_in_scrolling($('.product__rose--04'));
 });
+
+
 
 class ParallaxEffectBackground {
     constructor() {

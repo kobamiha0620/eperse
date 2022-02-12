@@ -38,6 +38,44 @@
     }
 
 }
+.innocentred {
+    .product__slick {
+        .slick-dots li:nth-of-type(1) button:before {
+            background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_inocentrose01_thumb_731438ee-1351-4af0-bbff-0676591f36f5.png?v=1644652656") no-repeat;
+            background-size: 100% auto;
+            opacity: 1;
+            content: "";
+        }
+
+        .slick-dots li:nth-of-type(2) button:before {
+            background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_inocentrose02_thumb_d84b49ee-88ca-45df-b98f-bcfb527e7bd3.png?v=1644652656") no-repeat;
+            background-size: 100% auto;
+            opacity: 1;
+            content: "";
+        }
+
+        .slick-dots li:nth-of-type(3) button:before {
+            background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_inocentrose03_thumb_4a340d14-5c5e-4379-993f-3fb074427528.png?v=1644652656") no-repeat;
+            background-size: 100% auto;
+            opacity: 1;
+            content: "";
+        }
+
+        .slick-dots li:nth-of-type(4) button:before {
+            background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_inocentrose04_thumb_3b5051cd-da6a-4af6-b47e-4b6dda1b488a.png?v=1644652656") no-repeat;
+            background-size: 100% auto;
+            opacity: 1;
+            content: "";
+        }
+
+    }
+
+    .product__intro {
+        background: #DB656E;
+    }
+
+}
+
 
 .product {
     padding-bottom: 120px;
@@ -261,11 +299,9 @@
             line-height: 1;
             margin: 0 0 21px !important;
             padding-top: 17px;
-
             span {
                 width: 77.81%;
                 display: inline-block;
-
                 img {
                     width: 100%;
                 }
@@ -298,6 +334,11 @@
 
             &.nuderose {
                 background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_rip01color02.png?v=1644462298') no-repeat 0 0;
+                background-size: 100% auto;
+                display: block;
+            }
+            &.innocentred{
+                background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_rip02color02.png?v=1644462298') no-repeat 0 0;
                 background-size: 100% auto;
                 display: block;
             }
@@ -514,6 +555,149 @@
                 }
             }
         }
+    }
+    &__rose{
+        background: #EBE0DE;
+        width: 568px;
+        margin: 0 auto 100px;
+        padding: 0 0;
+        font-size: 0;
+        &--01{
+            position: relative;
+            margin: 0 0;
+            padding: 0;
+            font-size: 0;
+        }
+        &--01fv{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        &--01fvc{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            img{
+                width: 100%;
+            }
+            opacity: 0;
+
+            &.is-show{
+                opacity: 1;
+                animation-name:fadeUpAnime50;
+                animation-duration:0.8s;
+            }
+        }
+
+        &--02{
+            position: relative;
+            width: 568px;
+            height: 1295px;
+        }
+        &--02a{
+            position: absolute;
+            width: 45px;
+            height: 434px;
+            top: 105px;
+            right: 57px;
+        }
+        &--02b{
+            position: absolute;
+            width: 388px;
+            height: 84px;
+            bottom: 82px;
+            left: 49px;
+        }
+        &--02c{
+            position: absolute;
+            width: 174px;
+            height: 174px;
+            left: 41px;
+            bottom: 309px;
+        }
+        &--02d{
+            position: absolute;
+            width: 415px;
+            height: 566px;
+            left: 0px;
+            top: 92px;
+            opacity: 0;
+            &.is-show{
+                opacity: 1;
+                animation-name: fadeLeftAnime02;
+                animation-duration: 0.8s;
+                animation-fill-mode:forwards;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        &--02e{
+            position: absolute;
+            width: 348px;
+            height: 461px;
+            right: 41px;
+            top: 622px;
+            opacity: 0;
+
+            &.is-show{
+                opacity: 1;
+                animation-name: fadeRtAnime;
+                animation-duration: 1s;
+                animation-fill-mode:forwards;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        &--03{
+            padding: 0 50px;
+            position: relative;
+            font-size: 0;
+            .product__rose--03b{
+                opacity: 0;
+            }
+            &.is-show{
+                .product__rose--03b{
+                    opacity: 1;
+                    animation-name: fadeUpAnime50;
+                    animation-duration: 1s;
+                    animation-fill-mode:forwards;
+                }
+            }
+        }
+
+        &--03a{
+            img{
+                width: 100%;
+            }
+        }
+        &--03b{
+            position: absolute;
+            left: 220px;
+            width: 124px;
+            height: 392px;
+            top: 105px;
+            img{
+                width: 100%;
+            }
+        }
+        &--04{
+            margin: 85px 0 0;
+            img{
+                width: 100%;
+            }
+            opacity: 0;
+            &.is-show{
+                opacity: 1;
+                animation-name: fadeUpAnime50;
+                animation-duration: 1s;
+                animation-fill-mode:forwards;
+            }
+        }
+
     }
     &__others{
         color: $CR;
@@ -1298,6 +1482,83 @@
                 left: 6.2vw;
                 width: 72vw;
                 height: 122.66vw;
+            }
+        }
+        &__rose{
+            width: 100vw;
+            margin: 0 auto 100px;
+            &--01fv{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            &--01fvc{
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 100%;
+            }
+    
+            &--02{
+                width: 100vw;
+                height: 228.3vw;
+            }
+            &--02a{
+                position: absolute;
+                width: 8vw;
+                height: 76.53vw;
+                top: 18.66vw;
+                right: 10vw;
+            }
+            &--02b{
+                position: absolute;
+                width: 68.3vw;
+                height: 14.7vw;
+                bottom: 14vw;
+                left: 6.93vw;
+            }
+            &--02c{
+                position: absolute;
+                width: 30.6vw;
+                height: 30.6vw;
+                left: 6.93vw;
+                bottom: 54.13vw;
+            }
+            &--02d{
+                position: absolute;
+                width: 72.66vw;
+                height: 99.75vw;
+                left: 0px;
+                top: 15.73vw;
+                opacity: 0;
+                &.is-show{
+                    opacity: 1;
+                    animation-name: fadeLeftAnime02;
+                    animation-duration: 0.8s;
+                    animation-fill-mode:forwards;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            &--02e{
+                position: absolute;
+                width: 59.73vw;
+                height: 79.7vw;
+                right: 7.13vw;
+                top: 110vw;
+                opacity: 0;
+            }
+            &--03{
+                padding: 0 8.6vw;
+            }
+            &--03b{
+                position: absolute;
+                left: 38.66vw;
+                width: 21.6vw;
+                height: 69vw;
+                top: 18.4vw;
             }
         }
         &__others{

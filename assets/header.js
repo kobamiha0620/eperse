@@ -29,7 +29,6 @@ function gmenu(){
     for( let $i = 0; $i < gbtn.length; $i++ ) {
         gbtn[$i].onclick = function () {
             this.classList.toggle('active');
-
         }
     }
 }
@@ -96,3 +95,25 @@ $(window).scroll(function () {
         $("#MainContent").removeClass('adjustment');
     }
 });
+
+
+// ------------------------------------------------------------------------------
+
+const conceptLink = document.querySelector("[href='/#concept']")
+conceptLink.onclick = () => {
+  if (location.pathname == '/') {
+    location = '/index#concept'
+  } else {
+    location = '/#concept'
+  }
+}
+const producerLink = document.querySelector("[href='/#producer']")
+producerLink.onclick = () => {
+  if (location.pathname == '/') {
+  location = '/index#producer'
+  } else {
+    location = '/#producer'
+  }
+}
+
+// ------------------------------------------------------------------------------

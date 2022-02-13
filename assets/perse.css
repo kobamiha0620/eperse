@@ -2873,6 +2873,38 @@ footer * {
   background: #e77968;
 }
 
+.almond .product__slick .slick-dots li:nth-of-type(1) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_almond01_thumb_4c02b2a5-38cf-460a-b4a4-1dc57eb22af1.png?v=1644718696") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+.almond .product__slick .slick-dots li:nth-of-type(2) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_almond02_thumb_ba9606e3-26b0-444e-a4cc-21ba6a834920.png?v=1644718696") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+.almond .product__slick .slick-dots li:nth-of-type(3) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_almond03_thumb_6af9e6df-e020-4743-817a-5bd7b9511bdf.png?v=1644718696") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+.almond .product__slick .slick-dots li:nth-of-type(4) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_almond04_thumb_cf1f77cf-1ca5-4450-9930-8ad5db92f1ee.png?v=1644718696") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+.almond .product__intro {
+  background: #ca8174;
+}
+
 .product {
   padding-bottom: 120px;
 }
@@ -3176,6 +3208,12 @@ footer * {
 
 .product__intro--art.orange {
   background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_rip03color02.png?v=1644462297") no-repeat 0 0;
+  background-size: 100% auto;
+  display: block;
+}
+
+.product__intro--art.almond {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_rip04color02.png?v=1644462297") no-repeat 0 0;
   background-size: 100% auto;
   display: block;
 }
@@ -3652,6 +3690,113 @@ footer * {
 }
 
 .product__orange--03b.is-show {
+  opacity: 1;
+  animation-name: fadeUpAnime50;
+  animation-duration: 2s;
+}
+
+.product__almond {
+  width: 568px;
+  background: #efd9ce;
+  margin: 0 auto 105px;
+  padding-bottom: 65px;
+  font-size: 0;
+}
+
+.product__almond--01 {
+  position: relative;
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/prdocut_almond01a.png?v=1644722723") no-repeat 0 0;
+  background-size: 100% auto;
+  height: 777px;
+  width: 100%;
+  margin: 0 0 66px;
+}
+
+.product__almond--01 .product__almond--01fv {
+  opacity: 0;
+}
+
+.product__almond--01.is-show .product__almond--01fv {
+  opacity: 1;
+  animation-name: fadeUpAnime50;
+  animation-duration: 0.6s;
+}
+
+.product__almond--01fv {
+  width: 100%;
+  height: 777px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.product__almond--02 {
+  margin: 0 0 75px;
+}
+
+.product__almond--02 img {
+  width: 100%;
+}
+
+.product__almond--03 {
+  position: relative;
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/prdocut_almond03a.png?v=1644721743") no-repeat 0 0;
+  background-size: 100% auto;
+  height: 613px;
+  width: 466px;
+  margin: 0 auto 90px;
+}
+
+.product__almond--03 .product__almond--03fv {
+  opacity: 0;
+}
+
+.product__almond--03.is-show .product__almond--03fv {
+  opacity: 1;
+  animation-name: fadeUpAnime50;
+  animation-duration: 0.6s;
+}
+
+.product__almond--03fv {
+  position: absolute;
+  width: 123px;
+  height: 386px;
+  top: 106px;
+  right: 178px;
+}
+
+.product__almond--03fv img {
+  width: 100%;
+}
+
+.product__almond--04 {
+  overflow: hidden;
+  width: 100%;
+}
+
+.product__almond--04 img {
+  width: 100%;
+}
+
+.product__almond--04a {
+  float: left;
+  width: 276px;
+  opacity: 0;
+}
+
+.product__almond--04a.is-show {
+  opacity: 1;
+  animation-name: fadeUpAnime50;
+  animation-duration: 0.6s;
+}
+
+.product__almond--04b {
+  float: right;
+  width: 276px;
+  opacity: 0;
+}
+
+.product__almond--04b.is-show {
   opacity: 1;
   animation-name: fadeUpAnime50;
   animation-duration: 2s;
@@ -4625,6 +4770,51 @@ footer * {
 
   .product__orange--03b {
     width: 48vw;
+  }
+
+  .product__almond {
+    width: 100vw;
+    margin: 0 auto 15.6vw;
+    padding-bottom: 13vw;
+    font-size: 0;
+  }
+
+  .product__almond--01 {
+    position: relative;
+    background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/prdocut_almond01a.png?v=1644722723") no-repeat 0 0;
+    background-size: 100% auto;
+    height: 136.8vw;
+    width: 100%;
+    margin: 0 0 12vw;
+  }
+
+  .product__almond--01fv {
+    height: 136.8vw;
+  }
+
+  .product__almond--02 {
+    margin: 0 0 14.4vw;
+  }
+
+  .product__almond--03 {
+    height: 108.8vw;
+    width: 82.666vw;
+    margin: 0 auto 16.44vw;
+  }
+
+  .product__almond--03fv {
+    width: 21.73vw;
+    height: 68.4vw;
+    top: 18.13vw;
+    right: 31.466vw;
+  }
+
+  .product__almond--04a {
+    width: 48.93vw;
+  }
+
+  .product__almond--04b {
+    width: 48.93vw;
   }
 
   .product__others {

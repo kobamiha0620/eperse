@@ -140,6 +140,9 @@ $(window).on('load scroll', function() {
   add_class_in_scrolling($('.product__rose--02e'));
   add_class_in_scrolling($('.product__rose--03'));
   add_class_in_scrolling($('.product__rose--04'));
+  add_class_in_scrolling($('.product__orange--02'));
+  add_class_in_scrolling($('.product__orange--03a'));
+  add_class_in_scrolling($('.product__orange--03b'));
 });
 
 

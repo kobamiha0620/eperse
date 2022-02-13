@@ -1,0 +1,82 @@
+@charset "utf-8";
+@import "_reset";
+
+.persePolicy{
+    color: $CR;
+
+    &__en{
+        text-align: center;
+        color: $CR;
+        font-family: 'Outfit', sans-serif;
+        font-size: 5.5rem;
+        padding-top: 170px;
+        margin: 0 0 20px!important;
+        line-height: 1;
+    }
+    &__sub{
+        text-align: center;
+        font-size: 1.7rem;
+        line-height: 1;
+        margin: 0 0 76px!important;
+
+    }
+    &__content{
+        width: 708px;
+        margin: 0 auto 200px;
+    }
+    &__subttl{
+        font-weight: bold;
+        font-size: 1.3rem;
+        line-height:2;
+        margin: 60px 0 18px!important;
+    }
+    &__txt{
+        font-size: 1.1rem;
+        line-height: 1.95;
+    }
+    &__txtb{
+        font-size: 1.1rem;
+        line-height: 1.9;
+        margin: 0 0 8px;
+    }
+    .mt40{
+        margin-top: 40px;
+    }
+    .mt20{
+        margin-top: 20px;
+    }
+    .bold{
+        font-weight: bold;
+    }
+    &__b{
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin: 60px 0 15px!important;
+
+    }
+}
+//sp
+@media screen and (max-width: $BP) {
+    .persePolicy{
+    
+        &__en{
+            font-size: 2.7rem;
+            padding-top: 70px;
+            margin: 0 0 10px!important;
+        }
+        &__sub{
+            font-size: 1.2rem;
+            line-height: 1;
+            margin: 0 0 34px!important;
+    
+        }
+        &__content{
+            width: auto;
+            margin: 0 7vw 200px;
+        }
+        
+    }
+}
+
+//tablet　画面サイズが750pxからはこのスタイルを読む
+@media screen and (min-width: $BP+1) {}

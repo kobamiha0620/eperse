@@ -161,43 +161,28 @@
       {% if template contains 'cart' %}
       </div>
       {%- endif -%}
-      <div id="wrapper" class="{% if template == 'index' %}home{% elsif template == 'blog' %}
-      news
-      {% endif %}
-        {% if template == 'product.booster-oil' %}
-        product_01 detail-product
-        {% elsif template == 'product.moisture-serum' %}
-        product_02 detail-product
-        {% elsif template == 'product.set-package' %}
-        product_03 detail-product
-        {% elsif page.handle == 'about' %}
-        about
-        {% elsif page.handle == 'faq' %}
-        faq
-        {% elsif page.handle == 'cart' %}
-        cart
-        {% elsif page.handle == 'contact' %}
-        products
-        {% elsif page.handle == 'products' %}
-        products
-        {% elsif page.handle == 'privacy-policy' %}
-        privacy
-        {% elsif page.handle == 'sctl' %}
-        sctl
-        {% elsif page.handle == 'rule' %}
-        rule
-        {% elsif page.handle == 'company' %}
-        company
-        {% endif %}">
+      <div id="wrapper">
 
       {%- if template == 'index' -%}
-      {% render 'persehome' %}
-
+        {% render 'persehome' %}
       {%- endif -%}
 
+      {% if request.path == '/policies/refund-policy' %}
+        {% section 'refund-policy' %}
+      {% elsif request.path contains '/policies/privacy-policy' %}
+        {% section 'privacy-policy' %}
+      {% elsif request.path contains '/policies/terms-of-service' %}
+        {% section 'terms-of-service' %}
+      {% elsif request.path contains '/policies/shipping-policy' %}
+        {% section 'shipping-policy' %}
+      {% elsif request.path contains '/policies/legal-notice' %}
+      {% section 'legal-notice' %}
+      {% endif %}
 
-
+      
       {{ content_for_layout }}
+
+
     </div>
     </main>
         

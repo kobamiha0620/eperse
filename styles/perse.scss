@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import "_reset";
 @import 'parts/**/*.scss';
 
 body {
@@ -252,10 +251,12 @@ header-drawer {
     }
 }
 
-#MainContent {
+#MainContent { 
     padding-top: 65px;
-    width: 100vw;
+    width: 100vw;    
+    padding:65px 10px 60px;
     margin: 0 auto;
+    padding-bottom: 60px;
     &.adjustment {
         padding-top: 0;
     }
@@ -353,9 +354,7 @@ header-drawer {
     }
 
 }
-.spaced-section{
-    margin: 0!important;
-}
+
 
 .cart-count-bubble{
     width: 8px;
@@ -402,5 +401,10 @@ header-drawer {
     to {
         transform: translateX(0);
         opacity: 1;
+    }
+}
+#MainContent{
+    .shopify-policy__container{
+        display: none;
     }
 }

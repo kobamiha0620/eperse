@@ -115,8 +115,8 @@ footer * {
 }
 
 .footer__insta {
-  margin: 0 auto -120px;
-  padding: 0 0 110px;
+  margin: -60px auto 0;
+  padding: 0 0 0 8px;
   max-width: 1054px;
   width: 100%;
 }
@@ -439,8 +439,8 @@ footer * {
 
   .footer__insta {
     width: 100%;
-    padding: 0 0 18.6vw;
-    margin: 0 0 0 5%;
+    padding: 0 0 !important;
+    margin: -40px 0 0 5%;
   }
 
   .footer__insta--wrap {

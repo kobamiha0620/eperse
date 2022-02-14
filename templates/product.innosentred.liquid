@@ -43,7 +43,7 @@
         </div>
 
         <div class="product__cartbtn">
-             <form method="post" action="/cart/add">
+             {% comment %} <form method="post" action="/cart/add">
                 <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
                 <input type="hidden" min="1" type="number" id="quantity" name="quantity" value="1"/>
                 
@@ -52,6 +52,14 @@
                     <span class="product__cartbtn--img">cartimg<span>
                 </label>
                 <input type="submit" value="" class="" id="persebtn" />
+            </form> {% endcomment %}
+
+
+            <div class="product__cartbtn--disable">
+                <p>BUY</p>
+                <span class="product__cartbtn--img">cartimg<span>
+            </div>
+            <span class="product__cartbtn--notice">2022.3.3(THU) 12:00〜発売開始</span>
         </div>
 
         <div class="product__intro">
@@ -82,7 +90,21 @@
             </p>
         </div>
 
-        {% render 'perseripproduct' %}
+
+        {% render 'perseripproduct01' %}
+        
+        <div class="rip04">
+            <p class="rip04__txt">
+                <img src="https://cdn.shopify.com/s/files/1/0618/4593/0220/files/rip04_txt.svg?v=1644551112" alt="" width="auto" height="auto" loading="lazy">
+                <img src="https://cdn.shopify.com/s/files/1/0618/4593/0220/files/rip04_txt.svg?v=1644551112" alt="" width="auto" height="auto" loading="lazy">
+            </p>
+            <figure class="rip04__img">
+                <img src="https://cdn.shopify.com/s/files/1/0618/4593/0220/files/item_02Innocent-Red_24c57440-28f6-4e88-8189-a7ee101bfbd3.png?v=1644813119" alt="" width="auto" height="auto" loading="lazy">
+            </figure>
+        </div>
+        
+        {% render 'perseripproduct02' %}
+
 
 
         <div class="product__component">

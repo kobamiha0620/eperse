@@ -182,16 +182,35 @@
             display: none;
         }
         &--img{
-            width: 22px;
-            height: 22px;
+            width: 23px;
+            height: 23px;
             display: inline-block;
             white-space: nowrap;
             text-indent: -9999px;
-            background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/cartbtn.png?v=1644645277') no-repeat 0 0;
+            background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/cartIcon.png?v=1644814375') no-repeat 0 0;
             background-size: 100% auto;
             position: absolute;
             right: 48px;
             top: 17px;
+        }
+        &--disable{
+            max-width: 490px;
+            display: block;
+            background: #E8E3DD;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: 0.1em;
+            padding: 20px 0;
+            position: relative;
+        }
+        &--notice{
+            text-align: center;
+            color :$CR;
+            font-size :1.4rem;
+            margin-top: 5px;
+            display: block;
         }
     }
     &__slickwrap {
@@ -930,7 +949,7 @@
         }
         &--03{
             position: relative;
-            background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/prdocut_almond03a.png?v=1644721743') no-repeat 0 0;
+            background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/bg_item_04AlmondBrown.png?v=1644815890') no-repeat 0 0;
             background-size: 100% auto;
             height: 613px;
             width: 466px;
@@ -1555,13 +1574,13 @@
 
             .slick-active button:before {
                 content: '' !important;
-                width: 85px !important;
-                height: 113px !important;
+                width: 19vw !important;
+                height: 23.33vw !important;
             }
 
             .slick-dots li {
-                width: 85px !important;
-                height: 113px !important;
+                width: 19vw !important;
+                height: 23.33vw !important;
                 margin: 0 4px 0 5px !important;
             }
 
@@ -1574,13 +1593,13 @@
             }
 
             .slick-dots li button {
-                width: 85px !important;
-                height: 113px !important;
+                width: 19vw !important;
+                height: 23.33vw !important;
             }
 
             .slick-dots li button:before {
-                width: 85px !important;
-                height: 113px !important;
+                width: 19vw !important;
+                height: 23.33vw !important;
             }
 
             .slick-dots {

@@ -627,6 +627,9 @@
     &__pararaSp{
         display: none;
     }
+    &__pararaSp2{
+        display: none;
+    }
     &__produce{
         width: 1060px;
         height: 817px;
@@ -971,7 +974,7 @@
         &__product{
             border-top: solid 1px $CR;
             border-bottom: solid 1px $CR;
-            margin: 0 0 100px!important;
+            margin: 0 0 12vw!important;
             &--inner{
                 max-width: 1060px;
                 width: 100%;
@@ -1189,6 +1192,40 @@
         }
         &__pararaPc{
             display: none;
+        }
+        &__pararaSp2{
+            position: relative;
+            display: block;
+            margin: 12vw 0;
+            width: 100vw;
+            height: 103vw;
+            .phome__pararaSp2--ttl{
+                opacity: 0;
+            }
+            &.is-show{
+                .phome__pararaSp2--ttl{
+                    opacity: 1;
+                    animation-name:fadeUpAnime0;
+                    animation-duration: 0.8s;
+                }
+            }
+            &--txt{
+                img{
+                    width: 100%;
+                }
+            }
+            &--ttl{
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 100vw;
+                height: 103vw;
+                img{
+                    width: 100vw;
+                    height: 103vw;
+                }
+            }
+            
         }
         &__pararaSp{
             margin-top: 300px;

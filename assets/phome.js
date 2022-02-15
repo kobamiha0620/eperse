@@ -170,6 +170,8 @@ $(window).on('load scroll', function() {
   add_class_in_scrolling($('.product__almond--03'));
   add_class_in_scrolling($('.product__almond--04a'));
   add_class_in_scrolling($('.product__almond--04b'));
+  add_class_in_scrolling($('.phome__pararaSp2'));
+
 });
 
 

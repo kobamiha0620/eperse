@@ -4131,12 +4131,12 @@ footer * {
 }
 
 .rip02__slick .slick-next {
-  top: 530px !important;
+  top: 495px !important;
   right: 60px !important;
 }
 
 .rip02__slick .slick-prev {
-  top: 530px !important;
+  top: 495px !important;
   left: 60px !important;
 }
 
@@ -4230,7 +4230,6 @@ footer * {
 
 .rip02__slick--main {
   margin-right: 0px !important;
-  margin-left: 8px !important;
   padding: 0;
   width: 333px;
 }
@@ -4241,7 +4240,7 @@ footer * {
 
 .rip02__slick--name {
   align-items: center;
-  margin: 60px 0 0;
+  margin: 40px 0 0;
   padding: 0;
   height: 29px;
 }
@@ -4262,7 +4261,7 @@ footer * {
   color: #f08984;
   font-size: 1.3rem;
   line-height: 1.4;
-  margin: -60px 0 0;
+  margin: 70px 0 0;
 }
 
 .rip02__slick02 {
@@ -5166,12 +5165,12 @@ footer * {
   }
 
   .rip02__slick .slick-next {
-    top: 92.2vw !important;
+    top: 90.2vw !important;
     right: 30px !important;
   }
 
   .rip02__slick .slick-prev {
-    top: 92.2vw !important;
+    top: 90.2vw !important;
     left: 30px !important;
   }
 
@@ -5197,7 +5196,7 @@ footer * {
   .rip02__slick--txt {
     font-size: 0.9rem;
     line-height: 1.6;
-    margin: -60px 0 0;
+    margin: 70px 0 0;
   }
 
   .rip02__slick02 {
@@ -5531,7 +5530,7 @@ body {
 
   .header-wrapper.active {
     top: 0px;
-    height: 75px;
+    height: 64px;
   }
 
   .header-wrapper.active .pereseLogo {

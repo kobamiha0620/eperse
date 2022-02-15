@@ -1149,11 +1149,9 @@
         width: 100%;
         margin: 0 !important;
         padding: 0 !important;
-
         .rip02__slick--name {
             display: none;
         }
-
         .slick-active {
             .rip02__slick--name {
                 display: block;
@@ -1191,12 +1189,12 @@
         }
 
         .slick-next {
-            top: 530px !important;
+            top: 495px !important;
             right: 60px !important;
         }
 
         .slick-prev {
-            top: 530px !important;
+            top: 495px !important;
             left: 60px !important;
         }
 
@@ -1290,7 +1288,6 @@
 
         &--main {
             margin-right: 0px !important;
-            margin-left: 8px !important;
             padding: 0;
             width: 333px;
 
@@ -1301,7 +1298,7 @@
 
         &--name {
             align-items: center;
-            margin: 60px 0 0;
+            margin: 40px 0 0;
             padding: 0;
             height: 29px;
 
@@ -1323,7 +1320,7 @@
             color: $CR;
             font-size: 1.3rem;
             line-height: 1.4;
-            margin: -60px 0 0;
+            margin: 70px 0 0;
         }
     }
 
@@ -2156,12 +2153,12 @@
             }
 
             .slick-next {
-                top: 92.2vw !important;
+                top: 90.2vw !important;
                 right: 30px !important;
             }
 
             .slick-prev {
-                top: 92.2vw !important;
+                top: 90.2vw !important;
                 left: 30px !important;
             }
 
@@ -2187,7 +2184,7 @@
             &--txt {
                 font-size: 0.9rem;
                 line-height: 1.6;
-                margin: -60px 0 0;
+                margin: 70px 0 0;
             }
         }
 

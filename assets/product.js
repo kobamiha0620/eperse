@@ -30,22 +30,22 @@ $('.product__slick').slick({
     slidesToScroll: 1,//1回のスクロールで3枚の写真を移動して見せる
     dots: false,　//下部ドットナビゲーションの表示
     asNavFor: '.rip02__slick',
-    speed: 600,
+    speed: 300,
     centerMode: true
   });
 
 
 
   //回転する
-  function relotate(){
-    var rotate = function(logo, angle) {
-      logo.css({
-      "transform" : "rotate("+angle+"deg)"
-      });
-     }
-     $(window).scroll(function(){
-      rotate($(".relotateNude"), $(window).scrollTop()*0.6);
-     })
+  // function relotate(){
+  //   var rotate = function(logo, angle) {
+  //     logo.css({
+  //     "transform" : "rotate("+angle+"deg)"
+  //     });
+  //    }
+  //    $(window).scroll(function(){
+  //     rotate($(".relotateNude"), $(window).scrollTop()*0.6);
+  //    })
     
-  }
-  relotate();
+  // }
+  // relotate();

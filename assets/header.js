@@ -61,13 +61,38 @@ $(function(){
 
   
 
-//フッターまで行ったらヘッダーをdisplay: none;
-// const toFooter =  document.getElementById('js-footer');
-// const toreact = toFooter.getBoundingClientRect();
-// const elemtop = (toreact.top + window.pageYOffset) - 60;
-// // const toRlogo = document.getElementById('mainRlogo');
-// const elemRlogo = (toreact.top + window.pageYOffset) - 300;
 
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 33) {
+      $(".header-wrapper").addClass("active");
+      $("#MainContent").addClass('adjustment');
+      
+  } else {
+      $(".header-wrapper").removeClass("active");
+      $("#MainContent").removeClass('adjustment');
+  }
+});
+
+
+function scrollingtoFooter(){
+
+
+
+//フッターまで行ったらヘッダーをdisplay: none;
+let toFooter =  document.getElementById('perseFooter');
+// let toreact = toFooter.getBoundingClientRect();
+// let elemtop = (toreact.top);
+// let toRlogo = document.getElementById('mainRlogo');
+// let elemRlogo = (toreact.top + window.pageYOffset);
+let footerH = (toFooter.clientHeight) + 100;
+let absolutePositionTop = (toFooter.getBoundingClientRect().top + window.pageYOffset ) - footerH;
+
+window.addEventListener('scroll', ()=> {
+  console.log(window.pageYOffset);
+});
+
+console.log(absolutePositionTop);
 // $(window).scroll(function(){
 //     if(($(window).scrollTop() > elemtop)){
 //         $('.header-wrapper').addClass('fixed');
@@ -75,27 +100,21 @@ $(function(){
 //         $('.header-wrapper').removeClass('fixed');
 //     }
 // });
-// $(window).scroll(function(){
-//     if(($(window).scrollTop() > elemRlogo)){
-//         $('.main__logo').addClass('fixed');
-//         $('.main__sns').addClass('fixed');
-//     }else{
-//         $('.main__logo').removeClass('fixed');
-//         $('.main__sns').removeClass('fixed');
-//     }
-// });
 
-$(window).scroll(function () {
-    if ($(window).scrollTop() > 33) {
-        $(".header-wrapper").addClass("active");
-        $("#MainContent").addClass('adjustment');
-        
-    } else {
-        $(".header-wrapper").removeClass("active");
-        $("#MainContent").removeClass('adjustment');
+
+$(window).scroll(function(){
+    if(($(window).scrollTop() > absolutePositionTop)){
+        $('.main__logo').addClass('fixed');
+        $('.main__sns').addClass('fixed');
+    }else{
+        $('.main__logo').removeClass('fixed');
+        $('.main__sns').removeClass('fixed');
     }
 });
 
+}
+
+window.onload = scrollingtoFooter;
 
 // ------------------------------------------------------------------------------
 

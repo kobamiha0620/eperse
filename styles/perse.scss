@@ -65,18 +65,28 @@ body {
 
 //sp
 @media screen and (max-width: $BP) {
-    .pereseLogo {
-        width: 101px;
-        height: 29px;
-        background-size: 100% auto;
-    }
+
+
 
     .header-wrapper {
         top: 33px;
-        height: 64px;
-
+        .pereseLogo {
+            width: 41.466vw;
+            height: 12vw;
+            background-size: 100% auto;
+            margin-left: 5.83vw;
+            margin-top: 4.5vw;
+        }
         &.active {
             top: 0px;
+            height: 75px;
+            .pereseLogo {
+                width: 26.66vw;
+                height: 7.86vw;
+                margin-left: 5.83vw;
+                margin-top: 10px;
+                margin-bottom: 0;
+            }
         }
     }
 
@@ -251,7 +261,7 @@ header-drawer {
 
 #MainContent { 
     width: 100vw;    
-    padding: 85px 0 60px;
+    padding: 95px 0 60px;
     margin: 0 auto;
     padding-bottom: 60px;
     &.adjustment {

@@ -1,4 +1,5 @@
 $('.phome__slide').slick({
+  fade: true, 
     autoplay: true,//自動的に動き出すか。初期値はfalse。
     infinite: true,//スライドをループさせるかどうか。初期値はtrue。
     slidesToShow: 1,//スライドを画面に3枚見せる
@@ -21,11 +22,12 @@ $('.phome__slide').slick({
   });
 
   $('.phome__product--slick02').slick({
+    fade: true, 
     autoplay: false,//自動的に動き出すか。初期値はfalse。
     infinite: true,//スライドをループさせるかどうか。初期値はtrue。
     slidesToShow: 1,//スライドを画面に3枚見せる
     arrows: false,
-    speed: 500,
+    speed: 600,
     slidesToScroll: 1,//1回のスクロールで3枚の写真を移動して見せる
     dots: false,　//下部ドットナビゲーションの表示
     asNavFor: '.phome__product--slick'
@@ -46,6 +48,7 @@ $('.phome__slide').slick({
     if ($(window).scrollTop() > 33) {
         $(".fadeUpTrigger").addClass("fadeUp");
     } 
+    
 });
 
 
@@ -127,6 +130,26 @@ function add_class_in_scrolling(target) {
     }
 }
 
+function addFooter(target) {
+  let winScroll = $(window).scrollTop();
+  let winHeight = $(window).height();
+  let mainlogo = $('.main__logo');
+  let mainSns = $('.main__sns');
+  let scrollPos = winScroll + winHeight;
+  if (target.length) {
+    var menuPos = target.offset().top;
+  }
+  if(menuPos < scrollPos) {
+      setTimeout(function(){
+        mainlogo.addClass('fixed');
+        mainSns.addClass('fixed');
+      }, 500);
+  }
+}
+$(window).on('load scroll', function() {
+  addFooter($('#perseFooter'));
+
+});
 $(window).on('load scroll', function() {
   add_class_in_scrolling($('.phome__produce--lblc'));
   add_class_in_scrolling($('.product__intro'));
@@ -185,3 +208,6 @@ class ParallaxEffectBackground {
   });
   
 
+$(window).on('load', function(){
+  $('.fadeUpTriggerSp').addClass("fadeUp");
+});

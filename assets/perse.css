@@ -1237,6 +1237,14 @@ footer * {
   display: block;
 }
 
+.phome .fadeUpTrigger {
+  display: block;
+}
+
+.phome .fadeUpTriggerSp {
+  display: none;
+}
+
 .phome__slide {
   width: 100%;
   padding: 0;
@@ -1314,7 +1322,7 @@ footer * {
   font-family: "Outfit", sans-serif;
   font-size: 1.5rem;
   color: #f08984;
-  margin: 0 auto !important;
+  margin: 0 auto 48px !important;
 }
 
 .phome__brand--blc {
@@ -1333,10 +1341,8 @@ footer * {
   background-size: 100% auto;
   width: 444px;
   height: 40px;
-  margin: -10px auto 54px !important;
-  display: inline-block;
-  position: relative;
-  top: 0;
+  margin: -10px auto 53px !important;
+  font-size: 0;
 }
 
 .phome__brand--spconcept {
@@ -1347,9 +1353,10 @@ footer * {
   color: #f08984;
   text-align: center;
   font-size: 1.56rem;
-  line-height: 2;
+  line-height: 2.4;
   display: block;
   position: relative;
+  margin: 0 0 10px !important;
 }
 
 .phome__brand--en {
@@ -1358,18 +1365,19 @@ footer * {
   color: #f08984;
   font-size: 1.2rem;
   line-height: 1.4;
-  margin: 96px auto 0 !important;
+  margin: 34px auto 0 !important;
   padding-bottom: 220px !important;
   display: block;
   position: relative;
+  font-weight: 300;
 }
 
 .phome__brand--img01 {
   position: absolute;
   width: 150px;
   height: 150px;
-  top: 42px;
-  left: 20px;
+  top: 0;
+  left: 30px;
 }
 
 .phome__brand--img01 img {
@@ -1380,8 +1388,8 @@ footer * {
   position: absolute;
   width: 254px;
   height: 350px;
-  top: 116px;
-  right: 0px;
+  top: 76px;
+  right: -10px;
 }
 
 .phome__brand--img02 img {
@@ -1392,8 +1400,8 @@ footer * {
   position: absolute;
   width: 190px;
   height: 244px;
-  top: 238px;
-  left: 52px;
+  top: 198px;
+  left: 60px;
 }
 
 .phome__brand--img03 img {
@@ -1428,7 +1436,7 @@ footer * {
 .phome__product--sub {
   text-align: center;
   font-size: 1.3rem;
-  color: #00000a;
+  color: gray;
 }
 
 .phome__product--rip {
@@ -1616,13 +1624,44 @@ footer * {
   margin-top: -73px !important;
 }
 
+.phome__product--slick02 {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.phome__product--slick02 img {
+  width: 100%;
+}
+
+.phome__product--slick02 .slick-slide.slick-active {
+  animation: fadezoom 0.7s 0s forwards;
+}
+
+.phome__product--slick02 .slick-slide {
+  opacity: 0;
+}
+
+@keyframes fadezoom {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .phome__product--slick02wrap {
-  position: absolute;
-  top: 280px;
-  width: 340px;
   z-index: 2;
-  padding-left: 120px;
-  right: -10px;
+  position: absolute;
+  top: 290px;
+  right: 0;
+  width: 530px;
+}
+
+.phome__product--slick02wrap a {
+  display: block;
 }
 
 .phome__product--slick03 {
@@ -1802,8 +1841,8 @@ footer * {
 }
 
 .phome__product--slickpro {
-  width: 126px;
-  height: 156px;
+  width: 530px;
+  height: 160px;
 }
 
 .phome__product--slickpro img {
@@ -1849,9 +1888,9 @@ footer * {
   width: 140px;
   height: 83px;
   position: absolute;
-  right: 86px;
-  top: 155px;
-  animation: rotate-anime 3s linear infinite;
+  right: 80px;
+  top: 145px;
+  animation: rotate-anime 6s linear infinite;
 }
 
 .phome__pararaPc {
@@ -1964,10 +2003,9 @@ footer * {
   background: #f08984;
   width: 540px;
   height: 750px;
+  padding: 40px 70px;
   bottom: 0;
   right: 0;
-  white-space: nowrap;
-  text-indent: -9999px;
   opacity: 0;
 }
 
@@ -1975,15 +2013,6 @@ footer * {
   opacity: 1;
   animation-name: fadeUpAnime50;
   animation-duration: 0.8s;
-}
-
-.phome__produce--lblcIn {
-  position: absolute;
-  width: 540px;
-  height: 750px;
-  bottom: 0;
-  right: 0;
-  padding: 40px 70px;
 }
 
 .phome__produce--ltxt {
@@ -2000,14 +2029,20 @@ footer * {
   display: inline-block;
 }
 
-@keyframes fadeUpAnime50 {
+@keyframes fadeUpAnime0 {
   from {
     opacity: 0;
-    transform: translateY(50px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+  }
+}
+@keyframes fadeUpAnime50 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 @keyframes rotate-anime {
@@ -2086,6 +2121,22 @@ footer * {
 }
 
 @media screen and (max-width: 750px) {
+  .phome .fadeUpTrigger {
+    display: none;
+  }
+
+  .phome .fadeUpTriggerSp {
+    display: block;
+    opacity: 0;
+  }
+
+  .phome .fadeUpTriggerSp .fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 1;
+  }
+
   .phome__slide {
     width: 100%;
     padding: 0;
@@ -2123,14 +2174,15 @@ footer * {
   }
 
   .phome__slide--name {
-    margin: -58vw auto 0;
-    width: 58.13vw;
+    margin: -54vw auto 0;
+    width: 68.13vw;
     height: 28.8vw;
     padding-left: 10vw;
-    padding-bottom: 58vw;
   }
 
   .phome__slide--name img {
+    width: 58.13vw;
+    height: 28.8vw;
     width: 100%;
   }
 
@@ -2153,7 +2205,7 @@ footer * {
 
   .phome__brand--ttl {
     font-size: 1.1rem;
-    margin: 30px auto 0 !important;
+    margin: 30px auto 6.66vw !important;
   }
 
   .phome__brand--blc {
@@ -2288,14 +2340,14 @@ footer * {
   }
 
   .phome__product--slickkado {
-    width: 5.6vw;
-    height: 5.6vw;
+    width: 10.933vw;
+    height: 10.933vw;
     position: absolute;
     top: 0;
     left: 16vw;
     text-indent: -9999px;
     white-space: nowrap;
-    background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/slick-leftImg.png?v=1644378734") no-repeat 0 0;
+    background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/kadomaruSp.png?v=1644907882") no-repeat 0 0;
     background-size: 100% auto;
   }
 
@@ -2424,10 +2476,8 @@ footer * {
   }
 
   .phome__product--slick02wrap {
-    top: 56.2vw;
-    width: 68.11vw;
-    padding-left: 12vw;
-    right: -16vw;
+    top: 60.2vw;
+    width: 100vw;
   }
 
   .phome__product--slickbtn a {
@@ -2450,7 +2500,7 @@ footer * {
   }
 
   .phome__product--slickpro {
-    width: 25.3vw;
+    width: 100vw;
     height: 31.7vw;
   }
 
@@ -2484,16 +2534,15 @@ footer * {
     margin-top: 300px;
     width: 100vw;
     height: 102.6vw;
-    background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_pararasp3.png?v=1644342949") no-repeat;
-    background-size: 100% auto;
+    background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/parara_sp.png?v=1644911720") no-repeat;
+    background-size: 100vw 105.33vw;
     margin: 0 auto 110px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-size: cover;
     background-position: center top;
     background-attachment: fixed;
-    background-position: center calc(50% - 100px);
+    background-position: center calc(80% - 100px);
   }
 
   .phome__pararaSp--ttl {
@@ -2571,28 +2620,15 @@ footer * {
     margin-bottom: 30px !important;
   }
 
-  .phome__produce--wrapper {
-    position: relative;
-    height: 155.6vw;
-    width: 100vw;
-  }
-
   .phome__produce--lblc {
     border-top-left-radius: 56px;
     width: 94.5vw;
     height: 155.6vw;
-    bottom: 10px;
-    right: 0;
-  }
-
-  .phome__produce--lblcIn {
+    margin-left: 5.33vw;
     margin-top: -10px;
-    position: absolute;
-    width: 94.5vw;
-    height: 155.6vw;
-    bottom: 10px;
-    right: 0;
     padding: 40px 8.26vw;
+    position: relative;
+    height: 155.6vw;
   }
 
   .phome__produce--ltxt {
@@ -3246,8 +3282,8 @@ footer * {
 
 .product__intro.is-show .product__intro--fv {
   opacity: 1;
-  animation-name: fadeUpAnime50;
-  animation-duration: 0.6s;
+  animation-name: fadeUpAnime0;
+  animation-duration: 0.9s;
 }
 
 .product__intro--ripttl {
@@ -3359,7 +3395,7 @@ footer * {
 
 .product__intro--art.is-show .product__intro--artkey {
   opacity: 1;
-  animation-name: fadeUpAnime50;
+  animation-name: fadeUpAnime0;
   animation-duration: 0.6s;
 }
 
@@ -3374,7 +3410,6 @@ footer * {
 
 .product__intro--artkey img {
   width: 100%;
-  animation: rotate-anime 3s linear infinite;
 }
 
 .product__component {
@@ -3500,7 +3535,7 @@ footer * {
 
 .product__nude--02.is-show .product__nude--02fv {
   opacity: 1;
-  animation-name: fadeUpAnime50;
+  animation-name: fadeUpAnime0;
   animation-duration: 0.8s;
 }
 
@@ -3617,7 +3652,7 @@ footer * {
 
 .product__rose--01fvc.is-show {
   opacity: 1;
-  animation-name: fadeUpAnime50;
+  animation-name: fadeUpAnime0;
   animation-duration: 0.8s;
 }
 
@@ -3662,7 +3697,7 @@ footer * {
 
 .product__rose--02d.is-show {
   opacity: 1;
-  animation-name: fadeLeftAnime02;
+  animation-name: fadeLeftAnime0;
   animation-duration: 0.8s;
   animation-fill-mode: forwards;
 }
@@ -3682,7 +3717,7 @@ footer * {
 
 .product__rose--02e.is-show {
   opacity: 1;
-  animation-name: fadeRtAnime;
+  animation-name: fadeRtAnime0;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
@@ -3703,7 +3738,7 @@ footer * {
 
 .product__rose--03.is-show .product__rose--03b {
   opacity: 1;
-  animation-name: fadeUpAnime50;
+  animation-name: fadeUpAnime0;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
@@ -3781,7 +3816,7 @@ footer * {
 
 .product__orange--02.is-show .product__orange--02fv {
   opacity: 1;
-  animation-name: fadeUpAnime50;
+  animation-name: fadeUpAnime0;
   animation-duration: 0.6s;
 }
 
@@ -3853,8 +3888,8 @@ footer * {
 
 .product__almond--01.is-show .product__almond--01fv {
   opacity: 1;
-  animation-name: fadeUpAnime50;
-  animation-duration: 0.6s;
+  animation-name: fadeUpAnime0;
+  animation-duration: 0.8s;
 }
 
 .product__almond--01fv {
@@ -3888,7 +3923,7 @@ footer * {
 
 .product__almond--03.is-show .product__almond--03fv {
   opacity: 1;
-  animation-name: fadeUpAnime50;
+  animation-name: fadeUpAnime0;
   animation-duration: 0.6s;
 }
 
@@ -4443,6 +4478,14 @@ footer * {
   width: 100%;
 }
 
+.rip06__inner .pctxt {
+  display: block;
+}
+
+.rip06__inner .sptxt {
+  display: none;
+}
+
 .rip06__txt {
   width: 520px;
   margin: 0 auto 70px !important;
@@ -4832,7 +4875,7 @@ footer * {
 
   .product__rose--02d.is-show {
     opacity: 1;
-    animation-name: fadeLeftAnime02;
+    animation-name: fadeLeftAnime0;
     animation-duration: 0.8s;
     animation-fill-mode: forwards;
   }
@@ -5285,12 +5328,20 @@ footer * {
   }
 
   .rip06__inner {
-    padding: 0 3.33vw 0 0;
-    width: 100%;
+    padding: 0 2.66vw 0 0;
+    width: 100vw;
   }
 
   .rip06__inner img {
     width: 100%;
+  }
+
+  .rip06__inner .pctxt {
+    display: none;
+  }
+
+  .rip06__inner .sptxt {
+    display: block;
   }
 
   .rip06__txt {
@@ -5319,6 +5370,10 @@ footer * {
     width: 100%;
   }
 }
+.relotateNude {
+  animation: rotate-anime 6s linear infinite;
+}
+
 footer html, footer body, footer div, footer span, footer object, footer iframe, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, footer blockquote, footer pre, footer abbr, footer address, footer cite, footer code, footer del, footer dfn, footer em, footer img, footer ins, footer kbd, footer q, footer samp, footer small, footer strong, footer sub, footer sup, footer var, footer b, footer i, footer dl, footer dt, footer dd, footer ol, footer ul, footer li, footer fieldset, footer form, footer label, footer legend, footer table, footer caption, footer tbody, footer tfoot, footer thead, footer tr, footer th, footer td, footer article, footer aside, footer canvas, footer details, footer figcaption, footer figure, footer footer, footer header, footer hgroup, footer menu, footer nav, footer section, footer summary, footer time, footer mark, footer audio, footer video {
   margin: 0;
   padding: 0;
@@ -5462,19 +5517,29 @@ body {
 }
 
 @media screen and (max-width: 750px) {
-  .pereseLogo {
-    width: 101px;
-    height: 29px;
-    background-size: 100% auto;
-  }
-
   .header-wrapper {
     top: 33px;
-    height: 64px;
+  }
+
+  .header-wrapper .pereseLogo {
+    width: 41.466vw;
+    height: 12vw;
+    background-size: 100% auto;
+    margin-left: 5.83vw;
+    margin-top: 4.5vw;
   }
 
   .header-wrapper.active {
     top: 0px;
+    height: 75px;
+  }
+
+  .header-wrapper.active .pereseLogo {
+    width: 26.66vw;
+    height: 7.86vw;
+    margin-left: 5.83vw;
+    margin-top: 10px;
+    margin-bottom: 0;
   }
 
   .header__notice {
@@ -5623,7 +5688,7 @@ header-drawer {
 
 #MainContent {
   width: 100vw;
-  padding: 85px 0 60px;
+  padding: 95px 0 60px;
   margin: 0 auto;
   padding-bottom: 60px;
 }

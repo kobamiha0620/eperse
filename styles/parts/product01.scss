@@ -388,8 +388,8 @@
         &.is-show {
             .product__intro--fv {
                 opacity: 1;
-                animation-name: fadeUpAnime50;
-                animation-duration: 0.6s;
+                animation-name: fadeUpAnime0;
+                animation-duration: 0.9s;
             }
 
         }
@@ -499,7 +499,7 @@
             &.is-show {
                 .product__intro--artkey {
                     opacity: 1;
-                    animation-name: fadeUpAnime50;
+                    animation-name: fadeUpAnime0;
                     animation-duration: 0.6s;
                 }
             }
@@ -515,7 +515,6 @@
 
             img {
                 width: 100%;
-                animation: rotate-anime 3s linear infinite;
 
             }
         }
@@ -627,7 +626,7 @@
             &.is-show{
                 .product__nude--02fv{
                     opacity: 1;
-                    animation-name:fadeUpAnime50;
+                    animation-name:fadeUpAnime0;
                     animation-duration:0.8s;
                 }
             }
@@ -735,7 +734,7 @@
 
             &.is-show{
                 opacity: 1;
-                animation-name:fadeUpAnime50;
+                animation-name:fadeUpAnime0;
                 animation-duration:0.8s;
             }
         }
@@ -775,7 +774,7 @@
             opacity: 0;
             &.is-show{
                 opacity: 1;
-                animation-name: fadeLeftAnime02;
+                animation-name: fadeLeftAnime0;
                 animation-duration: 0.8s;
                 animation-fill-mode:forwards;
             }
@@ -793,7 +792,7 @@
 
             &.is-show{
                 opacity: 1;
-                animation-name: fadeRtAnime;
+                animation-name: fadeRtAnime0;
                 animation-duration: 1s;
                 animation-fill-mode:forwards;
             }
@@ -811,7 +810,7 @@
             &.is-show{
                 .product__rose--03b{
                     opacity: 1;
-                    animation-name: fadeUpAnime50;
+                    animation-name: fadeUpAnime0;
                     animation-duration: 1s;
                     animation-fill-mode:forwards;
                 }
@@ -883,7 +882,7 @@
             &.is-show {
                 .product__orange--02fv {
                     opacity: 1;
-                    animation-name: fadeUpAnime50;
+                    animation-name: fadeUpAnime0;
                     animation-duration: 0.6s;
                 }
     
@@ -952,8 +951,8 @@
             &.is-show {
                 .product__almond--01fv {
                     opacity: 1;
-                    animation-name: fadeUpAnime50;
-                    animation-duration: 0.6s;
+                    animation-name: fadeUpAnime0;
+                    animation-duration: 0.8s;
                 }
     
             }
@@ -985,7 +984,7 @@
             &.is-show {
                 .product__almond--03fv {
                     opacity: 1;
-                    animation-name: fadeUpAnime50;
+                    animation-name: fadeUpAnime0;
                     animation-duration: 0.6s;
                 }
     
@@ -1521,10 +1520,17 @@
     width: 568px;
     margin: 0 auto 35px;
     padding: 0 23px 0 0;
+
     &__inner{   
         width: 545px;
         img{
             width: 100%;
+        }
+        .pctxt{
+            display: block;
+        }
+        .sptxt{
+            display: none;
         }
     }
     &__txt{
@@ -1883,7 +1889,7 @@
                 opacity: 0;
                 &.is-show{
                     opacity: 1;
-                    animation-name: fadeLeftAnime02;
+                    animation-name: fadeLeftAnime0;
                     animation-duration: 0.8s;
                     animation-fill-mode:forwards;
                 }
@@ -2302,12 +2308,19 @@
     .rip06{
         width: 100vw;
         margin: 0 0 7.7vw 0;
-        &__inner{   
-            padding: 0 3.33vw 0 0;
 
-            width: 100%;
+        &__inner{   
+            padding: 0 2.66vw 0 0;
+
+            width: 100vw;
             img{
                 width: 100%;
+            }
+            .pctxt{
+                display: none;
+            }
+            .sptxt{
+                display: block;
             }
         }
         &__txt{
@@ -2337,3 +2350,7 @@
 
 //tablet　画面サイズが750pxからはこのスタイルを読む
 @media screen and (min-width: $BP+1) {}
+
+.relotateNude{
+    animation: rotate-anime 6s linear infinite;   
+}

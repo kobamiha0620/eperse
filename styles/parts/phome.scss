@@ -2,6 +2,12 @@
 @import "_reset";
 
 .phome {
+    .fadeUpTrigger{
+        display: block;
+    }
+    .fadeUpTriggerSp{
+        display: none;
+    }
     display: block;
     &__slide {
         width: 100%;
@@ -76,7 +82,7 @@
             font-family: 'Outfit', sans-serif;
             font-size: 1.5rem;
             color: $CR;
-            margin: 0 auto !important;
+            margin: 0 auto 48px!important;
         }
         &--blc{
             max-width: 924px;
@@ -93,10 +99,8 @@
             background-size: 100% auto;
             width: 444px;
             height: 40px;
-            margin: -10px auto 54px!important;
-            display: inline-block;
-            position: relative;
-            top: 0;
+            margin: -10px auto 53px!important;
+            font-size: 0;
         }
         &--spconcept{
             display: none;
@@ -105,9 +109,10 @@
             color: $CR;
             text-align: center;
             font-size: 1.56rem;
-            line-height: 2;
+            line-height: 2.4;
             display: block;
             position: relative;
+            margin: 0 0 10px!important;
         }
         &--en{
             font-family: 'Outfit', sans-serif;
@@ -115,17 +120,18 @@
             color: $CR;
             font-size: 1.2rem;
             line-height: 1.4;
-            margin: 96px auto 0!important;
+            margin: 34px auto 0!important;
             padding-bottom: 220px!important;
             display: block;
             position: relative;
+            font-weight: 300;
         }
         &--img01{
             position: absolute;
             width: 150px;
             height: 150px;
-            top: 42px;
-            left: 20px;
+            top:0;
+            left: 30px;
             img{
                 width: 100%;
             }
@@ -135,8 +141,8 @@
             position: absolute;
             width: 254px;
             height: 350px;
-            top: 116px;
-            right: 0px;
+            top: 76px;
+            right: -10px;
             img{
                 width: 100%;
             }
@@ -146,8 +152,8 @@
             position: absolute;
             width: 190px;
             height: 244px;
-            top: 238px;
-            left: 52px;
+            top: 198px;
+            left: 60px;
             img{
                 width: 100%;
             }
@@ -178,7 +184,7 @@
         &--sub{
             text-align: center;
             font-size: 1.3rem;
-            color: #00000a;
+            color: #808080;
         }
         &--rip{
             width: 50%;
@@ -348,13 +354,47 @@
                 margin-top: -73px!important;
             }
         }
+        &--slick02{
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+            img{
+                width: 100%;
+            }
+            .slick-slide.slick-active{
+                animation: fadezoom 0.7s 0s forwards;
+
+            }
+            .slick-slide{
+                opacity: 0;
+            }
+            // .slide-animation{
+            //     animation: fadezoom 8s 0s forwards;
+            // }
+            @keyframes fadezoom {
+                from {
+                    opacity: 0;
+                    transform: translateY(10px);
+                }
+            
+                to {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+            
+        }
         &--slick02wrap{
-            position: absolute;
-            top: 280px;
-            width: 340px;
             z-index: 2;
-            padding-left: 120px;
-            right: -10px;
+            position: absolute;
+            top: 290px;
+            right: 0;
+            width: 530px;
+            // paddin60left: 120px;
+            // right: -10px;
+            a{
+                display: block;
+            }
         }
         &--slick03{
             margin: 0!important;
@@ -517,8 +557,8 @@
             }
         }
         &--slickpro{
-            width: 126px;
-            height: 156px;
+            width: 530px;
+            height: 160px;
             img{
                 width: 100%;
             }
@@ -560,9 +600,9 @@
             width: 140px;
             height: 83px;
             position: absolute;
-            right: 86px;
-            top: 155px;
-            animation: rotate-anime 3s linear infinite;
+            right: 80px;
+            top: 145px;
+            animation: rotate-anime 6s linear infinite;
         }
     }
     &__pararaPc{
@@ -660,26 +700,17 @@
             background: $CR;
             width: 540px;
             height: 750px;
+            padding: 40px 70px;
             bottom: 0;
             right: 0;
-            white-space: nowrap;
-            text-indent: -9999px;
             opacity: 0;
             &.is-show{
                 opacity: 1;
                 animation-name:fadeUpAnime50;
-                animation-duration:0.8s;
+                animation-duration: 0.8s;
             }
         }
-        &--lblcIn{
-            position: absolute;
-            width: 540px;
-            height: 750px;
-            bottom: 0;
-            right: 0;
-            padding: 40px 70px;
-            
-        }
+
         &--ltxt{
             text-align: center;
             line-height: 1.4;
@@ -696,14 +727,22 @@
     }
 
 }
-@keyframes fadeUpAnime50{
+
+@keyframes fadeUpAnime0{
     from {
     opacity: 0;
-    transform: translateY(50px);
     }
     to {
     opacity: 1;
-    transform: translateY(0);
+    }
+}
+@keyframes fadeUpAnime50{
+    from {
+    opacity: 0;
+
+    }
+    to {
+    opacity: 1;
     }
 }
 @keyframes rotate-anime {
@@ -787,6 +826,19 @@
 @media screen and (max-width: $BP) {
 
     .phome {
+        .fadeUpTrigger{
+            display: none;
+        }
+        .fadeUpTriggerSp{
+            display: block;
+            opacity: 0;
+            .fadeUp{
+                animation-name:fadeUpAnime;
+                animation-duration:0.8s;
+                animation-fill-mode:forwards;
+                opacity:1;
+            }
+        }
         &__slide {
             width: 100%;
             padding: 0;
@@ -818,12 +870,13 @@
                 top: 30vw;
             }
             &--name{
-                margin: -58vw auto 0;
-                width: 58.13vw;
+                margin: -54vw auto 0;
+                width: 68.13vw;
                 height: 28.8vw;
                 padding-left: 10vw;
-                padding-bottom: 58vw;
                 img{
+                    width: 58.13vw;
+                    height: 28.8vw;
                     width: 100%;
                 }
             }
@@ -844,7 +897,7 @@
             margin-bottom: 15vw;
             &--ttl{
                 font-size: 1.1rem;
-                margin: 30px auto 0!important;
+                margin: 30px auto 6.66vw!important;
             }
             &--blc{
                 max-width: 100vw;
@@ -963,14 +1016,14 @@
                 height: 8.3vw;
             }
             &--slickkado{
-                width: 5.6vw;
-                height: 5.6vw;
+                width: 10.933vw;
+                height: 10.933vw;
                 position: absolute;
                 top: 0;
                 left: 16vw;
                 text-indent: -9999px;
                 white-space: nowrap;
-                background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/slick-leftImg.png?v=1644378734') no-repeat 0 0;
+                background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/kadomaruSp.png?v=1644907882') no-repeat 0 0;
                 background-size: 100% auto;
             }
             &--slick{
@@ -1084,10 +1137,10 @@
                 }
             }
             &--slick02wrap{
-                top: 56.2vw;
-                width: 68.11vw;
-                padding-left: 12vw;
-                right: -16vw;
+                top: 60.2vw;
+                width: 100vw;
+                // padding-left: 12vw;
+                // right: -16vw;
 
             }
 
@@ -1112,7 +1165,7 @@
                 position: relative;
             }
             &--slickpro{
-                width: 25.3vw;
+                width: 100vw;
                 height: 31.7vw;
             }
             &--slickname{
@@ -1141,23 +1194,23 @@
             margin-top: 300px;
             width: 100vw;
             height: 102.6vw;  
-            background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_pararasp3.png?v=1644342949') no-repeat;
-            background-size: 100% auto;
+            background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/parara_sp.png?v=1644911720') no-repeat;
+            background-size: 100vw 105.33vw;
             margin: 0 auto 110px;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-size: cover;
             background-position: center top;
             background-attachment: fixed;
-            background-position: center calc(50% - 100px);
+            background-position: center calc(80% - 100px);
             &--ttl{
                 width: 85.73vw;
                 margin: 0 auto;
                 img{
                     width: 100%;
                 }
-            }        }
+            } 
+        }
         &__produce{
             width: 100vw;
             height: auto;
@@ -1212,42 +1265,33 @@
                 line-height: 1.8;
                 margin-bottom: 30px!important;
             }
-            &--wrapper{
-                position: relative;
-                height: 155.6vw;
-                width: 100vw;
-            }
+
             &--lblc{
                 border-top-left-radius: 56px;
                 width: 94.5vw;
                 height: 155.6vw;
-                bottom: 10px;
-                right: 0;
-            }
-            &--lblcIn{
+                margin-left: 5.33vw;
                 margin-top: -10px;
-                position: absolute;
-                width: 94.5vw;
-                height: 155.6vw;
-                bottom: 10px;
-                right: 0;
                 padding: 40px 8.26vw;
-                
+                position: relative;
+                height: 155.6vw;
+
             }
+
             &--ltxt{
                 line-height: 1.4;
                 font-size: 1.6rem;
                 margin: 0 0 21px!important;
             }
-                    &--comming{
-            display: block;
-            width: 140px;
-            height: 83px;
-            position: absolute;
-            right: 86px;
-            top: 155px;
-            animation: rotate-anime 3s linear infinite;
-        }
+            &--comming{
+                display: block;
+                width: 140px;
+                height: 83px;
+                position: absolute;
+                right: 86px;
+                top: 155px;
+                animation: rotate-anime 3s linear infinite;
+            }
         }
     }
 

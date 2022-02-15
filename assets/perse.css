@@ -2534,7 +2534,7 @@ footer * {
     margin-top: 300px;
     width: 100vw;
     height: 102.6vw;
-    background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/parara_sp.png?v=1644911720") no-repeat;
+    background-image: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/parara_sp.png?v=1644911720");
     background-size: 100vw 105.33vw;
     margin: 0 auto 110px;
     display: flex;
@@ -3910,11 +3910,12 @@ footer * {
 
 .product__almond--03 {
   position: relative;
-  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/bg_item_04AlmondBrown.png?v=1644815890") no-repeat 0 0;
+  background-position: 0 0;
   background-size: 100% auto;
   height: 613px;
   width: 466px;
   margin: 0 auto 90px;
+  background-image: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/bg_item_04AlmondBrown.png?v=1644815890");
 }
 
 .product__almond--03 .product__almond--03fv {

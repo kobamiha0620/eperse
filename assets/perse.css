@@ -2034,19 +2034,42 @@ footer * {
 }
 
 @keyframes fadeUpAnime0 {
-  from {
+  0% {
     opacity: 0;
+    transform: translateY(5px);
   }
-  to {
+  40% {
     opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeUpAnime20 {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 @keyframes fadeUpAnime50 {
-  from {
+  0% {
     opacity: 0;
+    transform: translateY(5px);
   }
-  to {
+  40% {
     opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 @keyframes rotate-anime {
@@ -3322,7 +3345,7 @@ footer * {
 .product__intro.is-show .product__intro--fv {
   opacity: 1;
   animation-name: fadeUpAnime0;
-  animation-duration: 0.9s;
+  animation-duration: 0.5s;
 }
 
 .product__intro--ripttl {
@@ -3435,7 +3458,7 @@ footer * {
 .product__intro--art.is-show .product__intro--artkey {
   opacity: 1;
   animation-name: fadeUpAnime0;
-  animation-duration: 0.6s;
+  animation-duration: 0.5s;
 }
 
 .product__intro--artkey {
@@ -3575,7 +3598,7 @@ footer * {
 .product__nude--02.is-show .product__nude--02fv {
   opacity: 1;
   animation-name: fadeUpAnime0;
-  animation-duration: 0.8s;
+  animation-duration: 0.5s;
 }
 
 .product__nude--03 {
@@ -3603,7 +3626,7 @@ footer * {
 .product__nude--03a.is-show img {
   opacity: 1;
   animation-name: fadeUpAnime50;
-  animation-duration: 0.8s;
+  animation-duration: 0.5s;
 }
 
 .product__nude--03b {
@@ -3622,7 +3645,7 @@ footer * {
 .product__nude--03b.is-show img {
   opacity: 1;
   animation-name: fadeUpAnime50;
-  animation-duration: 0.8s;
+  animation-duration: 0.5s;
 }
 
 .product__nude--03c {
@@ -3651,7 +3674,7 @@ footer * {
 .product__nude--04.is-show img {
   opacity: 1;
   animation-name: fadeUpAnime50;
-  animation-duration: 0.8s;
+  animation-duration: 0.5s;
 }
 
 .product__rose {
@@ -3692,7 +3715,7 @@ footer * {
 .product__rose--01fvc.is-show {
   opacity: 1;
   animation-name: fadeUpAnime0;
-  animation-duration: 0.8s;
+  animation-duration: 0.5s;
 }
 
 .product__rose--02 {
@@ -3777,8 +3800,8 @@ footer * {
 
 .product__rose--03.is-show .product__rose--03b {
   opacity: 1;
-  animation-name: fadeUpAnime0;
-  animation-duration: 1s;
+  animation-name: fadeUpAnime20;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
 
@@ -3810,7 +3833,7 @@ footer * {
 .product__rose--04.is-show {
   opacity: 1;
   animation-name: fadeUpAnime50;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
 
@@ -3856,7 +3879,7 @@ footer * {
 .product__orange--02.is-show .product__orange--02fv {
   opacity: 1;
   animation-name: fadeUpAnime0;
-  animation-duration: 0.6s;
+  animation-duration: 0.5s;
 }
 
 .product__orange--02fv {
@@ -3889,7 +3912,7 @@ footer * {
 .product__orange--03a.is-show {
   opacity: 1;
   animation-name: fadeUpAnime50;
-  animation-duration: 0.6s;
+  animation-duration: 0.5s;
 }
 
 .product__orange--03b {
@@ -3901,7 +3924,7 @@ footer * {
 .product__orange--03b.is-show {
   opacity: 1;
   animation-name: fadeUpAnime50;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 .product__almond {
@@ -3928,7 +3951,7 @@ footer * {
 .product__almond--01.is-show .product__almond--01fv {
   opacity: 1;
   animation-name: fadeUpAnime0;
-  animation-duration: 0.8s;
+  animation-duration: 0.4s;
 }
 
 .product__almond--01fv {
@@ -3964,7 +3987,7 @@ footer * {
 .product__almond--03.is-show .product__almond--03fv {
   opacity: 1;
   animation-name: fadeUpAnime0;
-  animation-duration: 0.6s;
+  animation-duration: 0.4s;
 }
 
 .product__almond--03fv {
@@ -3997,7 +4020,7 @@ footer * {
 .product__almond--04a.is-show {
   opacity: 1;
   animation-name: fadeUpAnime50;
-  animation-duration: 0.6s;
+  animation-duration: 0.4s;
 }
 
 .product__almond--04b {
@@ -4009,7 +4032,7 @@ footer * {
 .product__almond--04b.is-show {
   opacity: 1;
   animation-name: fadeUpAnime50;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 .product__others {

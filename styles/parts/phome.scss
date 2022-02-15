@@ -783,12 +783,12 @@
 
 .fadein01, .fadein02, .fadein03 {
     opacity: 0;
-    transition: all 800ms;
+    transition: all 500ms;
     transform : translate(0, 50px);
 }
 .fadein04, .fadein05, .fadein06 {
     opacity: 0;
-    transition: all 800ms;
+    transition: all 500ms;
     transform : translate(0, 50px);
 }
 .fadein01 {
@@ -1195,12 +1195,11 @@
             width: 100vw;
             height: 102.6vw;  
             background-image: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/parara_sp.png?v=1644911720');
-            background-size: 100vw 105.33vw;
+            background-size: 100vw auto;
             margin: 0 auto 110px;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-position: center center;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center calc(80% - 100px);

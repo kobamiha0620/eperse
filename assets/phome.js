@@ -61,7 +61,7 @@ $(function(){
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
             var target = $('.fadein_block');
-            var speed = 600;
+            var speed = 500;
             if(scroll > elemPos - windowHeight){
                 target.find('.fadein01').addClass('scrollin');
                 setTimeout(function(){

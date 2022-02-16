@@ -1237,14 +1237,6 @@ footer * {
   display: block;
 }
 
-.phome .fadeUpTrigger {
-  display: block;
-}
-
-.phome .fadeUpTriggerSp {
-  display: none;
-}
-
 .phome__slide {
   width: 100%;
   padding: 0;
@@ -1489,7 +1481,7 @@ footer * {
   height: 61px;
   position: absolute;
   top: 0;
-  left: 93px;
+  left: 90px;
   text-indent: -9999px;
   white-space: nowrap;
   background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/slick-leftImg.png?v=1644378734") no-repeat 0 0;
@@ -1655,7 +1647,7 @@ footer * {
 .phome__product--slick02wrap {
   z-index: 2;
   position: absolute;
-  top: 290px;
+  top: 265px;
   right: 0;
   width: 530px;
 }
@@ -1828,7 +1820,7 @@ footer * {
 
 .phome__product--slickwrap {
   position: relative;
-  padding: 0 94px;
+  padding: 0 90px;
 }
 
 .phome__product--slickImg {
@@ -1842,7 +1834,7 @@ footer * {
 
 .phome__product--slickpro {
   width: 530px;
-  height: 160px;
+  height: 188px;
 }
 
 .phome__product--slickpro img {
@@ -2100,7 +2092,7 @@ footer * {
 @keyframes fadeUpAnime {
   from {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -2149,15 +2141,11 @@ footer * {
 
 @media screen and (max-width: 750px) {
   .phome .fadeUpTrigger {
-    display: none;
-  }
-
-  .phome .fadeUpTriggerSp {
     display: block;
     opacity: 0;
   }
 
-  .phome .fadeUpTriggerSp .fadeUp {
+  .phome .fadeUpTrigger .fadeUp {
     animation-name: fadeUpAnime;
     animation-duration: 0.8s;
     animation-fill-mode: forwards;
@@ -2528,7 +2516,7 @@ footer * {
 
   .phome__product--slickpro {
     width: 100vw;
-    height: 31.7vw;
+    height: 39.33vw;
   }
 
   .phome__product--slickname {
@@ -4613,6 +4601,10 @@ footer * {
     margin: 0 0 0 5.333vw;
   }
 
+  .product__slickwrap .slick-dotted.slick-slider {
+    margin-bottom: 0 !important;
+  }
+
   .product__slick {
     width: 100%;
     margin: 0;
@@ -4630,13 +4622,14 @@ footer * {
   .product__slick .slick-active button:before {
     content: "" !important;
     width: 15.73vw !important;
-    height: 19.26vw !important;
+    height: 21.5vw !important;
   }
 
   .product__slick .slick-dots li {
     width: 15.73vw !important;
-    height: 19.26vw !important;
+    height: 21.5vw !important;
     margin: 0 4px 0 5px !important;
+    padding-bottom: 5px;
   }
 
   .product__slick .slick-dots li.slick-active {
@@ -4649,21 +4642,17 @@ footer * {
 
   .product__slick .slick-dots li button {
     width: 15.73vw !important;
-    height: 19.26vw !important;
+    height: 21.5vw !important;
   }
 
   .product__slick .slick-dots li button:before {
     width: 15.73vw !important;
-    height: 19.26vw !important;
+    height: 21.5vw !important;
   }
 
   .product__slick .slick-dots {
     bottom: initial !important;
-    margin-top: 19px !important;
-  }
-
-  .product__slick .slick-dots {
-    padding: 0 5.3vw 0 0 !important;
+    margin: 19px 5.33vw 0 -5.33vw !important;
   }
 
   .product__frame {
@@ -5581,27 +5570,23 @@ body {
 @media screen and (max-width: 750px) {
   .header-wrapper {
     top: 33px;
-  }
-
-  .header-wrapper .pereseLogo {
-    width: 41.466vw;
-    height: 12vw;
-    background-size: 100% auto;
-    margin-left: 5.83vw;
-    margin-top: 4.5vw;
-  }
-
-  .header-wrapper.active {
-    top: 0px;
     height: 64px;
   }
 
-  .header-wrapper.active .pereseLogo {
+  .pereseLogo {
+    top: 0px;
     width: 26.66vw;
     height: 7.86vw;
-    margin-left: 5.83vw;
-    margin-top: 10px;
+    margin-left: 1vw;
     margin-bottom: 0;
+  }
+
+  .pereseLogo.big {
+    width: 41.466vw;
+    height: 12vw;
+    background-size: 100% auto;
+    margin-left: 1vw;
+    margin-top: 4.5vw;
   }
 
   .header__notice {
@@ -5839,6 +5824,10 @@ header-drawer {
 
   #wrapper {
     width: 100vw;
+  }
+
+  #MainContent {
+    padding: 80px 0 60px;
   }
 
   #MainContent .main__logo {

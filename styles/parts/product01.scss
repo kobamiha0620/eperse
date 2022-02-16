@@ -1586,6 +1586,9 @@
             position: relative;
             width: 100%;
             margin: 0 0 0 5.333vw;
+            .slick-dotted.slick-slider{
+                margin-bottom: 0!important;
+            }
         }
 
         &__slick {
@@ -1604,13 +1607,13 @@
             .slick-active button:before {
                 content: '' !important;
                 width: 15.73vw !important;
-                height: 19.26vw !important;
+                height: 21.5vw !important;
             }
-
             .slick-dots li {
                 width: 15.73vw !important;
-                height: 19.26vw !important;
+                height: 21.5vw !important;
                 margin: 0 4px 0 5px !important;
+                padding-bottom: 5px;
             }
 
             .slick-dots li.slick-active {
@@ -1623,21 +1626,21 @@
 
             .slick-dots li button {
                 width: 15.73vw !important;
-                height: 19.26vw !important;
+                height: 21.5vw !important;
             }
 
             .slick-dots li button:before {
                 width: 15.73vw !important;
-                height: 19.26vw !important;
+                height: 21.5vw !important;
             }
 
             .slick-dots {
                 bottom: initial !important;
-                margin-top: 19px !important;
+                margin: 19px 5.33vw 0 -5.33vw !important;
             }
 
             .slick-dots {
-                padding: 0 5.3vw 0 0 !important;
+                // padding: 0 5.3vw 0 0 !important;
             }
         }
 
@@ -2185,6 +2188,7 @@
             &--txt {
                 font-size: 0.9rem;
                 line-height: 1.6;
+                
                 margin: 70px 0 0;
             }
         }

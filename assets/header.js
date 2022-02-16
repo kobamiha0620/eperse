@@ -56,7 +56,10 @@ $(function(){
       }, 300);
       return false;
     });
-  
+      
+    if (location.pathname == '/') {
+      $(".pereseLogo").addClass("big");
+    } 
   });
 
   
@@ -68,9 +71,18 @@ $(window).scroll(function () {
       $(".header-wrapper").addClass("active");
       $("#MainContent").addClass('adjustment');
       
+      if (location.pathname == '/') {
+        $(".pereseLogo").removeClass("big");
+      } 
+      
   } else {
-      $(".header-wrapper").removeClass("active");
       $("#MainContent").removeClass('adjustment');
+      $(".header-wrapper").removeClass("active");
+
+      if (location.pathname == '/') {
+        $(".pereseLogo").addClass("big");
+      } 
+      
   }
 });
 
@@ -114,7 +126,7 @@ $(window).scroll(function(){
 
 }
 
-window.onload = scrollingtoFooter;
+
 
 // ------------------------------------------------------------------------------
 

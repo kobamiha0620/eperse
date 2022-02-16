@@ -70,26 +70,23 @@ body {
 
     .header-wrapper {
         top: 33px;
-        .pereseLogo {
+        height: 64px;
+    }
+    .pereseLogo {
+        top: 0px;
+        width: 26.66vw;
+        height: 7.86vw;
+        margin-left: 1vw;
+        margin-bottom: 0;
+
+        &.big {
             width: 41.466vw;
             height: 12vw;
             background-size: 100% auto;
-            margin-left: 5.83vw;
+            margin-left: 1vw;
             margin-top: 4.5vw;
         }
-        &.active {
-            top: 0px;
-            height: 64px;
-            .pereseLogo {
-                width: 26.66vw;
-                height: 7.86vw;
-                margin-left: 5.83vw;
-                margin-top: 10px;
-                margin-bottom: 0;
-            }
-        }
     }
-
     .header {
         &__notice {
             font-size: 12px;
@@ -351,12 +348,15 @@ header-drawer {
     }
 
     #MainContent{
+        padding: 80px 0 60px;
+
         .main__logo{
             display: none;
         }
         .main__sns{
             display: none;
         }
+        
     }
 
 }

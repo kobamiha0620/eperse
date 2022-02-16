@@ -2,12 +2,6 @@
 @import "_reset";
 
 .phome {
-    .fadeUpTrigger{
-        display: block;
-    }
-    .fadeUpTriggerSp{
-        display: none;
-    }
     display: block;
     &__slide {
         width: 100%;
@@ -230,7 +224,7 @@
             height: 61px;
             position: absolute;
             top: 0;
-            left: 93px;
+            left: 90px;
             text-indent: -9999px;
             white-space: nowrap;
             background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/slick-leftImg.png?v=1644378734') no-repeat 0 0;
@@ -387,7 +381,7 @@
         &--slick02wrap{
             z-index: 2;
             position: absolute;
-            top: 290px;
+            top: 265px;
             right: 0;
             width: 530px;
             // paddin60left: 120px;
@@ -547,7 +541,7 @@
         }
         &--slickwrap{
             position: relative;
-            padding: 0 94px;   
+            padding: 0 90px;   
         }
         &--slickImg{
             width: 100%;
@@ -558,7 +552,7 @@
         }
         &--slickpro{
             width: 530px;
-            height: 160px;
+            height: 188px;
             img{
                 width: 100%;
             }
@@ -795,7 +789,7 @@
 @keyframes fadeUpAnime{
     from {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(30px);
     }
     to {
     opacity: 1;
@@ -850,12 +844,8 @@
 
 //sp
 @media screen and (max-width: $BP) {
-
     .phome {
         .fadeUpTrigger{
-            display: none;
-        }
-        .fadeUpTriggerSp{
             display: block;
             opacity: 0;
             .fadeUp{
@@ -865,6 +855,7 @@
                 opacity:1;
             }
         }
+
         &__slide {
             width: 100%;
             padding: 0;
@@ -1192,7 +1183,7 @@
             }
             &--slickpro{
                 width: 100vw;
-                height: 31.7vw;
+                height: 39.33vw;
             }
             &--slickname{
                 font-size: 1rem;

@@ -44,13 +44,6 @@ $('.phome__slide').slick({
 
     
   });
-  $(window).scroll(function () {
-    if ($(window).scrollTop() > 33) {
-        $(".fadeUpTrigger").addClass("fadeUp");
-    } 
-    
-});
-
 
 
   // ふわ
@@ -211,5 +204,6 @@ class ParallaxEffectBackground {
   
 
 $(window).on('load', function(){
-  $('.fadeUpTriggerSp').addClass("fadeUp");
+  $('.fadeUpTrigger').addClass("fadeUp");
 });
+

@@ -76,13 +76,41 @@ $(function(){
         });
     });
 
+      $(window).scroll(function (){
+        $('.fadein_block3').each(function(){
+            var elemPos = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var target = $('.fadein_block3');
+            var speed = 800;
+            if(scroll > elemPos - windowHeight){
+                target.find('.fadein01').addClass('scrollin');
+                setTimeout(function(){
+                    target.find('.fadein02').addClass('scrollin');
+                    setTimeout(function(){
+                        target.find('.fadein03').addClass('scrollin');
+                        setTimeout(function(){
+                            target.find('.fadein04').addClass('scrollin');
+                            setTimeout(function(){
+                                target.find('.fadein05').addClass('scrollin');
+                                setTimeout(function(){
+                                    target.find('.fadein06').addClass('scrollin');
+                                },speed);
+                            },speed);
+                        },speed);
+                    },speed);
+                },speed);
+            }
+        });
+    });
+
     $(window).scroll(function (){
-      $('.fadein_block').each(function(){
+      $('.fadein_block2').each(function(){
           var elemPos = $(this).offset().top;
           var scroll = $(window).scrollTop();
           var windowHeight = $(window).height();
-          var target = $('.fadein_block');
-          var speed = 600;
+          var target = $('.fadein_block2');
+          var speed = 800;
           if(scroll > elemPos - windowHeight){
               target.find('.fadein01').addClass('scrollin');
               setTimeout(function(){
@@ -118,7 +146,7 @@ function add_class_in_scrolling(target) {
     if(menuPos < scrollPos) {
         setTimeout(function(){
             target.addClass('is-show');
-        }, 500);
+        }, 800);
         
     }
 }
@@ -137,12 +165,16 @@ function addFooter(target) {
         mainlogo.addClass('fixed');
         mainSns.addClass('fixed');
       }, 500);
+  }else{
+    mainlogo.removeClass('fixed');
+    mainSns.removeClass('fixed');
   }
 }
 $(window).on('load scroll', function() {
   addFooter($('#perseFooter'));
-
 });
+
+
 $(window).on('load scroll', function() {
   add_class_in_scrolling($('.phome__produce--lblc'));
   add_class_in_scrolling($('.product__intro'));
@@ -152,18 +184,22 @@ $(window).on('load scroll', function() {
   add_class_in_scrolling($('.product__nude--03b'));
   add_class_in_scrolling($('.product__nude--04'));
   add_class_in_scrolling($('.product__rose--01fvc'));
-  add_class_in_scrolling($('.product__rose--02d'));
-  add_class_in_scrolling($('.product__rose--02e'));
+  // add_class_in_scrolling($('.product__rose--02d'));
+  // add_class_in_scrolling($('.product__rose--02e'));
   add_class_in_scrolling($('.product__rose--03'));
   add_class_in_scrolling($('.product__rose--04'));
+  add_class_in_scrolling($('.product__orange--01'));
   add_class_in_scrolling($('.product__orange--02'));
-  add_class_in_scrolling($('.product__orange--03a'));
-  add_class_in_scrolling($('.product__orange--03b'));
+  // add_class_in_scrolling($('.product__orange--03a'));
+  // add_class_in_scrolling($('.product__orange--03b'));
   add_class_in_scrolling($('.product__almond--01'));
+  add_class_in_scrolling($('.product__almond--02'));
   add_class_in_scrolling($('.product__almond--03'));
-  add_class_in_scrolling($('.product__almond--04a'));
-  add_class_in_scrolling($('.product__almond--04b'));
+  // add_class_in_scrolling($('.product__almond--04a'));
+  // add_class_in_scrolling($('.product__almond--04b'));
   add_class_in_scrolling($('.phome__pararaSp2'));
+  add_class_in_scrolling($('.rip06'));
+  add_class_in_scrolling($('.product__nude--01'));
 
 });
 

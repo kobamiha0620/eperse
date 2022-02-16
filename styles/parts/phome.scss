@@ -703,8 +703,8 @@
             opacity: 0;
             &.is-show{
                 opacity: 1;
-                animation-name:fadeUpAnime50;
-                animation-duration: 0.8s;
+                animation-name:fadeUpAnime0;
+                animation-duration: 2s;
             }
         }
 
@@ -728,14 +728,9 @@
 @keyframes fadeUpAnime0{
     0%{
         opacity: 0;
-        transform: translateY(5px);
-    }
-    40%{
-        opacity: 1;
     }
     100%{
         opacity: 1;
-        transform: translateY(0);
     }
 }
 @keyframes fadeUpAnime20{
@@ -752,19 +747,19 @@
     }
 
 }
-@keyframes fadeUpAnime50{
-    0%{
-        opacity: 0;
-        transform: translateY(5px);
-    }
-    40%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+// @keyframes fadeUpAnime50{
+//     0%{
+//         opacity: 0;
+//         transform: translateY(5px);
+//     }
+//     40%{
+//         opacity: 1;
+//     }
+//     100%{
+//         opacity: 1;
+//         transform: translateY(0);
+//     }
+// }
 @keyframes rotate-anime {
     0%  {transform: rotate(0);}
     100%  {transform: rotate(360deg);}
@@ -803,12 +798,12 @@
 
 .fadein01, .fadein02, .fadein03 {
     opacity: 0;
-    transition: all 500ms;
+    transition: all 800ms;
     transform : translate(0, 50px);
 }
 .fadein04, .fadein05, .fadein06 {
     opacity: 0;
-    transition: all 500ms;
+    transition: all 800ms;
     transform : translate(0, 50px);
 }
 .fadein01 {

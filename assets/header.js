@@ -42,6 +42,11 @@ gmenu();
 
 
 $(function(){
+
+  if (location.pathname == '/') {
+    $("body").addClass("homePerse");
+  } 
+
     $('#insta-feed').wrap('<div class="instagram">');
     $('#js-right').click(function () {
       $('.instagram').animate({
@@ -56,10 +61,8 @@ $(function(){
       }, 300);
       return false;
     });
-      
-    if (location.pathname == '/') {
-      $(".pereseLogo").addClass("big");
-    } 
+
+
   });
 
   
@@ -67,24 +70,17 @@ $(function(){
 
 
 $(window).scroll(function () {
-  if ($(window).scrollTop() > 33) {
+  if ($(window).scrollTop() >20) {
       $(".header-wrapper").addClass("active");
       $("#MainContent").addClass('adjustment');
-      
-      if (location.pathname == '/') {
-        $(".pereseLogo").removeClass("big");
-      } 
       
   } else {
       $("#MainContent").removeClass('adjustment');
       $(".header-wrapper").removeClass("active");
-
-      if (location.pathname == '/') {
-        $(".pereseLogo").addClass("big");
-      } 
       
   }
 });
+
 
 
 function scrollingtoFooter(){

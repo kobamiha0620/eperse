@@ -67,26 +67,60 @@ body {
 @media screen and (max-width: $BP) {
 
 
+    body.homePerse{
+        .active{
+            .header-wrapper {
+                top: 33px;
+                height: 85px;
+            }
+            .pereseLogo {          
+                margin-top: 1vw;
+                top: 0px;
+                width: 26.66vw;
+                height: 7.86vw;
+                margin-left: 1vw;
+                margin-bottom: 0
+            }
+        }
+        #MainContent{
+            padding: 88px 0 60px!important;
+        }
 
-    .header-wrapper {
-        top: 33px;
-        height: 64px;
-    }
-    .pereseLogo {
-        top: 0px;
-        width: 26.66vw;
-        height: 7.86vw;
-        margin-left: 1vw;
-        margin-bottom: 0;
-
-        &.big {
+        .pereseLogo {
             width: 41.466vw;
             height: 12vw;
             background-size: 100% auto;
             margin-left: 1vw;
-            margin-top: 4.5vw;
+            margin-top: 3vw;
         }
     }
+    #MainContent{
+        padding: 65px 0 60px;
+    }
+
+    .header-wrapper {
+        top: 33px;
+        height: 64px;
+        .pereseLogo {
+            margin-top: 1vw;
+            top: 0px;
+            width: 26.66vw;
+            height: 7.86vw;
+            margin-left: 1vw;
+            margin-bottom: 0
+        }
+        .active{
+            .pereseLogo{
+                margin-top: 1vw;
+                top: 0px;
+                width: 26.66vw;
+                height: 7.86vw;
+                margin-left: 1vw;
+                margin-bottom: 0
+            }
+        }
+    }
+
     .header {
         &__notice {
             font-size: 12px;
@@ -111,7 +145,11 @@ body {
 @media screen and (min-width: $BP+1) {}
 
 //PCTablet 画面サイズが990pxからはこのスタイルを読む
-@media screen and (min-width: 990px) {}
+@media screen and (min-width: 990px) {
+    #MainContent{
+        padding-top: 90px;
+    }
+}
 
 // .hiddenParts{
 //     display: none;
@@ -258,7 +296,6 @@ header-drawer {
 
 #MainContent { 
     width: 100vw;    
-    padding: 95px 0 60px;
     margin: 0 auto;
     padding-bottom: 60px;
     &.adjustment {
@@ -348,8 +385,6 @@ header-drawer {
     }
 
     #MainContent{
-        padding: 80px 0 60px;
-
         .main__logo{
             display: none;
         }
@@ -385,6 +420,15 @@ header-drawer {
 }
 
 
+@keyframes fadeLeftAnime0{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 @keyframes fadeLeftAnime02{
     from {
         opacity: 0;

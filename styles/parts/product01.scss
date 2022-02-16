@@ -389,7 +389,7 @@
             .product__intro--fv {
                 opacity: 1;
                 animation-name: fadeUpAnime0;
-                animation-duration: 0.5s;
+                animation-duration: 2s;
             }
 
         }
@@ -500,7 +500,7 @@
                 .product__intro--artkey {
                     opacity: 1;
                     animation-name: fadeUpAnime0;
-                    animation-duration: 0.5s;
+                    animation-duration: 2s;
                 }
             }
         }
@@ -583,9 +583,39 @@
             margin: 0 0 82px;
             padding: 0;
             font-size: 0;
+
+            .pcimg{
+                display: block;
+                width: 445px;
+                height: 643px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+            }
+            &.is-show{
+                .pcimg{
+                    opacity: 1;
+                    animation-name:fadeUpAnime0;
+                    animation-duration: 2.5s;
+                }
+            }
+            .rosetxt{
+                display: block;
+                position: absolute;
+                width: 44px;
+                height: 445px;
+                right: 46px;
+                top: 53px;
+            }
+            .spimg{
+                display: none;
+            }
         }
         &--01fv{
-            width: 100%;
+            position: relative;
+            width: 568px;
+            height: 642px;
             img{
                 width: 100%;
             }
@@ -627,7 +657,7 @@
                 .product__nude--02fv{
                     opacity: 1;
                     animation-name:fadeUpAnime0;
-                    animation-duration: 0.5s;
+                    animation-duration: 2.5s;
                 }
             }
         }
@@ -652,8 +682,8 @@
             &.is-show{
                 img{
                     opacity: 1;
-                    animation-name:fadeUpAnime50;
-                    animation-duration: 0.5s;
+                    animation-name:fadeUpAnime0;
+                    animation-duration: 2s;
                 }
             }
 
@@ -671,8 +701,8 @@
             &.is-show{
                 img{
                     opacity: 1;
-                    animation-name:fadeUpAnime50;
-                    animation-duration: 0.5s;
+                    animation-name:fadeUpAnime0;
+                    animation-duration: 2.5s;
                 }
             }
 
@@ -692,15 +722,14 @@
             padding: 0;
             font-size: 0;
             img{
-                opacity: 0;
                 width: 100%;
             }
+            opacity: 0;
+
             &.is-show{
-                img{
-                    opacity: 1;
-                    animation-name:fadeUpAnime50;
-                    animation-duration: 0.5s;
-                }
+                opacity: 1;
+                animation-name:fadeUpAnime0;
+                animation-duration: 2s;
             }
         }
     }
@@ -735,7 +764,7 @@
             &.is-show{
                 opacity: 1;
                 animation-name:fadeUpAnime0;
-                animation-duration: 0.5s;
+                animation-duration: 2.5s;
             }
         }
 
@@ -771,11 +800,11 @@
             height: 566px;
             left: 0px;
             top: 92px;
-            opacity: 0;
+            // opacity: 0;
             &.is-show{
                 opacity: 1;
                 animation-name: fadeLeftAnime0;
-                animation-duration: 0.8s;
+                animation-duration: 2.5s;
                 animation-fill-mode:forwards;
             }
             img{
@@ -788,7 +817,7 @@
             height: 461px;
             right: 41px;
             top: 622px;
-            opacity: 0;
+            // opacity: 0;
 
             &.is-show{
                 opacity: 1;
@@ -840,8 +869,8 @@
             opacity: 0;
             &.is-show{
                 opacity: 1;
-                animation-name: fadeUpAnime50;
-                animation-duration: 0.5s;
+                animation-name: fadeUpAnime0;
+                animation-duration: 2.5s;
                 animation-fill-mode:forwards;
             }
         }
@@ -854,13 +883,44 @@
         padding-top: 50px;
         padding-bottom: 65px;
         font-size: 0;
+        &--01inner{
+            height: 625px;
+            width: 568px;
+            position: relative;
+        }
+    
         &--01{
             position: relative;
-            background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/prdocut_orange01.png?v=1644682385') no-repeat 0 0;
-            background-size: 100% auto;
-            height: 625px;
-            width: 100%;
-            margin: 0 0 80px;
+            margin: 0 0 82px;
+            padding: 0;
+            font-size: 0;
+            .pcimg{
+                display: block;
+                width: 413px;
+                height: 626px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+            }
+                &.is-show{
+                .pcimg{
+                    opacity: 1;
+                    animation-name:fadeUpAnime0;
+                    animation-duration: 2.5s;
+                }  
+            }
+            .orangeTxt{
+                display: block;
+                position: absolute;
+                width: 44px;
+                height: 415px;
+                right: 59px;
+                top: 37px;
+            }
+            .spimg{
+                display: none;
+            }
         }
         &--01fv{
             width: 174px;
@@ -883,7 +943,7 @@
                 .product__orange--02fv {
                     opacity: 1;
                     animation-name: fadeUpAnime0;
-                    animation-duration: 0.5s;
+                    animation-duration: 2.5s;
                 }
     
             }
@@ -913,22 +973,22 @@
         &--03a{
             float: left;
             width: 284px;
-            opacity: 0;
+            // opacity: 0;
             &.is-show {
                 opacity: 1;
-                animation-name: fadeUpAnime50;
-                animation-duration: 0.5s;
+                animation-name: fadeUpAnime0;
+                animation-duration: 2s;
             }
         }
         &--03b{
             float: right;
             width: 273px;
-            opacity: 0;
+            // opacity: 0;
 
             &.is-show {
                 opacity: 1;
-                animation-name: fadeUpAnime50;
-                animation-duration: 1s;
+                animation-name: fadeUpAnime0;
+                animation-duration: 2s;
             }
         }
     }
@@ -952,7 +1012,7 @@
                 .product__almond--01fv {
                     opacity: 1;
                     animation-name: fadeUpAnime0;
-                    animation-duration: 0.4s;
+                    animation-duration: 2.4s;
                 }
     
             }
@@ -967,9 +1027,49 @@
         }
         &--02{
             margin: 0 0 75px;
+            width: 568px;
+            height: 745px;
+            position: relative;
+            font-size: 0;
+            padding: 0;
             img{
                 width: 100%;
             }
+            .spimg{
+                display: none;
+            }
+            .product__almond--02img{
+            opacity: 0;
+            }
+            &.is-show {
+                .product__almond--02img{
+                    opacity: 1;
+                    animation-name: fadeUpAnime0;
+                    animation-duration: 2.4s;
+                }
+    
+            }
+        }
+        &--02img{
+            width: 410px;
+            height: 622px;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+        &--02txt1{
+            position: absolute;
+            width: 53px;
+            height: 523px;
+            top: 36px;
+            right: 58px;
+        }
+        &--02txt2{
+            position: absolute;
+            width: 368px;
+            height: 78px;
+            bottom: 0;
+            left: 53px;
         }
         &--03{
             position: relative;
@@ -987,7 +1087,7 @@
                 .product__almond--03fv {
                     opacity: 1;
                     animation-name: fadeUpAnime0;
-                    animation-duration: 0.4s;
+                    animation-duration: 2.4s;
                 }
             }
 
@@ -1016,22 +1116,21 @@
         &--04a{
             float: left;
             width: 276px;
-            opacity: 0;
+            // opacity: 0;
             &.is-show {
                 opacity: 1;
                 animation-name: fadeUpAnime50;
-                animation-duration: 0.4s;
+                animation-duration: 2.5s;
             }
         }
         &--04b{
             float: right;
             width: 276px;
-            opacity: 0;
-
+            // opacity: 0;
             &.is-show {
                 opacity: 1;
-                animation-name: fadeUpAnime50;
-                animation-duration: 1s;
+                animation-name: fadeUpAnime0;
+                animation-duration: 2s;
             }
         }
     }
@@ -1090,6 +1189,17 @@
     width: 545px;
     margin: 0 auto;
     padding-bottom: 100px;
+    
+    .fadein01, .fadein02, .fadein03, .fadein04, .fadein05, .fadein06{
+        &.scrollin{
+            opacity: 1;
+        }
+    }
+    .fadein01, .fadein02, .fadein03, .fadein04, .fadein05, .fadein06{
+        opacity: 0;
+        transition: all 2000ms;
+        transform : translate(0, 0);
+    }
 
     img {
         width: 100%;
@@ -1104,12 +1214,18 @@
     }
 
     &__prodcut {
-        margin: 0 auto 55px;
+        margin: 0 auto 55px!important;
+        padding: 0;
         width: 263px;
-
-        img {
-            width: 100%;
-
+        display: flex;
+        justify-content: space-between;
+        li{
+            list-style: none;
+            width: 45px;
+            opacity: 0;
+            img {
+                width: 100%;
+            }
         }
     }
 
@@ -1458,9 +1574,32 @@
     }
     &__fv{
         width: 470px;
+        height: 630px;
         margin-right: -4px;
         padding-left: 7px;
         margin-bottom: 46px;
+        position: relative;
+        &--ttl{
+            width: 377px;
+            height: 93px;
+            top: 0;
+            left: 48px;
+            position: absolute;
+        }
+        &--img{
+            width: 458px;
+            height: 550px;
+            position: absolute;
+            top: 75px;
+            right: 4px;
+        }
+        &--checkpoint{
+            width: 137px;
+            height: 151px;
+            position: absolute;
+            bottom: 13px;
+            right: -9px;
+        }
         img{
             width: 100%;
         }
@@ -1518,9 +1657,21 @@
     width: 568px;
     margin: 0 auto 35px;
     padding: 0 23px 0 0;
+    .rip06__relotate{
+        opacity: 0;
+    }
+    &.is-show{
+        .rip06__relotate{
+            opacity: 1;
+            animation-name: fadeLeftAnime0;
+            animation-duration: 2.6s;
+            animation-fill-mode:forwards;
+        }
 
+    }
     &__inner{   
         width: 545px;
+        position: relative;
         img{
             width: 100%;
         }
@@ -1529,6 +1680,18 @@
         }
         .sptxt{
             display: none;
+        }
+    }
+    &__relotate{
+        position: absolute;
+        width: 108px;
+        height: 113px;
+        left: 64px;
+        top: 282px;
+        margin: 0!important;
+
+        img{
+            width: 100%;
         }
     }
     &__txt{
@@ -1598,7 +1761,6 @@
 
             li {
                 width: 100%;
-
                 img {
                     width: 100%;
                 }
@@ -1796,7 +1958,45 @@
             margin: 0 auto 20vw;
             padding: 8.53vw 0 0;
             &--01{
+                position: relative;
                 margin-bottom: 14.4vw;
+
+                .pcimg{
+                    display: none;
+                }
+
+                .rosetxt{
+                    display: block;
+                    position: absolute;
+                    width: 7.73vw;
+                    height: 73vw;
+                    right: 7.86vw;
+                    top: 9.46vw;
+                }
+                .spimg{
+                    display: block;
+                    opacity: 0;
+                    position: absolute;
+                    width: 78.4vw;
+                    height: 113.33vw;
+                    left: 0;
+                    top: 0;
+                    }
+                    &.is-show{
+                        .spimg{
+                            opacity: 1;
+                            animation-name:fadeUpAnime0;
+                            animation-duration: 2.5s;
+                        }
+                    }
+                }
+            &--01fv{
+                position: relative;
+                width: 100vw;
+                height: 113.33vw;
+                img{
+                    width: 100%;
+                }
             }
             &--01fvc{
                 position: absolute;
@@ -1887,11 +2087,11 @@
                 height: 99.75vw;
                 left: 0px;
                 top: 15.73vw;
-                opacity: 0;
+                // opacity: 0;
                 &.is-show{
                     opacity: 1;
                     animation-name: fadeLeftAnime0;
-                    animation-duration: 0.8s;
+                    animation-duration: 2.4s;
                     animation-fill-mode:forwards;
                 }
                 img{
@@ -1904,7 +2104,7 @@
                 height: 79.7vw;
                 right: 7.13vw;
                 top: 110vw;
-                opacity: 0;
+                // opacity: 0;
             }
             &--03{
                 padding: 0 8.6vw;
@@ -1923,12 +2123,47 @@
             padding-top: 8.66vw;
             padding-bottom: 11.33vw;
             font-size: 0;
-            &--01{
-                position: relative;
-                background-size: 100% auto;
+            &--01inner{
+                width: 100vw;
                 height: 110vw;
-                width: 100%;
+                position: relative;
+            }
+            &--01{
+                width: 100vw;
+                height: 110vw;
+                position: relative;
                 margin: 0 0 14.44vw;
+                padding: 0;
+                font-size: 0;
+                .pcimg{
+                    display: none;
+                }
+
+                .orangeTxt{
+                    display: block;
+                    position: absolute;
+                    width:7.73vw;
+                    height: 73.6vw;
+                    right: 7.6vw;
+                    top: 6.53vw;
+                }
+                .spimg{
+                    display: block;
+                    opacity: 0;
+                    width: 72.6vw;
+                    height: 110vw;
+                    position: absolute;
+                    left: 0;
+                    top:0;
+
+                }
+                &.is-show{
+                    .spimg{
+                        opacity: 1;
+                        animation-name:fadeUpAnime0;
+                        animation-duration: 2.5s;
+                    }  
+                }
             }
             &--01fv{
                 width: 30vw;
@@ -1972,8 +2207,49 @@
             &--01fv{
                 height: 136.8vw;
             }
+  
             &--02{
                 margin: 0 0 14.4vw;
+                width: 100vw;
+                height: 132vw;
+                position: relative;
+                font-size: 0;
+                padding: 0;
+                .pcimg{
+                     display: none;
+                }
+                .spimg{
+                    display: block;
+                }
+                .product__almond--02img{
+                opacity: 0;
+                }
+                &.is-show {
+                    .product__almond--02img{
+                        opacity: 1;
+                        animation-name: fadeUpAnime0;
+                        animation-duration: 2.4s;
+                    }
+        
+                }
+            }
+            &--02img{
+                width: 72.6vw;
+                height: 110.13vw;
+            }
+            &--02txt1{
+                position: absolute;
+                width: 9.33vw;
+                height: 92.625vw;
+                top: 6.5vw;
+                right: 10.3vw;
+            }
+            &--02txt2{
+                position: absolute;
+                width: 65.2vw;
+                height: 13.76vw;
+                bottom: 0;
+                left: 9.18vw;
             }
             &--03{
                 height: 108.8vw;
@@ -2069,9 +2345,18 @@
         }
 
         &__prodcut {
-            margin: 0 auto 9vw;
+            margin: 0 auto 9vw!important;
             width: 46.53vw;
+            padding: 0;
+            li{
+                width: 8vw;
+                img {
+                    width: 100%;
+                }
+            }
         }
+        
+        
 
         &__feature {
             font-size: 1.4rem;
@@ -2272,8 +2557,31 @@
         &__fv{
             width:100%;
             margin-right: 0px;
-            padding-left: -7px;
+            padding-left: 0;
             margin-bottom: 8.6vw;
+            position: relative;
+            height: 114.66vw;
+            &--ttl{
+                width: 66.666vw;
+                height: 16.8vw;
+                top: 0;
+                left: 8.4vw;
+                position: absolute;
+            }
+            &--img{
+                width: 81vw;
+                height: 97.33vw;
+                position: absolute;
+                top: 14vw;
+                left: 1.6vw;
+            }
+            &--checkpoint{
+                width: 23.73vw;
+                height: 26.62vw;
+                position: absolute;
+                bottom: 2.66vw;
+                right: -4vw;
+            }
             img{
                 width: 100%;
             }
@@ -2310,10 +2618,8 @@
     .rip06{
         width: 100vw;
         margin: 0 0 7.7vw 0;
-
         &__inner{   
             padding: 0 2.66vw 0 0;
-
             width: 100vw;
             img{
                 width: 100%;
@@ -2323,6 +2629,17 @@
             }
             .sptxt{
                 display: block;
+            }
+        }
+        &__relotate{
+            position: absolute;
+            width: 20.6vw;
+            height: 21.46vw;
+            left: 11.46vw;
+            margin: 0!important;
+            top: 48.66vw;
+            img{
+                width: 100%;
             }
         }
         &__txt{

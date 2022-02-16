@@ -2007,8 +2007,8 @@ footer * {
 
 .phome__produce--lblc.is-show {
   opacity: 1;
-  animation-name: fadeUpAnime50;
-  animation-duration: 0.8s;
+  animation-name: fadeUpAnime0;
+  animation-duration: 2s;
 }
 
 .phome__produce--ltxt {
@@ -2028,33 +2028,15 @@ footer * {
 @keyframes fadeUpAnime0 {
   0% {
     opacity: 0;
-    transform: translateY(5px);
-  }
-  40% {
-    opacity: 1;
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 @keyframes fadeUpAnime20 {
   0% {
     opacity: 0;
     transform: translateY(8px);
-  }
-  40% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes fadeUpAnime50 {
-  0% {
-    opacity: 0;
-    transform: translateY(5px);
   }
   40% {
     opacity: 1;
@@ -2105,13 +2087,13 @@ footer * {
 
 .fadein01, .fadein02, .fadein03 {
   opacity: 0;
-  transition: all 500ms;
+  transition: all 800ms;
   transform: translate(0, 50px);
 }
 
 .fadein04, .fadein05, .fadein06 {
   opacity: 0;
-  transition: all 500ms;
+  transition: all 800ms;
   transform: translate(0, 50px);
 }
 
@@ -3334,7 +3316,7 @@ footer * {
 .product__intro.is-show .product__intro--fv {
   opacity: 1;
   animation-name: fadeUpAnime0;
-  animation-duration: 0.5s;
+  animation-duration: 2s;
 }
 
 .product__intro--ripttl {
@@ -3447,7 +3429,7 @@ footer * {
 .product__intro--art.is-show .product__intro--artkey {
   opacity: 1;
   animation-name: fadeUpAnime0;
-  animation-duration: 0.5s;
+  animation-duration: 2s;
 }
 
 .product__intro--artkey {
@@ -3537,8 +3519,39 @@ footer * {
   font-size: 0;
 }
 
+.product__nude--01 .pcimg {
+  display: block;
+  width: 445px;
+  height: 643px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.product__nude--01.is-show .pcimg {
+  opacity: 1;
+  animation-name: fadeUpAnime0;
+  animation-duration: 2.5s;
+}
+
+.product__nude--01 .rosetxt {
+  display: block;
+  position: absolute;
+  width: 44px;
+  height: 445px;
+  right: 46px;
+  top: 53px;
+}
+
+.product__nude--01 .spimg {
+  display: none;
+}
+
 .product__nude--01fv {
-  width: 100%;
+  position: relative;
+  width: 568px;
+  height: 642px;
 }
 
 .product__nude--01fv img {
@@ -3587,7 +3600,7 @@ footer * {
 .product__nude--02.is-show .product__nude--02fv {
   opacity: 1;
   animation-name: fadeUpAnime0;
-  animation-duration: 0.5s;
+  animation-duration: 2.5s;
 }
 
 .product__nude--03 {
@@ -3614,8 +3627,8 @@ footer * {
 
 .product__nude--03a.is-show img {
   opacity: 1;
-  animation-name: fadeUpAnime50;
-  animation-duration: 0.5s;
+  animation-name: fadeUpAnime0;
+  animation-duration: 2s;
 }
 
 .product__nude--03b {
@@ -3633,8 +3646,8 @@ footer * {
 
 .product__nude--03b.is-show img {
   opacity: 1;
-  animation-name: fadeUpAnime50;
-  animation-duration: 0.5s;
+  animation-name: fadeUpAnime0;
+  animation-duration: 2.5s;
 }
 
 .product__nude--03c {
@@ -3653,17 +3666,17 @@ footer * {
   margin: 0;
   padding: 0;
   font-size: 0;
+  opacity: 0;
 }
 
 .product__nude--04 img {
-  opacity: 0;
   width: 100%;
 }
 
-.product__nude--04.is-show img {
+.product__nude--04.is-show {
   opacity: 1;
-  animation-name: fadeUpAnime50;
-  animation-duration: 0.5s;
+  animation-name: fadeUpAnime0;
+  animation-duration: 2s;
 }
 
 .product__rose {
@@ -3704,7 +3717,7 @@ footer * {
 .product__rose--01fvc.is-show {
   opacity: 1;
   animation-name: fadeUpAnime0;
-  animation-duration: 0.5s;
+  animation-duration: 2.5s;
 }
 
 .product__rose--02 {
@@ -3743,13 +3756,12 @@ footer * {
   height: 566px;
   left: 0px;
   top: 92px;
-  opacity: 0;
 }
 
 .product__rose--02d.is-show {
   opacity: 1;
   animation-name: fadeLeftAnime0;
-  animation-duration: 0.8s;
+  animation-duration: 2.5s;
   animation-fill-mode: forwards;
 }
 
@@ -3763,7 +3775,6 @@ footer * {
   height: 461px;
   right: 41px;
   top: 622px;
-  opacity: 0;
 }
 
 .product__rose--02e.is-show {
@@ -3821,8 +3832,8 @@ footer * {
 
 .product__rose--04.is-show {
   opacity: 1;
-  animation-name: fadeUpAnime50;
-  animation-duration: 0.5s;
+  animation-name: fadeUpAnime0;
+  animation-duration: 2.5s;
   animation-fill-mode: forwards;
 }
 
@@ -3835,13 +3846,46 @@ footer * {
   font-size: 0;
 }
 
+.product__orange--01inner {
+  height: 625px;
+  width: 568px;
+  position: relative;
+}
+
 .product__orange--01 {
   position: relative;
-  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/prdocut_orange01.png?v=1644682385") no-repeat 0 0;
-  background-size: 100% auto;
-  height: 625px;
-  width: 100%;
-  margin: 0 0 80px;
+  margin: 0 0 82px;
+  padding: 0;
+  font-size: 0;
+}
+
+.product__orange--01 .pcimg {
+  display: block;
+  width: 413px;
+  height: 626px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.product__orange--01.is-show .pcimg {
+  opacity: 1;
+  animation-name: fadeUpAnime0;
+  animation-duration: 2.5s;
+}
+
+.product__orange--01 .orangeTxt {
+  display: block;
+  position: absolute;
+  width: 44px;
+  height: 415px;
+  right: 59px;
+  top: 37px;
+}
+
+.product__orange--01 .spimg {
+  display: none;
 }
 
 .product__orange--01fv {
@@ -3868,7 +3912,7 @@ footer * {
 .product__orange--02.is-show .product__orange--02fv {
   opacity: 1;
   animation-name: fadeUpAnime0;
-  animation-duration: 0.5s;
+  animation-duration: 2.5s;
 }
 
 .product__orange--02fv {
@@ -3895,25 +3939,23 @@ footer * {
 .product__orange--03a {
   float: left;
   width: 284px;
-  opacity: 0;
 }
 
 .product__orange--03a.is-show {
   opacity: 1;
-  animation-name: fadeUpAnime50;
-  animation-duration: 0.5s;
+  animation-name: fadeUpAnime0;
+  animation-duration: 2s;
 }
 
 .product__orange--03b {
   float: right;
   width: 273px;
-  opacity: 0;
 }
 
 .product__orange--03b.is-show {
   opacity: 1;
-  animation-name: fadeUpAnime50;
-  animation-duration: 1s;
+  animation-name: fadeUpAnime0;
+  animation-duration: 2s;
 }
 
 .product__almond {
@@ -3940,7 +3982,7 @@ footer * {
 .product__almond--01.is-show .product__almond--01fv {
   opacity: 1;
   animation-name: fadeUpAnime0;
-  animation-duration: 0.4s;
+  animation-duration: 2.4s;
 }
 
 .product__almond--01fv {
@@ -3953,10 +3995,53 @@ footer * {
 
 .product__almond--02 {
   margin: 0 0 75px;
+  width: 568px;
+  height: 745px;
+  position: relative;
+  font-size: 0;
+  padding: 0;
 }
 
 .product__almond--02 img {
   width: 100%;
+}
+
+.product__almond--02 .spimg {
+  display: none;
+}
+
+.product__almond--02 .product__almond--02img {
+  opacity: 0;
+}
+
+.product__almond--02.is-show .product__almond--02img {
+  opacity: 1;
+  animation-name: fadeUpAnime0;
+  animation-duration: 2.4s;
+}
+
+.product__almond--02img {
+  width: 410px;
+  height: 622px;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.product__almond--02txt1 {
+  position: absolute;
+  width: 53px;
+  height: 523px;
+  top: 36px;
+  right: 58px;
+}
+
+.product__almond--02txt2 {
+  position: absolute;
+  width: 368px;
+  height: 78px;
+  bottom: 0;
+  left: 53px;
 }
 
 .product__almond--03 {
@@ -3976,7 +4061,7 @@ footer * {
 .product__almond--03.is-show .product__almond--03fv {
   opacity: 1;
   animation-name: fadeUpAnime0;
-  animation-duration: 0.4s;
+  animation-duration: 2.4s;
 }
 
 .product__almond--03fv {
@@ -4003,25 +4088,23 @@ footer * {
 .product__almond--04a {
   float: left;
   width: 276px;
-  opacity: 0;
 }
 
 .product__almond--04a.is-show {
   opacity: 1;
   animation-name: fadeUpAnime50;
-  animation-duration: 0.4s;
+  animation-duration: 2.5s;
 }
 
 .product__almond--04b {
   float: right;
   width: 276px;
-  opacity: 0;
 }
 
 .product__almond--04b.is-show {
   opacity: 1;
-  animation-name: fadeUpAnime50;
-  animation-duration: 1s;
+  animation-name: fadeUpAnime0;
+  animation-duration: 2s;
 }
 
 .product__others {
@@ -4086,6 +4169,16 @@ footer * {
   padding-bottom: 100px;
 }
 
+.rip01 .fadein01.scrollin, .rip01 .fadein02.scrollin, .rip01 .fadein03.scrollin, .rip01 .fadein04.scrollin, .rip01 .fadein05.scrollin, .rip01 .fadein06.scrollin {
+  opacity: 1;
+}
+
+.rip01 .fadein01, .rip01 .fadein02, .rip01 .fadein03, .rip01 .fadein04, .rip01 .fadein05, .rip01 .fadein06 {
+  opacity: 0;
+  transition: all 2000ms;
+  transform: translate(0, 0);
+}
+
 .rip01 img {
   width: 100%;
 }
@@ -4099,11 +4192,20 @@ footer * {
 }
 
 .rip01__prodcut {
-  margin: 0 auto 55px;
+  margin: 0 auto 55px !important;
+  padding: 0;
   width: 263px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.rip01__prodcut img {
+.rip01__prodcut li {
+  list-style: none;
+  width: 45px;
+  opacity: 0;
+}
+
+.rip01__prodcut li img {
   width: 100%;
 }
 
@@ -4454,9 +4556,35 @@ footer * {
 
 .rip05__fv {
   width: 470px;
+  height: 630px;
   margin-right: -4px;
   padding-left: 7px;
   margin-bottom: 46px;
+  position: relative;
+}
+
+.rip05__fv--ttl {
+  width: 377px;
+  height: 93px;
+  top: 0;
+  left: 48px;
+  position: absolute;
+}
+
+.rip05__fv--img {
+  width: 458px;
+  height: 550px;
+  position: absolute;
+  top: 75px;
+  right: 4px;
+}
+
+.rip05__fv--checkpoint {
+  width: 137px;
+  height: 151px;
+  position: absolute;
+  bottom: 13px;
+  right: -9px;
 }
 
 .rip05__fv img {
@@ -4521,8 +4649,20 @@ footer * {
   padding: 0 23px 0 0;
 }
 
+.rip06 .rip06__relotate {
+  opacity: 0;
+}
+
+.rip06.is-show .rip06__relotate {
+  opacity: 1;
+  animation-name: fadeLeftAnime0;
+  animation-duration: 2.6s;
+  animation-fill-mode: forwards;
+}
+
 .rip06__inner {
   width: 545px;
+  position: relative;
 }
 
 .rip06__inner img {
@@ -4535,6 +4675,19 @@ footer * {
 
 .rip06__inner .sptxt {
   display: none;
+}
+
+.rip06__relotate {
+  position: absolute;
+  width: 108px;
+  height: 113px;
+  left: 64px;
+  top: 282px;
+  margin: 0 !important;
+}
+
+.rip06__relotate img {
+  width: 100%;
 }
 
 .rip06__txt {
@@ -4816,7 +4969,47 @@ footer * {
   }
 
   .product__nude--01 {
+    position: relative;
     margin-bottom: 14.4vw;
+  }
+
+  .product__nude--01 .pcimg {
+    display: none;
+  }
+
+  .product__nude--01 .rosetxt {
+    display: block;
+    position: absolute;
+    width: 7.73vw;
+    height: 73vw;
+    right: 7.86vw;
+    top: 9.46vw;
+  }
+
+  .product__nude--01 .spimg {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    width: 78.4vw;
+    height: 113.33vw;
+    left: 0;
+    top: 0;
+  }
+
+  .product__nude--01.is-show .spimg {
+    opacity: 1;
+    animation-name: fadeUpAnime0;
+    animation-duration: 2.5s;
+  }
+
+  .product__nude--01fv {
+    position: relative;
+    width: 100vw;
+    height: 113.33vw;
+  }
+
+  .product__nude--01fv img {
+    width: 100%;
   }
 
   .product__nude--01fvc {
@@ -4922,13 +5115,12 @@ footer * {
     height: 99.75vw;
     left: 0px;
     top: 15.73vw;
-    opacity: 0;
   }
 
   .product__rose--02d.is-show {
     opacity: 1;
     animation-name: fadeLeftAnime0;
-    animation-duration: 0.8s;
+    animation-duration: 2.4s;
     animation-fill-mode: forwards;
   }
 
@@ -4942,7 +5134,6 @@ footer * {
     height: 79.7vw;
     right: 7.13vw;
     top: 110vw;
-    opacity: 0;
   }
 
   .product__rose--03 {
@@ -4965,12 +5156,48 @@ footer * {
     font-size: 0;
   }
 
-  .product__orange--01 {
-    position: relative;
-    background-size: 100% auto;
+  .product__orange--01inner {
+    width: 100vw;
     height: 110vw;
-    width: 100%;
+    position: relative;
+  }
+
+  .product__orange--01 {
+    width: 100vw;
+    height: 110vw;
+    position: relative;
     margin: 0 0 14.44vw;
+    padding: 0;
+    font-size: 0;
+  }
+
+  .product__orange--01 .pcimg {
+    display: none;
+  }
+
+  .product__orange--01 .orangeTxt {
+    display: block;
+    position: absolute;
+    width: 7.73vw;
+    height: 73.6vw;
+    right: 7.6vw;
+    top: 6.53vw;
+  }
+
+  .product__orange--01 .spimg {
+    display: block;
+    opacity: 0;
+    width: 72.6vw;
+    height: 110vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .product__orange--01.is-show .spimg {
+    opacity: 1;
+    animation-name: fadeUpAnime0;
+    animation-duration: 2.5s;
   }
 
   .product__orange--01fv {
@@ -5024,6 +5251,50 @@ footer * {
 
   .product__almond--02 {
     margin: 0 0 14.4vw;
+    width: 100vw;
+    height: 132vw;
+    position: relative;
+    font-size: 0;
+    padding: 0;
+  }
+
+  .product__almond--02 .pcimg {
+    display: none;
+  }
+
+  .product__almond--02 .spimg {
+    display: block;
+  }
+
+  .product__almond--02 .product__almond--02img {
+    opacity: 0;
+  }
+
+  .product__almond--02.is-show .product__almond--02img {
+    opacity: 1;
+    animation-name: fadeUpAnime0;
+    animation-duration: 2.4s;
+  }
+
+  .product__almond--02img {
+    width: 72.6vw;
+    height: 110.13vw;
+  }
+
+  .product__almond--02txt1 {
+    position: absolute;
+    width: 9.33vw;
+    height: 92.625vw;
+    top: 6.5vw;
+    right: 10.3vw;
+  }
+
+  .product__almond--02txt2 {
+    position: absolute;
+    width: 65.2vw;
+    height: 13.76vw;
+    bottom: 0;
+    left: 9.18vw;
   }
 
   .product__almond--03 {
@@ -5131,8 +5402,17 @@ footer * {
   }
 
   .rip01__prodcut {
-    margin: 0 auto 9vw;
+    margin: 0 auto 9vw !important;
     width: 46.53vw;
+    padding: 0;
+  }
+
+  .rip01__prodcut li {
+    width: 8vw;
+  }
+
+  .rip01__prodcut li img {
+    width: 100%;
   }
 
   .rip01__feature {
@@ -5335,8 +5615,34 @@ footer * {
   .rip05__fv {
     width: 100%;
     margin-right: 0px;
-    padding-left: -7px;
+    padding-left: 0;
     margin-bottom: 8.6vw;
+    position: relative;
+    height: 114.66vw;
+  }
+
+  .rip05__fv--ttl {
+    width: 66.666vw;
+    height: 16.8vw;
+    top: 0;
+    left: 8.4vw;
+    position: absolute;
+  }
+
+  .rip05__fv--img {
+    width: 81vw;
+    height: 97.33vw;
+    position: absolute;
+    top: 14vw;
+    left: 1.6vw;
+  }
+
+  .rip05__fv--checkpoint {
+    width: 23.73vw;
+    height: 26.62vw;
+    position: absolute;
+    bottom: 2.66vw;
+    right: -4vw;
   }
 
   .rip05__fv img {
@@ -5394,6 +5700,19 @@ footer * {
 
   .rip06__inner .sptxt {
     display: block;
+  }
+
+  .rip06__relotate {
+    position: absolute;
+    width: 20.6vw;
+    height: 21.46vw;
+    left: 11.46vw;
+    margin: 0 !important;
+    top: 48.66vw;
+  }
+
+  .rip06__relotate img {
+    width: 100%;
   }
 
   .rip06__txt {
@@ -5569,12 +5888,13 @@ body {
 }
 
 @media screen and (max-width: 750px) {
-  .header-wrapper {
+  body.homePerse .active .header-wrapper {
     top: 33px;
-    height: 64px;
+    height: 85px;
   }
 
-  .pereseLogo {
+  body.homePerse .active .pereseLogo {
+    margin-top: 1vw;
     top: 0px;
     width: 26.66vw;
     height: 7.86vw;
@@ -5582,12 +5902,43 @@ body {
     margin-bottom: 0;
   }
 
-  .pereseLogo.big {
+  body.homePerse #MainContent {
+    padding: 88px 0 60px !important;
+  }
+
+  body.homePerse .pereseLogo {
     width: 41.466vw;
     height: 12vw;
     background-size: 100% auto;
     margin-left: 1vw;
-    margin-top: 4.5vw;
+    margin-top: 3vw;
+  }
+
+  #MainContent {
+    padding: 65px 0 60px;
+  }
+
+  .header-wrapper {
+    top: 33px;
+    height: 64px;
+  }
+
+  .header-wrapper .pereseLogo {
+    margin-top: 1vw;
+    top: 0px;
+    width: 26.66vw;
+    height: 7.86vw;
+    margin-left: 1vw;
+    margin-bottom: 0;
+  }
+
+  .header-wrapper .active .pereseLogo {
+    margin-top: 1vw;
+    top: 0px;
+    width: 26.66vw;
+    height: 7.86vw;
+    margin-left: 1vw;
+    margin-bottom: 0;
   }
 
   .header__notice {
@@ -5605,6 +5956,11 @@ body {
     margin: 0 auto;
     text-align: center;
     letter-spacing: 0.1;
+  }
+}
+@media screen and (min-width: 990px) {
+  #MainContent {
+    padding-top: 90px;
   }
 }
 @media screen and (min-width: 990px) {
@@ -5736,7 +6092,6 @@ header-drawer {
 
 #MainContent {
   width: 100vw;
-  padding: 95px 0 60px;
   margin: 0 auto;
   padding-bottom: 60px;
 }
@@ -5827,10 +6182,6 @@ header-drawer {
     width: 100vw;
   }
 
-  #MainContent {
-    padding: 80px 0 60px;
-  }
-
   #MainContent .main__logo {
     display: none;
   }
@@ -5863,6 +6214,14 @@ header-drawer {
   transition-duration: 0.6s;
 }
 
+@keyframes fadeLeftAnime0 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes fadeLeftAnime02 {
   from {
     opacity: 0;

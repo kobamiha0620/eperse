@@ -2,17 +2,93 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false
       }
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "disabled": true,
       "settings": {
+        "products_per_page": 16,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "collapse_on_larger_devices": false
+      }
+    },
+    "164507398956f6baa5": {
+      "type": "collection-list",
+      "disabled": true,
+      "blocks": {
+        "164507398946bdf476-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "164507398946bdf476-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "164507398946bdf476-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "03073d15-c31b-4eb4-aeea-ac0184f9f21b": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "164507398946bdf476-0",
+        "164507398946bdf476-1",
+        "164507398946bdf476-2",
+        "03073d15-c31b-4eb4-aeea-ac0184f9f21b"
+      ],
+      "settings": {
+        "title": "Collections",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
+      }
+    },
+    "164507406162ca23e4": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "collection-all",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
       }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "164507398956f6baa5",
+    "164507406162ca23e4"
   ]
 }

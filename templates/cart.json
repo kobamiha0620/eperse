@@ -3,6 +3,7 @@
     "cart-items": {
       "type": "main-cart-items",
       "settings": {
+        "show_vendor": false
       }
     },
     "cart-footer": {
@@ -24,19 +25,76 @@
         "buttons"
       ],
       "settings": {
+        "show_cart_note": false
       }
     },
     "featured-products": {
       "type": "featured-collection",
       "settings": {
-        "collection": "all",
-        "image_ratio": "square"
+        "title": "Featured collection",
+        "collection": "collection-all",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "164506905694f90477": {
+      "type": "collection-list",
+      "disabled": true,
+      "blocks": {
+        "16450690569f0ff2e5-0": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": ""
+          }
+        },
+        "16450690569f0ff2e5-1": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": ""
+          }
+        },
+        "16450690569f0ff2e5-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "a932e6f1-cb73-4da9-9d59-60fb22a40971": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "collection-all"
+          }
+        }
+      },
+      "block_order": [
+        "16450690569f0ff2e5-0",
+        "16450690569f0ff2e5-1",
+        "16450690569f0ff2e5-2",
+        "a932e6f1-cb73-4da9-9d59-60fb22a40971"
+      ],
+      "settings": {
+        "title": "Collections",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
       }
     }
   },
   "order": [
     "cart-items",
     "cart-footer",
-    "featured-products"
+    "featured-products",
+    "164506905694f90477"
   ]
 }

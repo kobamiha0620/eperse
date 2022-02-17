@@ -118,7 +118,7 @@
         "unit_price": "単価"
       },
       "share": "この商品を共有する",
-      "sold_out": "売り切れ",
+      "sold_out": "coming soon",
       "unavailable": "利用できません",
       "vendor": "販売元",
       "video_exit_message": "{{ title }}は同じウィンドウの全画面表示ビデオで開きます。",
@@ -409,6 +409,13 @@
       "expired": "期限切れ",
       "copy_code_success": "コードは正常にコピーされました",
       "print_gift_card": "印刷する"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "stock": {
+        "sold_out_label": "coming soon"
+      }
     }
   }
 }

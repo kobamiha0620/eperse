@@ -44,7 +44,7 @@
         </div>
 
         <div class="product__cartbtn">
-             {% comment %} <form method="post" action="/cart/add">
+             <form method="post" action="/cart/add">
                 <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
                 <input type="hidden" min="1" type="number" id="quantity" name="quantity" value="1"/>
                 
@@ -53,14 +53,14 @@
                     <span class="product__cartbtn--img">cartimg<span>
                 </label>
                 <input type="submit" value="" class="" id="persebtn" />
-            </form> {% endcomment %}
-
+            </form> 
+{% comment %} 
 
             <div class="product__cartbtn--disable">
                 <p>BUY</p>
                 <span class="product__cartbtn--img">cartimg<span>
             </div>
-            <span class="product__cartbtn--notice">2022.3.3(THU) 12:00〜発売開始</span>
+            <span class="product__cartbtn--notice">2022.3.3(THU) 12:00〜発売開始</span> {% endcomment %}
 
         </div>
 
@@ -209,7 +209,7 @@
     </p>
 </div>
 
-
+{% comment %} 
 <form method="post" action="/cart/add">
     <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
     <input type="hidden" min="1" type="number" id="quantity" name="quantity" value="1"/>
@@ -219,4 +219,4 @@
     </label>
     <input type="submit" value="" class="" id="productBtnDayo"  style="width: 50px; height: 50px; opacity: 0;"/>
 
-</form> 
+</form>  {% endcomment %}

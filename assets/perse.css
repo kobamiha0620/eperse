@@ -2798,6 +2798,11 @@ footer * {
   margin: 60px 0 18px !important;
 }
 
+.persePolicy__subttl#shippingFee {
+  margin: 0 !important;
+  padding: 80px 0 18px;
+}
+
 .persePolicy__txt {
   font-size: 1.1rem;
   line-height: 1.95;

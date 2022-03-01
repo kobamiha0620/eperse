@@ -5955,7 +5955,7 @@ footer * {
   width: 240px;
   font-size: 0;
   line-height: 0;
-  margin: 0 0 38px !important;
+  margin: 0 0 18px !important;
   letter-spacing: -0.1em;
 }
 
@@ -5964,7 +5964,9 @@ footer * {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 202px;
+  height: 223px;
+  background: #f08984;
+  border: solid 1px #fff;
 }
 
 @keyframes slidePopup {
@@ -6140,13 +6142,13 @@ footer * {
 
   .homePerse .modal__giftbox--ttl {
     text-align: center;
-    margin: 0 auto 5vw !important;
+    margin: 0 auto 4vw !important;
     width: 48.66vw;
   }
 
   .homePerse .modal__giftbox--imgb {
-    width: 44.266vw;
-    height: 36.6vw;
+    width: 42.1vw;
+    height: 39vw;
     margin: 0 auto;
   }
 }

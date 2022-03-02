@@ -1134,13 +1134,13 @@ footer * {
 
   #insta-feed {
     display: flex;
-    width: 1400px !important;
+    width: 1430px !important;
   }
 
   #insta-feed + div {
     display: flex;
     overflow-x: scroll;
-    width: 1400px !important;
+    width: 1430px !important;
   }
 
   #insta-feed a {

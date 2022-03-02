@@ -5948,6 +5948,7 @@ footer * {
   color: #fff;
   font-size: 9px;
   line-height: 1.6;
+  letter-spacing: -0.1;
   margin: 0 !important;
 }
 
@@ -5960,13 +5961,10 @@ footer * {
 }
 
 .homePerse .modal__giftbox--imgb {
-  background: #eee;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 223px;
-  background: #f08984;
-  border: solid 1px #fff;
 }
 
 @keyframes slidePopup {

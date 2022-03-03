@@ -8,8 +8,15 @@
     },
     "form": {
       "type": "contact-form",
+      "disabled": true,
       "settings": {
         "heading": ""
+      }
+    },
+    "16462978400a2b033d": {
+      "type": "contact-form_new",
+      "settings": {
+        "heading": "Contact form"
       }
     },
     "164473325456da7c8d": {
@@ -31,6 +38,7 @@
   "order": [
     "main",
     "form",
+    "16462978400a2b033d",
     "164473325456da7c8d",
     "1644733298ea8e2132"
   ]

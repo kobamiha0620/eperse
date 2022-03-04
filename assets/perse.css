@@ -84,6 +84,197 @@ footer * {
   line-height: 1;
 }
 
+.testYoutube {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  justify-content: center;
+  height: 620px;
+}
+
+.testYoutube__inner {
+  margin-top: 169px;
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  background: #fff;
+}
+
+.testYoutube__inner iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.testVideo {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  justify-content: center;
+  height: 620px;
+}
+
+.testVideo__inner {
+  margin-top: 169px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  background: #fff;
+}
+
+.testVideo video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media screen and (max-width: 750px) {
+  .testYoutube {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    justify-content: center;
+    height: 124vw;
+  }
+
+  .testYoutube__inner {
+    margin-top: 30vw;
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background: #fff;
+    padding-right: 5%;
+  }
+
+  .testYoutube__inner iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .testVideo {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    justify-content: center;
+    height: 124vw;
+    padding-right: 5%;
+    width: 100%;
+  }
+
+  .testVideo__inner {
+    margin-top: 30vw;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background: #fff;
+  }
+
+  .testVideo video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+footer html, footer body, footer div, footer span, footer object, footer iframe, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, footer blockquote, footer pre, footer abbr, footer address, footer cite, footer code, footer del, footer dfn, footer em, footer img, footer ins, footer kbd, footer q, footer samp, footer small, footer strong, footer sub, footer sup, footer var, footer b, footer i, footer dl, footer dt, footer dd, footer ol, footer ul, footer li, footer fieldset, footer form, footer label, footer legend, footer table, footer caption, footer tbody, footer tfoot, footer thead, footer tr, footer th, footer td, footer article, footer aside, footer canvas, footer details, footer figcaption, footer figure, footer footer, footer header, footer hgroup, footer menu, footer nav, footer section, footer summary, footer time, footer mark, footer audio, footer video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+footer article, footer aside, footer details, footer figcaption, footer figure, footer footer, footer header, footer hgroup, footer menu, footer nav, footer section {
+  display: block;
+}
+
+footer nav ul {
+  list-style: none;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer blockquote, footer q {
+  quotes: none;
+}
+
+footer blockquote:before, footer blockquote:after, footer q:before, footer q:after {
+  content: "";
+  content: none;
+}
+
+footer a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+footer ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+footer mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+footer del {
+  text-decoration: line-through;
+}
+
+footer abbr[title], footer dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+footer table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+footer hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+footer input, footer select {
+  vertical-align: middle;
+}
+
+footer * {
+  box-sizing: border-box !important;
+  line-height: 1;
+}
+
 .footer {
   background: #f7f2ef;
   width: 100vw;

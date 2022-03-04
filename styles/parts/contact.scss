@@ -1,0 +1,111 @@
+@charset "utf-8";
+@import "_reset";
+
+.testYoutube{
+    display: flex;
+    align-items: center;
+    background:#FFF;
+    justify-content: center;
+    height: 620px;
+    &__inner{
+        margin-top: 169px;
+        display: block;
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;
+        background:#FFF;
+        iframe{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+}
+.testVideo{
+    display: flex;
+    align-items: center;
+    background:#FFF;
+    justify-content: center;
+    height: 620px;
+    &__inner{
+        margin-top: 169px;
+        overflow: hidden;
+        display: block;
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;
+        background:#FFF;
+    }
+    video{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+//sp
+@media screen and (max-width: $BP) {
+    .testYoutube{
+        display: flex;
+        align-items: center;
+        background:#FFF;
+        justify-content: center;
+        height: 124vw;
+        &__inner{
+            margin-top: 30vw;
+            display: block;
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            background:#FFF;
+            padding-right: 5%;
+
+            iframe{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100% !important;
+                height: 100% !important;
+            }
+        }
+    }
+    .testVideo{
+        display: flex;
+        align-items: center;
+        background:#FFF;
+        justify-content: center;
+        height: 124vw;
+        padding-right: 5%;
+        width: 100%;
+        &__inner{
+            margin-top: 30vw;
+            overflow: hidden;
+            display: block;
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            background:#FFF;
+        }
+        video{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+}
+
+//tablet　画面サイズが750pxからはこのスタイルを読む
+@media screen and (min-width: $BP+1) {
+    .homePerse {}
+}
+
+
+//PCTablet 画面サイズが990pxからはこのスタイルを読む
+@media screen and (min-width: 990px) {
+    .homePerse {}
+}

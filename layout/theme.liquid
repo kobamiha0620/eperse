@@ -134,6 +134,9 @@
     </script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
 
+    {% if template contains "product" and product.handle == "nudie-beige" %}
+      <meta name="robots" content="noindex">
+    {% endif %}
   
   </head>
   

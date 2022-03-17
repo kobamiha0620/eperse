@@ -97,6 +97,7 @@
         }
     }
 }
+
 //流れるテキスト
 @keyframes loop {
     0% {
@@ -277,19 +278,19 @@
                 height: 22px;
             }
             &-twitter{
-                background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/icon_twitter.svg') no-repeat 0 0;
+                background: url('#{$assets_path}icon_twitter.svg') no-repeat 0 0;
                 background-size: 100% auto;
             }
             &-insta{
-                background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/icon_insta.svg') no-repeat 0 0;
+                background: url('#{$assets_path}icon_insta.svg') no-repeat 0 0;
                 background-size: 100% auto;
             }
             &-line{
-                background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/icon_line.svg') no-repeat 0 0;
+                background: url('#{$assets_path}icon_line.svg') no-repeat 0 0;
                 background-size: 100% auto;
             }
             &-youtube{
-                background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/icon_youtube.svg') no-repeat 0 0;
+                background: url('#{$assets_path}icon_youtube.svg') no-repeat 0 0;
                 background-size: 100% auto;
             }
         }
@@ -306,7 +307,62 @@
     }
 }
 
+#nudie-beige{
+    .gmenu{
+        &__copy{
+            color: $cColor;
+        }
+        &__list{
+            a{
+                color: $cColor;
+                &.borderR{
+                    border-right: solid 1px $cColor;
+                }
+            }
+        }
+        &__product{
+            &--ttl{
+                color:$cColor;
+            }
+            &--subttl{
+                color:$cColor;
+            }
+            &--link{
+                a{
+                    color:$cColor;
+                    background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/arrow_contact.svg?v=1647422696') no-repeat 0 2px;
+                }
 
+            }
+        }
+        &__links{
+            a{
+                color: $cColor;
+            }
+            &--snsttl{
+                color: $cColor;
+            }
+            &--snslist{
+                &-twitter{
+                    background: url('#{$assets_path}icon_twitter2.svg') no-repeat 0 0;
+                }
+                &-insta{
+                    background: url('#{$assets_path}icon_insta2.svg') no-repeat 0 0;
+                }
+                &-line{
+                    background: url('#{$assets_path}icon_line2.svg') no-repeat 0 0;
+                }
+                &-youtube{
+                    background: url('#{$assets_path}icon_youtube2.svg') no-repeat 0 0;
+                }
+            }
+        }
+        .perseFooterLogo{
+            background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/logoFooter_contact.svg?v=1647422056') no-repeat 0 0;
+        }
+    }
+
+}
 //sp
 @media screen and (max-width: $BP) {
     .footer{
@@ -607,6 +663,7 @@
             height: 17.6vw;
         }
     }
+
 }
 
 #headerMenu{
@@ -884,6 +941,32 @@
             height: 70px;
         }
     }
+}
+
+#nudie-beige{
+    .gmenu{
+        &__product{
+            &--subttl{
+                span {
+                    &::before{
+                        background: $cColor;
+                    }
+                    &::after{
+                        background: $cColor;
+                    }
+    
+                    &::after {
+                        background: $cColor;
+                    }
+    
+                
+                }
+    
+            }
+        }
+
+    }
+
 }
 #insta-feed{
     padding: 0!important;

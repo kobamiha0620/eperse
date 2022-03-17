@@ -20,16 +20,26 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 710px;
-        background-color: $CR;
         z-index: 11;
+        background-color: $CR;
+
         padding: 40px 0 16px 40px;
         border-top-left-radius: 50px;
         border-bottom-right-radius: 50px;
         box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
         display: none;
+        &.campaign{
+            padding: 0;
+            background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_popupPcb_1.png?v=1647332329') no-repeat 0 0;
+            min-height: 421px;
+            background-size: auto 421px;
+            background-color: #F4EFEC;
+
+        }
     }
 
     .modal {
+
         &__frame {
             width: 630px;
             height: 364px;
@@ -146,7 +156,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-
             .close {
                 background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/modal_close.svg?v=1645165461') no-repeat 0 0;
                 margin-right: 5px;
@@ -211,6 +220,57 @@
                 height: 223px;
             }
         }
+        &__closeBtn{
+            color: $CR;
+            font-size: 13px;
+            cursor: pointer;
+            font-family: 'Outfit', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 18px 0 0!important;
+            .close {
+                background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/modal_close.svg?v=1645165461') no-repeat 0 0;
+                margin-right: 5px;
+                background-size: 100% auto;
+                width: 10px;
+                height: 10px;
+                white-space: nowrap;
+                text-indent: -9999px;
+                display: inline-block;
+            }
+        }
+        &__campaign{
+            margin: 35px 0 0 346px;
+            width: 325px;
+            
+            &--ttl{
+                background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/txt_review.svg?v=1647332636') no-repeat 0 0;
+                white-space: nowrap;
+                text-indent: -9999px;
+                width: 280px;
+                height: 56px;
+                margin: 0 auto 20px!important;
+            }
+            &--txt{
+                font-weight: bold;
+                font-size: 12.8px;
+                line-height: 1.6;
+                margin: 14px -20px 0 0!important;
+            }
+            &--note{
+                font-size: 10px;
+                line-height: 1.9;
+                margin: 14px 0 0!important;
+            }
+            .pc{
+                display: block;
+            }
+            .sp{
+                display: none;
+            }
+        }
+
     }
 }
 
@@ -250,6 +310,18 @@
             padding: 11.2vw 6.2vw 5.33vw;
             border-top-left-radius: 9.46vw;
             border-bottom-right-radius: 9.46vw;
+            &.campaign{
+                padding: 0;
+                background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_popupSpb_1.png?v=1647336761') no-repeat 0 0;
+                min-height: 58.13vw;
+                background-size: 100% auto;
+                border-top-left-radius: 0;
+                border-bottom-right-radius: 0;
+                border-top-right-radius: 9.46vw;
+                border-bottom-left-radius: 9.46vw;
+                background-color: #F4EFEC;
+
+            }
         }
 
         .modal {
@@ -397,6 +469,34 @@
                     width:42.1vw;
                     height: 39vw;
                     margin: 0 auto;
+                }
+            }
+            &__closeBtn{
+                font-size: 11px;
+                margin: 0 0 0!important;
+            }
+            &__campaign{
+                margin: 58.13vw 0 0 0;
+                width: 100%;
+                padding: 3.3vw 7vw;
+                .pc{
+                    display: none;
+                }
+                .sp{
+                    display: block;
+                }
+                &--ttl{
+                    width: 54vw;
+                    height: 10.6vw;
+                    margin: 0 auto 15px!important;
+                }
+                &--txt{
+                    display: none;
+                }
+                &--note{
+                    font-size: 10px;
+                    line-height: 1.7;
+                    margin: 14px 0 3vw!important;
                 }
             }
         }

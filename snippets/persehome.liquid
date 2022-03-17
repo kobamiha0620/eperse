@@ -202,10 +202,10 @@
     </div>
 </div>  
 
-{% comment %} 
+
 <div id="overlay" class="overlay js-close">overlay</div>
-<div class="modal-window">
-    <div class="modal__frame">
+<div class="modal-window campaign">
+    {% comment %} <div class="modal__frame">
 
         <div class="modal__frame02">
             <div class="modal__giftbox">
@@ -257,8 +257,21 @@
     
         </div>  
         
+    </div> {% endcomment %}
+
+    <div class="modal__campaign">
+        <h2 class="modal__campaign--ttl">Review campaign</h2>
+        <div class="pc"> <img src="https://cdn.shopify.com/s/files/1/0618/4593/0220/files/product_imgModal.png?v=1647333671" alt="" loading="lazy" width="100%" height="auto"></div>
+       
+        <p class="modal__campaign--txt">抽選で10名様に「ベルベットフィックスリップバーム」全４色＋よしミチのチェキをプレゼント</p>
+        <p class="modal__campaign--note">perseの店舗発売を記念して、公式Instagramにて3/17(thu)～4/16(sat)の間、perseレビューキャンペーンを開催中。<br>
+            「#パースレビュー」と共にperseの商品レビューをフィードまたはリールに投稿いただいた方の中から、抽選で10名様に「ベルベットフィックスリップバーム」全4色＋よしミチのチェキが当たります。</p>
+        <div class="sp"> <img src="https://cdn.shopify.com/s/files/1/0618/4593/0220/files/product_imgModal.png?v=1647333671" alt="" loading="lazy" width="100%" height="auto"></div>
+
+            <p class="modal__closeBtn js-close" id=""><span class="close">close</span><span>CLOSE</span></p>
+
     </div>
 
 </div>
 
-<script src="{{ 'popup.js' | asset_url }}" defer="defer"></script>	 {% endcomment %}
+<script src="{{ 'popup.js' | asset_url }}" defer="defer"></script>	

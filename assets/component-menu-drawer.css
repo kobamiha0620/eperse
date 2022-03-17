@@ -250,3 +250,10 @@ details[open].menu-opening > .menu-drawer__submenu {
   display: block;
   z-index: 4;
 }
+
+#nudie-beige .menu-drawer__utility-links {
+  background-color: rgba(130,177,188, 0.03);
+}
+#nudie-beige .menu-drawer__account{
+  color: #82B1BC;
+}

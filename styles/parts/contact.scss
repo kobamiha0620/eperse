@@ -1,6 +1,10 @@
 @charset "utf-8";
 @import "_reset";
 
+$cColor:  #82B1BC;
+@mixin bg{
+    
+}
 .testYoutube{
     display: flex;
     align-items: center;

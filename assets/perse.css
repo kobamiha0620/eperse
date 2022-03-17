@@ -589,22 +589,22 @@ footer * {
 }
 
 .gmenu__links--snslist-twitter {
-  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/icon_twitter.svg") no-repeat 0 0;
+  background: url("//cdn.shopify.com/s/files/1/0618/4593/0220/files/icon_twitter.svg") no-repeat 0 0;
   background-size: 100% auto;
 }
 
 .gmenu__links--snslist-insta {
-  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/icon_insta.svg") no-repeat 0 0;
+  background: url("//cdn.shopify.com/s/files/1/0618/4593/0220/files/icon_insta.svg") no-repeat 0 0;
   background-size: 100% auto;
 }
 
 .gmenu__links--snslist-line {
-  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/icon_line.svg") no-repeat 0 0;
+  background: url("//cdn.shopify.com/s/files/1/0618/4593/0220/files/icon_line.svg") no-repeat 0 0;
   background-size: 100% auto;
 }
 
 .gmenu__links--snslist-youtube {
-  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/icon_youtube.svg") no-repeat 0 0;
+  background: url("//cdn.shopify.com/s/files/1/0618/4593/0220/files/icon_youtube.svg") no-repeat 0 0;
   background-size: 100% auto;
 }
 
@@ -617,6 +617,59 @@ footer * {
   background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/logoFooter.svg") no-repeat 0 0;
   background-size: 100% auto;
   margin: 0 auto;
+}
+
+#nudie-beige .gmenu__copy {
+  color: #82b1bc;
+}
+
+#nudie-beige .gmenu__list a {
+  color: #82b1bc;
+}
+
+#nudie-beige .gmenu__list a.borderR {
+  border-right: solid 1px #82b1bc;
+}
+
+#nudie-beige .gmenu__product--ttl {
+  color: #82b1bc;
+}
+
+#nudie-beige .gmenu__product--subttl {
+  color: #82b1bc;
+}
+
+#nudie-beige .gmenu__product--link a {
+  color: #82b1bc;
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/arrow_contact.svg?v=1647422696") no-repeat 0 2px;
+}
+
+#nudie-beige .gmenu__links a {
+  color: #82b1bc;
+}
+
+#nudie-beige .gmenu__links--snsttl {
+  color: #82b1bc;
+}
+
+#nudie-beige .gmenu__links--snslist-twitter {
+  background: url("//cdn.shopify.com/s/files/1/0618/4593/0220/files/icon_twitter2.svg") no-repeat 0 0;
+}
+
+#nudie-beige .gmenu__links--snslist-insta {
+  background: url("//cdn.shopify.com/s/files/1/0618/4593/0220/files/icon_insta2.svg") no-repeat 0 0;
+}
+
+#nudie-beige .gmenu__links--snslist-line {
+  background: url("//cdn.shopify.com/s/files/1/0618/4593/0220/files/icon_line2.svg") no-repeat 0 0;
+}
+
+#nudie-beige .gmenu__links--snslist-youtube {
+  background: url("//cdn.shopify.com/s/files/1/0618/4593/0220/files/icon_youtube2.svg") no-repeat 0 0;
+}
+
+#nudie-beige .gmenu .perseFooterLogo {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/logoFooter_contact.svg?v=1647422056") no-repeat 0 0;
 }
 
 @media screen and (max-width: 750px) {
@@ -1214,6 +1267,18 @@ footer * {
 #headerMenu .gmenu .perseFooterLogo {
   width: 130px;
   height: 70px;
+}
+
+#nudie-beige .gmenu__product--subttl span::before {
+  background: #82b1bc;
+}
+
+#nudie-beige .gmenu__product--subttl span::after {
+  background: #82b1bc;
+}
+
+#nudie-beige .gmenu__product--subttl span::after {
+  background: #82b1bc;
 }
 
 #insta-feed {
@@ -5960,13 +6025,21 @@ footer * {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 710px;
-  background-color: #f08984;
   z-index: 11;
+  background-color: #f08984;
   padding: 40px 0 16px 40px;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
   box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
   display: none;
+}
+
+.homePerse .modal-window.campaign {
+  padding: 0;
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_popupPcb_1.png?v=1647332329") no-repeat 0 0;
+  min-height: 421px;
+  background-size: auto 421px;
+  background-color: #f4efec;
 }
 
 .homePerse .modal__frame {
@@ -6158,6 +6231,63 @@ footer * {
   height: 223px;
 }
 
+.homePerse .modal__closeBtn {
+  color: #f08984;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 18px 0 0 !important;
+}
+
+.homePerse .modal__closeBtn .close {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/modal_close.svg?v=1645165461") no-repeat 0 0;
+  margin-right: 5px;
+  background-size: 100% auto;
+  width: 10px;
+  height: 10px;
+  white-space: nowrap;
+  text-indent: -9999px;
+  display: inline-block;
+}
+
+.homePerse .modal__campaign {
+  margin: 35px 0 0 346px;
+  width: 325px;
+}
+
+.homePerse .modal__campaign--ttl {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/txt_review.svg?v=1647332636") no-repeat 0 0;
+  white-space: nowrap;
+  text-indent: -9999px;
+  width: 280px;
+  height: 56px;
+  margin: 0 auto 20px !important;
+}
+
+.homePerse .modal__campaign--txt {
+  font-weight: bold;
+  font-size: 12.8px;
+  line-height: 1.6;
+  margin: 14px -20px 0 0 !important;
+}
+
+.homePerse .modal__campaign--note {
+  font-size: 10px;
+  line-height: 1.9;
+  margin: 14px 0 0 !important;
+}
+
+.homePerse .modal__campaign .pc {
+  display: block;
+}
+
+.homePerse .modal__campaign .sp {
+  display: none;
+}
+
 @keyframes slidePopup {
   0% {
     opacity: 0;
@@ -6186,6 +6316,18 @@ footer * {
     padding: 11.2vw 6.2vw 5.33vw;
     border-top-left-radius: 9.46vw;
     border-bottom-right-radius: 9.46vw;
+  }
+
+  .homePerse .modal-window.campaign {
+    padding: 0;
+    background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_popupSpb_1.png?v=1647336761") no-repeat 0 0;
+    min-height: 58.13vw;
+    background-size: 100% auto;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 9.46vw;
+    border-bottom-left-radius: 9.46vw;
+    background-color: #f4efec;
   }
 
   .homePerse .modal__frame {
@@ -6339,6 +6481,41 @@ footer * {
     width: 42.1vw;
     height: 39vw;
     margin: 0 auto;
+  }
+
+  .homePerse .modal__closeBtn {
+    font-size: 11px;
+    margin: 0 0 0 !important;
+  }
+
+  .homePerse .modal__campaign {
+    margin: 58.13vw 0 0 0;
+    width: 100%;
+    padding: 3.3vw 7vw;
+  }
+
+  .homePerse .modal__campaign .pc {
+    display: none;
+  }
+
+  .homePerse .modal__campaign .sp {
+    display: block;
+  }
+
+  .homePerse .modal__campaign--ttl {
+    width: 54vw;
+    height: 10.6vw;
+    margin: 0 auto 15px !important;
+  }
+
+  .homePerse .modal__campaign--txt {
+    display: none;
+  }
+
+  .homePerse .modal__campaign--note {
+    font-size: 10px;
+    line-height: 1.7;
+    margin: 14px 0 3vw !important;
   }
 }
 body {
@@ -6561,6 +6738,18 @@ header-drawer {
   height: 1px;
   background: #f08984;
   transform: rotate(45deg);
+}
+
+#nudie-beige .menu-drawer-close {
+  color: #82b1bc;
+}
+
+#nudie-beige .menu-drawer-close span::before {
+  background: #82b1bc;
+}
+
+#nudie-beige .menu-drawer-close span::after {
+  background: #82b1bc;
 }
 
 .menu-drawer__navWrap {

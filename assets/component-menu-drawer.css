@@ -257,3 +257,22 @@ details[open].menu-opening > .menu-drawer__submenu {
 #nudie-beige .menu-drawer__account{
   color: #82B1BC;
 }
+
+#teddy-brown .menu-drawer__utility-links {
+  background-color: rgba(130,177,188, 0.03);
+}
+#teddy-brown .menu-drawer__account{
+  color: #82B1BC;
+}
+#air-gray .menu-drawer__utility-links {
+  background-color: rgba(130,177,188, 0.03);
+}
+#air-gray .menu-drawer__account{
+  color: #82B1BC;
+}
+#palm-green .menu-drawer__utility-links {
+  background-color: rgba(130,177,188, 0.03);
+}
+#palm-green .menu-drawer__account{
+  color: #82B1BC;
+}

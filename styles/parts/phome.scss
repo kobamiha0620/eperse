@@ -6,13 +6,31 @@
     &__slide {
         width: 100%;
         padding: 0;
+        font-size: 0;
+        line-height: 0;
+        &--img{
+            border-top-left-radius: 120px;
+        }
+        &--fadein{
+            position: relative;
+        }
+        &--contactname{
+            width: 500px;
+            height: 166px;
+            position: absolute;
+            bottom: 63px;
+            left: 35px;
+            img{
+                width: 100%;
+            }
+        }
         .slick-dots {
             bottom: -40px;
         }
     
         .slick-dots li {
-            margin: 0 8px;
-            width: 70px;
+            margin: 0 6px;
+            width: 50px;
             height: 2px !important;
     
             button {
@@ -23,7 +41,7 @@
     
         .slick-dots li button:before {
             content: '';
-            width: 70px;
+            width: 50px;
             height: 2px !important;
             background: #DDDDDD;
             opacity: 1;
@@ -39,7 +57,7 @@
         &--wrapper {
             max-width: 569px;
             width: 100%;
-            margin: 0 auto 140px;
+            margin: 0 auto 200px;
             position: relative;
             display: block;
         }
@@ -167,31 +185,34 @@
             display: flex;
             .slick-next{
                 right: -52px!important;
-                top: 198px!important;
+                top: 214px!important;
             }
             
             .slick-prev{
                 left: -52px!important;
-                top: 198px!important;
+                top: 214px!important;
             }
         }
         &--sub{
             text-align: center;
             font-size: 1.3rem;
             color: #808080;
+            margin: 17px 0 44px!important;
+            line-height: 1;
         }
         &--rip{
             width: 50%;
             border-right: solid 1px $CR;
-            padding: 60px 0;
+            padding: 54px 0;
         }
         &--lenz{
             width: 50%;
-            padding: 60px 0;
+            padding: 54px 0;
         }
         &--ripttl{
             text-align: center;
             color: $CR;
+            margin: 0 auto 6px!important;
             font-family: 'Outfit', sans-serif
         }
         &--ripsub{
@@ -206,28 +227,29 @@
         }
         &--lenzttl{
             text-align: center;
-            color:#769dac;
+            color:$cColor;
+            margin: 0 auto 6px!important;
             font-family: 'Outfit', sans-serif
         }
         &--lenzsub{
             white-space: nowrap;
             text-indent: -9999px;
-            background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/subttl_lenz.svg?v=1644380784') no-repeat 0 0;
-            width: 421px;
+            background: url('#{$assets_path}subttl_lens.svg') no-repeat 0 0;
+            width: 433px;
             height: 43px;
             display: block;
             background-size: 100% auto;
             margin: 0 auto;
         }
         &--slickkado{
-            width: 61px;
-            height: 61px;
+            width: 82px;
+            height: 82px;
             position: absolute;
             top: 0;
-            left: 90px;
+            left: 100px;
             text-indent: -9999px;
             white-space: nowrap;
-            background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/slick-leftImg.png?v=1644378734') no-repeat 0 0;
+            background: url('#{$assets_path}kadobaruPc.svg') no-repeat 0 0;
             background-size: 100% auto;
         }
         &--slick{
@@ -333,7 +355,7 @@
             .slick-dots li{
                 height: 23px!important;
                 width: 23px!important;
-                margin: 0 12px!important;
+                margin: 0 8px 0 7px!important;
             }
             .slick-dots li button{
                 height: 23px!important;
@@ -345,7 +367,7 @@
             }
             .slick-dots{    
                 bottom: initial!important;
-                margin-top: -73px!important;
+                margin-top: -67px!important;
             }
         }
         &--slick02{
@@ -381,7 +403,7 @@
         &--slick02wrap{
             z-index: 2;
             position: absolute;
-            top: 265px;
+            top: 246px;
             right: 0;
             width: 530px;
             // paddin60left: 120px;
@@ -493,7 +515,7 @@
             .slick-dots li{
                 height: 23px!important;
                 width: 23px!important;
-                margin: 0 12px!important;
+                margin: 0 8px 0 7px!important;
             }
             .slick-dots li button{
                 height: 23px!important;
@@ -506,6 +528,58 @@
             .slick-dots{    
                 bottom: initial!important;
                 margin-top: -73px!important;
+            }
+        }
+        &--slick04{
+            margin: 0;
+            padding: 0;
+            font-size: 0;
+            img{
+                width: 100%;
+            }
+            .slick-slide.slick-active{
+                animation: fadezoom 0.7s 0s forwards;
+            }
+            .slick-slide{
+                opacity: 0;
+            }
+
+            @keyframes fadezoom {
+                from {
+                    opacity: 0;
+                    transform: translateY(10px);
+                }
+            
+                to {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+            
+        }
+        &--slick04wrap{
+            z-index: 2;
+            position: absolute;
+            top: 327px;
+            right: 0;
+            width: 530px;
+            a{
+                display: block;
+            }
+        }
+        &--slickcon{
+            text-align: center;
+            line-height: 1!important;
+            a{
+                text-decoration: none;
+                color: #fff;
+                background: $cColor;
+                padding: 12px 35px;
+                border-radius: 40px;
+                font-size: 1.4rem;
+                display: inline-block;
+                line-height: 1!important;
+                font-family: 'Outfit', sans-serif;  
             }
         }
         &--slickbtn{
@@ -526,7 +600,7 @@
         &--slickdisable{
             text-align: center;
             line-height: 1!important;
-  
+
             span{
                 text-decoration: none;
                 color: #fff;
@@ -541,11 +615,13 @@
         }
         &--slickwrap{
             position: relative;
-            padding: 0 90px;   
+            padding: 0 100px;   
         }
         &--slickImg{
             width: 100%;
             position: relative;
+            font-size: 0;
+            line-height: 0;
             img{
                 width: 100%;
             }
@@ -556,13 +632,19 @@
             img{
                 width: 100%;
             }
+            .imgPc{
+                display: block;
+            }
+            .imgSp{
+                display: none;
+            }
         }
         &--slickname{
             text-align: center;
             color: #8d8d8d;
             font-size: 1.3rem;
             line-height: 1;
-            margin: 80px 0 0!important;
+            margin: 73px 0 0!important;
         }
         &--price{
             text-align: center;
@@ -583,12 +665,13 @@
             font-size: 2rem;
             line-height: 1;
             margin: 15px 0 20px!important;
-            color:#769dac!important;
+            color: $cColor!important;
 
            span{
                 font-size: 1.6rem;
             }
         }
+
         &--comming{
             display: block;
             width: 140px;
@@ -767,12 +850,12 @@
             
 .slick-next{
     right: -52px!important;
-    top: 198px!important;
+    top: 214px!important;
 }
 
 .slick-prev{
     left: -52px!important;
-    top: 198px!important;
+    top: 214px!important;
 }
 //フワーっと
 .fadeUp{
@@ -858,10 +941,26 @@
             img {
                 width: 100%;
             }
+            &--img{
+                border-top-left-radius: 16vw;
+            }
+            &--fadein{
+                position: relative;
+            }
+            &--contactname{
+                width: 78.8vw;
+                height: 26.13vw;
+                position: absolute;
+                bottom: 9.9vw;
+                left: 5.5vw;
+                img{
+                    width: 100%;
+                }
+            }
             &--wrapper {
                 max-width: 100%;
                 width: 90vw;
-                margin: 0 0 17.6vw 10%;
+                margin: 0 0 25vw 10%;
                 position: relative;
             }
             &--frame {
@@ -899,11 +998,11 @@
         }
     
         .slick-dots li {
-            margin: 0 8px;
-            width: 13.86vw;
+            margin: 0 1vw;
+            width: 8.4vw;
         }
         .slick-dots li button:before {
-            width: 13.86vw;
+            width: 8.4vw;
         }
         &__brand{
             margin-bottom: 15vw;
@@ -982,8 +1081,8 @@
         }
         &__product{
             border-top: solid 1px $CR;
-            border-bottom: solid 1px $CR;
-            margin: 0 0 12vw!important;
+            border-bottom: none;
+            margin: 0 0!important;
             &--inner{
                 max-width: 1060px;
                 width: 100%;
@@ -992,36 +1091,43 @@
                 border-left: none;
                 display: block;
                 .slick-next{
-                    right: -12vw!important;
-                    top: 198px!important;
-                    }
-                    
-                    .slick-prev{
-                    left: -12vw!important;
-                    top: 198px!important;
-                    }
+                    right: -11.5vw!important;
+                    top: 40.5vw!important;
+                }  
+                .slick-prev{
+                    left: -11.5vw!important;
+                    top: 40.5vw!important;
+                }
             }
             &--sub{
                 text-align: center;
                 font-size: 1.3rem;
-
+                margin: 3.3vw 0 4.8vw!important;
             }
             &--rip{
                 width: 100vw;
                 border-right: none;
-                padding: 5vw 0 10.6vw;
+                padding: 10.4vw 0 10.6vw;
             }
             &--lenz{
                 width: 100vw;
-                border-top: solid 1px $CR;
-                padding: 5vw 0 10.6vw;
+                border-top: solid 1px $cColor;
+                padding: 10.4vw 0 10.6vw;
             }
             &--ripttl{
-                font-size: 1.1rem
+                line-height: 1;
+                font-size: 1.1rem;
+                margin: 0 0 2.9vw!important;
+
             }
             &--ripsub{
                 width: 83vw;
                 height: 8.3vw;
+            }
+            &--lenzttl{
+                line-height: 1;
+                font-size: 1.1rem;
+                margin: 0 0 2.9vw!important;
             }
             &--lenzsub{
                 width: 83vw;
@@ -1033,10 +1139,6 @@
                 position: absolute;
                 top: 0;
                 left: 16vw;
-                text-indent: -9999px;
-                white-space: nowrap;
-                background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/kadomaruSp.png?v=1644907882') no-repeat 0 0;
-                background-size: 100% auto;
             }
             &--slick{
                 margin: 0!important;
@@ -1046,13 +1148,13 @@
                 & + li{
                   margin: 0 auto;
                 }
-            　.slick-arrow:before{
-                content:""!important;
-                width: 25px!important;
-                height: 20px!important;
-                position: absolute;
-                top: 0;
-                left: 0;
+                .slick-arrow:before{
+                    content:""!important;
+                    width: 25px!important;
+                    height: 20px!important;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
                 }
                 .slick-prev:before, .slick-next:before{
                     width: 25px!important;
@@ -1076,7 +1178,7 @@
                 .slick-dots li{
                     height: 17px!important;
                     width: 17px!important;
-                    margin: 0 12px!important;
+                    margin: 0 6px!important;
                 }
                 .slick-dots li button{
                     height: 17px!important;
@@ -1099,13 +1201,13 @@
                 & + li{
                   margin: 0 auto;
                 }
-            　.slick-arrow:before{
-                content:""!important;
-                width: 25px!important;
-                height: 20px!important;
-                position: absolute;
-                top: 0;
-                left: 0;
+                .slick-arrow:before{
+                    content:""!important;
+                    width: 25px!important;
+                    height: 20px!important;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
                 }
                 .slick-prev:before, .slick-next:before{
                     width: 25px!important;
@@ -1133,7 +1235,7 @@
                 .slick-dots li{
                     height: 17px!important;
                     width: 17px!important;
-                    margin: 0 12px!important;
+                    margin: 0 6 px!important;
                 }
                 .slick-dots li button{
                     height: 17px!important;
@@ -1148,6 +1250,45 @@
                     margin-top: -15vw!important;
                 }
             }
+            &--slick04{
+                margin: 0;
+                padding: 0;
+                font-size: 0;
+                img{
+                    width: 100%;
+                }
+                .slick-slide.slick-active{
+                    animation: fadezoom 0.7s 0s forwards;
+                }
+                .slick-slide{
+                    opacity: 0;
+                }
+    
+                @keyframes fadezoom {
+                    from {
+                        opacity: 0;
+                        transform: translateY(10px);
+                    }
+                
+                    to {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+                
+            }
+            &--slick04wrap{
+                top: 67.6vw;
+                right: 0;
+                width: 100vw;
+            }
+            &--slickcon{
+                a{
+                    padding: 11px 35px;
+                    font-size: 1.1rem;
+                }
+            }
+
             &--slick02wrap{
                 top: 60.2vw;
                 width: 100vw;
@@ -1158,12 +1299,12 @@
 
             &--slickbtn{    
                 a{
-                    padding: 12px 26px;
+                    padding: 11px 35px;
                     font-size: 1.1rem;
                 }
             }
-            &--slickdisable{
 
+            &--slickdisable{
                 span{
                     padding: 12px 26px;
                     font-size: 1.1rem;
@@ -1179,6 +1320,15 @@
             &--slickpro{
                 width: 100vw;
                 height: 39.33vw;
+                img{
+                    width: 100%;
+                }
+                .imgPc{
+                    display: none;
+                }
+                .imgSp{
+                    display: block;
+                }
             }
             &--slickname{
                 font-size: 1rem;
@@ -1190,6 +1340,9 @@
                span{
                     font-size: 1.2rem;
                 }
+            }
+            &--lenzprice{
+                font-size: 1.6rem;
             }
             &--comming{
                 width: 29.4vw;
@@ -1205,7 +1358,7 @@
         &__pararaSp2{
             position: relative;
             display: block;
-            margin: 12vw 0;
+            margin: 0 0 12vw;
             width: 100vw;
             height: 103vw;
             .phome__pararaSp2--ttl{

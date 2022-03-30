@@ -1,4 +1,6 @@
 /node_modules/
 /design/
+/assets/*.png
+/assets/*.svg
 package.json
 package-lock.json

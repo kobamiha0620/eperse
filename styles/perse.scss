@@ -252,7 +252,8 @@ header-drawer {
     }
 }
 
-#nudie-beige{
+#nudie-beige, #teddy-brown, #air-gray, #palm-green{
+
     .menu-drawer-close {
         color: $cColor;    
         span {
@@ -385,6 +386,42 @@ header-drawer {
             }
         }
     }
+}
+
+#nudie-beige, #teddy-brown, #air-gray, #palm-green{
+
+    #MainContent {
+        .main {
+            &__sns{
+                &--tw {
+                    background: url('#{$assets_path}icon_twitter2.svg') no-repeat 0 0;
+                    background-size: 100% auto;
+    
+                }
+    
+                &--insta {
+                    background: url('#{$assets_path}icon_insta2.svg') no-repeat 0 0;
+                    background-size: 100% auto;
+                }
+    
+                &--line {
+                    background: url('#{$assets_path}icon_line2.svg') no-repeat 0 0;
+                    background-size: 100% auto;
+                }
+    
+                &--youtube {
+                    background: url('#{$assets_path}icon_youtube2.svg') no-repeat 0 0;
+                    background-size: 100% auto;
+                }
+            }
+            &__logo{
+                background: url('#{$assets_path}mainlog.svg') no-repeat 0 0;
+                background-size: 100% auto;
+
+            }
+        }
+    }
+
 }
 
 //sp

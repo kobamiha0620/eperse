@@ -307,7 +307,7 @@
     }
 }
 
-#nudie-beige{
+#nudie-beige, #teddy-brown, #air-gray, #palm-green{
     .gmenu{
         &__copy{
             color: $cColor;
@@ -330,7 +330,8 @@
             &--link{
                 a{
                     color:$cColor;
-                    background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/arrow_contact.svg?v=1647422696') no-repeat 0 2px;
+                    background:  url(#{$assets_path}arrow_contact2.svg) no-repeat 0 2px;
+                    background-size: 12px 10px;
                 }
 
             }
@@ -943,7 +944,7 @@
     }
 }
 
-#nudie-beige{
+#nudie-beige, #teddy-brown, #air-gray, #palm-green{
     .gmenu{
         &__product{
             &--subttl{

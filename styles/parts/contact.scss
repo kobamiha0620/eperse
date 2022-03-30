@@ -7,6 +7,7 @@
     font-size: 1.5rem;
     line-height: 1.4;
     position: absolute;
+    text-align: center;
     left: 27px;
     top: 31px;
     margin: 0 !important;
@@ -456,6 +457,317 @@
 }
 // Teddy-brown----------------------------------
 
+
+
+// AirGray ----------------------------------
+#clenz03 {
+    .clenz {
+        &__01 {
+            border-top: solid 1px $c03;
+            @extend %clenz01blc;
+            &--ltxt {
+                @extend %clenz01enTxt;
+                color: $c03;
+            }
+
+            &--logo {
+                @include bgimg('img_clenz03_01logo.svg');
+                @extend %clenz01logo;
+            }
+
+            &--img {
+                @extend %clenz01enImg;
+                img {
+                    width: 100%;
+                }
+            }
+
+            &--fadeTxt {
+                @extend %clenz01rfade;
+            }
+
+            &--name {
+                @include bgimg('img_clenz03_01c.svg');
+                width: 384px;
+                height: 45px;
+                margin: 0 auto 15px;
+            }
+
+            &--txt {
+                @extend %clenz01txt;
+                color: $c03;
+            }
+        }
+        &__02 {
+            background: url('#{$assets_path}bg_clenz03_02a.png') no-repeat 0 0;
+            @extend %clenz02;
+        }
+
+        @media screen and (max-width: $BP) {
+            %clenz01enImg {
+                width: 79.6vw;
+                margin: 11.3vw auto;
+                font-size: 0;
+                line-height: 0;
+            }
+
+            %clenz01rfade {
+                width: 27vw;
+                height: 27vw;
+                top: 86.9vw;
+                right: 5.4vw;
+                position: absolute;
+                margin: 0 !important;
+            }
+
+            &__inner {
+                width: 100vw;
+            }
+
+            &__01 {
+                &--name {
+                    width: 70.5vw;
+                    height: 8.26vw;
+                    margin: 0 auto 3.6vw;
+                }
+            }
+
+        }
+    }
+}
+// Air Gray ----------------------------------
+
+
+// Palm Greeen ----------------------------------
+#clenz04 {
+    .clenz {
+        &__01 {
+            border-top: solid 1px $c04;
+            @extend %clenz01blc;
+            &--ltxt {
+                @extend %clenz01enTxt;
+                color: $c04;
+            }
+
+            &--logo {
+                @include bgimg('img_clenz04_01logo.svg');
+                @extend %clenz01logo;
+            }
+
+            &--img {
+                @extend %clenz01enImg;
+                img {
+                    width: 100%;
+                }
+            }
+
+            &--fadeTxt {
+                @extend %clenz01rfade;
+            }
+
+            &--name {
+                @include bgimg('img_clenz04_01c.svg');
+                width: 384px;
+                height: 45px;
+                margin: 0 auto 15px;
+            }
+
+            &--txt {
+                @extend %clenz01txt;
+                color: $c04;
+            }
+        }
+        &__02 {
+            background: url('#{$assets_path}bg_clenz04_02a.png') no-repeat 0 0;
+            @extend %clenz02;
+        }
+        &__03{
+            width: 542px;
+            position: relative;
+            margin: 0 auto 160px;
+            font-size: 0;
+            &--img{
+                width: 499px;
+                margin: 0 0 50px auto;
+                img{
+                    width: 100%;
+                }
+            }
+            &--txt{
+                position: absolute;
+                width: 17px;
+                top: 21px;
+                left: 0;
+                margin: 0;
+                font-size: 0;
+                img{
+                    width: 100%;
+                }
+            }
+            &--name{
+                margin: 0 0 32px 70px;
+                width: 390px;
+                font-size: 0;
+                img{
+                    width: 100%;
+                }
+            }
+            &--words{
+                color: $c04;
+                font-family: 'Outfit', sans-serif;
+                font-size: 1.36rem;
+                line-height: 1.5;
+                margin: 0 0 50px 104px;
+            }
+
+            &--line{
+                left: 3px;
+                top: 254px;
+                margin: 0;
+                padding: 0;
+                font-size: 0;
+                height: 0;
+                border-left: solid 2px $c04;
+                position: absolute;
+            }
+            &--subimg{
+                width: 443px;
+                height: 162px;
+                margin: 0 0 66px auto;
+                img{
+                    width: 100%;
+                }
+            }
+            &--blc{
+                position: relative;
+                width: 362px;
+                margin: 0 0 0 42px;
+                img{
+                    width: 100%;
+                }
+            }
+            &--subimg01{
+                margin: 0 0 9px;
+            }
+            &--relotate{
+                animation: rotate-anime 6s linear infinite;
+                width: 175px;
+                height: 175px;
+                position: absolute;
+                bottom: -12px;
+                right: -118px;
+                img{
+                    width: 100%;
+                }
+            }
+            &--producer{
+                width: 12px;
+                position: absolute;
+                right: -58px;
+                top: 59px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        @media screen and (max-width: $BP) {
+            %clenz01enImg {
+                width: 79.6vw;
+                margin: 11.3vw auto;
+                font-size: 0;
+                line-height: 0;
+            }
+
+            %clenz01rfade {
+                width: 27vw;
+                height: 27vw;
+                top: 86.9vw;
+                right: 5.4vw;
+                position: absolute;
+                margin: 0 !important;
+            }
+
+            &__inner {
+                width: 100vw;
+            }
+
+            &__01 {
+                &--name {
+                    width: 70.5vw;
+                    height: 8.26vw;
+                    margin: 0 auto 3.6vw;
+                }
+            }
+            &__03{
+                width: 100vw;
+                margin: 16.4vw auto 19.6vw;
+                
+                &--img{
+                    width: 87.7vw;
+                    margin: 0 0 8.8vw auto;
+                }
+                &--txt{
+                    position: absolute;
+                    width: 3vw;
+                    top: 4vw;
+                    left: 4.5vw;
+                }
+                &--name{
+                    margin: 0 0 5.2vw 17.3vw;
+                    width: 68.5vw;
+                }
+
+                &--words{
+                    font-size: 0.9rem;
+                    line-height: 1.5;
+                    margin: 0 0 10vw 23vw;
+                }
+    
+                &--line{
+                    left: 5.3vw;
+                    top: 41vw;
+                    border-left: solid 1px $c04;
+                }
+                &--subimg{
+                    width: 78vw;
+                    margin: 0 0 11.6vw auto;
+                    font-size: 0;
+                    height: 28.5vw;
+                    img{
+                        width: 100%;
+                        font-size: 0;
+
+                    } 
+                }
+                &--blc{
+                    position: relative;
+                    width: 63.6vw;
+                    margin: 0 0 0 12vw;
+                    font-size: 0;
+                }
+                &--subimg01{
+                    margin: 0 0 9px;
+                }
+                &--relotate{
+                    width: 30vw;
+                    height: 30vw;
+                    position: absolute;
+                    bottom: -2.3vw;
+                    right: -22vw;
+                }
+                &--producer{
+                    width: 2.1vw;
+                    position: absolute;
+                    right: -12.8vw;
+                    top: 10vw;
+
+                }
+            }
+
+        }
+    }
+}
+// Palm Greeen ----------------------------------
 .clenz {
     overflow: hidden;
     &__inner {
@@ -1277,6 +1589,235 @@
         }
     }
 
+    #clenz03 {
+        .clenz {
+            &__03 {
+                width: 606px;
+                margin: 0 auto 164px;
+                position: relative;
+                &--ttl {
+                    @include bgimg('clenz03_03.svg');
+                    width: 368px;
+                    height: 101px;
+                    margin: 0 auto;
+                }
+
+                &--square {
+                    border-radius: 50%;
+                    border: solid 1px $c03;
+                    width: 606px;
+                    height: 606px;
+                    white-space: nowrap;
+                    text-indent: -9999px;
+                    position: absolute;
+                    top: 349px;
+                    right: 0;
+                    margin: 0;
+                    font-size: 0;
+                    z-index: -1;
+                }
+
+                &--img01 {
+                    width: 382px;
+                    margin: -43px auto 33px;
+                    font-size: 0;
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                &--txt {
+                    font-family: 'Outfit', sans-serif;
+                    text-align: center;
+                    color: $c03;
+                    font-size: 1.4rem;
+                    line-height: 1.5;
+                    margin: 0 auto 41px;
+                }
+
+                &--subttl {
+                    padding: 0 14px 0 0;
+                    margin: 0 auto 57px;
+                    text-align: center;
+                    font-size: 0;
+
+                    img {
+                        width: 388px;
+                    }
+                }
+
+                &--img02 {
+                    box-sizing: border-box;
+                    margin: 0 0 93px;
+                    padding-right: 13px;
+                    font-size: 0;
+                    text-align: right;
+                    display: block;
+                    img {
+                        width: 492px;
+                    }
+                }
+
+                &--img03 {
+                    position: relative;
+                    width: 395px;
+                    height: 270px;
+                    margin: 0 0 68px 50px;
+
+                    &-bg {
+                        width: 380px;
+                        height: 258px;
+                        background: $c03;
+                        margin: 0;
+                        right: 0;
+                        bottom: 0;
+                        position: absolute;
+                    }
+
+                    &-fv {
+                        position: absolute;
+                        margin: 0;
+                        font-size: 0;
+                        width: 380px;
+                        height: 258px;
+                        top: 0;
+                        left: 0;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    &-relotate {
+                        width: 175px;
+                        height: 175px;
+                        margin: 0;
+                        position: absolute;
+                        top: -30px;
+                        right: -113px;
+                        animation: rotate-anime 6s linear infinite;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &--img04 {
+                    width:507px;
+                    margin: 0 0 0 87px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    &-a {
+                        width: 12px;
+                    }
+
+                    &-b {
+                        width: 453px;
+                    }
+                }
+
+            }
+
+            @media screen and (max-width: $BP) {
+                &__03 {
+                    width: 100vw;
+                    padding: 0 0 0;
+                    margin: 16.4vw 0 18.5vw;
+
+                    &--ttl {
+                        @include bgimg('clenz03_03.svg');
+                        margin: 0 auto;
+                        font-size: 0;
+                        background-size: 100% auto;
+                        width: 64.44vw;
+                        height: 17.7vw;
+                    }
+
+                    &--square {
+                        width: 106vw;
+                        height: 106vw;
+                        position: absolute;
+                        top: 60vw;
+                        right: -3vw;
+                        left: -3vw;
+                    }
+
+                    &--img01 {
+                        width: 67vw;
+                        margin: -7.6vw auto 6.5vw;
+                    }
+
+                    &--txt {
+                        font-size: 0.9rem;
+                        line-height: 1.55;
+                        margin: 0 auto 6vw;
+                    }
+
+                    &--subttl {
+                        padding: 0 3vw 0 0;
+                        margin: 0 auto 10.2vw;
+                        
+                        img {
+                            width: 68vw;
+                        }
+                    }
+
+                    &--img02 {
+                        box-sizing: border-box;
+                        margin: 0 0 16vw;
+                        padding-right: 0;
+
+                        img {
+                            width: 86vw;
+                        }
+                    }
+
+                    &--img03 {
+                        width: 69vw;
+                        height: 47.2vw;
+                        margin: 0 0 12vw 4.4vw;
+
+                        &-bg {
+                            width: 66.6vw;
+                            height: 44.6vw;
+                        }
+
+                        &-fv {
+                            position: absolute;
+                            width: 66.6vw;
+                            height: 44.6vw;
+                        }
+
+                        &-relotate {
+                            width: 30vw;
+                            height: 30vw;
+                            margin: 0;
+                            position: absolute;
+                            top: -5.1vw;
+                            right: -19.8vw;
+                        }
+                    }
+
+                    &--img04 {
+                        width: 88.5vw + 3.73vw;
+                        padding-left: 3.73vw;
+                        margin: 0 0 0 auto;
+
+                        &-a {
+                            width: 2.1vw;
+                        }
+
+                        &-b {
+                            width: 78.6vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 
     //ーーーーーーーーーーーーーーーーーー４色共通ーーーーーーーーーーーーーーーーーー
@@ -2325,7 +2866,7 @@
         }
     }
 
-#clenz01{
+#clenz01, #clenz03{
     .clenz__03{
         .fadein01, .fadein02, .fadein03, .fadein04, .fadein05, .fadein06{
             opacity: 0;
@@ -2387,6 +2928,51 @@
             @media screen and (max-width: $BP) {
                 &.scrollin{
                     height: 184.2vw;
+                }
+            }
+        }
+    }
+    
+}
+#clenz04{
+    .clenz__03{
+        .fadein01, .fadein02{
+            opacity: 0;
+            transition: all 800ms;
+            transform : translate(0, 40px);
+            &.scrollin{
+                opacity: 1;
+                transform : translate(0, 0);
+            }
+        }
+        .fadein04, .fadein05{
+            opacity: 0;
+            transition: all 1500ms;
+            transform : translate(0, 40px);
+            &.scrollin{
+                opacity: 1;
+                transform : translate(0, 0);
+            }
+        }
+        .fadein06, .fadein07, .fadein08, .fadein09, .fadein10{
+            opacity: 0;
+            transition: all 2500ms;
+            transform : translate(0, 40px);
+            &.scrollin{
+                opacity: 1;
+                transform : translate(0, 0);
+            }
+        }
+        .fadein03{
+            height: 0;
+            transition: height 1s linear;
+            &.scrollin{
+                height: 1319px;
+                transition: height 2s linear;
+            }
+            @media screen and (max-width: $BP) {
+                &.scrollin{
+                    height: 232vw;
                 }
             }
         }

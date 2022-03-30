@@ -227,6 +227,10 @@ footer * {
   color: #cb997b;
 }
 
+#clenz01 .clenz__01--txt span {
+  text-align: center;
+}
+
 @media screen and (max-width: 750px) {
   #clenz01 .clenz .clenz__01--img {
     width: 79.6vw;
@@ -343,6 +347,10 @@ footer * {
 
 #clenz02 .clenz__01--txt {
   color: #8c6351;
+}
+
+#clenz02 .clenz__01--txt span {
+  text-align: center;
 }
 
 #clenz02 .clenz__02 {
@@ -578,6 +586,10 @@ footer * {
   color: #92b1bc;
 }
 
+#clenz03 .clenz__01--txt span {
+  text-align: center;
+}
+
 #clenz03 .clenz__02 {
   background: url("//cdn.shopify.com/s/files/1/0618/4593/0220/files/bg_clenz03_02a.png") no-repeat 0 0;
 }
@@ -646,6 +658,10 @@ footer * {
 
 #clenz04 .clenz__01--txt {
   color: #7a9569;
+}
+
+#clenz04 .clenz__01--txt span {
+  text-align: center;
 }
 
 #clenz04 .clenz__02 {

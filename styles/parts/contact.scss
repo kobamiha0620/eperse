@@ -149,6 +149,9 @@
             &--txt {
                 @extend %clenz01txt;
                 color: $c01;
+                span{
+                    text-align: center;
+                }
             }
         }
 
@@ -282,6 +285,9 @@
             &--txt {
                 @extend %clenz01txt;
                 color: $c02;
+                span{
+                    text-align: center;
+                }
             }
         }
         &__02 {
@@ -496,6 +502,9 @@
             &--txt {
                 @extend %clenz01txt;
                 color: $c03;
+                span{
+                    text-align: center;
+                }
             }
         }
         &__02 {
@@ -575,6 +584,9 @@
             &--txt {
                 @extend %clenz01txt;
                 color: $c04;
+                span{
+                    text-align: center;
+                }
             }
         }
         &__02 {

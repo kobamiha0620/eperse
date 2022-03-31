@@ -4649,6 +4649,18 @@ footer * {
   background-size: 100% auto;
 }
 
+.phome__product--slickline {
+  width: 1px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  right: 100px;
+  background-color: #f5f1ee;
+  text-indent: -9999px;
+  white-space: nowrap;
+  background-size: 1px auto;
+}
+
 .phome__product--slick {
   margin: 0 !important;
   padding: 0 !important;
@@ -4990,7 +5002,7 @@ footer * {
   line-height: 1 !important;
 }
 
-.phome__product--slickcon a {
+.phome__product--slickcon span {
   text-decoration: none;
   color: #fff;
   background: #82b1bc;
@@ -5007,7 +5019,7 @@ footer * {
   line-height: 1 !important;
 }
 
-.phome__product--slickbtn a {
+.phome__product--slickbtn span {
   text-decoration: none;
   color: #fff;
   background: #f08984;
@@ -5236,7 +5248,7 @@ footer * {
 .phome__produce--lblc.is-show {
   opacity: 1;
   animation-name: fadeUpAnime0;
-  animation-duration: 2s;
+  animation-duration: 1.3s;
 }
 
 .phome__produce--ltxt {
@@ -5601,6 +5613,14 @@ footer * {
     left: 16vw;
   }
 
+  .phome__product--slickline {
+    width: 1px;
+    height: 98vw;
+    position: absolute;
+    top: 0;
+    right: 16vw;
+  }
+
   .phome__product--slick {
     margin: 0 !important;
     padding: 0 !important;
@@ -5759,7 +5779,7 @@ footer * {
     width: 100vw;
   }
 
-  .phome__product--slickcon a {
+  .phome__product--slickcon span {
     padding: 11px 35px;
     font-size: 1.1rem;
   }
@@ -5770,7 +5790,7 @@ footer * {
     top: 56vw;
   }
 
-  .phome__product--slickbtn a {
+  .phome__product--slickbtn span {
     padding: 11px 35px;
     font-size: 1.1rem;
   }
@@ -5988,6 +6008,27 @@ footer * {
     animation: rotate-anime 3s linear infinite;
   }
 }
+.slick-slide {
+  outline: none;
+}
+
+.slick-slide a {
+  text-decoration: none;
+  display: block;
+}
+
+.slick-slide:focus {
+  outline: none;
+}
+
+.phome__product--slickImg {
+  display: block;
+}
+
+.phome__product--slickImg a {
+  background: #f5f1ee;
+}
+
 footer html, footer body, footer div, footer span, footer object, footer iframe, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, footer blockquote, footer pre, footer abbr, footer address, footer cite, footer code, footer del, footer dfn, footer em, footer img, footer ins, footer kbd, footer q, footer samp, footer small, footer strong, footer sub, footer sup, footer var, footer b, footer i, footer dl, footer dt, footer dd, footer ol, footer ul, footer li, footer fieldset, footer form, footer label, footer legend, footer table, footer caption, footer tbody, footer tfoot, footer thead, footer tr, footer th, footer td, footer article, footer aside, footer canvas, footer details, footer figcaption, footer figure, footer footer, footer header, footer hgroup, footer menu, footer nav, footer section, footer summary, footer time, footer mark, footer audio, footer video {
   margin: 0;
   padding: 0;

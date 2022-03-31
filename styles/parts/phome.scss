@@ -252,6 +252,18 @@
             background: url('#{$assets_path}kadobaruPc.svg') no-repeat 0 0;
             background-size: 100% auto;
         }
+        &--slickline{
+            width: 1px;
+            height: 300px;
+            position: absolute;
+            top: 0;
+            right: 100px;
+            background-color: #F5F1EE;
+            text-indent: -9999px;
+            white-space: nowrap;
+            background-size: 1px auto;
+
+        }
         &--slick{
             margin: 0!important;
             padding: 0 !important;
@@ -570,7 +582,8 @@
         &--slickcon{
             text-align: center;
             line-height: 1!important;
-            a{
+            
+            span{
                 text-decoration: none;
                 color: #fff;
                 background: $cColor;
@@ -585,7 +598,7 @@
         &--slickbtn{
             text-align: center;
             line-height: 1!important;
-            a{
+            span{
                 text-decoration: none;
                 color: #fff;
                 background: $CR;
@@ -787,7 +800,7 @@
             &.is-show{
                 opacity: 1;
                 animation-name:fadeUpAnime0;
-                animation-duration: 2s;
+                animation-duration: 1.3s;
             }
         }
 
@@ -1140,6 +1153,14 @@
                 top: 0;
                 left: 16vw;
             }
+            &--slickline{
+                width: 1px;
+                height: 98vw;
+                position: absolute;
+                top: 0;
+                right: 16vw;
+
+            }
             &--slick{
                 margin: 0!important;
                 padding: 0 !important;
@@ -1283,7 +1304,7 @@
                 width: 100vw;
             }
             &--slickcon{
-                a{
+                span{
                     padding: 11px 35px;
                     font-size: 1.1rem;
                 }
@@ -1298,7 +1319,7 @@
             }
 
             &--slickbtn{    
-                a{
+                span{
                     padding: 11px 35px;
                     font-size: 1.1rem;
                 }
@@ -1498,4 +1519,23 @@
 
 //tablet　画面サイズが750pxからはこのスタイルを読む
 @media screen and (min-width: $BP+1) {
+}
+
+.slick-slide{
+    outline:none;
+    a{
+        text-decoration: none;
+        display: block;
+    }
+}
+
+.slick-slide:focus {
+    outline: none;
+  }
+  
+.phome__product--slickImg{
+    display: block;
+}
+.phome__product--slickImg a{
+    background: #F5F1EE;
 }

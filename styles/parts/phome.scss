@@ -253,7 +253,7 @@
             background-size: 100% auto;
         }
         &--slickline{
-            width: 1px;
+            width: 2px;
             height: 300px;
             position: absolute;
             top: 0;
@@ -1154,12 +1154,12 @@
                 left: 16vw;
             }
             &--slickline{
-                width: 1px;
+                width: 2px;
                 height: 98vw;
                 position: absolute;
                 top: 0;
                 right: 16vw;
-
+                margin: 0;
             }
             &--slick{
                 margin: 0!important;

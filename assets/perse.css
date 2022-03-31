@@ -4650,7 +4650,7 @@ footer * {
 }
 
 .phome__product--slickline {
-  width: 1px;
+  width: 2px;
   height: 300px;
   position: absolute;
   top: 0;
@@ -5614,11 +5614,12 @@ footer * {
   }
 
   .phome__product--slickline {
-    width: 1px;
+    width: 2px;
     height: 98vw;
     position: absolute;
     top: 0;
     right: 16vw;
+    margin: 0;
   }
 
   .phome__product--slick {

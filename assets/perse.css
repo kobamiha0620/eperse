@@ -2816,50 +2816,56 @@ footer * {
 }
 
 .clenz__fv .mySwiper__wrapper {
-  width: 414px;
-  margin: 0 auto 68px;
+  margin: 0 0 0;
+  padding: 0;
   overflow: hidden;
 }
 
 .clenz__fv .mySwiper {
-  width: 460px;
+  margin: 0;
+  padding: 0 38px;
 }
 
 .clenz__fv .swiper__arrow {
   width: 500px;
   position: relative;
   margin: -120px 0 120px;
-  z-index: 0;
 }
 
 .clenz__fv .swiper__arrow .swiper-button-next {
-  background-image: url("//cdn.shopify.com/s/files/1/0618/4593/0220/files/swiper_next.svg");
+  background-image: url("//cdn.shopify.com/s/files/1/0618/4593/0220/files/arrowR.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 100% auto;
   white-space: nowrap;
   text-indent: -9999px;
   display: block;
-  width: 23px;
-  height: 16px;
+  width: 43px;
+  height: 130px;
   position: absolute;
-  right: 0;
-  top: 6px;
+  right: 0px;
+  top: 15px;
+  z-index: 1;
+  background-color: #f4f1ed;
+  background-size: 43px 117px;
 }
 
 .clenz__fv .swiper__arrow .swiper-button-prev {
-  background-image: url("//cdn.shopify.com/s/files/1/0618/4593/0220/files/swiper_prev.svg");
+  background-image: url("//cdn.shopify.com/s/files/1/0618/4593/0220/files/arrowL.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 100% auto;
   white-space: nowrap;
   text-indent: -9999px;
   display: block;
-  width: 23px;
-  height: 16px;
+  width: 42px;
+  height: 130px;
   position: absolute;
   left: 0;
-  top: 6px;
+  top: 15px;
+  z-index: 1;
+  background-color: #f4f1ed;
+  background-size: 43px 117px;
 }
 
 @media screen and (max-width: 750px) {
@@ -2881,13 +2887,11 @@ footer * {
   }
 
   .clenz__fv .mySwiper__wrapper {
-    width: 100vw;
-    margin: 0;
+    margin: 0 0 0 5.3vw;
   }
 
   .clenz__fv .mySwiper {
-    width: 106vw;
-    margin: 0 0 0 5.3vw;
+    margin: 0 0 0;
     padding: 0;
   }
 
@@ -3066,7 +3070,9 @@ footer * {
   }
 }
 .clenz .swiper-button-next.swiper-button-disabled, .clenz .swiper-button-prev.swiper-button-disabled {
-  opacity: 0 !important;
+  opacity: 1 !important;
+  z-index: 1;
+  background-image: none;
 }
 
 footer html, footer body, footer div, footer span, footer object, footer iframe, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, footer blockquote, footer pre, footer abbr, footer address, footer cite, footer code, footer del, footer dfn, footer em, footer img, footer ins, footer kbd, footer q, footer samp, footer small, footer strong, footer sub, footer sup, footer var, footer b, footer i, footer dl, footer dt, footer dd, footer ol, footer ul, footer li, footer fieldset, footer form, footer label, footer legend, footer table, footer caption, footer tbody, footer tfoot, footer thead, footer tr, footer th, footer td, footer article, footer aside, footer canvas, footer details, footer figcaption, footer figure, footer footer, footer header, footer hgroup, footer menu, footer nav, footer section, footer summary, footer time, footer mark, footer audio, footer video {

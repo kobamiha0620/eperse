@@ -931,18 +931,18 @@
 
             &--itemswrapper {
                 overflow-x: scroll;
-                width: 100%;
+                width: 92vw;
                 margin: 0 0 0 8vw;
-                padding-right: 8vw;
+                padding-right: 0;
                 padding-bottom: 12vw;
-                scrollbar-color: $cColor #EBE3DB;
+               -webkit-overflow-scrolling:touch;
 
+                scrollbar-color: $cColor #EBE3DB;
                 &::-webkit-scrollbar {
                     display: block;
                     height: 2px;
 
                 }
-
                 &::-webkit-scrollbar-track {
                     height: 2px;
                     width: 100%;
@@ -956,7 +956,6 @@
                     background-color: $cColor;
                 }
 
-
             }
 
             &--items {
@@ -967,7 +966,7 @@
                 display: flex;
                 margin: 0;
                 padding: 0;
-
+                margin-right: 12vw;
                 li {
                     width: 52.8vw;
                     max-width: 52.8vw;
@@ -985,6 +984,9 @@
                         img {
                             width: 100%;
                         }
+                    }
+                    &:last-child{
+                        margin-right: 8vw;
                     }
                 }
             }

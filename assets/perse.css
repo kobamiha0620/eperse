@@ -1026,10 +1026,11 @@ footer * {
 
   .clenz__other--itemswrapper {
     overflow-x: scroll;
-    width: 100%;
+    width: 92vw;
     margin: 0 0 0 8vw;
-    padding-right: 8vw;
+    padding-right: 0;
     padding-bottom: 12vw;
+    -webkit-overflow-scrolling: touch;
     scrollbar-color: #82b1bc #ebe3db;
   }
 
@@ -1059,6 +1060,7 @@ footer * {
     display: flex;
     margin: 0;
     padding: 0;
+    margin-right: 12vw;
   }
 
   .clenz__other--items li {
@@ -1079,6 +1081,10 @@ footer * {
 
   .clenz__other--items li a img {
     width: 100%;
+  }
+
+  .clenz__other--items li:last-child {
+    margin-right: 8vw;
   }
 
   .clenz__other--txtblc {

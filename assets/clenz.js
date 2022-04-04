@@ -20,7 +20,7 @@ function add_class_in_scrolling(target) {
 
 $(window).on('load scroll', function() {
     add_class_in_scrolling($('.clenz__01'));
-    add_class_in_scrolling($('.clenz__02'));
+    // add_class_in_scrolling($('.clenz__02'));
 });
 
 $(window).scroll(function (){

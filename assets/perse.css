@@ -1132,7 +1132,6 @@ footer * {
 .clenz__buynow--feature {
   width: 115px;
   height: 72px;
-  animation: rotate-anime 3s linear infinite;
   position: absolute;
   top: 70px;
   left: 92px;
@@ -2927,16 +2926,18 @@ footer * {
 }
 .clenz__01 .clenz__01--fadeTxt {
   opacity: 0;
+  transition: ease-in 1000ms;
+  transform: translate(0, 50px);
 }
 
 .clenz__01.is-show .clenz__01--fadeTxt {
   opacity: 1;
-  animation-name: fadeUpAnime0;
-  animation-duration: 2s;
+  animation: rotate-anime 6s linear infinite;
+  transform: translate(0, 0);
 }
 
 .clenz__02 .clenz__02--img {
-  opacity: 0;
+  opacity: 1;
 }
 
 .clenz__02.is-show .clenz__02--img {

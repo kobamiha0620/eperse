@@ -900,11 +900,13 @@ footer * {
   white-space: nowrap;
   text-indent: -9999px;
   display: block;
-  width: 221px;
+  width: 222px;
   height: 28px;
   margin: 0 auto;
   font-size: 0;
   line-height: 1;
+  background-position: 0 0;
+  display: inline-block;
 }
 
 .clenz__other--itemswrapper {
@@ -1009,8 +1011,9 @@ footer * {
   }
 
   .clenz__other--ttl span {
-    width: 39vw;
-    height: 5.2vw;
+    width: 30vw;
+    height: 5.5vw;
+    background-size: 100% auto;
     margin: 0 auto;
   }
 

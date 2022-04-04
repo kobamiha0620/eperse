@@ -796,11 +796,13 @@
 
             span {
                 @include bgimg('ttl_otheritem.svg');
-                width: 221px;
+                width: 222px;
                 height: 28px;
                 margin: 0 auto;
                 font-size: 0;
                 line-height: 1;
+                background-position: 0 0;
+                display: inline-block;
             }
         }
 
@@ -913,8 +915,9 @@
                 font-size: 0;
 
                 span {
-                    width: 39vw;
-                    height: 5.2vw;
+                    width: 30vw;
+                    height: 5.5vw;
+                    background-size: 100% auto;
                     margin: 0 auto;
                 }
             }

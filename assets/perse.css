@@ -89,7 +89,7 @@ footer * {
   font-size: 1.5rem;
   line-height: 1.4;
   position: absolute;
-  text-align: center;
+  text-align: left;
   left: 27px;
   top: 31px;
   margin: 0 !important;
@@ -890,7 +890,6 @@ footer * {
 .clenz__other--ttl {
   text-align: center;
   margin: 0 0 60px;
-  font-size: 0;
 }
 
 .clenz__other--ttl span {
@@ -904,6 +903,8 @@ footer * {
   width: 221px;
   height: 28px;
   margin: 0 auto;
+  font-size: 0;
+  line-height: 1;
 }
 
 .clenz__other--itemswrapper {
@@ -1008,15 +1009,8 @@ footer * {
   }
 
   .clenz__other--ttl span {
-    background-image: url("//cdn.shopify.com/s/files/1/0618/4593/0220/files/ttl_otheritem.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 100% auto;
-    white-space: nowrap;
-    text-indent: -9999px;
-    display: block;
     width: 39vw;
-    height: 4.93vw;
+    height: 5.2vw;
     margin: 0 auto;
   }
 
@@ -2942,7 +2936,7 @@ footer * {
 .clenz__exp02 .fadein01, .clenz__exp02 .fadein02, .clenz__exp02 .fadein03, .clenz__exp02 .fadein04 {
   opacity: 0;
   transition: all 800ms;
-  transform: translate(0, 20px);
+  transform: translate(0, 0);
 }
 
 .clenz__exp02 .fadein01.scrollin, .clenz__exp02 .fadein02.scrollin, .clenz__exp02 .fadein03.scrollin, .clenz__exp02 .fadein04.scrollin {
@@ -3068,6 +3062,10 @@ footer * {
     height: 232vw;
   }
 }
+.clenz .swiper-button-next.swiper-button-disabled, .clenz .swiper-button-prev.swiper-button-disabled {
+  opacity: 0 !important;
+}
+
 footer html, footer body, footer div, footer span, footer object, footer iframe, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, footer blockquote, footer pre, footer abbr, footer address, footer cite, footer code, footer del, footer dfn, footer em, footer img, footer ins, footer kbd, footer q, footer samp, footer small, footer strong, footer sub, footer sup, footer var, footer b, footer i, footer dl, footer dt, footer dd, footer ol, footer ul, footer li, footer fieldset, footer form, footer label, footer legend, footer table, footer caption, footer tbody, footer tfoot, footer thead, footer tr, footer th, footer td, footer article, footer aside, footer canvas, footer details, footer figcaption, footer figure, footer footer, footer header, footer hgroup, footer menu, footer nav, footer section, footer summary, footer time, footer mark, footer audio, footer video {
   margin: 0;
   padding: 0;

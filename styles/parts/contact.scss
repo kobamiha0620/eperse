@@ -7,7 +7,7 @@
     font-size: 1.5rem;
     line-height: 1.4;
     position: absolute;
-    text-align: center;
+    text-align: left;
     left: 27px;
     top: 31px;
     margin: 0 !important;
@@ -793,13 +793,14 @@
         &--ttl {
             text-align: center;
             margin: 0 0 60px;
-            font-size: 0;
 
             span {
                 @include bgimg('ttl_otheritem.svg');
                 width: 221px;
                 height: 28px;
                 margin: 0 auto;
+                font-size: 0;
+                line-height: 1;
             }
         }
 
@@ -912,9 +913,8 @@
                 font-size: 0;
 
                 span {
-                    @include bgimg('ttl_otheritem.svg');
                     width: 39vw;
-                    height: 4.93vw;
+                    height: 5.2vw;
                     margin: 0 auto;
                 }
             }
@@ -2870,7 +2870,7 @@
         .fadein01, .fadein02, .fadein03, .fadein04{
             opacity: 0;
             transition: all 800ms;
-            transform : translate(0, 20px);
+            transform : translate(0, 0);
             &.scrollin{
                 opacity: 1;
                 transform : translate(0, 0);
@@ -2990,4 +2990,11 @@
         }
     }
     
+}
+
+.clenz{
+    .swiper-button-next.swiper-button-disabled, 
+    .swiper-button-prev.swiper-button-disabled{
+        opacity: 0!important;
+    }
 }

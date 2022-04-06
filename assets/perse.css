@@ -3271,6 +3271,10 @@ footer * {
   cursor: pointer;
 }
 
+.footer .gmenu__official {
+  display: none;
+}
+
 @keyframes loop {
   0% {
     transform: translateX(100%);
@@ -3295,6 +3299,19 @@ footer * {
   width: 100vw;
   border-top: solid 1px #e8e3dd;
   border-bottom: solid 1px #e8e3dd;
+}
+
+.gmenu__official {
+  border-bottom: solid 1px #e8e3dd;
+}
+
+.gmenu__official a {
+  padding: 28px 18px 24px;
+  text-decoration: none;
+  color: #f08984;
+  font-size: 1.45rem;
+  line-height: 1;
+  display: block;
 }
 
 .gmenu__inner {
@@ -3520,6 +3537,10 @@ footer * {
 
 #nudie-beige .gmenu__list a.borderR, #teddy-brown .gmenu__list a.borderR, #air-gray .gmenu__list a.borderR, #palm-green .gmenu__list a.borderR {
   border-right: solid 1px #82b1bc;
+}
+
+#nudie-beige .gmenu__official a, #teddy-brown .gmenu__official a, #air-gray .gmenu__official a, #palm-green .gmenu__official a {
+  color: #82b1bc;
 }
 
 #nudie-beige .gmenu__product--ttl, #teddy-brown .gmenu__product--ttl, #air-gray .gmenu__product--ttl, #palm-green .gmenu__product--ttl {
@@ -3775,6 +3796,7 @@ footer * {
 
   .gmenu__links a {
     font-size: 1.45rem;
+    display: block;
   }
 
   .gmenu__links--left {
@@ -4064,12 +4086,14 @@ footer * {
 
 #headerMenu .gmenu__links--left ul li {
   margin: 0;
-  padding: 10px 0;
   line-height: 1;
+  padding: 0;
 }
 
 #headerMenu .gmenu__links--left ul li a {
   line-height: 1;
+  padding: 10px 0;
+  display: block;
 }
 
 #headerMenu .gmenu__links--left .gmenu__links--leftL {

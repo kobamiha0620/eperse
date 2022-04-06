@@ -3272,7 +3272,13 @@ footer * {
 }
 
 .footer .gmenu__official {
-  display: none;
+  border-bottom: none;
+  border-top: solid 1px #e8e3dd;
+}
+
+.footer .gmenu__official a {
+  padding: 36px 9%;
+  display: block;
 }
 
 @keyframes loop {
@@ -3629,6 +3635,16 @@ footer * {
     display: none;
   }
 
+  .footer .gmenu__official {
+    border-top: none;
+    border-bottom: solid 1px #e8e3dd;
+  }
+
+  .footer .gmenu__official a {
+    padding: 5.4vw 3.4vw;
+    display: block;
+  }
+
   .gmenu__wrapper {
     padding: 0 5.3%;
     border-top: none;
@@ -3860,6 +3876,16 @@ footer * {
   .gmenu__links--snslist a {
     width: 19px;
     height: 18px;
+  }
+
+  .gmenu__official {
+    border-bottom: solid 1px #e8e3dd;
+    border-top: none;
+  }
+
+  .gmenu__official a {
+    display: block;
+    padding: 5.4vw 3.4vw 5.4vw;
   }
 
   .gmenu__btm {

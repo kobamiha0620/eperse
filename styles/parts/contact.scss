@@ -113,7 +113,6 @@
             margin: 0 auto;
         }
 
-
         &__01 {
             border-top: solid 1px $c01;
             @extend %clenz01blc;
@@ -139,6 +138,10 @@
             &--fadeTxt {
                 @extend %clenz01rfade;
 
+                img{
+                    animation: rotate-anime 6s linear infinite;
+
+                }
             }
 
             &--name {
@@ -275,6 +278,11 @@
 
             &--fadeTxt {
                 @extend %clenz01rfade;
+
+                img{
+                    animation: rotate-anime 6s linear infinite;
+
+                }
             }
 
             &--name {
@@ -492,7 +500,13 @@
 
             &--fadeTxt {
                 @extend %clenz01rfade;
+
+                img{
+                    animation: rotate-anime 6s linear infinite;
+
+                }
             }
+
 
             &--name {
                 @include bgimg('img_clenz03_01c.svg');
@@ -574,7 +588,13 @@
 
             &--fadeTxt {
                 @extend %clenz01rfade;
+
+                img{
+                    animation: rotate-anime 6s linear infinite;
+
+                }
             }
+
 
             &--name {
                 @include bgimg('img_clenz04_01c.svg');
@@ -2862,8 +2882,11 @@
                 opacity: 1;
                 // animation-name:fadeUpAnime0;
                 // animation-duration: 2s;
-                animation: rotate-anime 6s linear infinite;
                 transform : translate(0, 0);
+                img{
+                    animation: rotate-anime 6s linear infinite;
+
+                }
             }
         }
     }

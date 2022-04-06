@@ -210,6 +210,10 @@ footer * {
   width: 100%;
 }
 
+#clenz01 .clenz__01--fadeTxt img {
+  animation: rotate-anime 6s linear infinite;
+}
+
 #clenz01 .clenz__01--name {
   background-image: url("//cdn.shopify.com/s/files/1/0618/4593/0220/files/img_clenz01_01c.svg");
   background-repeat: no-repeat;
@@ -330,6 +334,10 @@ footer * {
 
 #clenz02 .clenz__01--img img {
   width: 100%;
+}
+
+#clenz02 .clenz__01--fadeTxt img {
+  animation: rotate-anime 6s linear infinite;
 }
 
 #clenz02 .clenz__01--name {
@@ -569,6 +577,10 @@ footer * {
   width: 100%;
 }
 
+#clenz03 .clenz__01--fadeTxt img {
+  animation: rotate-anime 6s linear infinite;
+}
+
 #clenz03 .clenz__01--name {
   background-image: url("//cdn.shopify.com/s/files/1/0618/4593/0220/files/img_clenz03_01c.svg");
   background-repeat: no-repeat;
@@ -641,6 +653,10 @@ footer * {
 
 #clenz04 .clenz__01--img img {
   width: 100%;
+}
+
+#clenz04 .clenz__01--fadeTxt img {
+  animation: rotate-anime 6s linear infinite;
 }
 
 #clenz04 .clenz__01--name {
@@ -2932,8 +2948,11 @@ footer * {
 
 .clenz__01.is-show .clenz__01--fadeTxt {
   opacity: 1;
-  animation: rotate-anime 6s linear infinite;
   transform: translate(0, 0);
+}
+
+.clenz__01.is-show .clenz__01--fadeTxt img {
+  animation: rotate-anime 6s linear infinite;
 }
 
 .clenz__02 .clenz__02--img {

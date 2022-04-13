@@ -53,54 +53,26 @@ $('.product__slick').slick({
 
 
   function contact(){
-    const span = $('#js-online');
-    const slide = $('#js-slide');
-
+    let span = $('.js-online');
+    let slide = $('.clenz__btn--list');
+    
     span.on('click', function(e){
       e.stopPropagation();
-      if(span.hasClass('isShow')){
-        span.removeClass('isShow');
-        $(slide).slideUp(300);
-        
+      if($(this).hasClass('isShow')){
+        $(this).removeClass('isShow');
+        $(this).next('.clenz__btn--list').slideUp(300);
       }else{
-        span.addClass('isShow');
-        $(slide).slideDown(300);
-
+        $(this).addClass('isShow');
+        $(this).next('.clenz__btn--list').slideDown(300);
       }
     });
 
-    slide.on('mouseleave',function(e){
+    slide.mouseleave(function(e){
       e.stopPropagation();
-      span.removeClass('isShow');
-      $(slide).slideUp(300);
-
+      $(this).prev('.js-online').removeClass('isShow');
+      $(this).slideUp(300);
     });
 
 
-
-    const span2 = $('#js-online2');
-    const slide2 = $('#js-slide2');
-
-
-
-    span2.on('click', function(e){
-      e.stopPropagation();
-      if(span2.hasClass('isShow')){
-        span2.removeClass('isShow');
-        $(slide2).slideUp(300);
-        
-      }else{
-        span2.addClass('isShow');
-        $(slide2).slideDown(300);
-
-      }
-    });
-
-    slide2.on('mouseleave',function(e){
-      e.stopPropagation();
-      span2.removeClass('isShow');
-      $(slide2).slideUp(300);
-
-    });
   }
   contact();

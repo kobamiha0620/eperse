@@ -32,7 +32,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "collection",
-        "collection": "collection-all",
+        "collection": "all",
         "products_to_show": 4,
         "show_view_all": true,
         "swipe_on_mobile": false,
@@ -71,7 +71,7 @@
         "a932e6f1-cb73-4da9-9d59-60fb22a40971": {
           "type": "featured_collection",
           "settings": {
-            "collection": "collection-all"
+            "collection": "all"
           }
         }
       },

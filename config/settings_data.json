@@ -17,15 +17,25 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "4.22(FRI)〜カラーコンタクトレンズ発売開始",
               "color_scheme": "accent-1",
               "link": ""
             }
+          },
+          "83c23dc0-af02-4dce-ace1-9093e716aed2": {
+            "type": "announcement",
+            "settings": {
+              "text": "4\/13(WED)偽SNSアカウントにご注意ください",
+              "color_scheme": "accent-1",
+              "link": "shopify:\/\/blogs\/ニュース\/4-13wed偽snsアカウントにご注意ください"
+            }
           }
         },
         "block_order": [
-          "announcement-bar-0"
+          "announcement-bar-0",
+          "83c23dc0-af02-4dce-ace1-9093e716aed2"
         ],
         "settings": {
         }

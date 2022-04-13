@@ -20,7 +20,6 @@ var swiper2 = new Swiper(".mySwiper2", {
   slidesPerView: 1,
   thumbs: {
     swiper: swiper,
-  },
+  }
 });
-
 

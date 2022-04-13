@@ -1230,16 +1230,50 @@ footer * {
 }
 .clenz__btn {
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
+  width: 492px;
+  position: relative;
 }
 
-.clenz__btn a {
+.clenz__btn--list {
+  display: none;
+  position: absolute;
+  top: 54px;
+  width: 100%;
+  border: solid 1px #82b1bc;
+  background: #fff;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+.clenz__btn--list li {
+  list-style-type: none;
+  border-top: solid 1px #82b1bc;
+}
+
+.clenz__btn--list li a {
+  text-decoration: none;
+  display: block;
+  color: #82b1bc;
+  line-height: 1;
+  padding: 20px 0;
+  background-image: url(//cdn.shopify.com/s/files/1/0618/4593/0220/files/c_arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 50px top 20px;
+  background-size: 8px 15px;
+}
+
+.clenz__btn span {
+  font-family: "Outfit", sans-serif;
   background: #82b1bc;
   text-align: center;
   display: block;
   color: #fff;
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 2rem;
   border-radius: 30px;
   line-height: 1;
   padding: 22px 0 0;
@@ -1248,28 +1282,72 @@ footer * {
   background-size: 22px 23px;
   background-repeat: no-repeat;
   background-position: right 50px top 18px;
-  width: 492px;
+  width: 100%;
   height: 62px;
+  transition: all 0.4s ease;
 }
 
-.clenz__btn a:hover {
-  opacity: 0.8;
+.clenz__btn span.isShow {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-top: 19px;
+  background-image: url(//cdn.shopify.com/s/files/1/0618/4593/0220/files/batsu.svg);
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: right 50px top 23px;
+  transition: all 0.2s ease;
 }
 
 @media screen and (max-width: 750px) {
   .clenz__btn {
-    margin: 0 6.4vw;
+    margin: 0;
+    width: 100%;
   }
 
-  .clenz__btn a {
+  .clenz__btn--wrapper {
+    margin: 0 auto;
+    padding: 0 5.6vw;
+  }
+
+  .clenz__btn--list {
+    top: 52px;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+  }
+
+  .clenz__btn--list li a {
+    padding: 15px 0;
+    background-position: right 8vw top 15px;
+    background-size: 5px 10px;
     font-size: 1.3rem;
-    padding: 19px 0 0;
-    background-image: url(//cdn.shopify.com/s/files/1/0618/4593/0220/files/bg_btn.svg);
-    background-size: 16px 17px;
-    background-repeat: no-repeat;
-    background-position: right 28px top 16px;
-    width: 100%;
+  }
+
+  .clenz__btn span {
+    font-size: 1.5rem;
+    line-height: 0.9;
+    padding: 20px 0;
     height: 52px;
+    max-height: 52px;
+    background-image: url(//cdn.shopify.com/s/files/1/0618/4593/0220/files/bg_btn.svg);
+    background-size: 17px 16px;
+    background-repeat: no-repeat;
+    background-position: right 8vw top 17px;
+    width: 100%;
+    border-radius: 28px;
+  }
+
+  .clenz__btn span.isShow {
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 20px 0;
+    background-image: url(//cdn.shopify.com/s/files/1/0618/4593/0220/files/batsu.svg);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: right 8vw top 21px;
   }
 }
 .clenz__disablebtn {

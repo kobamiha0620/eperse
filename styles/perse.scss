@@ -527,8 +527,10 @@ header-drawer {
             display: flex;
             align-items: center;
             width: 100%;
-            animation-name: fadeRtAnime;
-            animation-duration: 16s;
+            animation-name: fadeTopBar;
+            animation-duration: 7s;
+            animation-delay: 150ms; 
+            animation-timing-function: linear;
             animation-iteration-count: infinite;
         }
     }
@@ -542,29 +544,33 @@ header-drawer {
     }
 }
 
-@keyframes fadeRtAnime{
+@keyframes fadeTopBar{
     0% {
         opacity: 0;
         transform: translateY(-100px);
     }
-    23% {
+    20% {
+        opacity: 0;
+
         transform: translateY(-100px);
-        opacity: 1;
     }
-    33% {
-        transform: translateY(0);
+    30% {
         opacity: 1;
-    }
-    66% {
+
         transform: translateY(0);
-        opacity: 1;
     }   
-    76% {
-        transform: translateY(0);
+    80% {
         opacity: 1;
+        transform: translateY(0);
+    }
+    90% {
+        opacity: 0;
+
+        transform: translateY(-100px);
     }
     100%{
         opacity: 0;
+
         transform: translateY(-100px);
     }
 }

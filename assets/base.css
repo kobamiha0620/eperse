@@ -2468,3 +2468,17 @@ details-disclosure > details {
 #palm-green .header-wrapper{
   background: #F7F2EF!important;
 }
+
+
+@media screen and (max-width: 750px) {
+  .announcement-bar__message {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 33px;
+    align-items: center;
+    
+  }
+
+  
+}

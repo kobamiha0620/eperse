@@ -31,11 +31,20 @@
               "color_scheme": "accent-1",
               "link": "shopify:\/\/blogs\/ニュース\/4-13wed偽snsアカウントにご注意ください"
             }
+          },
+          "aa1ea613-c85a-46c5-827c-605421b67b3c": {
+            "type": "announcement",
+            "settings": {
+              "text": "ＧＷ期間中の発送についてのお知らせ",
+              "color_scheme": "accent-1",
+              "link": "shopify:\/\/blogs\/ニュース\/ｇｗ期間中の発送についてのお知らせ"
+            }
           }
         },
         "block_order": [
           "announcement-bar-0",
-          "83c23dc0-af02-4dce-ace1-9093e716aed2"
+          "83c23dc0-af02-4dce-ace1-9093e716aed2",
+          "aa1ea613-c85a-46c5-827c-605421b67b3c"
         ],
         "settings": {
         }

@@ -2471,14 +2471,18 @@ details-disclosure > details {
 
 
 @media screen and (max-width: 750px) {
-  .announcement-bar__message {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  .announcement-bar a{
     height: 33px;
-    align-items: center;
-    
+    display: block;
   }
+  .announcement-bar__message {
+    position: relative;
 
+  }
+  .announcement-bar__link .icon-arrow{
+    right: -3px;
+    position: absolute;
+    padding-top: 1px;
+  }
   
 }

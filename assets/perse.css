@@ -10228,3 +10228,57 @@ header-drawer {
 #MainContent .shopify-policy__container {
   display: none;
 }
+
+#shopify-section-announcement-bar {
+  position: relative;
+  width: 100%;
+}
+
+#shopify-section-announcement-bar .announcement-bar {
+  border: none;
+}
+
+#shopify-section-announcement-bar .announcement-bar + .announcement-bar {
+  position: absolute;
+  height: 50px;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  animation-name: fadeRtAnime;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 750px) {
+  #shopify-section-announcement-bar .announcement-bar + .announcement-bar {
+    height: 33px;
+  }
+}
+@keyframes fadeRtAnime {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  23% {
+    transform: translateY(-100px);
+    opacity: 1;
+  }
+  33% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  66% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  76% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}

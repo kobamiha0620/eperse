@@ -9297,6 +9297,14 @@ footer * {
   background-color: #f4efec;
 }
 
+.homePerse .modal-window.campaign02 {
+  padding: 0;
+  background: url("//cdn.shopify.com/s/files/1/0618/4593/0220/files/img_popupPc2.png?v=1650427602") no-repeat 0 0;
+  min-height: 421px;
+  background-size: 314px 421px;
+  background-color: #f4efec;
+}
+
 .homePerse .modal__frame {
   width: 630px;
   height: 364px;
@@ -9508,6 +9516,28 @@ footer * {
   display: inline-block;
 }
 
+.homePerse .modal__closeBtn02 {
+  color: #f08984;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 18px 0 0 !important;
+}
+
+.homePerse .modal__closeBtn02 .close {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/modal_close.svg?v=1645165461") no-repeat 0 0;
+  margin-right: 5px;
+  background-size: 100% auto;
+  width: 10px;
+  height: 10px;
+  white-space: nowrap;
+  text-indent: -9999px;
+  display: inline-block;
+}
+
 .homePerse .modal__campaign {
   margin: 35px 0 0 346px;
   width: 325px;
@@ -9546,6 +9576,71 @@ footer * {
   display: none;
 }
 
+.homePerse .modal__campaign02 {
+  margin: 35px 0 0 346px;
+  width: 325px;
+}
+
+.homePerse .modal__campaign02--ttl {
+  background-image: url("//cdn.shopify.com/s/files/1/0618/4593/0220/files/ttl_presentCampaign.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% auto;
+  white-space: nowrap;
+  text-indent: -9999px;
+  display: block;
+  width: 290px;
+  height: 55px;
+  margin: 0 auto 36px !important;
+  color: #f08984;
+}
+
+.homePerse .modal__campaign02--txt {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #f08984;
+  line-height: 1.6;
+  margin: 0 0 0 !important;
+}
+
+.homePerse .modal__campaign02--note {
+  font-size: 1rem;
+  line-height: 1.9;
+  margin: 21px 0 75px !important;
+  color: #f08984;
+}
+
+.homePerse .modal__campaign02 .pc {
+  display: block;
+}
+
+.homePerse .modal__campaign02 .sp {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .homePerse .modal__campaign02 {
+    margin: 58.13vw 0 0 0;
+    width: 100%;
+    padding: 3.3vw 7vw;
+  }
+
+  .homePerse .modal__campaign02--ttl {
+    width: 56vw;
+    height: 10.6vw;
+    margin: 0 auto 7vw !important;
+  }
+
+  .homePerse .modal__campaign02--txt {
+    display: none;
+  }
+
+  .homePerse .modal__campaign02--note {
+    font-size: 10px;
+    line-height: 1.7;
+    margin: 0 0 8.6vw !important;
+  }
+}
 @keyframes slidePopup {
   0% {
     opacity: 0;
@@ -9579,6 +9674,18 @@ footer * {
   .homePerse .modal-window.campaign {
     padding: 0;
     background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_popupSpb_1.png?v=1647336761") no-repeat 0 0;
+    min-height: 58.13vw;
+    background-size: 100% auto;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 9.46vw;
+    border-bottom-left-radius: 9.46vw;
+    background-color: #f4efec;
+  }
+
+  .homePerse .modal-window.campaign02 {
+    padding: 0;
+    background: url("//cdn.shopify.com/s/files/1/0618/4593/0220/files/img_popupSp2.png?v=1650427602") no-repeat 0 0;
     min-height: 58.13vw;
     background-size: 100% auto;
     border-top-left-radius: 0;
@@ -9744,6 +9851,16 @@ footer * {
   .homePerse .modal__closeBtn {
     font-size: 11px;
     margin: 0 0 0 !important;
+  }
+
+  .homePerse .modal__closeBtn02 {
+    font-size: 3vw;
+    margin: 0 0 0 !important;
+  }
+
+  .homePerse .modal__closeBtn02 .close {
+    width: 3vw;
+    height: 3vw;
   }
 
   .homePerse .modal__campaign {

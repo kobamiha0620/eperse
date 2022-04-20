@@ -34,7 +34,13 @@
             min-height: 421px;
             background-size: auto 421px;
             background-color: #F4EFEC;
-
+        }
+        &.campaign02{
+            padding: 0;
+            background: url('#{$assets_path}img_popupPc2.png?v=1650427602') no-repeat 0 0;
+            min-height: 421px;
+            background-size: 314px 421px;
+            background-color: #F4EFEC;
         }
     }
 
@@ -240,6 +246,26 @@
                 display: inline-block;
             }
         }
+        &__closeBtn02{
+            color: $CR;
+            font-size: 13px;
+            cursor: pointer;
+            font-family: 'Outfit', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 18px 0 0!important;
+            .close {
+                background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/modal_close.svg?v=1645165461') no-repeat 0 0;
+                margin-right: 5px;
+                background-size: 100% auto;
+                width: 10px;
+                height: 10px;
+                white-space: nowrap;
+                text-indent: -9999px;
+                display: inline-block;
+            }
+        }
         &__campaign{
             margin: 35px 0 0 346px;
             width: 325px;
@@ -274,7 +300,55 @@
                 display: none;
             }
         }
+        &__campaign02{
+            margin: 35px 0 0 346px;
+            width: 325px;
+            &--ttl{
+                @include bgimg('ttl_presentCampaign.svg');
+                width: 290px;
+                height: 55px;
+                margin: 0 auto 36px!important;
+                color: $CR;
+            }
+            &--txt{
+                font-weight: bold;
+                font-size: 1.3rem;
+                color: $CR;
+                line-height: 1.6;
+                margin: 0 0 0!important;
+            }
+            &--note{
+                font-size: 1rem;
+                line-height: 1.9;
+                margin: 21px 0 75px!important;
+                color: $CR;
+            }
+            .pc{
+                display: block;
+            }
+            .sp{
+                display: none;
+            }
+            @media screen and (max-width: $BP) {
+                margin: 58.13vw 0 0 0;
+                width: 100%;
+                padding: 3.3vw 7vw;
 
+                &--ttl{
+                    width: 56vw;
+                    height: 10.6vw;
+                    margin: 0 auto 7vw!important;
+                }
+                &--txt{
+                    display: none;
+                }
+                &--note{
+                    font-size: 10px;
+                    line-height: 1.7;
+                    margin: 0 0 8.6vw!important;
+                }
+            }
+        }
     }
 }
 
@@ -324,7 +398,17 @@
                 border-top-right-radius: 9.46vw;
                 border-bottom-left-radius: 9.46vw;
                 background-color: #F4EFEC;
-
+            }
+            &.campaign02{
+                padding: 0;
+                background: url('#{$assets_path}img_popupSp2.png?v=1650427602') no-repeat 0 0;
+                min-height: 58.13vw;
+                background-size: 100% auto;
+                border-top-left-radius: 0;
+                border-bottom-right-radius: 0;
+                border-top-right-radius: 9.46vw;
+                border-bottom-left-radius: 9.46vw;
+                background-color: #F4EFEC;
             }
         }
 
@@ -479,6 +563,14 @@
                 font-size: 11px;
                 margin: 0 0 0!important;
             }
+            &__closeBtn02{
+                font-size: 3vw;
+                margin: 0 0 0!important;
+                .close {
+                    width: 3vw;
+                    height: 3vw;
+                }
+            }
             &__campaign{
                 margin: 58.13vw 0 0 0;
                 width: 100%;
@@ -503,6 +595,7 @@
                     margin: 14px 0 3vw!important;
                 }
             }
+
         }
     }
 }

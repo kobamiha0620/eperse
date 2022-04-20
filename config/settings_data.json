@@ -17,7 +17,6 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "4.22(FRI)〜カラーコンタクトレンズ発売開始",
               "color_scheme": "accent-1",
@@ -26,6 +25,7 @@
           },
           "83c23dc0-af02-4dce-ace1-9093e716aed2": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "4\/13(WED)偽SNSアカウントにご注意ください",
               "color_scheme": "accent-1",

@@ -34,6 +34,7 @@
           },
           "aa1ea613-c85a-46c5-827c-605421b67b3c": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "ＧＷ期間中の発送についてのお知らせ",
               "color_scheme": "accent-1",

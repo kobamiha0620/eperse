@@ -2,6 +2,7 @@
   "sections": {
     "1643978356489413d1": {
       "type": "instafeed",
+      "disabled": true,
       "settings": {
         "heading_font": "helvetica_n4",
         "heading_size": 20,
@@ -11,6 +12,7 @@
     },
     "16442370952639d861": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"footer__insta\">\n\n    <div class=\"footer__icon\">\n      <a href=\"https:\/\/www.instagram.com\/official_perse\/\" target=\"_blank\" class=\"footer__insta--link\">follow us on Instagram<\/a>\n      <div class=\"footer__icon--scroll\">\n        <span class=\"footer__icon--left\" id=\"js-left\"><\/span>\n        <span class=\"footer__icon--right\" id=\"js-right\"><\/span>\n      <\/div>\n    <\/div>\n    <\/div>"
       }

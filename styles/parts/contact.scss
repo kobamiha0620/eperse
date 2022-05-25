@@ -1178,6 +1178,18 @@
                 }
             }
         }
+        &--btmtxt{
+            margin: 20px 0 !important;
+            text-align: center;
+            font-size: 1.4rem;
+            a{
+                text-decoration: none;
+                color: $cColor;
+                display: block;
+                border-bottom: solid 1px $cColor;
+                display: inline-block;
+            }
+        }
         span {
             font-family: 'Outfit', sans-serif;
             background: $cColor;

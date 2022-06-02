@@ -610,3 +610,134 @@
 @media screen and (min-width: 990px) {
     .homePerse {}
 }
+.homePerse {
+    .modal-window {
+        &.campaign02{
+            padding: 0;
+            background: url('#{$assets_path}img_campaign300.png?v=1654160719') no-repeat 0 0;
+            min-height: 421px;
+            background-size: 330px 421px;
+            background-color: #F4EFEC;
+            
+        }
+    }
+    .modal{
+        &__campaign02{
+            margin: 40px 0 0 360px;
+            width: 310px;
+            &--300{
+                text-align: center;
+                span{
+                    background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/ttl_campaing300.svg?v=1654161043') no-repeat 0 0;
+                    background-size: 100% auto;
+                    display: inline-block;
+                    width: 290px;
+                    height: 54px;
+                    white-space: nowrap;
+                    text-indent: -9999px;
+                }
+
+            }
+            &--txt{
+                font-weight: 300;
+                margin: 18px 0!important;
+            }
+            &--blc{
+                border-top: solid 1px $CR;
+                border-bottom: solid 1px $CR;
+                position: relative;
+                margin-top: 30px;
+                margin-bottom: 36px;
+                padding-bottom: 20px;
+            }
+            &--subttl{
+                margin: -10px auto 10px!important;
+                text-align: center;
+                span{
+                    display: inline-block;
+                    margin: 0 auto;
+                    background: $BG;
+                    padding: 0 8px;
+                    font-size: 14px;
+                }
+            }
+            &--lists{
+                display: flex;
+                justify-content: space-between;
+                span{
+                    font-size: 10px;
+                    display: inline-block;
+                }
+                a{
+                    color: $CR;
+                    font-size: 10px;
+                    margin: 0!important;
+                    text-decoration: none;
+
+                }
+                p{
+                    margin: 0!important;
+                    line-height: 1.2;
+                }
+            }
+            &--listsblc{
+                width: 50%;
+                min-width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $BP) {
+    .homePerse {
+        .modal-window {
+            width: 87vw;
+            height: auto;
+            display: block;
+            padding: 11.2vw 6.2vw 5.33vw;
+            border-top-left-radius: 9.46vw;
+            border-bottom-right-radius: 9.46vw;
+
+            &.campaign02{
+                margin: 0!important;
+                padding: 0;
+                background: url('#{$assets_path}img_campaign300sp.png?v=1654163512') no-repeat 0 0;
+                min-height: 58.13vw;
+                background-size: 100% auto;
+                border-top-left-radius: 0;
+                border-bottom-right-radius: 0;
+                border-top-right-radius: 9.46vw;
+                border-bottom-left-radius: 9.46vw;
+                background-color: #F4EFEC;
+            }
+        }
+        .modal{
+            &__campaign02{
+                width: auto;
+                margin: 68vw 0 0 0;
+                padding: 3vw 5vw;
+                &--txt{
+                    display: block;
+                    margin:  0!important;
+                    &.spnone{
+                        display: none;
+                    }
+                }
+                &--300{
+                    text-align: center;
+                    margin-top: 0!important;
+                    span{
+                        background-size: 100% auto;
+                        display: inline-block;
+                        width: 54.2vw;
+                        height: 10.2vw;
+                    }
+    
+                }
+                &--blc{
+                    margin: 20px 0 16px;
+                }
+            }
+        }
+    }
+}

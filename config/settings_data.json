@@ -17,7 +17,6 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "4.22(FRI)〜カラーコンタクトレンズ発売開始",
               "color_scheme": "accent-1",
@@ -35,6 +34,7 @@
           },
           "aa1ea613-c85a-46c5-827c-605421b67b3c": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "6\/3(金)よりLILY ANNA各店舗で perseの販売を開始",
               "color_scheme": "accent-1",

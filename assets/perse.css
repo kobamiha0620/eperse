@@ -6205,6 +6205,24 @@ footer * {
   background: #f5f1ee;
 }
 
+.phome__product--price .beforesale {
+  text-decoration: line-through;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.product__de--price .beforesale {
+  text-decoration: line-through;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.product__others--price .beforesale {
+  text-decoration: line-through;
+  display: inline-block;
+  margin-right: 3px;
+}
+
 footer html, footer body, footer div, footer span, footer object, footer iframe, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, footer blockquote, footer pre, footer abbr, footer address, footer cite, footer code, footer del, footer dfn, footer em, footer img, footer ins, footer kbd, footer q, footer samp, footer small, footer strong, footer sub, footer sup, footer var, footer b, footer i, footer dl, footer dt, footer dd, footer ol, footer ul, footer li, footer fieldset, footer form, footer label, footer legend, footer table, footer caption, footer tbody, footer tfoot, footer thead, footer tr, footer th, footer td, footer article, footer aside, footer canvas, footer details, footer figcaption, footer figure, footer footer, footer header, footer hgroup, footer menu, footer nav, footer section, footer summary, footer time, footer mark, footer audio, footer video {
   margin: 0;
   padding: 0;

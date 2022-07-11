@@ -18,18 +18,17 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "7月16日23:59まで ！リップバームキャンペーン",
+              "text": "7.12(TUE)三上悠亜さんコラボ動画が公開",
               "color_scheme": "accent-1",
               "link": ""
             }
           },
           "83c23dc0-af02-4dce-ace1-9093e716aed2": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "4\/13(WED)偽SNSアカウントにご注意ください",
+              "text": "7.12(TUE)〜16(SAT)送料無料＋100円OFFキャンペーン実施中",
               "color_scheme": "accent-1",
-              "link": "shopify:\/\/blogs\/ニュース\/4-13wed偽snsアカウントにご注意ください"
+              "link": ""
             }
           },
           "aa1ea613-c85a-46c5-827c-605421b67b3c": {

@@ -10600,3 +10600,7 @@ header-drawer {
 #nudie-beige .announcement-bar + .announcement-bar, #teddy-brown .announcement-bar + .announcement-bar, #air-gray .announcement-bar + .announcement-bar, #palm-green .announcement-bar + .announcement-bar {
   border-top: solid 1px #f5f1ee;
 }
+
+.announcement-bar__link {
+  padding: 0 !important;
+}

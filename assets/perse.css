@@ -10592,3 +10592,11 @@ header-drawer {
 .announcement-bar {
   height: auto;
 }
+
+#nudie-beige #shopify-section-announcement-bar, #teddy-brown #shopify-section-announcement-bar, #air-gray #shopify-section-announcement-bar, #palm-green #shopify-section-announcement-bar {
+  background: #82b1bc !important;
+}
+
+#nudie-beige .announcement-bar + .announcement-bar, #teddy-brown .announcement-bar + .announcement-bar, #air-gray .announcement-bar + .announcement-bar, #palm-green .announcement-bar + .announcement-bar {
+  border-top: solid 1px #f5f1ee;
+}

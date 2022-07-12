@@ -625,3 +625,16 @@ header-drawer {
 .announcement-bar{
     height: auto;
 }
+#nudie-beige, #teddy-brown, #air-gray, #palm-green{
+    #shopify-section-announcement-bar{
+        background: #82B1BC!important;
+    }
+    .announcement-bar{   
+
+        &+ .announcement-bar{
+            border-top: solid 1px #f5f1ee;
+
+
+        }
+     }
+}

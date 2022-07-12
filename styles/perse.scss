@@ -306,7 +306,6 @@ header-drawer {
     height: 50px;
     align-items: center;
     display: flex;
-
     p {
         text-align: left;
     }
@@ -429,7 +428,6 @@ header-drawer {
     .announcement-bar {
         justify-content: center;
         height: 33px;
-
         p {
             text-align: center;
         }
@@ -513,36 +511,36 @@ header-drawer {
     }
 }
 
-//告知バー
-#shopify-section-announcement-bar{
-    position: relative;
-    width: 100%;
-    .announcement-bar{
-        border: none;
-        &+ .announcement-bar{
-            position: absolute;
-            height: 50px;
-            top: 0;
-            left: 0;
-            display: flex;
-            align-items: center;
-            width: 100%;
-            animation-name: fadeTopBar;
-            animation-duration: 7s;
-            animation-delay: 150ms; 
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-        }
-    }
-    @media screen and (max-width: $BP) {
-        .announcement-bar{
-            &+ .announcement-bar{
-                height: 33px;
-            }
+//告知バー　切り替え
+// #shopify-section-announcement-bar{
+//     position: relative;
+//     width: 100%;
+//     .announcement-bar{
+//         border: none;
+//         &+ .announcement-bar{
+//             position: absolute;
+//             height: 50px;
+//             top: 0;
+//             left: 0;
+//             display: flex;
+//             align-items: center;
+//             width: 100%;
+//             animation-name: fadeTopBar;
+//             animation-duration: 7s;
+//             animation-delay: 150ms; 
+//             animation-timing-function: linear;
+//             animation-iteration-count: infinite;
+//         }
+//     }
+//     @media screen and (max-width: $BP) {
+//         .announcement-bar{
+//             &+ .announcement-bar{
+//                 height: 33px;
+//             }
 
-        }
-    }
-}
+//         }
+//     }
+// }
 
 @keyframes fadeTopBar{
     0% {
@@ -573,4 +571,57 @@ header-drawer {
 
         transform: translateY(-100px);
     }
+}
+
+// アナウンスメントバー 二段
+
+#shopify-section-announcement-bar{
+    position: relative;
+    background: #F08984;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    padding: 5px 40px;
+
+    .announcement-bar__message{
+        padding: 8px 0 ;
+        display: inline-block!important;
+        width: 100%;
+        line-height: 1;
+        letter-spacing: 0;
+        max-height: 35px!important;
+        display: flex;
+        align-items: cemter;
+    }
+    .announcement-bar{   
+        min-height: 30px!important;
+        line-height: 0!important;
+        font-size: 0!important;
+        &+ .announcement-bar{
+            border-top: solid 1px #edb9b6;
+
+            .announcement-bar__message{
+                
+            }
+
+        }
+     }
+     @media screen and (max-width: $BP) {
+        #shopify-section-announcement-bar{
+            padding: 3px 10px;
+        }
+
+        .announcement-bar__message{
+            padding-left: 0!important;
+            font-size: 12px;
+
+        }
+
+     }
+}
+.header-wrapper {
+    top: 70px;
+}
+.announcement-bar{
+    height: auto;
 }

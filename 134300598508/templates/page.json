@@ -1,0 +1,19 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "1646297629f1553bf8": {
+      "type": "contact-form_new",
+      "settings": {
+        "heading": "Contact form"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1646297629f1553bf8"
+  ]
+}

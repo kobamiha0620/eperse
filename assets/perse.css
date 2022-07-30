@@ -6205,6 +6205,24 @@ footer * {
   background: #f5f1ee;
 }
 
+.phome__product--price .beforesale {
+  text-decoration: line-through;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.product__de--price .beforesale {
+  text-decoration: line-through;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.product__others--price .beforesale {
+  text-decoration: line-through;
+  display: inline-block;
+  margin-right: 3px;
+}
+
 footer html, footer body, footer div, footer span, footer object, footer iframe, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, footer blockquote, footer pre, footer abbr, footer address, footer cite, footer code, footer del, footer dfn, footer em, footer img, footer ins, footer kbd, footer q, footer samp, footer small, footer strong, footer sub, footer sup, footer var, footer b, footer i, footer dl, footer dt, footer dd, footer ol, footer ul, footer li, footer fieldset, footer form, footer label, footer legend, footer table, footer caption, footer tbody, footer tfoot, footer thead, footer tr, footer th, footer td, footer article, footer aside, footer canvas, footer details, footer figcaption, footer figure, footer footer, footer header, footer hgroup, footer menu, footer nav, footer section, footer summary, footer time, footer mark, footer audio, footer video {
   margin: 0;
   padding: 0;
@@ -9275,6 +9293,18 @@ footer * {
   animation: rotate-anime 6s linear infinite;
 }
 
+.limitedPrice {
+  font-size: 16px;
+  margin: 0 auto 10px !important;
+  display: inline-block;
+  border-bottom: solid 1px #e77968;
+  line-height: 1.2;
+}
+
+.limitedPrice span {
+  font-size: 1.2em;
+}
+
 .homePerse .overlay {
   position: fixed;
   top: 0;
@@ -10618,35 +10648,6 @@ header-drawer {
   display: none;
 }
 
-#shopify-section-announcement-bar {
-  position: relative;
-  width: 100%;
-}
-
-#shopify-section-announcement-bar .announcement-bar {
-  border: none;
-}
-
-#shopify-section-announcement-bar .announcement-bar + .announcement-bar {
-  position: absolute;
-  height: 50px;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  animation-name: fadeTopBar;
-  animation-duration: 7s;
-  animation-delay: 150ms;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-@media screen and (max-width: 750px) {
-  #shopify-section-announcement-bar .announcement-bar + .announcement-bar {
-    height: 33px;
-  }
-}
 @keyframes fadeTopBar {
   0% {
     opacity: 0;
@@ -10672,4 +10673,64 @@ header-drawer {
     opacity: 0;
     transform: translateY(-100px);
   }
+}
+#shopify-section-announcement-bar {
+  position: relative;
+  background: #f08984;
+  width: 100%;
+  font-size: 0;
+  line-height: 0;
+  padding: 5px 40px;
+}
+
+#shopify-section-announcement-bar .announcement-bar__message {
+  padding: 8px 0;
+  display: inline-block !important;
+  width: 100%;
+  line-height: 1;
+  letter-spacing: 0;
+  max-height: 35px !important;
+  display: flex;
+  align-items: cemter;
+}
+
+#shopify-section-announcement-bar .announcement-bar {
+  min-height: 30px !important;
+  line-height: 0 !important;
+  font-size: 0 !important;
+}
+
+#shopify-section-announcement-bar .announcement-bar + .announcement-bar {
+  border-top: solid 1px #edb9b6;
+}
+
+@media screen and (max-width: 750px) {
+  #shopify-section-announcement-bar #shopify-section-announcement-bar {
+    padding: 3px 10px;
+  }
+
+  #shopify-section-announcement-bar .announcement-bar__message {
+    padding-left: 0 !important;
+    font-size: 12px;
+  }
+}
+.header-wrapper {
+  top: 70px;
+}
+
+.announcement-bar {
+  height: auto;
+}
+
+#nudie-beige #shopify-section-announcement-bar, #teddy-brown #shopify-section-announcement-bar, #air-gray #shopify-section-announcement-bar, #palm-green #shopify-section-announcement-bar {
+  background: #82b1bc !important;
+}
+
+#nudie-beige .announcement-bar + .announcement-bar, #teddy-brown .announcement-bar + .announcement-bar, #air-gray .announcement-bar + .announcement-bar, #palm-green .announcement-bar + .announcement-bar {
+  border-top: solid 1px #f5f1ee;
+}
+
+.announcement-bar__link {
+  padding: 0 !important;
+  height: auto !important;
 }

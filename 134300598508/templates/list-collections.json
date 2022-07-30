@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "disabled": true,
+      "settings": {
+        "title": "Collections",
+        "sort": "date",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "image_padding": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

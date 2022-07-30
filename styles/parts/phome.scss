@@ -1539,3 +1539,28 @@
 .phome__product--slickImg a{
     background: #F5F1EE;
 }
+
+
+//キャンペーン 100円OFF
+.phome__product--price{
+    .beforesale{
+        text-decoration: line-through;
+        display: inline-block;
+        margin-right: 3px;
+    }
+}
+
+.product__de--price{
+    .beforesale{
+        text-decoration: line-through;
+        display: inline-block;
+        margin-right: 3px;
+    }
+}
+.product__others--price{
+    .beforesale{
+        text-decoration: line-through;
+        display: inline-block;
+        margin-right: 3px;
+    }
+}

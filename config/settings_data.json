@@ -18,18 +18,21 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
+<<<<<<< HEAD
               "text": "8.12(FRI)12:00〜新色｢FRENCH BROWN｣予約開始",
+=======
+              "text": "7.12(TUE)三上悠亜さんコラボ動画が公開",
+>>>>>>> dcb667f3353b1e0a85933537a75a7d9ab8f65e61
               "color_scheme": "accent-1",
-              "link": ""
+              "link": "https:\/\/youtu.be\/dKmp-SW9jV0"
             }
           },
           "83c23dc0-af02-4dce-ace1-9093e716aed2": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "4\/13(WED)偽SNSアカウントにご注意ください",
+              "text": "7.12(TUE)〜16(SAT)送料無料＋100円OFFキャンペーン実施中",
               "color_scheme": "accent-1",
-              "link": "shopify:\/\/blogs\/ニュース\/4-13wed偽snsアカウントにご注意ください"
+              "link": ""
             }
           },
           "aa1ea613-c85a-46c5-827c-605421b67b3c": {

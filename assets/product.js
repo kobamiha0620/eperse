@@ -22,7 +22,6 @@ $('.product__slick').slick({
     centerPadding: '21%'
   });
 
-
   // $('.rip02__slick02').slick({
   //   fade: true,
   //   autoplay: false,//自動的に動き出すか。初期値はfalse。

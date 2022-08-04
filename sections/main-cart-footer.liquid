@@ -7,15 +7,22 @@
   {% if cart.item_count >= 2 %}
     {% if item.product.id == 7718631604460 %}
       <div class="cartAttention">
-     <p>新色「05 FRENCH BROWN」を同時にご購入のため、全ての商品は発送は8/19(金)より順次発送致します</p>
-    </div>
+          <p>新色「05 FRENCH BROWN」を同時にご購入のため、全ての商品は8/19(金)より順次発送致します</p>
+      </div>
     {% endif %}
+    
+  {% elsif cart.item_count >= 1 %}
+    {% if item.product.id == 7718631604460 %}
 
-  {% elsif item.product.id == 7718631604460 %}
-  <div class="cartAttention">
-
-    <p>こちらの商品は予約商品となります。<br>発送は8月19日（金）より順次発送致します</p>
-  </div>
+      <div class="cartAttention">
+        <p>こちらの商品は予約商品となります。<br>8月19日（金）より順次発送致します</p>
+      </div>
+    
+    {% else %}
+    <div class="cartAttention green">
+      <p>新色「05 FRENCH BROWN」を同時にご購入の場合、8/19(金)より順次発送致します</p>
+    </div>
+  {% endif %}
 
   {% endif %}
 {% endfor %}

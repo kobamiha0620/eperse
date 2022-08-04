@@ -9862,6 +9862,14 @@ footer * {
   display: none;
 }
 
+.cartAttention.green {
+  border: solid 3px #9ce2cd;
+}
+
+.cartAttention.green p {
+  color: #444;
+}
+
 @media screen and (max-width: 750px) {
   .cartAttention {
     margin: 0 auto;

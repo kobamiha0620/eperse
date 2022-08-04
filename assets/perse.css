@@ -9339,7 +9339,7 @@ footer * {
 }
 
 #velvetfixlipbalm-frenchbrown .product__slick .slick-dots li:nth-of-type(3) button:before {
-  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img03_productRip05.png?v=1659529059") no-repeat;
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img03_productRip05_b.png?v=1659613132") no-repeat;
   background-size: 100% auto;
   opacity: 1;
   content: "";
@@ -9776,7 +9776,7 @@ footer * {
 
 .orange .product__slick .slick-dots li, .almond .product__slick .slick-dots li {
   width: 70px !important;
-  height: 100px !important;
+  height: 96px !important;
 }
 
 @media screen and (max-width: 750px) {
@@ -9787,7 +9787,7 @@ footer * {
 }
 .orange .product__slick .slick-dots li button, .almond .product__slick .slick-dots li button {
   width: 70px !important;
-  height: 100px !important;
+  height: 96px !important;
 }
 
 @media screen and (max-width: 750px) {
@@ -9798,7 +9798,7 @@ footer * {
 }
 .orange .product__slick .slick-dots li button:before, .almond .product__slick .slick-dots li button:before {
   width: 70px !important;
-  height: 100px !important;
+  height: 96px !important;
 }
 
 @media screen and (max-width: 750px) {

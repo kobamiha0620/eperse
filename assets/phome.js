@@ -17,7 +17,10 @@ $('.phome__slide').slick({
     speed: 300,
     slidesToScroll: 1,//1回のスクロールで3枚の写真を移動して見せる
     dots: true,　//下部ドットナビゲーションの表示
-    asNavFor: '.phome__product--slick02'
+    initialSlide: 4,
+
+    asNavFor: '.phome__product--slick02',
+
 
   });
 
@@ -30,7 +33,10 @@ $('.phome__slide').slick({
     speed: 600,
     slidesToScroll: 1,//1回のスクロールで3枚の写真を移動して見せる
     dots: false,　//下部ドットナビゲーションの表示
-    asNavFor: '.phome__product--slick'
+    initialSlide: 4,
+
+    asNavFor: '.phome__product--slick',
+
 
   });
   $('.phome__product--slick03').slick({
@@ -208,6 +214,10 @@ $(window).on('load scroll', function() {
   add_class_in_scrolling($('.product__almond--03'));
   // add_class_in_scrolling($('.product__almond--04a'));
   // add_class_in_scrolling($('.product__almond--04b'));
+  add_class_in_scrolling($('.product__french--01'));
+  add_class_in_scrolling($('.product__french--02'));
+  add_class_in_scrolling($('.product__french--03'));
+
   add_class_in_scrolling($('.phome__pararaSp2'));
   add_class_in_scrolling($('.rip06'));
   add_class_in_scrolling($('.product__nude--01'));

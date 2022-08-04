@@ -4909,6 +4909,13 @@ footer * {
   content: "";
 }
 
+.phome__product--slick .slick-dots li:nth-of-type(5) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/dot_rip04.png?v=1644375012") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
 .phome__product--slick .slick-dots li.slick-active:nth-of-type(1) button:before {
   background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/dot_rip01_active.png?v=1644375012") no-repeat;
   background-size: 100% auto;
@@ -4931,6 +4938,13 @@ footer * {
 }
 
 .phome__product--slick .slick-dots li.slick-active:nth-of-type(4) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/dot_rip04_active.png?v=1644375012") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+.phome__product--slick .slick-dots li.slick-active:nth-of-type(5) button:before {
   background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/dot_rip04_active.png?v=1644375012") no-repeat;
   background-size: 100% auto;
   opacity: 1;
@@ -6205,6 +6219,21 @@ footer * {
   background: #f5f1ee;
 }
 
+.phome__slide--name {
+  margin: -210px auto 0;
+  width: 362px;
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 750px) {
+  .phome__slide--name {
+    margin: -35vw auto 0;
+    width: 58.13vw;
+    height: 28.9vw;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+}
 footer html, footer body, footer div, footer span, footer object, footer iframe, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, footer blockquote, footer pre, footer abbr, footer address, footer cite, footer code, footer del, footer dfn, footer em, footer img, footer ins, footer kbd, footer q, footer samp, footer small, footer strong, footer sub, footer sup, footer var, footer b, footer i, footer dl, footer dt, footer dd, footer ol, footer ul, footer li, footer fieldset, footer form, footer label, footer legend, footer table, footer caption, footer tbody, footer tfoot, footer thead, footer tr, footer th, footer td, footer article, footer aside, footer canvas, footer details, footer figcaption, footer figure, footer footer, footer header, footer hgroup, footer menu, footer nav, footer section, footer summary, footer time, footer mark, footer audio, footer video {
   margin: 0;
   padding: 0;
@@ -6948,6 +6977,12 @@ footer * {
 
 .product__intro--art.almond {
   background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_rip04color02_f3fef85b-b0c8-4ddf-867b-2e7a308ab21c.png?v=1647230909") no-repeat 0 0;
+  background-size: 100% auto;
+  display: block;
+}
+
+.product__intro--art.frenchbrown {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_rip05color-b.png?v=1659580252") no-repeat 0 0;
   background-size: 100% auto;
   display: block;
 }
@@ -7857,6 +7892,13 @@ footer * {
   content: "";
 }
 
+.rip02__slick .slick-dots li:nth-of-type(5) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/dot_rip05.png") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
 .rip02__slick .slick-dots li.slick-active:nth-of-type(1) button:before {
   background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/dot_rip01_active.png?v=1644375012") no-repeat;
   background-size: 100% auto;
@@ -7880,6 +7922,13 @@ footer * {
 
 .rip02__slick .slick-dots li.slick-active:nth-of-type(4) button:before {
   background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/dot_rip04_active.png?v=1644375012") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+.rip02__slick .slick-dots li.slick-active:nth-of-type(5) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/dot_rip05_active.png") no-repeat;
   background-size: 100% auto;
   opacity: 1;
   content: "";
@@ -9275,6 +9324,524 @@ footer * {
   animation: rotate-anime 6s linear infinite;
 }
 
+#velvetfixlipbalm-frenchbrown .product__slick .slick-dots li:nth-of-type(1) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img01_productRip05.png?v=1659529059") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+#velvetfixlipbalm-frenchbrown .product__slick .slick-dots li:nth-of-type(2) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img02_productRip05.png?v=1659529058") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+#velvetfixlipbalm-frenchbrown .product__slick .slick-dots li:nth-of-type(3) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img03_productRip05.png?v=1659529059") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+#velvetfixlipbalm-frenchbrown .product__slick .slick-dots li:nth-of-type(4) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img04_productRip05.png?v=1659529059") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+#velvetfixlipbalm-frenchbrown .product__slick .slick-dots li:nth-of-type(5) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img05_productRip05.png?v=1659529059") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+#velvetfixlipbalm-frenchbrown .product__intro {
+  background: #92625d;
+}
+
+#velvetfixlipbalm-frenchbrown .product__intro--art.frenchbrown .product__intro--artkey {
+  right: 53px;
+  top: 77px;
+  position: absolute;
+  width: 164px;
+  height: 164px;
+  display: block;
+}
+
+#velvetfixlipbalm-frenchbrown .product__intro--art.frenchbrown .product__intro--artkey img {
+  width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  #velvetfixlipbalm-frenchbrown .product__intro--art.frenchbrown .product__intro--artkey {
+    right: 9.6vw;
+    top: 13.46vw;
+    width: 28.8vw;
+    height: 28.8vw;
+  }
+}
+.product__french {
+  width: 568px;
+  background: #cfb0ae;
+  margin: 0 auto 105px;
+  padding-bottom: 86px;
+  font-size: 0;
+}
+
+.product__french--01 {
+  position: relative;
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/prdocut_french01a.png?v=1659600831") no-repeat 0 0;
+  background-size: 100% auto;
+  height: 730px;
+  width: 100%;
+  margin: 0 0 66px;
+}
+
+.product__french--01 .product__french--01fv {
+  opacity: 0;
+}
+
+.product__french--01.is-show .product__french--01fv {
+  opacity: 1;
+  animation-name: fadeUpAnime0;
+  animation-duration: 2.4s;
+}
+
+.product__french--01fv {
+  width: 234px;
+  height: 294px;
+  position: absolute;
+  bottom: 39px;
+  left: 46px;
+}
+
+.product__french--02 {
+  margin: 0 0 67px;
+  width: 568px;
+  height: 684px;
+  position: relative;
+  font-size: 0;
+  padding: 0;
+}
+
+.product__french--02 img {
+  width: 100%;
+}
+
+.product__french--02 .product__french--02img {
+  opacity: 0;
+}
+
+.product__french--02.is-show .product__french--02img {
+  opacity: 1;
+  animation-name: fadeUpAnime0;
+  animation-duration: 2.4s;
+}
+
+.product__french--02img {
+  width: 430px;
+  height: 566px;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.product__french--02img img {
+  border-top-left-radius: 28px;
+}
+
+.product__french--02txt1 {
+  position: absolute;
+  width: 53px;
+  height: 544px;
+  top: 14px;
+  left: 47px;
+}
+
+.product__french--02txt2 {
+  position: absolute;
+  width: 385px;
+  height: 79px;
+  bottom: 0;
+  left: 145px;
+}
+
+.product__french--03 {
+  position: relative;
+  background-position: 0 0;
+  background-size: 100% auto;
+  height: 629px;
+  width: 480px;
+  margin: 0 auto 86px;
+  background-image: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/prdocut_french03a.png?v=1659604430");
+}
+
+.product__french--03 .product__french--03fv {
+  opacity: 0;
+}
+
+.product__french--03.is-show .product__french--03fv {
+  opacity: 1;
+  animation-name: fadeUpAnime0;
+  animation-duration: 2.4s;
+}
+
+.product__french--03fv {
+  position: absolute;
+  width: 117px;
+  height: 368px;
+  top: 138px;
+  right: 178px;
+}
+
+.product__french--03fv img {
+  width: 100%;
+}
+
+.product__french--04 {
+  overflow: hidden;
+  width: 100%;
+}
+
+.product__french--04 img {
+  width: 100%;
+}
+
+.product__french--04a {
+  float: left;
+  width: 279px;
+}
+
+.product__french--04a.is-show {
+  opacity: 1;
+  animation-name: fadeUpAnime50;
+  animation-duration: 2.5s;
+}
+
+.product__french--04b {
+  float: right;
+  width: 279px;
+}
+
+.product__french--04b.is-show {
+  opacity: 1;
+  animation-name: fadeUpAnime0;
+  animation-duration: 2s;
+}
+
+@media screen and (max-width: 750px) {
+  .product__french {
+    width: 100vw;
+    padding-bottom: 15.33vw;
+  }
+
+  .product__french--01 {
+    height: 128.66vw;
+    margin: 0 0 12.4vw;
+  }
+
+  .product__french--01fv {
+    width: 41vw;
+    height: 51.33cw;
+    position: absolute;
+    bottom: 7vw;
+    left: 8vw;
+  }
+
+  .product__french--02 {
+    margin: 0 0 11.73vw;
+    width: 100vw;
+    height: 120.5vw;
+  }
+
+  .product__french--02img {
+    width: 75.7vw;
+    height: 99.7vw;
+  }
+
+  .product__french--02img img {
+    border-top-left-radius: 14vw;
+  }
+
+  .product__french--02txt1 {
+    position: absolute;
+    width: 9.24vw;
+    height: 95.7vw;
+    top: 2.66vw;
+    left: 8.4vw;
+  }
+
+  .product__french--02txt2 {
+    position: absolute;
+    width: 67.8vw;
+    height: 13.74vw;
+    bottom: 0;
+    left: 25.33vw;
+  }
+
+  .product__french--03 {
+    height: 110vw;
+    width: 84.66vw;
+    margin: 0 auto 14.8vw;
+  }
+
+  .product__french--03fv {
+    position: absolute;
+    width: 20.8vw;
+    height: 64.53vw;
+    top: 25vw;
+    right: 31.33vw;
+  }
+
+  .product__french--04a {
+    width: 49vw;
+  }
+
+  .product__french--04b {
+    width: 49vw;
+  }
+}
+.rip01__img {
+  margin-bottom: 60px;
+}
+
+.rip01__img img {
+  border-top-right-radius: 86px;
+}
+
+@media screen and (max-width: 750px) {
+  .rip01__img {
+    margin-bottom: 10.6vw;
+  }
+
+  .rip01__img img {
+    border-top-right-radius: 11.46vw;
+  }
+}
+.rip01__prodcut {
+  width: 338px;
+}
+
+@media screen and (max-width: 750px) {
+  .rip01__prodcut {
+    width: 59.46vw;
+  }
+}
+.rip03__img img {
+  width: 100%;
+}
+
+.product__others {
+  max-width: 1080px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.product__others--list {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 -19px 0 0;
+}
+
+.product__others--list li {
+  width: 23.7%;
+  max-width: 256px;
+  list-style: none;
+}
+
+.product__others--list li img {
+  width: 100%;
+  border-top-left-radius: 120px;
+}
+
+.product__others--name strong {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 750px) {
+  .product__others {
+    width: 100vw;
+    max-width: 100vw;
+  }
+
+  .product__others--list {
+    width: 150vw;
+    max-width: 151vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .product__others--list li {
+    flex-shrink: 1;
+    width: 52.66vw;
+    max-width: 52.66vw;
+    min-width: 52.66vw;
+    padding-bottom: 10vw;
+    margin-right: 4vw;
+  }
+
+  .product__others--list li img {
+    width: 100%;
+    border-top-left-radius: 16vw;
+  }
+}
+.orange .product__slick .slick-dots li:nth-of-type(1) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/newimg_orange01.png?v=1659609382") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+.orange .product__slick .slick-dots li:nth-of-type(2) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_orange01_thumb_e45d474a-cf8a-478f-9156-512bb4033d91.png?v=1644680242") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+.orange .product__slick .slick-dots li:nth-of-type(3) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/yo03_thumb_19f9cb09-d07a-435c-a49b-f58921708008.png?v=1644844118") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+.orange .product__slick .slick-dots li:nth-of-type(4) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_orange02_thumb_87ea61ec-4420-4c33-8bc3-47b178f791ed.png?v=1644680243") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+.orange .product__slick .slick-dots li:nth-of-type(5) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_orange03_thumb_574c2066-f1bb-4c7d-b91b-6ae4181fae6a.png?v=1644680242") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+.orange .product__slick .slick-dots li:nth-of-type(6) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_orange04_thumb_9b6d88a3-e4a9-41b7-a494-d728e343ed50.png?v=1644680242") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+.almond .product__slick .slick-dots li:nth-of-type(1) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/newimg_almond01.png?v=1659609382") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+.almond .product__slick .slick-dots li:nth-of-type(2) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_almond01_thumb_4c02b2a5-38cf-460a-b4a4-1dc57eb22af1.png?v=1644718696") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+.almond .product__slick .slick-dots li:nth-of-type(3) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/yo04_thumb_f63a19e2-b415-4b19-8dd4-9ecb6ce38f9e.png?v=1644845898") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+.almond .product__slick .slick-dots li:nth-of-type(4) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_almond02_thumb_ba9606e3-26b0-444e-a4cc-21ba6a834920.png?v=1644718696") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+.almond .product__slick .slick-dots li:nth-of-type(5) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_almond03_thumb_6af9e6df-e020-4743-817a-5bd7b9511bdf.png?v=1644718696") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+.almond .product__slick .slick-dots li:nth-of-type(6) button:before {
+  background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/img_almond04_thumb_cf1f77cf-1ca5-4450-9930-8ad5db92f1ee.png?v=1644718696") no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  content: "";
+}
+
+.orange .product__slick .slick-dots li, .almond .product__slick .slick-dots li {
+  width: 70px !important;
+  height: 100px !important;
+}
+
+@media screen and (max-width: 750px) {
+  .orange .product__slick .slick-dots li, .almond .product__slick .slick-dots li {
+    width: 13vw !important;
+    height: 18vw !important;
+  }
+}
+.orange .product__slick .slick-dots li button, .almond .product__slick .slick-dots li button {
+  width: 70px !important;
+  height: 100px !important;
+}
+
+@media screen and (max-width: 750px) {
+  .orange .product__slick .slick-dots li button, .almond .product__slick .slick-dots li button {
+    width: 13vw !important;
+    height: 18vw !important;
+  }
+}
+.orange .product__slick .slick-dots li button:before, .almond .product__slick .slick-dots li button:before {
+  width: 70px !important;
+  height: 100px !important;
+}
+
+@media screen and (max-width: 750px) {
+  .orange .product__slick .slick-dots li button:before, .almond .product__slick .slick-dots li button:before {
+    width: 13vw !important;
+    height: 18vw !important;
+  }
+}
+.btn__yoyakukome {
+  text-indent: -1em;
+  padding-left: 1em;
+  font-size: 14px !important;
+  line-height: 1.4 !important;
+  padding: 10px 0 0 !important;
+  margin: 0;
+  margin-left: 1em;
+}
+
+@media screen and (max-width: 750px) {
+  .btn__yoyakukome {
+    font-size: 12px !important;
+    text-align: left;
+    max-width: 90vw;
+    margin: 0 auto !important;
+  }
+}
+.btn__yoyakukome + .btn__yoyakukome {
+  padding: 5px 0 0 !important;
+}
+
+#velvetfixlipbalm-frenchbrown .btn__yoyakukome {
+  text-align: center;
+}
+
+.yoyakukome__wrapper {
+  padding: 0 20px 0 30px;
+}
+
+@media screen and (max-width: 750px) {
+  .yoyakukome__wrapper {
+    padding: 0 0 0 10px;
+  }
+}
 .homePerse .overlay {
   position: fixed;
   top: 0;

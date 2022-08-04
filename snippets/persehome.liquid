@@ -1,21 +1,21 @@
 <div class="phome" id="phome">
     <div class="phome__slide--wrapper ">
         <ul class="phome__slide">
-            <li class="phome__slide--fadein"><img src="{{ 'top_newslide01.png' | file_url }}" alt="slide01" width="100%" height="auto" class="phome__slide--img">
-            <div class="phome__slide--contactname fadeUpTrigger">
+            <li class="phome__slide--fadein"><img src="{{ 'img_fvslick_rip01.png' | file_url }}" alt="slide01" width="100%" height="auto" class="phome__slide--img">
+            {% comment %} <div class="phome__slide--contactname fadeUpTrigger">
                 <img src="{{ 'ttl_topnewslide.svg' | file_url }}" alt="Color Contact Lenses"  loading="lazy" width="auto" height="auto">
-            </div>
-        </li>
-            <li><img src="{{ 'top_newslide02.png' | file_url }}" alt="slide02" width="100%" height="auto" loading="lazy" class="phome__slide--img"></li>
-            <li><img src="{{ 'top_newslide03.png' | file_url }}" alt="slide03" width="100%" height="auto" loading="lazy" class="phome__slide--img"></li>
+            </div> {% endcomment %}
+            <div class="phome__slide--name fadeUpTrigger"><img src="{{ 'top_slide.svg?v=1644294744' | file_url }}" alt="Name"  loading="lazy" width="auto" height="auto"></div>
+            </li>
+            <li><img src="{{ 'img_fvslick_rip02.png' | file_url }}" alt="slide02" width="100%" height="auto" loading="lazy" class="phome__slide--img"></li>
+            <li><img src="{{ 'img_fvslick_rip03.png' | file_url }}" alt="slide03" width="100%" height="auto" loading="lazy" class="phome__slide--img"></li>
 
-            <li><img src="{{ 'top_newslide04.png' | file_url }}" alt="slide04" width="100%" height="auto" loading="lazy" class="phome__slide--img"></li>
-            <li><img src="{{ 'top_newslide05.png' | file_url }}" alt="slide05" width="100%" height="auto" loading="lazy" class="phome__slide--img"></li>
-            <li><img src="{{ 'top_newslide06.png' | file_url }}" alt="slide06" width="100%" height="auto" loading="lazy" class="phome__slide--img"></li>
+            <li><img src="{{ 'img_fvslick_contact01.png' | file_url }}" alt="slide04" width="100%" height="auto" loading="lazy" class="phome__slide--img"></li>
+            <li><img src="{{ 'top_newslide02.png' | file_url }}" alt="slide05" width="100%" height="auto" loading="lazy" class="phome__slide--img"></li>
+            <li><img src="{{ 'top_newslide03.png' | file_url }}" alt="slide06" width="100%" height="auto" loading="lazy" class="phome__slide--img"></li>
         </ul>
         <div class="phome__slide--logo">logo</div>
     </div>
-    {% comment %} <div class="phome__slide--name fadeUpTrigger"><img src="{{ 'top_slide.svg?v=1644294744' | file_url }}" alt="Name"  loading="lazy" width="auto" height="auto"></div> {% endcomment %}
 
     <div class="phome__brand" id="concept">
         <div class="phome__brand--blc">
@@ -49,6 +49,7 @@
                 <h3 class="phome__product--sub">ベルベット フィックス リップバーム</h3>
                 <div class="phome__product--slickwrap">
                 <ul class="phome__product--slick">
+
                     <li>    
                     <a href="{{ routes.root_url }}products/velvet-fix-lip-balm-1/">
 
@@ -79,7 +80,7 @@
                         <a href="{{ routes.root_url }}products/velvet-fix-lip-balm-chili-orange/">
 
                         <div class="phome__product--slickImg">
-                            <img src="{{ 'img_rip03b.png?v=1644347218' | file_url }}" alt="03 チリオレンジ" loading="lazy" width="auto" height="auto">
+                            <img src="{{ 'img_slick_top03.png' | file_url }}" alt="03 チリオレンジ" loading="lazy" width="auto" height="auto">
                         </div>
                         <p class="phome__product--price">¥1,680<span> ( inc.tax )</span></p>
 
@@ -92,7 +93,7 @@
                         <a href="{{ routes.root_url }}products/velvet-fix-lip-balm-almond-brown">
 
                         <div class="phome__product--slickImg">
-                            <img src="{{ 'img_rip04b.png?v=1644347218' | file_url }}" alt="04 アーモンドブラウン" loading="lazy" width="auto" height="auto">
+                            <img src="{{ 'img_slick_top04.png' | file_url }}" alt="04 アーモンドブラウン" loading="lazy" width="auto" height="auto">
                         </div>
                         <p class="phome__product--price">¥1,680<span> ( inc.tax )</span></p>
 
@@ -101,6 +102,18 @@
                     </a>
 
                     </li>
+                    <li>    
+                    <a href="{{ routes.root_url }}products/velvetfixlipbalm-frenchbrown/">
+
+                        <div class="phome__product--slickImg">
+                            <img src="{{ 'img_slick_top05.png' | file_url }}" alt="05 フレンチローズ" loading="lazy" width="auto" height="auto">
+                        </div>
+                        <p class="phome__product--price">¥1,680<span> ( inc.tax )</span></p>
+
+                        <p class="phome__product--slickbtn"><span>VIEW MORE</span></p>
+                        <p class="phome__product--slickname">05 フレンチブラウン</p>
+                    </a>
+                </li>
                 </ul>
                 <div class="phome__product--slickkado">kadomaru</div>
                 <div class="phome__product--slickline">line</div>
@@ -110,6 +123,8 @@
                         <li><a href="{{ routes.root_url }}products/velvet-fix-lip-balm-innocent-red/"><div class="phome__product--slickpro"><img src="{{ 'color_02_wb_1562ed71-63f6-4d4f-aedd-9be828f1e5c9.png?v=1644978820' | file_url }}" alt="02 イノセントレッド"  loading="lazy" width="auto" height="auto"></div></a></li>
                         <li><a href="{{ routes.root_url }}products/velvet-fix-lip-balm-chili-orange/"><div class="phome__product--slickpro"><img src="{{ 'color_03_wb_7d513389-d216-401f-9896-6df1b4e43e45.png?v=1644978821' | file_url }}" alt="03 チリオレンジ"  loading="lazy" width="auto" height="auto"></div></a></li>
                         <li><a href="{{ routes.root_url }}products/velvet-fix-lip-balm-almond-brown"><div class="phome__product--slickpro"><img src="{{ 'color_04_wb_6b82b05e-cab7-49f7-b950-fe166f497447.png?v=1644978820' | file_url }}" alt="04 アーモンドブラウン"  loading="lazy" width="auto" height="auto"></div></a></li>
+                        <li><a href="{{ routes.root_url }}products/velvetfixlipbalm-frenchbrown/"><div class="phome__product--slickpro"><img src="{{ 'img_slick_top05sub.png' | file_url }}" alt="05 フレンチブラウン"  loading="lazy" width="auto" height="auto"></div></a></li>
+
                     </ul>
                 </div>
             </div>
@@ -242,7 +257,7 @@
     </div>
 </div>  
 
-
+{% comment %} 
 
 <div id="overlay" class="overlay js-close0803">overlay</div>
 <div class="modal-window0803">
@@ -284,7 +299,7 @@
     </div>
 </div>
 
-<script src="{{ 'popup0803.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'popup0803.js' | asset_url }}" defer="defer"></script> {% endcomment %}
 
   {% comment %}
 <div id="overlay" class="overlay js-close">overlay</div>

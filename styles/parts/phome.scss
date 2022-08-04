@@ -329,6 +329,12 @@
                 opacity: 1;
                 content:"";
             }
+            .slick-dots li:nth-of-type(5) button:before{
+                background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/dot_rip04.png?v=1644375012") no-repeat;
+                background-size: 100% auto;
+                opacity: 1;
+                content:"";
+            }
             
             .slick-dots li.slick-active:nth-of-type(1) button:before{
                 background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/dot_rip01_active.png?v=1644375012") no-repeat;
@@ -352,6 +358,12 @@
             }
 
             .slick-dots li.slick-active:nth-of-type(4) button:before{
+                background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/dot_rip04_active.png?v=1644375012") no-repeat;
+                background-size: 100% auto;
+                opacity: 1;
+                content:"";
+            }
+            .slick-dots li.slick-active:nth-of-type(5) button:before{
                 background: url("https://cdn.shopify.com/s/files/1/0618/4593/0220/files/dot_rip04_active.png?v=1644375012") no-repeat;
                 background-size: 100% auto;
                 opacity: 1;
@@ -1539,3 +1551,19 @@
 .phome__product--slickImg a{
     background: #F5F1EE;
 }
+//新色リップ
+.phome__slide--name {
+    margin: -210px auto 0;
+    width: 362px;
+    padding-bottom: 0;
+  }
+  @media screen and (max-width: $BP) {
+    .phome__slide--name {
+        margin: -35vw auto 0;
+        width: 58.13vw;
+        height: 28.9vw;
+        padding-left: 0;
+        padding-bottom: 0;
+      }
+  }
+

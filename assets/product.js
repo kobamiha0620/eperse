@@ -18,6 +18,7 @@ $('.product__slick').slick({
     // asNavFor: '.rip02__slick02',
     centerMode: true,
     speed: 300,
+    initialSlide: 4,
     centerPadding: '21%'
   });
 

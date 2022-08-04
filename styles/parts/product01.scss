@@ -3183,3 +3183,16 @@
         padding: 0 0 0 10px;
     }
 }
+
+.cartAttention{
+    background: #FFF;
+    border: solid 3px #F00;
+    padding: 10px;
+    max-width: 1080px;
+    margin: 0 auto;
+    p{
+        text-align: center;
+        color: #F00;
+        margin: 0!important;
+    }
+}

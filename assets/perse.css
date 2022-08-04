@@ -9842,6 +9842,20 @@ footer * {
     padding: 0 0 0 10px;
   }
 }
+.cartAttention {
+  background: #fff;
+  border: solid 3px red;
+  padding: 10px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.cartAttention p {
+  text-align: center;
+  color: red;
+  margin: 0 !important;
+}
+
 .homePerse .overlay {
   position: fixed;
   top: 0;

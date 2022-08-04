@@ -3,6 +3,22 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 
+{% for item in cart.items %}
+  {% if cart.item_count >= 2 %}
+    {% if item.product.id == 7718631604460 %}
+      <div class="cartAttention">
+     <p>新色「05 FRENCH BROWN」を同時にご購入のため、全ての商品は発送は8/19(金)より順次発送致します</p>
+    </div>
+    {% endif %}
+
+  {% elsif item.product.id == 7718631604460 %}
+  <div class="cartAttention">
+
+    <p>こちらの商品は予約商品となります。発送は8月19日（金）より順次発送致します</p>
+  </div>
+
+  {% endif %}
+{% endfor %}
 <div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
   <div>
     <div class="cart__footer">

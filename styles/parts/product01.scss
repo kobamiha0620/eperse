@@ -3188,11 +3188,25 @@
     background: #FFF;
     border: solid 3px #F00;
     padding: 10px;
-    max-width: 1080px;
+    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
     p{
         text-align: center;
         color: #F00;
         margin: 0!important;
+        line-height: 1.4;
+        br{
+            display: none;
+        }
+
+
+    }
+    @media screen and (max-width: $BP){
+        margin: 0 auto;
+        width: 90vw;
+        br{
+            display: block!important;
+        }
     }
 }

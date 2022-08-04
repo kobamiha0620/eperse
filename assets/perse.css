@@ -9846,7 +9846,8 @@ footer * {
   background: #fff;
   border: solid 3px red;
   padding: 10px;
-  max-width: 1080px;
+  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -9854,8 +9855,23 @@ footer * {
   text-align: center;
   color: red;
   margin: 0 !important;
+  line-height: 1.4;
 }
 
+.cartAttention p br {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .cartAttention {
+    margin: 0 auto;
+    width: 90vw;
+  }
+
+  .cartAttention br {
+    display: block !important;
+  }
+}
 .homePerse .overlay {
   position: fixed;
   top: 0;

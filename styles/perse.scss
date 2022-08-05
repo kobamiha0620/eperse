@@ -573,3 +573,107 @@ header-drawer {
         transform: translateY(-100px);
     }
 }
+
+//時々二段
+
+#shopify-section-announcement-bar-nidan{
+    padding: 0 0;
+    background: #f08984;
+    height: 77px;
+    position: relative;
+    width: 100%;
+    .announcement-bar{
+        border: none;
+        &+ .announcement-bar{
+            position: absolute;
+            height: 72px;
+            top: 0;
+            left: 0;
+            display: block;
+            align-items: center;
+            animation-name: fadeTopBar;
+            animation-duration: 7s;
+            animation-delay: 150ms; 
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+    }
+
+    span{
+        display: block;
+        font-size: 14px!important;
+        line-height: 1.2!important;
+    }
+    .announcement__link{
+        padding: 0 0 0!important;
+        margin: 0 40px!important;
+        display: block;
+        line-height: 0;
+        margin: 0 auto;
+
+        border-bottom: solid 1px rgba(246, 241, 249, 0.6);
+        +.announcement__link{
+            border-bottom: none;
+            padding: 0!important;
+
+        }
+        .announcement-bar__link{
+            letter-spacing: 0.1;
+            span{
+                font-size: 0.8em;
+                display: inline;
+                line-height: 0;
+                
+            }
+        }
+    }
+    @media screen and (max-width: $BP) {
+        height: 67px;
+
+        .announcement-bar{
+            &+ .announcement-bar{
+            }
+
+        }
+        .announcement-bar__link{
+            position: relative;
+        }
+        .announcement-bar{
+
+            a{
+                height: 33px;
+                display: block;
+                line-height: 1;
+            }
+        }
+    }
+    .announcement-bar{
+        height: auto;
+        display: block;
+        font-size: 14px!important;
+        line-height: 1.2!important;
+
+    }
+    .announcement-bar__link{
+        padding-right: 5px!important;
+        padding-left: 5px!important;
+    }
+}
+
+
+#nudie-beige,
+#teddy-brown,
+#air-gray,
+#palm-green {
+#shopify-section-announcement-bar-nidan{
+    background: #82B1BB;
+}
+}
+
+.header-wrapper{
+    top: 77px;
+    @media screen and (max-width: $BP) {
+        top: 67px;
+
+    }
+}

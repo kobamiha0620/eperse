@@ -11278,3 +11278,99 @@ header-drawer {
     transform: translateY(-100px);
   }
 }
+#shopify-section-announcement-bar-nidan {
+  padding: 0 0;
+  background: #f08984;
+  height: 77px;
+  position: relative;
+  width: 100%;
+}
+
+#shopify-section-announcement-bar-nidan .announcement-bar {
+  border: none;
+}
+
+#shopify-section-announcement-bar-nidan .announcement-bar + .announcement-bar {
+  position: absolute;
+  height: 72px;
+  top: 0;
+  left: 0;
+  display: block;
+  align-items: center;
+  animation-name: fadeTopBar;
+  animation-duration: 7s;
+  animation-delay: 150ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#shopify-section-announcement-bar-nidan span {
+  display: block;
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+}
+
+#shopify-section-announcement-bar-nidan .announcement__link {
+  padding: 0 0 0 !important;
+  margin: 0 40px !important;
+  display: block;
+  line-height: 0;
+  margin: 0 auto;
+  border-bottom: solid 1px rgba(246, 241, 249, 0.6);
+}
+
+#shopify-section-announcement-bar-nidan .announcement__link + .announcement__link {
+  border-bottom: none;
+  padding: 0 !important;
+}
+
+#shopify-section-announcement-bar-nidan .announcement__link .announcement-bar__link {
+  letter-spacing: 0.1;
+}
+
+#shopify-section-announcement-bar-nidan .announcement__link .announcement-bar__link span {
+  font-size: 0.8em;
+  display: inline;
+  line-height: 0;
+}
+
+@media screen and (max-width: 750px) {
+  #shopify-section-announcement-bar-nidan {
+    height: 67px;
+  }
+
+  #shopify-section-announcement-bar-nidan .announcement-bar__link {
+    position: relative;
+  }
+
+  #shopify-section-announcement-bar-nidan .announcement-bar a {
+    height: 33px;
+    display: block;
+    line-height: 1;
+  }
+}
+#shopify-section-announcement-bar-nidan .announcement-bar {
+  height: auto;
+  display: block;
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+}
+
+#shopify-section-announcement-bar-nidan .announcement-bar__link {
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+}
+
+#nudie-beige #shopify-section-announcement-bar-nidan, #teddy-brown #shopify-section-announcement-bar-nidan, #air-gray #shopify-section-announcement-bar-nidan, #palm-green #shopify-section-announcement-bar-nidan {
+  background: #82b1bb;
+}
+
+.header-wrapper {
+  top: 77px;
+}
+
+@media screen and (max-width: 750px) {
+  .header-wrapper {
+    top: 67px;
+  }
+}

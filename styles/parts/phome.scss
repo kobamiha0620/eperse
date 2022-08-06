@@ -1547,9 +1547,19 @@
   
 .phome__product--slickImg{
     display: block;
+    position: relative;
+    overflow: visible!important;
 }
+
 .phome__product--slickImg a{
     background: #F5F1EE;
+}
+.newIcon{
+    position: absolute;
+    left: -20px;
+    top: 21px;
+    width: 87px!important   ;
+    height: 87px;
 }
 //新色リップ
 .phome__slide--name {
@@ -1567,3 +1577,29 @@
       }
   }
 
+.phome__product--slickpro00{
+    width: 530px;
+    height: 416px;
+    img{
+        width: 100%;
+    }
+    @media screen and (max-width: $BP) {
+        width: 100vw;
+        height: 78.49vw;
+    }
+}
+.phome__product--slick02wrapNew{
+    z-index: 2;
+    position: absolute;
+    top: 21px;
+    right: 0;
+    width: 530px;
+    a{
+        display: block;
+    }
+    @media screen and (max-width: $BP) {
+        width: 100vw;
+        top: 6.1vw;
+
+    }
+}

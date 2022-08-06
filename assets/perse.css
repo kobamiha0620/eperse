@@ -6213,10 +6213,20 @@ footer * {
 
 .phome__product--slickImg {
   display: block;
+  position: relative;
+  overflow: visible !important;
 }
 
 .phome__product--slickImg a {
   background: #f5f1ee;
+}
+
+.newIcon {
+  position: absolute;
+  left: -20px;
+  top: 21px;
+  width: 87px !important;
+  height: 87px;
 }
 
 .phome__slide--name {
@@ -6232,6 +6242,39 @@ footer * {
     height: 28.9vw;
     padding-left: 0;
     padding-bottom: 0;
+  }
+}
+.phome__product--slickpro00 {
+  width: 530px;
+  height: 416px;
+}
+
+.phome__product--slickpro00 img {
+  width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .phome__product--slickpro00 {
+    width: 100vw;
+    height: 78.49vw;
+  }
+}
+.phome__product--slick02wrapNew {
+  z-index: 2;
+  position: absolute;
+  top: 21px;
+  right: 0;
+  width: 530px;
+}
+
+.phome__product--slick02wrapNew a {
+  display: block;
+}
+
+@media screen and (max-width: 750px) {
+  .phome__product--slick02wrapNew {
+    width: 100vw;
+    top: 6.1vw;
   }
 }
 footer html, footer body, footer div, footer span, footer object, footer iframe, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer p, footer blockquote, footer pre, footer abbr, footer address, footer cite, footer code, footer del, footer dfn, footer em, footer img, footer ins, footer kbd, footer q, footer samp, footer small, footer strong, footer sub, footer sup, footer var, footer b, footer i, footer dl, footer dt, footer dd, footer ol, footer ul, footer li, footer fieldset, footer form, footer label, footer legend, footer table, footer caption, footer tbody, footer tfoot, footer thead, footer tr, footer th, footer td, footer article, footer aside, footer canvas, footer details, footer figcaption, footer figure, footer footer, footer header, footer hgroup, footer menu, footer nav, footer section, footer summary, footer time, footer mark, footer audio, footer video {

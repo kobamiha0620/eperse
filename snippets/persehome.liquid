@@ -270,49 +270,63 @@
     </div>
 </div>  
 
-{% comment %} 
 
 <div id="overlay" class="overlay js-close0803">overlay</div>
 <div class="modal-window0803">
     <div class="modal-window0803--inner">
+        <div class="modal__frame--popup03">
+            <div class="pc">
+                <a class="js-close0803">
+                    <img src="{{ 'popup-03_0812pc.jpg' | file_url }}" alt="PC1" loading="lazy" width="auto"
+                        height="auto">
+                </a>
+            </div>
+            <div class="sp">
+                <a class="js-close0803">
+                    <img src="{{ 'popup-03_0812sp.jpg' | file_url }}" alt="PC1" loading="lazy" width="auto"
+                        height="auto">
+                </a>
+
+            </div>
+        </div>
         <div class="modal__frame--popup02">
             <div class="pc">
-                <a class="js-close0803">
-                    <img src="{{ '803_popup02_pc.jpg' | file_url }}" alt="PC1" loading="lazy" width="auto"
+                <a class="js-nextlink0812b">
+                    <img src="{{ 'popup-02_0812pc.jpg' | file_url }}" alt="PC1" loading="lazy" width="auto"
                         height="auto">
                 </a>
             </div>
             <div class="sp">
-                <a class="js-close0803">
-
-                    <img src="{{ '803_popup02_sp.jpg' | file_url }}" alt="PC1" loading="lazy" width="auto"
+                <a class="js-nextlink0812b">
+                    <img src="{{ 'popup-02_0812sp.jpg' | file_url }}" alt="PC1" loading="lazy" width="auto"
                         height="auto">
                 </a>
 
             </div>
-            {% comment %} <p class="modal__next0803 js-close0803" id="">close</p> {% endcomment %}
         </div>
+
+
+
         <div class="modal__frame--popup01">
             <div class="pc">
-                <a class="js-nextlink0803">
-                    <img src="{{ '803_popup01b_pc.jpg' | file_url }}" alt="PC1" loading="lazy" width="auto"
+                <a class="js-nextlink0812a">
+                    <img src="{{ 'popup-01_0812pc.jpg' | file_url }}" alt="PC1" loading="lazy" width="auto"
                         height="auto">
                 </a>
             </div>
             <div class="sp">
-                <a class="js-nextlink0803">
-                    <img src="{{ '803_popup01b_sp.jpg' | file_url }}" alt="PC1" loading="lazy" width="auto"
+                <a class="js-nextlink0812a">
+
+                    <img src="{{ 'popup-01_0812sp.jpg' | file_url }}" alt="PC1" loading="lazy" width="auto"
                         height="auto">
                 </a>
 
             </div>
         </div>
-
-
     </div>
 </div>
 
-<script src="{{ 'popup0803.js' | asset_url }}" defer="defer"></script> {% endcomment %}
+<script src="{{ 'popup0812.js' | asset_url }}" defer="defer"></script> 
 
   {% comment %}
 <div id="overlay" class="overlay js-close">overlay</div>

@@ -580,8 +580,9 @@ header-drawer {
 
 #shopify-section-announcement-bar-nidan{
     padding: 0 0;
+    padding-top: 3px;
     background: #f08984;
-    height: 74px;
+    height: 70px;
     position: relative;
     width: 100%;
     .announcement-bar{
@@ -674,7 +675,7 @@ header-drawer {
 }
 
 .header-wrapper{
-    top: 74px;
+    top: 70px;
     @media screen and (max-width: $BP) {
         top: 70px;
 
@@ -682,7 +683,14 @@ header-drawer {
 }
 
 
-
+.announcement__link{
+    padding-top: 10px;
+    a{
+        display: block;
+    }
+    &.miharu{
+    }
+}
 @media screen and (max-width: $BP) {
 
 #shopify-section-announcement-bar-nidan .announcement__link {
@@ -695,4 +703,11 @@ header-drawer {
 .announcement-bar p{
     
 }
+.announcement__link{
+    &.miharu{
+        padding-top: 0;
+    }
 }
+}
+
+

@@ -11351,8 +11351,9 @@ header-drawer {
 }
 #shopify-section-announcement-bar-nidan {
   padding: 0 0;
+  padding-top: 3px;
   background: #f08984;
-  height: 74px;
+  height: 70px;
   position: relative;
   width: 100%;
 }
@@ -11434,7 +11435,7 @@ header-drawer {
 }
 
 .header-wrapper {
-  top: 74px;
+  top: 70px;
 }
 
 @media screen and (max-width: 750px) {
@@ -11442,6 +11443,14 @@ header-drawer {
     top: 70px;
   }
 }
+.announcement__link {
+  padding-top: 10px;
+}
+
+.announcement__link a {
+  display: block;
+}
+
 @media screen and (max-width: 750px) {
   #shopify-section-announcement-bar-nidan .announcement__link {
     margin: 0 30px !important;
@@ -11449,5 +11458,9 @@ header-drawer {
 
   #shopify-section-announcement-bar-nidan .announcement__link a {
     font-size: 12px;
+  }
+
+  .announcement__link.miharu {
+    padding-top: 0;
   }
 }

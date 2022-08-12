@@ -11086,6 +11086,8 @@ header-drawer {
 
 #shopify-section-announcement-bar {
   z-index: 0;
+  font-family: "Outfit", sans-serif;
+  letter-spacing: 0.1em;
 }
 
 .header__icon {
@@ -11393,16 +11395,10 @@ header-drawer {
   padding: 0 !important;
 }
 
-#shopify-section-announcement-bar-nidan .announcement__link .announcement-bar__link {
-  letter-spacing: 0.1;
-  font-size: 15px;
-}
-
 #shopify-section-announcement-bar-nidan .announcement__link .announcement-bar__link span {
-  font-size: 13px !important;
   display: inline;
   line-height: 0;
-  letter-spacing: 0;
+  letter-spacing: 0.1em;
 }
 
 @media screen and (max-width: 750px) {
@@ -11412,6 +11408,7 @@ header-drawer {
 
   #shopify-section-announcement-bar-nidan .announcement-bar__link {
     position: relative;
+    margin: 0 10px !important;
   }
 
   #shopify-section-announcement-bar-nidan .announcement-bar a {
@@ -11445,10 +11442,12 @@ header-drawer {
     top: 70px;
   }
 }
-.announcement-bar__link {
-  font-size: 15px;
-}
+@media screen and (max-width: 750px) {
+  #shopify-section-announcement-bar-nidan .announcement__link {
+    margin: 0 30px !important;
+  }
 
-.announcement-bar__link span.smallTxt {
-  font-size: 13px !important;
+  #shopify-section-announcement-bar-nidan .announcement__link a {
+    font-size: 12px;
+  }
 }

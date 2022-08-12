@@ -283,6 +283,8 @@ header-drawer {
 
 #shopify-section-announcement-bar {
     z-index: 0;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.1em;
 }
 
 .header-wrapper.gradient {
@@ -618,13 +620,11 @@ header-drawer {
 
         }
         .announcement-bar__link{
-            letter-spacing: 0.1;
-            font-size: 15px;
             span{
-                font-size: 13px!important;
                 display: inline;
                 line-height: 0;
-                letter-spacing: 0;
+                letter-spacing: 0.1em;
+
             }
         }
     }
@@ -638,6 +638,8 @@ header-drawer {
         }
         .announcement-bar__link{
             position: relative;
+            margin: 0 10px!important;
+
         }
         .announcement-bar{
 
@@ -679,12 +681,18 @@ header-drawer {
     }
 }
 
-.announcement-bar__link{
 
-    font-size: 15px;
-    span.smallTxt{
-        font-size: 13px!important;
 
-        
-    }
+@media screen and (max-width: $BP) {
+
+#shopify-section-announcement-bar-nidan .announcement__link {
+    margin: 0 30px!important;
+}
+#shopify-section-announcement-bar-nidan .announcement__link a{
+    font-size: 12px;
+
+}
+.announcement-bar p{
+    
+}
 }

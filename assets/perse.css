@@ -11353,7 +11353,7 @@ header-drawer {
   padding: 0 0;
   padding-top: 3px;
   background: #f08984;
-  height: 70px;
+  height: 72px;
   position: relative;
   width: 100%;
 }
@@ -11379,7 +11379,7 @@ header-drawer {
 #shopify-section-announcement-bar-nidan span {
   display: block;
   font-size: 14px !important;
-  line-height: 1.2 !important;
+  line-height: 1 !important;
 }
 
 #shopify-section-announcement-bar-nidan .announcement__link {
@@ -11435,7 +11435,7 @@ header-drawer {
 }
 
 .header-wrapper {
-  top: 70px;
+  top: 72px;
 }
 
 @media screen and (max-width: 750px) {
@@ -11444,7 +11444,7 @@ header-drawer {
   }
 }
 .announcement__link {
-  padding-top: 10px;
+  padding-top: 6px;
 }
 
 .announcement__link a {
@@ -11462,5 +11462,14 @@ header-drawer {
 
   .announcement__link.miharu {
     padding-top: 0;
+  }
+
+  #shopify-section-announcement-bar-nidan span {
+    font-size: 12px !important;
+  }
+}
+@media screen and (min-width: 750px) {
+  .slider-mobile-gutter .grid__item {
+    max-width: 20% !important;
   }
 }

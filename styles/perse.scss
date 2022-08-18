@@ -720,3 +720,42 @@ header-drawer {
 }
 
 
+
+@media screen and (min-width: $BP) {
+
+    .modal-window0803{
+        width: 594px;
+    
+        img{
+            max-width: 594px;
+            width: 594px;
+            width: 100%;
+        }
+    }
+
+.js-close0803{
+    width: 594px;
+    display: block;
+
+    img{
+        max-width: 594px;
+        width: 100%;
+        display: block;
+
+    }
+
+    
+}
+.js-nextlink0803{
+    width: 594px;
+    display: block;
+    img{
+        width: 594px;
+        width: 100%;
+
+        display: block;
+    }
+
+}
+}
+

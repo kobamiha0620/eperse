@@ -11473,3 +11473,36 @@ header-drawer {
     max-width: 20% !important;
   }
 }
+@media screen and (min-width: 750px) {
+  .modal-window0803 {
+    width: 594px;
+  }
+
+  .modal-window0803 img {
+    max-width: 594px;
+    width: 594px;
+    width: 100%;
+  }
+
+  .js-close0803 {
+    width: 594px;
+    display: block;
+  }
+
+  .js-close0803 img {
+    max-width: 594px;
+    width: 100%;
+    display: block;
+  }
+
+  .js-nextlink0803 {
+    width: 594px;
+    display: block;
+  }
+
+  .js-nextlink0803 img {
+    width: 594px;
+    width: 100%;
+    display: block;
+  }
+}

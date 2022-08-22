@@ -17,6 +17,7 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "8.12(FRI)12:00〜新色｢FRENCH BROWN｣予約開始",
               "color_scheme": "accent-1",

@@ -674,13 +674,13 @@ header-drawer {
 }
 }
 
-.header-wrapper{
-    top: 72px;
-    @media screen and (max-width: $BP) {
-        top: 70px;
+// .header-wrapper{
+//     top: 72px;
+//     @media screen and (max-width: $BP) {
+//         top: 70px;
 
-    }
-}
+//     }
+// }
 
 
 .announcement__link{
@@ -759,3 +759,31 @@ header-drawer {
 }
 }
 
+
+
+.pc{
+    display: block;
+}
+.sp{
+    display: none;
+}
+
+@media screen and (min-width: $BP) {
+    .pc{
+        display: none;
+    }
+    .sp{
+        display: block;
+    }
+    
+}
+.homePerse .modal-window{
+    background:none;
+    padding: 0;
+    width: auto;
+    box-shadow: none;
+}
+
+.announcement-bar__message{
+    letter-spacing: 0.2rem;
+}

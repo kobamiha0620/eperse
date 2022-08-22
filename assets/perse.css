@@ -11524,3 +11524,11 @@ header-drawer {
 .announcement-bar__message {
   letter-spacing: 0.2rem;
 }
+
+.spmodalblc {
+  width: 80vw;
+}
+
+.spmodalblc img {
+  width: 100%;
+}

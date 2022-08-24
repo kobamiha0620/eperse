@@ -17,15 +17,15 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "8.12(FRI)12:00〜新色｢FRENCH BROWN｣予約開始",
+              "text": "新色｢FRENCH BROWN｣発売開始",
               "color_scheme": "accent-1",
               "link": ""
             }
           },
           "83c23dc0-af02-4dce-ace1-9093e716aed2": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "08.25(THU)23:59まで送料無料",
               "color_scheme": "accent-1",

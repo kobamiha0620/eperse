@@ -17,6 +17,7 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "08.19(FRI)新色「FRENCH BROWN」発売",
               "color_scheme": "accent-1",
@@ -25,9 +26,8 @@
           },
           "83c23dc0-af02-4dce-ace1-9093e716aed2": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "08.25(THU)23:59まで送料無料",
+              "text": "9\/10・11（SAT \/ SUN）限定送料無料キャンペーン",
               "color_scheme": "accent-1",
               "link": ""
             }

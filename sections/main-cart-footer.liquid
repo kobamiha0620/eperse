@@ -27,7 +27,6 @@
   {% endif %}
 {% endfor %} {% endcomment %}
 
-
 <div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
   <div>
     <div class="cart__footer">
@@ -98,10 +97,26 @@
         {% endfor %}
 
         <div id="cart-errors"></div>
+        <div style="margin: 100px auto 0; max-width: 36rem">
+          <p style="text-align: right; font-size: 14px;">
+          <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a>
+          </p>
+        </div>
       </div>
+
+      
     </div>
+
+
+
+
   </div>
+
+
 </div>
+
+
+
 
 {% javascript %}
   class CartNote extends HTMLElement {

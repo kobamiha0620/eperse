@@ -28,22 +28,6 @@
         "show_cart_note": false
       }
     },
-    "featured-products": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "collection",
-        "collection": "all",
-        "products_to_show": 6,
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": false
-      }
-    },
     "164506905694f90477": {
       "type": "collection-list",
       "disabled": true,
@@ -94,7 +78,6 @@
   "order": [
     "cart-items",
     "cart-footer",
-    "featured-products",
     "164506905694f90477"
   ]
 }

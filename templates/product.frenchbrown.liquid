@@ -86,7 +86,7 @@
         </section>
 
         <div class="product__cartbtn">
-            <form method="post" action="/cart/add">
+            {% comment %} <form method="post" action="/cart/add">
                 <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
                 <input type="hidden" min="1" type="number" id="quantity" name="quantity" value="1"/>
                 
@@ -95,8 +95,9 @@
                     <span class="product__cartbtn--img">cartimg<span>
                 </label>
                 <input type="submit" value="" class="" id="persebtn" />
-            </form> 
-
+            </form>  {% endcomment %}
+            <p>BUY</p>
+            <span class="product__cartbtn--img">cartimg<span>
         </div>
 
         <div class="product__intro">

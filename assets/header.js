@@ -70,7 +70,7 @@ $(function(){
 
 
 $(window).scroll(function () {
-  if ($(window).scrollTop() >20) {
+  if ($(window).scrollTop() > 50) {
       $(".header-wrapper").addClass("active");
       $("#MainContent").addClass('adjustment');
       

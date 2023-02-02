@@ -1,26 +1,57 @@
 <div class="phome" id="phome">
     <div class="phome__slide--wrapper ">
         <ul class="phome__slide">
-            <li class="phome__slide--fadein"><img src="{{ 'img_fvslick_rip01.png' | file_url }}" alt="slide01"
-                    width="100%" height="auto" class="phome__slide--img">
-                {% comment %} <div class="phome__slide--contactname fadeUpTrigger">
-                    <img src="{{ 'ttl_topnewslide.svg' | file_url }}" alt="Color Contact Lenses" loading="lazy"
-                        width="auto" height="auto">
-                </div> {% endcomment %}
-                <div class="phome__slide--name fadeUpTrigger"><img src="{{ 'top_slide.svg?v=1644294744' | file_url }}"
-                        alt="Name" loading="lazy" width="auto" height="auto"></div>
+            <li class="phome__slide--fadein">
+                <picture>
+                    <source srcset="{{ 'img_fvslick01.webp' | asset_url }}" type="image/webp">
+                    <img src="{{ 'img_fvslick01.jpg' | asset_url }}" alt="slide01" class="phome__slide--img" width="1084" height="1448" loading="lazy">
+                </picture>
+               <div class="phome__slide--name fadeUpTrigger"><img src="{{ 'slick_ttl.svg' | asset_url }}"
+                        alt="The Skin Eyeshadow Pallete" loading="lazy" width="858" height="275"></div>
             </li>
-            <li><img src="{{ 'img_fvslick_rip02.png' | file_url }}" alt="slide02" width="100%" height="auto"
-                    loading="lazy" class="phome__slide--img"></li>
-            <li><img src="{{ 'img_fvslick_rip03.png' | file_url }}" alt="slide03" width="100%" height="auto"
-                    loading="lazy" class="phome__slide--img"></li>
-
-            <li><img src="{{ 'img_fvslick_contact01.png' | file_url }}" alt="slide04" width="100%" height="auto"
-                    loading="lazy" class="phome__slide--img"></li>
-            <li><img src="{{ 'top_newslide02.png' | file_url }}" alt="slide05" width="100%" height="auto" loading="lazy"
-                    class="phome__slide--img"></li>
-            <li><img src="{{ 'top_newslide03.png' | file_url }}" alt="slide06" width="100%" height="auto" loading="lazy"
-                    class="phome__slide--img"></li>
+            <li>
+                <picture>
+                    <source srcset="{{ 'img_fvslick02.webp' | asset_url }}" type="image/webp">
+                    <img src="{{ 'img_fvslick02.jpg' | asset_url }}" alt="slide02" width="1084" height="1448" loading="lazy" class="phome__slide--img">
+                </picture>
+            </li>
+            <li>
+                <picture>
+                    <source srcset="{{ 'img_fvslick03.webp' | asset_url }}" type="image/webp">
+                    <img src="{{ 'img_fvslick03.jpg' | asset_url }}" alt="slide03" width="1084" height="1448" loading="lazy" class="phome__slide--img">
+                </picture>
+            </li>
+            <li>
+                <picture>
+                    <source srcset="{{ 'img_fvslick04.webp' | asset_url }}" type="image/webp">
+                    <img src="{{ 'img_fvslick04.jpg' | asset_url }}" alt="slide04" width="1084" height="1448" loading="lazy" class="phome__slide--img">
+                </picture>
+            </li>
+            <!-- <li>
+                <picture>
+                    <source srcset="{{ 'img_fvslick04b.webp' | asset_url }}" type="image/webp">
+                    <img src="{{ 'img_fvslick04b.jpg' | asset_url }}" alt="slide04" width="1084" height="1448" loading="lazy" class="phome__slide--img">
+                </picture>
+            </li> -->
+            <li>
+                <picture>
+                    <source srcset="{{ 'img_fvslick05.webp' | asset_url }}" type="image/webp">
+                    <img src="{{ 'img_fvslick05.jpg' | asset_url }}" alt="slide05" width="1084" height="1448" loading="lazy" class="phome__slide--img">
+                </picture>
+            </li>
+            <!-- <li>
+                <picture>
+                    <source srcset="{{ 'img_fvslick06.webp' | asset_url }}" type="image/webp">
+                    <img src="{{ 'img_fvslick06.jpg' | asset_url }}" alt="slide06" width="1084" height="1448" loading="lazy" class="phome__slide--img">
+                </picture>
+            </li> -->
+            <li>
+                <picture>
+                    <source srcset="{{ 'img_fvslick06b.webp' | asset_url }}" type="image/webp">
+                    <img src="{{ 'img_fvslick06b.jpg' | asset_url }}" alt="slide06" width="1084" height="1448" loading="lazy" class="phome__slide--img">
+                </picture>
+            </li>
+ 
         </ul>
         <div class="phome__slide--logo">logo</div>
     </div>
@@ -41,46 +72,187 @@
             </p>
 
             <div class="fadein_block">
-                <div class="phome__brand--img01 fadein02"><img src="{{ 'img_brand01.png?v=1644307925' | file_url }}"
-                        alt="1" loading="lazy" width="auto" height="auto"></div>
-                <div class="phome__brand--img02 fadein03"><img src="{{ 'img_brand02.png?v=1644307925' | file_url }}"
-                        alt="2" loading="lazy" width="auto" height="auto"></div>
-                <div class="phome__brand--img03 fadein04"><img src="{{ 'img_brand03.png?v=1644307925' | file_url }}"
-                        alt="3" loading="lazy" width="auto" height="auto"></div>
+                <div class="phome__brand--img01 fadein02">
+                    <picture>
+                        <source srcset="{{ 'img_brand01.webp' | asset_url }}" type="image/webp">
+                        <img src="{{ 'img_brand01.jpg' | asset_url }}" alt="img_brand01" width="300" height="300" loading="lazy" class="">
+                    </picture>
+                </div>
+                <div class="phome__brand--img02 fadein03">
+                    <picture>
+                        <source srcset="{{ 'img_brand03.webp' | asset_url }}" type="image/webp">
+                        <img src="{{ 'img_brand03.jpg' | asset_url }}" alt="img_brand03" width="508" height="700" loading="lazy" class="">
+                    </picture>
+                </div>
+                <div class="phome__brand--img03 fadein04">
+                    <picture>
+                        <source srcset="{{ 'img_brand02.webp' | asset_url }}" type="image/webp">
+                        <img src="{{ 'img_brand02.jpg' | asset_url }}" alt="img_brand02" width="380" height="488" loading="lazy" class="">
+                    </picture>
+                </div>
             </div>
         </div>
     </div>
 
 
+
+
+
     <div class="phome__product">
-        <div class="phome__product--inner">
+        <div class="phome__slicktop">
+            <!-- 865 + 52px =917まで -->
+            <div class="phome__slicktop--inner">
+                <div class="phome__slicktop--ttlblc">
+                    <div class="sp">
+                        <p class="phome__product--ripttl">(&nbsp;&nbsp;ITEM 01&nbsp;&nbsp;)</p>
+                        <h2 class="phome__slicktop--spttl">The Skin Eyeshadow Palette</h2>
+                        <h3 class="phome__product--sub">ベルベット フィックス リップバーム</h3>
+                    </div>
+                </div>  
+
+                <!-- 1つ目のslick -->
+                <div class="phome__slicktop--01wrapper"> 
+                    <ul class="phome__slicktop--01">
+                        <a href="{{ routes.root_url }}products/skineyeshadow-01rosymood">
+                            <li>
+                                <picture>
+                                    <source srcset="{{ 'palette_slick01.webp' | asset_url }}" type="image/webp">
+                                    <img src="{{ 'palette_slick01.jpg' | asset_url }}" alt="palette_slick01" width="660" height="848" loading="lazy" class="">
+                                </picture>
+                                <div class="sp">
+                                    <p class="phome__slicktop--spttl01">01 rosymood</p>
+                                    <p class="phome__product--price">¥2,490<span> ( inc.tax )</span></p>
+                                    <p class="phome__product--slickbtn"><span>VIEW MORE</span></p>
+                                </div>
+                                <p class="phome__product--slickname">01 ロージームード</p>
+                            </li>
+                        </a>
+
+                        <a href="{{ routes.root_url }}products/skineyeshadow-02ambermood">
+                            <li>
+                                <picture>
+                                    <source srcset="{{ 'palette_slick02.webp' | asset_url }}" type="image/webp">
+                                    <img src="{{ 'palette_slick02.jpg' | asset_url }}" alt="palette_slick02" width="660" height="848" loading="lazy" class="">
+                                </picture>
+                                <div class="sp">
+                                    <p class="phome__slicktop--spttl02">02 Amber mood</p>
+                                    <p class="phome__product--price">¥2,490<span> ( inc.tax )</span></p>
+                                    <p class="phome__product--slickbtn"><span>VIEW MORE</span></p>
+                                </p>
+                                <p class="phome__product--slickname">02 アンバームード</p>
+                            </li>
+                        </a>
+                    </ul>
+
+                </div>
+
+                <div class="phome__slicktop--pright">
+                    <div class="pc">
+                        <p class="phome__product--ripttl">(&nbsp;&nbsp;ITEM 01&nbsp;&nbsp;)</p>
+                        <h2 class="phome__slicktop--ttl">The Skin Eyeshadow Palette</h2>
+                        <h3 class="phome__product--sub">ベルベット フィックス リップバーム</h3>
+                    </div>
+                </div>
+                <!-- position: absolute -->
+                <div class="phome__slicktop--inner-ab">
+                    <ul class="phome__slicktop--02">
+                        <li class="phome__slicktop--02-01">
+                            <div class="phome__slicktop--02-01img">
+                                <picture class="pc">
+                                    <source srcset="{{ 'palette_slick01a.webp' | asset_url }}" type="image/webp">
+                                    <img src="{{ 'palette_slick01a.png' | asset_url }}" alt="palette_slick01a" width="820" height="796" loading="lazy" class="">
+                                </picture>
+                                <picture class="sp">
+                                    <source srcset="{{ 'palette_slick01a-sp.webp' | asset_url }}" type="image/webp">
+                                    <img src="{{ 'palette_slick01a-sp.png' | asset_url }}" alt="palette_slick01a" width="1244" height="1244" loading="lazy" class="">
+                                </picture>
+                            </div>
+                            <div class="pc">
+                                <a href="{{ routes.root_url }}products/skineyeshadow-01rosymood" class="phome__slicktop--name01">
+                                    
+                                    <p class="phome__slicktop--02ttla">01 rosymood</p>
+                                    <p class="phome__product--price">¥2,490<span> ( inc.tax )</span></p>
+                                    <p class="phome__product--slickbtn"><span>VIEW MORE</span></p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="phome__slicktop--02-02">
+                            <div class="phome__slicktop--02-01img">
+                                <picture class="pc">
+                                    <source srcset="{{ 'palette_slick01b.webp' | asset_url }}" type="image/webp">
+                                    <img src="{{ 'palette_slick01b.png' | asset_url }}" alt="palette_slick01b" width="820" height="796" loading="lazy" class="">
+                                </picture>
+                                <picture class="sp">
+                                    <source srcset="{{ 'palette_slick01b-sp.webp' | asset_url }}" type="image/webp">
+                                    <img src="{{ 'palette_slick01b-sp.png' | asset_url }}" alt="palette_slick01a" width="1244" height="1244" loading="lazy" class="">
+                                </picture>
+                            </div>
+                            <div class="pc">
+                                <a href="{{ routes.root_url }}products/skineyeshadow-02ambermood" class="phome__slicktop--name02">
+                                    <p class="phome__slicktop--02ttlb">02 Amber mood</p>
+                                    <p class="phome__product--price">¥2,490<span> ( inc.tax )</span></p>
+                                    <p class="phome__product--slickbtn"><span>VIEW MORE</span></p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div> 
+
+            </div>
+
+
+
+        </div>
+
+       <div class="phome__product--inner">
             <div class="phome__product--rip">
-                <p class="phome__product--ripttl">(&nbsp;&nbsp;ITEM 01&nbsp;&nbsp;)</p>
+                <p class="phome__product--ripttl">(&nbsp;&nbsp;ITEM 02&nbsp;&nbsp;)</p>
                 <h2 class="phome__product--ripsub">Velvet Fix Lip Barm</h2>
                 <h3 class="phome__product--sub">ベルベット フィックス リップバーム</h3>
-
+                
                 <div class="phome__product--slickwrap">
                     <div class="phome__product--slick02wrapNew">
                         <ul class="phome__product--slick02">
                             <li><a href="{{ routes.root_url }}products/velvet-fix-lip-balm-1/">
-                                    <div class="phome__product--slickpro00"><img src="{{ 'newicon_01.png' | file_url }}"
-                                            alt="01 ヌードローズ" loading="lazy" width="auto" height="auto"></div>
+                                    <div class="phome__product--slickpro00">
+                                        <picture>
+                                            <source srcset="{{ 'newicon_01.webp' | asset_url }}" type="image/webp">
+                                            <img src="{{ 'newicon_01.png' | asset_url }}" alt="01 ヌードローズ" width="1060" height="832" loading="lazy" class="">
+                                        </picture>
+                                    </div>
                                 </a></li>
                             <li><a href="{{ routes.root_url }}products/velvet-fix-lip-balm-innocent-red/">
-                                    <div class="phome__product--slickpro00"><img src="{{ 'newicon_02.png' | file_url }}"
-                                            alt="02 イノセントレッド" loading="lazy" width="auto" height="auto"></div>
+                                    <div class="phome__product--slickpro00">
+                                        <picture>
+                                            <source srcset="{{ 'newicon_02.webp' | asset_url }}" type="image/webp">
+                                            <img src="{{ 'newicon_02.png' | asset_url }}" alt="02 イノセントレッド" width="1060" height="832" loading="lazy" class="">
+                                        </picture>
+                                    </div>
                                 </a></li>
                             <li><a href="{{ routes.root_url }}products/velvet-fix-lip-balm-chili-orange/">
-                                    <div class="phome__product--slickpro00"><img src="{{ 'newicon_03.png' | file_url }}"
-                                            alt="03 チリオレンジ" loading="lazy" width="auto" height="auto"></div>
+                                    <div class="phome__product--slickpro00">
+                                        
+                                        <picture>
+                                            <source srcset="{{ 'newicon_03.webp' | asset_url }}" type="image/webp">
+                                            <img src="{{ 'newicon_03.png' | asset_url }}" alt="03 チリオレンジ" width="1060" height="832" loading="lazy" class="">
+                                        </picture>
+                                    </div>
                                 </a></li>
                             <li><a href="{{ routes.root_url }}products/velvet-fix-lip-balm-almond-brown">
-                                    <div class="phome__product--slickpro00"><img src="{{ 'newicon_04.png' | file_url }}"
-                                            alt="04 アーモンドブラウン" loading="lazy" width="auto" height="auto"></div>
+                                    <div class="phome__product--slickpro00">
+                                        <picture>
+                                            <source srcset="{{ 'newicon_04.webp' | asset_url }}" type="image/webp">
+                                            <img src="{{ 'newicon_04.png' | asset_url }}" alt="04 アーモンドブラウン" width="1060" height="832" loading="lazy" class="">
+                                        </picture>
+                                    </div>
                                 </a></li>
                             <li><a href="{{ routes.root_url }}products/velvetfixlipbalm-frenchbrown/">
-                                    <div class="phome__product--slickpro00"><img src="{{ 'newicon_05.png' | file_url }}"
-                                            alt="05 フレンチブラウン" loading="lazy" width="auto" height="auto"></div>
+                                <div class="phome__product--slickpro00">
+                                    <picture>
+                                        <source srcset="{{ 'newicon_05.webp' | asset_url }}" type="image/webp">
+                                        <img src="{{ 'newicon_05.png' | asset_url }}" alt="05 フレンチブラウンド" width="1060" height="832" loading="lazy" class="">
+                                    </picture>
+                                    </div>
                                 </a></li>
                         </ul>
                     </div>
@@ -90,11 +262,13 @@
                             <a href="{{ routes.root_url }}products/velvet-fix-lip-balm-1/">
 
                                 <div class="phome__product--slickImg">
-                                    <img src="{{ 'img_rip01b_e9cb25ed-d8e6-48ea-8125-4fa4461daad3.png?v=1644628670' | file_url }}"
-                                        alt="01 ヌードローズ" loading="lazy" width="auto" height="auto">
+                                    <picture>
+                                        <source srcset="{{ 'img_rip01b.webp' | asset_url }}" type="image/webp">
+                                        <img src="{{ 'img_rip01b.png' | asset_url }}" alt="01 ヌードローズ" width="1060" height="832" loading="lazy" class="">
+                                    </picture>
+
                                 </div>
                                 <p class="phome__product--price">¥1,680<span> ( inc.tax )</span></p>
-
                                 <p class="phome__product--slickbtn"><span>VIEW MORE</span></p>
                                 <p class="phome__product--slickname">01 ヌードローズ</p>
                             </a>
@@ -104,8 +278,10 @@
                             <a href="{{ routes.root_url }}products/velvet-fix-lip-balm-innocent-red/">
 
                                 <div class="phome__product--slickImg">
-                                    <img src="{{ 'img_rip02b.png?v=1644347218' | file_url }}" alt="02 イノセントレッド"
-                                        loading="lazy" width="auto" height="auto">
+                                    <picture>
+                                        <source srcset="{{ 'img_rip02b.webp' | asset_url }}" type="image/webp">
+                                        <img src="{{ 'img_rip02b.png' | asset_url }}" alt="02 イノセントレッド" width="1060" height="832" loading="lazy" class="">
+                                    </picture>
                                 </div>
                                 <p class="phome__product--price">¥1,680<span> ( inc.tax )</span></p>
 
@@ -118,8 +294,10 @@
                             <a href="{{ routes.root_url }}products/velvet-fix-lip-balm-chili-orange/">
 
                                 <div class="phome__product--slickImg">
-                                    <img src="{{ 'img_slick_top03.png' | file_url }}" alt="03 チリオレンジ" loading="lazy"
-                                        width="auto" height="auto">
+                                    <picture>
+                                        <source srcset="{{ 'img_slick_top03.webp' | asset_url }}" type="image/webp">
+                                        <img src="{{ 'img_slick_top03.png' | asset_url }}" alt="03 チリオレンジ" width="1060" height="832" loading="lazy" class="">
+                                    </picture>
                                 </div>
                                 <p class="phome__product--price">¥1,680<span> ( inc.tax )</span></p>
 
@@ -132,8 +310,10 @@
                             <a href="{{ routes.root_url }}products/velvet-fix-lip-balm-almond-brown">
 
                                 <div class="phome__product--slickImg">
-                                    <img src="{{ 'img_slick_top04.png' | file_url }}" alt="04 アーモンドブラウン" loading="lazy"
-                                        width="auto" height="auto">
+                                    <picture>
+                                        <source srcset="{{ 'img_slick_top04.webp' | asset_url }}" type="image/webp">
+                                        <img src="{{ 'img_slick_top04.png' | asset_url }}" alt="04 アーモンドブラウン" width="1060" height="832" loading="lazy" class="">
+                                    </picture>
                                 </div>
                                 <p class="phome__product--price">¥1,680<span> ( inc.tax )</span></p>
 
@@ -146,8 +326,10 @@
                             <a href="{{ routes.root_url }}products/velvetfixlipbalm-frenchbrown/">
 
                                 <div class="phome__product--slickImg">
-                                    <img src="{{ 'img_slick_top05.png' | file_url }}" alt="05 フレンチローズ" loading="lazy"
-                                        width="auto" height="auto">
+                                    <picture>
+                                        <source srcset="{{ 'img_slick_top05.webp' | asset_url }}" type="image/webp">
+                                        <img src="{{ 'img_slick_top05.png' | asset_url }}" alt="05 フレンチローズ" width="1060" height="832" loading="lazy" class="">
+                                    </picture>
                                 </div>
                                 <p class="phome__product--price">¥1,680<span> ( inc.tax )</span></p>
 
@@ -156,48 +338,14 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="phome__product--slickkado">kadomaru</div>
-                    <div class="phome__product--slickline">line</div>
-                    {% comment %}
-                    <div class="phome__product--slick02wrap">
-                        <ul class="phome__product--slick02">
-                            <li><a href="{{ routes.root_url }}products/velvet-fix-lip-balm-1/">
-                                    <div class="phome__product--slickpro"><img
-                                            src="{{ 'color_01_wb_51679f2e-d5e7-467c-82ea-41725e6962d0.png?v=1644978820' | file_url }}"
-                                            alt="01 ヌードローズ" loading="lazy" width="auto" height="auto"></div>
-                                </a></li>
-                            <li><a href="{{ routes.root_url }}products/velvet-fix-lip-balm-innocent-red/">
-                                    <div class="phome__product--slickpro"><img
-                                            src="{{ 'color_02_wb_1562ed71-63f6-4d4f-aedd-9be828f1e5c9.png?v=1644978820' | file_url }}"
-                                            alt="02 イノセントレッド" loading="lazy" width="auto" height="auto"></div>
-                                </a></li>
-                            <li><a href="{{ routes.root_url }}products/velvet-fix-lip-balm-chili-orange/">
-                                    <div class="phome__product--slickpro"><img
-                                            src="{{ 'color_03_wb_7d513389-d216-401f-9896-6df1b4e43e45.png?v=1644978821' | file_url }}"
-                                            alt="03 チリオレンジ" loading="lazy" width="auto" height="auto"></div>
-                                </a></li>
-                            <li><a href="{{ routes.root_url }}products/velvet-fix-lip-balm-almond-brown">
-                                    <div class="phome__product--slickpro"><img
-                                            src="{{ 'color_04_wb_6b82b05e-cab7-49f7-b950-fe166f497447.png?v=1644978820' | file_url }}"
-                                            alt="04 アーモンドブラウン" loading="lazy" width="auto" height="auto"></div>
-                                </a></li>
-                            <li><a href="{{ routes.root_url }}products/velvetfixlipbalm-frenchbrown/">
-                                    <div class="phome__product--slickpro"><img
-                                            src="{{ 'img_slick_top05sub.png' | file_url }}" alt="05 フレンチブラウン"
-                                            loading="lazy" width="auto" height="auto"></div>
-                                </a></li>
-                        </ul>
-                    </div>
-                    {% endcomment %}
-
-
+                    <!-- <div class="phome__product--slickline">line</div> -->
                 </div>
             </div>
 
 
 
             <div class="phome__product--lenz">
-                <p class="phome__product--lenzttl">(&nbsp;&nbsp;ITEM 02&nbsp;&nbsp;)</p>
+                <p class="phome__product--lenzttl">(&nbsp;&nbsp;ITEM 03&nbsp;&nbsp;)</p>
                 <h2 class="phome__product--lenzsub">Color Contact Lenses</h2>
                 <h3 class="phome__product--sub">カラーコンタクトレンズ</h3>
                 <div class="phome__product--slickwrap">
@@ -205,8 +353,10 @@
                         <li>
                             <a href="{{ routes.root_url }}products/nudie-beige">
                                 <div class="phome__product--slickImg">
-                                    <img src="{{ 'img_lens01.png' | file_url }}" alt="01 ヌーディーベージュ" loading="lazy"
-                                        width="auto" height="auto">
+                                    <picture>
+                                        <source srcset="{{ 'img_lens01.webp' | asset_url }}" type="image/webp">
+                                        <img src="{{ 'img_lens01.png' | asset_url }}" alt="01 ヌーディーベージュ" width="660" height="960" loading="lazy" class="">
+                                    </picture>
                                 </div>
                                 <p class="phome__product--lenzprice">¥1,705<span> ( inc.tax )</span></p>
                                 <p class="phome__product--slickcon"><span>VIEW MORE</span></p>
@@ -216,8 +366,10 @@
                         <li>
                             <a href="{{ routes.root_url }}products/teddy-brown">
                                 <div class="phome__product--slickImg">
-                                    <img src="{{ 'img_lens02.png' | file_url }}" alt="02 テディブラウン" loading="lazy"
-                                        width="auto" height="auto">
+                                    <picture>
+                                        <source srcset="{{ 'img_lens02.webp' | asset_url }}" type="image/webp">
+                                        <img src="{{ 'img_lens02.png' | asset_url }}" alt="02 テディブラウン" width="660" height="960" loading="lazy" class="">
+                                    </picture>
                                 </div>
                                 <p class="phome__product--lenzprice">¥1,705<span> ( inc.tax )</span></p>
 
@@ -228,9 +380,10 @@
                         <li>
                             <a href="{{ routes.root_url }}products/air-gray">
                                 <div class="phome__product--slickImg">
-                                    <img src="{{ 'img_lens03.png' | file_url }}" alt="03 エアーグレー" loading="lazy"
-                                        width="auto" height="auto">
-
+                                    <picture>
+                                        <source srcset="{{ 'img_lens03.webp' | asset_url }}" type="image/webp">
+                                        <img src="{{ 'img_lens03.png' | asset_url }}" alt="03 エアーグレー" width="660" height="960" loading="lazy" class="">
+                                    </picture>
                                 </div>
                                 <p class="phome__product--lenzprice">¥1,705<span> ( inc.tax )</span></p>
 
@@ -241,9 +394,10 @@
                         <li>
                             <a href="{{ routes.root_url }}products/palm-green">
                                 <div class="phome__product--slickImg">
-                                    <img src="{{ 'img_lens04.png' | file_url }}" alt="04 パームグリーン" loading="lazy"
-                                        width="auto" height="auto">
-
+                                    <picture>
+                                        <source srcset="{{ 'img_lens04.webp' | asset_url }}" type="image/webp">
+                                        <img src="{{ 'img_lens04.png' | asset_url }}" alt="04 パームグリーン" width="660" height="960" loading="lazy" class="">
+                                    </picture>
                                 </div>
                                 <p class="phome__product--lenzprice">¥1,705<span> ( inc.tax )</span></p>
 
@@ -256,39 +410,56 @@
                         <ul class="phome__product--slick04">
                             <li>
                                 <div class="phome__product--slickpro">
-                                    <img src="{{ 'img_lens01b_pc.png' | file_url }}" alt="01 ヌーディーベージュ" loading="lazy"
-                                        width="auto" height="auto" class="imgPc">
-                                    <img src="{{ 'img_lens01b.png' | file_url }}" alt="01 ヌーディーベージュ" loading="lazy"
-                                        width="auto" height="auto" class="imgSp">
+                                    <picture>
+                                        <source srcset="{{ 'img_lens01b_pc.webp' | asset_url }}" type="image/webp">
+                                        <img src="{{ 'img_lens01b_pc.png' | asset_url }}" alt="01 ヌーディーベージュ" width="1060" height="220" loading="lazy" class="imgPc">
+                                    </picture>
+                                    <picture>
+                                        <source srcset="{{ 'img_lens01b.webp' | asset_url }}" type="image/webp">
+                                        <img src="{{ 'img_lens01b.png' | asset_url }}" alt="01 ヌーディーベージュ" width="1060" height="240" loading="lazy" class="imgSp">
+                                    </picture>
                                 </div>
                             </li>
                             <li>
                                 <div class="phome__product--slickpro">
-                                    <img src="{{ 'img_lens02b_pc.png' | file_url }}" alt="02 テディブラウン" loading="lazy"
-                                        width="auto" height="auto" class="imgPc">
-                                    <img src="{{ 'img_lens02b.png' | file_url }}" alt="02 テディブラウン" loading="lazy"
-                                        width="auto" height="auto" class="imgSp">
+                                    <picture>
+                                        <source srcset="{{ 'img_lens02b_pc.webp' | asset_url }}" type="image/webp">
+                                        <img src="{{ 'img_lens02b_pc.png' | asset_url }}" alt="02 テディブラウン" width="1060" height="220" loading="lazy" class="imgPc">
+                                    </picture>
+                                    <picture>
+                                        <source srcset="{{ 'img_lens02b.webp' | asset_url }}" type="image/webp">
+                                        <img src="{{ 'img_lens02b.png' | asset_url }}" alt="02 テディブラウン" width="1060" height="240" loading="lazy" class="imgSp">
+                                    </picture>
                                 </div>
                             </li>
                             <li>
                                 <div class="phome__product--slickpro">
-                                    <img src="{{ 'img_lens03b_pc.png' | file_url }}" alt="03 エアーグレー" loading="lazy"
-                                        width="auto" height="auto" class="imgPc">
-                                    <img src="{{ 'img_lens03b.png' | file_url }}" alt="03 エアーグレー" loading="lazy"
-                                        width="auto" height="auto" class="imgSp">
+                                    <picture>
+                                        <source srcset="{{ 'img_lens03b_pc.webp' | asset_url }}" type="image/webp">
+                                        <img src="{{ 'img_lens03b_pc.png' | asset_url }}" alt="03 エアーグレー" width="1060" height="220" loading="lazy" class="imgPc">
+                                    </picture>
+                                    <picture>
+                                        <source srcset="{{ 'img_lens03b.webp' | asset_url }}" type="image/webp">
+                                        <img src="{{ 'img_lens03b.png' | asset_url }}" alt="03 エアーグレー" width="1060" height="240" loading="lazy" class="imgSp">
+                                    </picture>
+
                                 </div>
                             </li>
                             <li>
                                 <div class="phome__product--slickpro">
-                                    <img src="{{ 'img_lens04b_pc.png' | file_url }}" alt="04 パームグリーン" loading="lazy"
-                                        width="auto" height="auto" class="imgPc">
-                                    <img src="{{ 'img_lens04b.png' | file_url }}" alt="04 パームグリーン" loading="lazy"
-                                        width="auto" height="auto" class="imgSp">
+                                    <picture>
+                                        <source srcset="{{ 'img_lens04b_pc.webp' | asset_url }}" type="image/webp">
+                                        <img src="{{ 'img_lens04b_pc.png' | asset_url }}" alt="04 パームグリーン" width="1060" height="220" loading="lazy" class="imgPc">
+                                    </picture>
+                                    <picture>
+                                        <source srcset="{{ 'img_lens04b.webp' | asset_url }}" type="image/webp">
+                                        <img src="{{ 'img_lens04b.png' | asset_url }}" alt="04 パームグリーン" width="1060" height="240" loading="lazy" class="imgSp">
+                                    </picture>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <div class="phome__product--slickkado">kadomaru</div>
+                    <!-- <div class="phome__product--slickkado">kadomaru</div> -->
                 </div>
             </div>
         </div>
@@ -296,9 +467,11 @@
 
 
 
-    <div class="phome__pararaPc">
-        <h2 class="phome__pararaPc--ttl"><img src="{{ 'parara_ttl.svg?v=1644331509' | file_url }}"
-                alt="create for yourself" loading="lazy" width="auto" height="auto"></h2>
+    <div class="phome__pararaPc">   
+        <h2 class="phome__pararaPc--ttl">
+            <img src="{{ 'parara_ttl.svg?v=1644331509' | file_url }}"
+                alt="create for yourself" loading="lazy" width="353" height="29">
+        </h2>
     </div>
     <div class="phome__pararaSp2">
         <h2 class="phome__pararaSp2--txt"><img src="{{ 'pararaSP2.png?v=1644917694' | file_url }}"
@@ -312,12 +485,16 @@
             <h2 class="phome__produce--rttl">(&nbsp;&nbsp;PRODUCER&nbsp;&nbsp;)</h2>
             <h3 class="phome__produce--rsubttl">YOSHIAKI & MICHI</h3>
             <div class="phome__produce--image">
-                <img src="{{ 'img_producer.png?v=1644320426' | file_url }}" alt="YOSHIAKI & MICHI" loading="lazy"
-                    width="auto" height="auto">
+                <picture>
+                    <source srcset="{{ 'img_producer2302.webp' | asset_url }}" type="image/webp">
+                    <img src="{{ 'img_producer2302.jpg' | asset_url }}" alt="YOSHIAKI & MICHI" width="816" height="954" loading="lazy" class="">
+                </picture>
             </div>
             <div class="phome__produce--imageSp">
-                <img src="{{ 'img_producerSp.png?v=1644329464' | file_url }}" alt="YOSHIAKI & MICHI" loading="lazy"
-                    width="auto" height="auto">
+                <picture>
+                    <source srcset="{{ 'img_producer2302sp.webp' | asset_url }}" type="image/webp">
+                    <img src="{{ 'img_producer2302sp.jpg' | asset_url }}" alt="YOSHIAKI & MICHI" width="1350" height="1288" loading="lazy" class="">
+                </picture>
             </div>
             <p class="phome__produce--txt">Tomorrow, You will be better than you are.<br>
                 Let your sensitivity wherever your heart takes you.<br>
@@ -328,9 +505,10 @@
             <h2 class="phome__produce--ltxt"><span>YOSHIAKI & MICHI</span></h2>
 
             <div class="phome__produce--imgs">
-                <img src="{{ 'img_producerB.png' | file_url }}" alt="YOSHIAKI & MICHI" loading="lazy" width="auto"
-                    height="auto">
-
+                <picture>
+                    <source srcset="{{ 'img_producer2302b.webp' | asset_url }}" type="image/webp">
+                    <img src="{{ 'img_producer2302b.png' | asset_url }}" alt="YOSHIAKI & MICHI" width="416" height="486" loading="lazy" class="">
+                </picture>
             </div>
 
             <p class="phome__produce--stxt">

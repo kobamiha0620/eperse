@@ -8,7 +8,7 @@ $c03: #92B1BC;
 $c04: #7A9569;
 
 $assets_path: "//cdn.shopify.com/s/files/1/0618/4593/0220/files/";
-
+$imgpath: "//cdn.shopify.com/s/files/1/0618/4593/0220/t/37/assets/";
 $BP: 750px;
 $PCW: 1280px;
 $PCIW: 568px;
@@ -127,4 +127,37 @@ input, select {
     text-indent: -9999px;
     display: block;
 	@content;
+}
+@mixin bgimg2($file) {
+	background-image: url($imgpath + $file);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+    background-size: 100% auto;
+    white-space: nowrap;
+    text-indent: -9999px;
+    display: block;
+	@content;
+}
+
+@mixin fz($size) {
+	font-size: calc($size / 16) + rem;
+}
+
+// ## webp classes
+$webpClassName: '.is-webp';
+$noWebpClassName: '.is-no-webp';
+
+// $selector にする background-image で、webp を出し分ける
+// ※親要素に $webpClassName / $noWebpClassName が付与されることが前提
+// --------------------------------------------------------
+// $selector      {string} css セレクタ (default: jpg)
+// $imgpath      {string} 背景画像ファイルパス
+// $fileExtension {string} 背景画像拡張子
+@mixin webpBg($selector, $imgpath, $fileExtension: 'jpg') {
+  #{$noWebpClassName} #{$selector} {
+    background-image: url(#{$imgpath}.#{$fileExtension});
+  }
+  #{$webpClassName} #{$selector} {
+    background-image: url(#{$imgpath}.webp);
+  }
 }

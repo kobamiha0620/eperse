@@ -1,5 +1,6 @@
 @charset "utf-8";
-@import "_reset";
+@use '../reset.scss' as var;
+
 
 // 01----------------------------------------------------------------------
 %clenz01enTxt {
@@ -53,7 +54,7 @@
 
 }
 
-@media screen and (max-width: $BP) {
+@media screen and (max-width: var.$BP) {
     %clenz01enTxt {
         font-size: 2.8vw;
         left: 4.5vw;
@@ -98,7 +99,7 @@
     margin: 0 0 84px;
 }
 
-@media screen and (max-width: $BP) {
+@media screen and (max-width: var.$BP) {
     %clenz02 {
         min-height: 134.9vw;
         width: 100vw;
@@ -109,21 +110,21 @@
 #clenz01 {
     .clenz {
         &__inner {
-            width: $PCIW;
+            width: var.$PCIW;
             margin: 0 auto;
         }
 
         &__01 {
-            border-top: solid 1px $c01;
+            border-top: solid 1px var.$c01;
             @extend %clenz01blc;
 
             &--ltxt {
                 @extend %clenz01enTxt;
-                color: $c01;
+                color: var.$c01;
             }
 
             &--logo {
-                @include bgimg('img_clenz01_01logo.svg');
+                @include var.bgimg('img_clenz01_01logo.svg');
                 @extend %clenz01logo;
             }
 
@@ -145,7 +146,7 @@
             }
 
             &--name {
-                @include bgimg('img_clenz01_01c.svg');
+                @include var.bgimg('img_clenz01_01c.svg');
                 width: 384px;
                 height: 45px;
                 margin: 0 auto 15px;
@@ -153,14 +154,14 @@
 
             &--txt {
                 @extend %clenz01txt;
-                color: $c01;
+                color: var.$c01;
                 span{
                     text-align: center;
                 }
             }
         }
 
-        @media screen and (max-width: $BP) {
+        @media screen and (max-width: var.$BP) {
             %clenz01enImg {
                 width: 79.6vw;
                 margin: 11.3vw auto;
@@ -191,7 +192,7 @@
         }
 
         &__02 {
-            background: url('#{$assets_path}bg_clenz01_02a.png') no-repeat 0 0;
+            background: url('#{var.$assets_path}bg_clenz01_02a.png') no-repeat 0 0;
             @extend %clenz02;
         }
     }
@@ -230,7 +231,7 @@
             }
         }
 
-        @media screen and (max-width: $BP) {
+        @media screen and (max-width: var.$BP) {
             .clenz__02--img {
                 padding: 9vw 9vw 0;
                 margin: 0 0 5vw;
@@ -257,15 +258,15 @@
 #clenz02 {
     .clenz {
         &__01 {
-            border-top: solid 1px $c02;
+            border-top: solid 1px var.$c02;
             @extend %clenz01blc;
             &--ltxt {
                 @extend %clenz01enTxt;
-                color: $c02;
+                color: var.$c02;
             }
 
             &--logo {
-                @include bgimg('img_clenz02_01logo.svg');
+                @include var.bgimg('img_clenz02_01logo.svg');
                 @extend %clenz01logo;
             }
 
@@ -286,7 +287,7 @@
             }
 
             &--name {
-                @include bgimg('img_clenz02_01c.svg');
+                @include var.bgimg('img_clenz02_01c.svg');
                 width: 384px;
                 height: 45px;
                 margin: 0 auto 15px;
@@ -294,14 +295,14 @@
 
             &--txt {
                 @extend %clenz01txt;
-                color: $c02;
+                color: var.$c02;
                 span{
                     text-align: center;
                 }
             }
         }
         &__02 {
-            background: url('#{$assets_path}bg_clenz02_02a.png') no-repeat 0 0;
+            background: url('#{var.$assets_path}bg_clenz02_02a.png') no-repeat 0 0;
             @extend %clenz02;
         }
         &__03{
@@ -340,7 +341,7 @@
                 left: 28px;
                 top: 554px;
                 height: 0;
-                border-left: solid 2px $c02;
+                border-left: solid 2px var.$c02;
                 position: absolute;
             }
             &--subimg{
@@ -364,7 +365,7 @@
                 }
             }
             &--words{
-                color: $c02;
+                color: var.$c02;
                 font-family: 'Outfit', sans-serif;
                 font-size: 1.36rem;
                 line-height: 1.5;
@@ -387,7 +388,7 @@
                 }
             }
         }
-        @media screen and (max-width: $BP) {
+        @media screen and (max-width: var.$BP) {
             %clenz01enImg {
                 width: 79.6vw;
                 margin: 11.3vw auto;
@@ -439,7 +440,7 @@
                     left: 5vw;
                     top: 97vw;
                     height: 0;
-                    border-left: solid 1px $c02;
+                    border-left: solid 1px var.$c02;
                 }
                 &--subimg{
                     width: 40.5vw;
@@ -479,15 +480,15 @@
 #clenz03 {
     .clenz {
         &__01 {
-            border-top: solid 1px $c03;
+            border-top: solid 1px var.$c03;
             @extend %clenz01blc;
             &--ltxt {
                 @extend %clenz01enTxt;
-                color: $c03;
+                color: var.$c03;
             }
 
             &--logo {
-                @include bgimg('img_clenz03_01logo.svg');
+                @include var.bgimg('img_clenz03_01logo.svg');
                 @extend %clenz01logo;
             }
 
@@ -509,7 +510,7 @@
 
 
             &--name {
-                @include bgimg('img_clenz03_01c.svg');
+                @include var.bgimg('img_clenz03_01c.svg');
                 width: 384px;
                 height: 45px;
                 margin: 0 auto 15px;
@@ -517,18 +518,18 @@
 
             &--txt {
                 @extend %clenz01txt;
-                color: $c03;
+                color: var.$c03;
                 span{
                     text-align: center;
                 }
             }
         }
         &__02 {
-            background: url('#{$assets_path}bg_clenz03_02a.png') no-repeat 0 0;
+            background: url('#{var.$assets_path}bg_clenz03_02a.png') no-repeat 0 0;
             @extend %clenz02;
         }
 
-        @media screen and (max-width: $BP) {
+        @media screen and (max-width: var.$BP) {
             %clenz01enImg {
                 width: 79.6vw;
                 margin: 11.3vw auto;
@@ -567,15 +568,15 @@
 #clenz04 {
     .clenz {
         &__01 {
-            border-top: solid 1px $c04;
+            border-top: solid 1px var.$c04;
             @extend %clenz01blc;
             &--ltxt {
                 @extend %clenz01enTxt;
-                color: $c04;
+                color: var.$c04;
             }
 
             &--logo {
-                @include bgimg('img_clenz04_01logo.svg');
+                @include var.bgimg('img_clenz04_01logo.svg');
                 @extend %clenz01logo;
             }
 
@@ -597,7 +598,7 @@
 
 
             &--name {
-                @include bgimg('img_clenz04_01c.svg');
+                @include var.bgimg('img_clenz04_01c.svg');
                 width: 384px;
                 height: 45px;
                 margin: 0 auto 15px;
@@ -605,14 +606,14 @@
 
             &--txt {
                 @extend %clenz01txt;
-                color: $c04;
+                color: var.$c04;
                 span{
                     text-align: center;
                 }
             }
         }
         &__02 {
-            background: url('#{$assets_path}bg_clenz04_02a.png') no-repeat 0 0;
+            background: url('#{var.$assets_path}bg_clenz04_02a.png') no-repeat 0 0;
             @extend %clenz02;
         }
         &__03{
@@ -647,7 +648,7 @@
                 }
             }
             &--words{
-                color: $c04;
+                color: var.$c04;
                 font-family: 'Outfit', sans-serif;
                 font-size: 1.36rem;
                 line-height: 1.5;
@@ -661,7 +662,7 @@
                 padding: 0;
                 font-size: 0;
                 height: 0;
-                border-left: solid 2px $c04;
+                border-left: solid 2px var.$c04;
                 position: absolute;
             }
             &--subimg{
@@ -704,7 +705,7 @@
                 }
             }
         }
-        @media screen and (max-width: $BP) {
+        @media screen and (max-width: var.$BP) {
             %clenz01enImg {
                 width: 79.6vw;
                 margin: 11.3vw auto;
@@ -760,7 +761,7 @@
                 &--line{
                     left: 5.3vw;
                     top: 41vw;
-                    border-left: solid 1px $c04;
+                    border-left: solid 1px var.$c04;
                 }
                 &--subimg{
                     width: 78vw;
@@ -807,7 +808,7 @@
 .clenz {
     overflow: hidden;
     &__inner {
-        width: $PCIW;
+        width: var.$PCIW;
         margin: 0 auto;
     }
     &__other {
@@ -819,7 +820,7 @@
             margin: 0 0 60px;
 
             span {
-                @include bgimg('ttl_otheritem.svg');
+                @include var.bgimg('ttl_otheritem.svg');
                 width: 222px;
                 height: 28px;
                 margin: 0 auto;
@@ -832,7 +833,7 @@
 
         &--itemswrapper {
 
-            scrollbar-color: $cColor #EBE3DB;
+            scrollbar-color: var.$cColor #EBE3DB;
 
             &::-webkit-scrollbar-track {
                 height: 2px;
@@ -844,7 +845,7 @@
             }
 
             &::-webkit-scrollbar-thumb {
-                background-color: $cColor;
+                background-color: var.$cColor;
             }
 
 
@@ -898,7 +899,7 @@
                 line-height: 1;
                 margin: 0 0 13px;
                 font-weight: bold;
-                color: $cColor;
+                color: var.$cColor;
 
             }
 
@@ -907,7 +908,7 @@
                 line-height: 1;
                 margin: 0 0 16px;
                 // font-weight: 300;
-                color: $cColor;
+                color: var.$cColor;
 
             }
 
@@ -918,7 +919,7 @@
                 line-height: 0.8;
 
                 // font-weight: 300;
-                color: $cColor;
+                color: var.$cColor;
 
                 span {
                     font-size: 0.8em;
@@ -927,7 +928,7 @@
         }
     }
 
-    @media screen and (max-width: $BP) {
+    @media screen and (max-width: var.$BP) {
         &__other {
             width: 100vw;
             max-width: 100vw;
@@ -961,7 +962,7 @@
                 padding-bottom: 12vw;
                -webkit-overflow-scrolling:touch;
 
-                scrollbar-color: $cColor #EBE3DB;
+                scrollbar-color: var.$cColor #EBE3DB;
                 &::-webkit-scrollbar {
                     display: block;
                     height: 2px;
@@ -977,7 +978,7 @@
                 }
 
                 &::-webkit-scrollbar-thumb {
-                    background-color: $cColor;
+                    background-color: var.$cColor;
                 }
 
             }
@@ -1078,7 +1079,7 @@
 
         &--name {
             text-align: center;
-            color: $cColor;
+            color: var.$cColor;
             font-size: 2.2rem;
             line-height: 1.47;
             font-family: 'Outfit', sans-serif;
@@ -1087,7 +1088,7 @@
 
         &--price {
             text-align: center;
-            color: $cColor;
+            color: var.$cColor;
             // font-weight: 300;
             font-size: 2.6rem;
             line-height: 1;
@@ -1099,7 +1100,7 @@
             }
         }
 
-        @media screen and (max-width: $BP) {
+        @media screen and (max-width: var.$BP) {
             padding-bottom: 20vw;
             border-bottom: solid 1px #EBE3DB;
 
@@ -1155,7 +1156,7 @@
             position: absolute;
             top: 54px;
             width: 100%;
-            border: solid 1px $cColor;
+            border: solid 1px var.$cColor;
             background: #FFF;
             border-bottom-left-radius: 30px;
             border-bottom-right-radius: 30px;
@@ -1164,14 +1165,14 @@
             z-index: 2;
             li{
                 list-style-type: none;
-                border-top: solid 1px $cColor;
+                border-top: solid 1px var.$cColor;
                 a{
                     text-decoration: none;
                     display: block;
-                    color: $cColor;
+                    color: var.$cColor;
                     line-height: 1;
                     padding: 20px 0;
-                    background-image: url(#{$assets_path}c_arrow.svg);
+                    background-image: url(#{var.$assets_path}c_arrow.svg);
                     background-repeat: no-repeat;
                     background-position: right 50px top 20px;
                     background-size: 8px 15px;
@@ -1184,15 +1185,15 @@
             font-size: 1.4rem;
             a{
                 text-decoration: none;
-                color: $cColor;
+                color: var.$cColor;
                 display: block;
-                border-bottom: solid 1px $cColor;
+                border-bottom: solid 1px var.$cColor;
                 display: inline-block;
             }
         }
         span {
             font-family: 'Outfit', sans-serif;
-            background: $cColor;
+            background: var.$cColor;
             text-align: center;
             display: block;
             color: #FFF;
@@ -1202,7 +1203,7 @@
             line-height: 1;
             padding: 22px 0 0;
             margin: 0 auto;
-            background-image: url(#{$assets_path}bg_btn.svg);
+            background-image: url(#{var.$assets_path}bg_btn.svg);
             background-size: 22px 23px;
             background-repeat: no-repeat;
             background-position: right 50px top 18px;
@@ -1216,7 +1217,7 @@
                 border-bottom-left-radius: 0;
                 border-bottom-right-radius: 0;
                 padding-top: 19px;
-                background-image: url(#{$assets_path}batsu.svg);
+                background-image: url(#{var.$assets_path}batsu.svg);
                 background-size: 12px 12px;
                 background-repeat: no-repeat;
                 background-position: right 50px top 23px;
@@ -1224,7 +1225,7 @@
             }
         }
 
-        @media screen and (max-width: $BP) {
+        @media screen and (max-width: var.$BP) {
             margin: 0;
             width: 100%;
             &--wrapper{
@@ -1250,7 +1251,7 @@
                 padding: 20px 0;
                 height: 52px;
                 max-height: 52px;
-                background-image: url(#{$assets_path}bg_btn.svg);
+                background-image: url(#{var.$assets_path}bg_btn.svg);
                 background-size: 17px 16px;
                 background-repeat: no-repeat;
                 background-position: right 8vw top 17px;
@@ -1263,7 +1264,7 @@
                     border-bottom-left-radius: 0;
                     border-bottom-right-radius: 0;
                     padding: 20px 0;
-                    background-image: url(#{$assets_path}batsu.svg);
+                    background-image: url(#{var.$assets_path}batsu.svg);
                     background-size: 12px 12px;
                     background-repeat: no-repeat;
                     background-position: right 8vw top 21px;
@@ -1287,7 +1288,7 @@
             line-height: 1;
             padding: 22px 0 0;
             margin: 0 auto;
-            background-image: url(#{$assets_path}bg_btndisable.svg);
+            background-image: url(#{var.$assets_path}bg_btndisable.svg);
             background-size: 22px 23px;
             background-repeat: no-repeat;
             background-position: right 50px top 18px;
@@ -1296,13 +1297,13 @@
 
         }
 
-        @media screen and (max-width: $BP) {
+        @media screen and (max-width: var.$BP) {
             margin: 0 6.4vw;
 
             span {
                 font-size: 1.3rem;
                 padding: 19px 0 0;
-                background-image: url(#{$assets_path}bg_btndisable.svg);
+                background-image: url(#{var.$assets_path}bg_btndisable.svg);
                 background-size: 16px 17px;
                 background-repeat: no-repeat;
                 background-position: right 28px top 16px;
@@ -1320,7 +1321,7 @@
 
         h1 {
             font-family: 'Outfit', sans-serif;
-            color: $cColor;
+            color: var.$cColor;
             // font-weight: 300;
             font-size: 3rem;
             margin: 0 0 18px;
@@ -1337,7 +1338,7 @@
             font-size: 2.7rem;
             margin: 0 0 28px;
             line-height: 1;
-            color: $cColor;
+            color: var.$cColor;
         }
 
         &--txtblc {
@@ -1349,7 +1350,7 @@
             margin: 0 0 30px;
             padding: 25px 0 0 20px;
             border-top: solid 1px #DDDDDD;
-            color: $cColor;
+            color: var.$cColor;
 
             li {
                 font-size: 1.5rem;
@@ -1358,7 +1359,7 @@
                 background: #FFF;
                 border-radius: 40px;
                 display: inline-block;
-                color: $cColor;
+                color: var.$cColor;
                 padding: 7px 11px;
                 line-height: 1;
             }
@@ -1393,7 +1394,7 @@
         &--name {
             font-family: 'Outfit', sans-serif;
             // font-weight: 300;
-            color: $cColor;
+            color: var.$cColor;
             line-height: 1;
             font-size: 1.7rem;
         }
@@ -1406,7 +1407,7 @@
             margin: 0;
         }
 
-        @media screen and (max-width: $BP) {
+        @media screen and (max-width: var.$BP) {
             box-sizing: border-box;
             width: 100%;
             padding: 0 0 21.7vw;
@@ -1488,7 +1489,7 @@
                 position: relative;
 
                 &--ttl {
-                    @include bgimg('clenz03_01.svg');
+                    @include var.bgimg('clenz03_01.svg');
                     width: 368px;
                     height: 101px;
                     margin: 0 auto;
@@ -1614,14 +1615,14 @@
 
             }
 
-            @media screen and (max-width: $BP) {
+            @media screen and (max-width: var.$BP) {
                 &__03 {
                     width: 100vw;
                     padding: 0 0 0;
                     margin: 16.4vw 0 15.2vw;
 
                     &--ttl {
-                        @include bgimg('clenz03_01.svg');
+                        @include var.bgimg('clenz03_01.svg');
                         margin: 0 auto;
                         font-size: 0;
                         background-size: 100% auto;
@@ -1719,7 +1720,7 @@
                 margin: 0 auto 164px;
                 position: relative;
                 &--ttl {
-                    @include bgimg('clenz03_03.svg');
+                    @include var.bgimg('clenz03_03.svg');
                     width: 368px;
                     height: 101px;
                     margin: 0 auto;
@@ -1727,7 +1728,7 @@
 
                 &--square {
                     border-radius: 50%;
-                    border: solid 1px $c03;
+                    border: solid 1px var.$c03;
                     width: 606px;
                     height: 606px;
                     white-space: nowrap;
@@ -1752,7 +1753,7 @@
                 &--txt {
                     font-family: 'Outfit', sans-serif;
                     text-align: center;
-                    color: $c03;
+                    color: var.$c03;
                     font-size: 1.4rem;
                     line-height: 1.5;
                     margin: 0 auto 41px;
@@ -1790,7 +1791,7 @@
                     &-bg {
                         width: 380px;
                         height: 258px;
-                        background: $c03;
+                        background: var.$c03;
                         margin: 0;
                         right: 0;
                         bottom: 0;
@@ -1844,14 +1845,14 @@
 
             }
 
-            @media screen and (max-width: $BP) {
+            @media screen and (max-width: var.$BP) {
                 &__03 {
                     width: 100vw;
                     padding: 0 0 0;
                     margin: 16.4vw 0 18.5vw;
 
                     &--ttl {
-                        @include bgimg('clenz03_03.svg');
+                        @include var.bgimg('clenz03_03.svg');
                         margin: 0 auto;
                         font-size: 0;
                         background-size: 100% auto;
@@ -1946,11 +1947,11 @@
     //ーーーーーーーーーーーーーーーーーー４色共通ーーーーーーーーーーーーーーーーーー
     .clenz {
         &__exp01 {
-            background: url('#{$assets_path}bg_clenz03_pc.png') no-repeat 0 0;
+            background: url('#{var.$assets_path}bg_clenz03_pc.png') no-repeat 0 0;
             background-size: 100% auto;
             min-height: 698px;
             width: 545px;
-            margin-right: calc($PCIW - 545px);
+            margin-right: calc(var.$PCIW - 545px);
 
             &--ttl {
                 text-align: center;
@@ -1971,8 +1972,8 @@
                 text-align: center;
             }
 
-            @media screen and (max-width: $BP) {
-                background: url('#{$assets_path}bg_clenz03_sp.png') no-repeat 0 0;
+            @media screen and (max-width: var.$BP) {
+                background: url('#{var.$assets_path}bg_clenz03_sp.png') no-repeat 0 0;
                 background-size: 100% auto;
 
                 min-height: 126vw;
@@ -1999,7 +2000,7 @@
             &--feature {
                 margin: 0 auto 16px !important;
                 text-align: center;
-                color: $cColor;
+                color: var.$cColor;
                 line-height: 1.9;
                 font-size: 1.9rem;
             }
@@ -2036,7 +2037,7 @@
             }
 
             &--name {
-                color: $cColor;
+                color: var.$cColor;
                 text-align: center;
                 line-height: 1.2;
                 font-size: 1.3rem;
@@ -2086,11 +2087,11 @@
                 font-size: 1.43rem;
                 margin: 0 auto 10px !important;
                 text-align: center;
-                color: $cColor;
+                color: var.$cColor;
                 line-height: 1;
             }
 
-            @media screen and (max-width: $BP) {
+            @media screen and (max-width: var.$BP) {
                 padding: 6.4vw 0 17vw;
 
                 &--feature {
@@ -2149,7 +2150,7 @@
         }
 
         &__exp03 {
-            background-color: $cColor;
+            background-color: var.$cColor;
             padding: 59px 24px 60px;
             margin: 0 0 143px;
 
@@ -2182,7 +2183,7 @@
 
             &--subttl {
                 font-family: 'Outfit', sans-serif;
-                color: $cColor;
+                color: var.$cColor;
                 font-size: 2.6rem;
                 line-height: 1;
                 margin: 0 0 13px !important;
@@ -2192,14 +2193,14 @@
 
             &--subttljp {
                 text-align: center;
-                color: $cColor;
+                color: var.$cColor;
                 font-size: 2rem;
                 margin: 0 0 49px !important;
                 line-height: 1;
             }
 
             &--mainimg {
-                background-image: url('#{$assets_path}clenz_dot.svg');
+                background-image: url('#{var.$assets_path}clenz_dot.svg');
                 background-position: bottom;
                 background-size: 7px 2px;
                 background-repeat: repeat-x;
@@ -2244,7 +2245,7 @@
 
             &--productname {
                 font-family: 'Outfit', sans-serif;
-                color: $cColor;
+                color: var.$cColor;
                 text-align: center;
                 margin: 25px 0 13px !important;
                 font-size: 2.2rem;
@@ -2252,7 +2253,7 @@
             }
 
             &--productjp {
-                color: $cColor;
+                color: var.$cColor;
                 text-align: center;
                 margin: 0 !important;
                 font-size: 1.1rem;
@@ -2271,7 +2272,7 @@
                 top: 74px;
             }
 
-            @media screen and (max-width: $BP) {
+            @media screen and (max-width: var.$BP) {
                 padding: 11.9vw 5.3vw;
                 margin: 0 0;
 
@@ -2342,7 +2343,7 @@
         }
 
         &__exp04 {
-            border: solid 1px $cColor;
+            border: solid 1px var.$cColor;
             border-radius: 30px;
             padding: 70px 46px 0px 40px;
             font-size: 0;
@@ -2351,7 +2352,7 @@
 
             &--ttl {
                 text-align: center;
-                color: $cColor;
+                color: var.$cColor;
                 font-size: 3.8rem;
                 margin: 0 0 10px !important;
                 line-height: 0.8;
@@ -2364,7 +2365,7 @@
                 padding: 0;
 
                 li {
-                    background-image: url('#{$assets_path}clenz_dot.svg');
+                    background-image: url('#{var.$assets_path}clenz_dot.svg');
                     background-position: bottom;
                     background-size: 7px 2px;
                     background-repeat: repeat-x;
@@ -2399,7 +2400,7 @@
             }
 
             &--subttl {
-                color: $cColor;
+                color: var.$cColor;
                 font-weight: bold;
                 font-size: 1.8rem;
                 margin: 0 0 14px !important;
@@ -2409,20 +2410,20 @@
             &--txt {
                 font-size: 1.8rem;
                 line-height: 1.55;
-                color: $cColor;
+                color: var.$cColor;
                 letter-spacing: -0.1;
                 margin: 0 !important;
 
             }
 
             &--note {
-                color: $cColor;
+                color: var.$cColor;
                 line-height: 1;
                 font-size: 1.5rem;
                 margin: 12px 0 0 !important;
             }
 
-            @media screen and (max-width: $BP) {
+            @media screen and (max-width: var.$BP) {
                 margin: 0 5vw 12vw;
                 padding: 12vw 6.1vw 2.6vw;
                 border-radius: 4vw;
@@ -2498,7 +2499,7 @@
                 animation: loop2 50s linear infinite;
             }
 
-            @media screen and (max-width: $BP) {
+            @media screen and (max-width: var.$BP) {
                 margin-bottom: 15vw;
 
                 &--txt {
@@ -2526,7 +2527,7 @@
                 span {
                     font-weight: bold;
                     color: #FFF;
-                    background-color: $cColor;
+                    background-color: var.$cColor;
                     padding: 3px 25px;
                     border-radius: 30px;
                     font-family: 'Outfit', sans-serif;
@@ -2541,8 +2542,8 @@
                 border-collapse: 0;
 
                 td {
-                    border-bottom: solid 1px $cColor;
-                    border-right: solid 1px $cColor;
+                    border-bottom: solid 1px var.$cColor;
+                    border-right: solid 1px var.$cColor;
                     font-size: 17px;
                     line-height: 1;
 
@@ -2567,17 +2568,17 @@
 
                     &.topRight {
                         border-top-right-radius: 32px;
-                        border-top: solid 1px $cColor;
+                        border-top: solid 1px var.$cColor;
                     }
 
                     &.bottomLeft {
                         border-bottom-left-radius: 32px;
-                        border-bottom: solid 1px $cColor;
+                        border-bottom: solid 1px var.$cColor;
                     }
 
                     &.bottomRight {
                         border-bottom-right-radius: 32px;
-                        border-bottom: solid 1px $cColor;
+                        border-bottom: solid 1px var.$cColor;
                     }
                 }
 
@@ -2585,7 +2586,7 @@
 
             &--td1 {
                 width: 125px;
-                background: $cColor;
+                background: var.$cColor;
 
                 p {
                     text-align: center;
@@ -2596,12 +2597,12 @@
             }
 
             &--td2 {
-                color: $cColor;
+                color: var.$cColor;
                 width: calc(434px - 125px);
 
             }
 
-            @media screen and (max-width: $BP) {
+            @media screen and (max-width: var.$BP) {
                 margin: 0 13.3vw;
 
                 &--ttl {
@@ -2610,7 +2611,7 @@
 
                     span {
                         color: #FFF;
-                        background-color: $cColor;
+                        background-color: var.$cColor;
                         padding: 3px 18px;
                         border-radius: 30px;
                         font-family: 'Outfit', sans-serif;
@@ -2645,7 +2646,7 @@
 
                         &.bottomLeft {
                             border-bottom-left-radius: 4vw;
-                            border-bottom: solid 1px $cColor;
+                            border-bottom: solid 1px var.$cColor;
 
                         }
 
@@ -2668,8 +2669,8 @@
         }
 
         &__exp07 {
-            border-bottom: solid 1px $cColor;
-            border-top: solid 1px $cColor;
+            border-bottom: solid 1px var.$cColor;
+            border-top: solid 1px var.$cColor;
             padding-bottom: 16px;
 
             &--ttl {
@@ -2679,14 +2680,14 @@
                 margin: -0.9rem 0 35px;
 
                 span {
-                    background: $BG;
+                    background: var.$BG;
                     padding: 0 20px;
-                    color: $cColor;
+                    color: var.$cColor;
                 }
             }
 
             &--list {
-                color: $cColor;
+                color: var.$cColor;
                 font-size: 1.4rem;
                 margin: 0;
                 padding: 0;
@@ -2704,7 +2705,7 @@
                 }
             }
 
-            @media screen and (max-width: $BP) {
+            @media screen and (max-width: var.$BP) {
                 margin: 20vw 8vw 0;
 
                 &--ttl {
@@ -2713,7 +2714,7 @@
 
                     span {
                         padding: 0 20px;
-                        color: $cColor;
+                        color: var.$cColor;
                     }
                 }
 
@@ -2734,10 +2735,10 @@
     }
 
     //sp
-    @media screen and (max-width: $BP) {}
+    @media screen and (max-width: var.$BP) {}
 
     //tablet　画面サイズが750pxからはこのスタイルを読む
-    @media screen and (min-width: $BP+1) {}
+    @media screen and (min-width: var.$BP+1) {}
 
 
     //PCTablet 画面サイズが990pxからはこのスタイルを読む
@@ -2806,7 +2807,7 @@
     }
 
     .mySwiper .swiper-slide-thumb-active {
-        border-bottom: solid 2px $cColor;
+        border-bottom: solid 2px var.$cColor;
         padding-bottom: 6px;
         background-color: #F7F3F0;
     }
@@ -2829,8 +2830,8 @@
                 text-align: center;
                 position: absolute;
                 bottom: 52px;
-                color: $cColor;
-                border: solid 1px $cColor;
+                color: var.$cColor;
+                border: solid 1px var.$cColor;
                 line-height: 1;
                 margin: 0;
                 font-size: 2rem;
@@ -2884,7 +2885,7 @@
             margin: -120px 0 120px;
 
             .swiper-button-next {
-                @include bgimg('arrowR.svg');
+                @include var.bgimg('arrowR.svg');
                 width: 43px;
                 height: 130px;
                 position: absolute;
@@ -2896,7 +2897,7 @@
             }
 
             .swiper-button-prev {
-                @include bgimg('arrowL.svg');
+                @include var.bgimg('arrowL.svg');
                 width: 42px;
                 height: 130px;
                 position: absolute;
@@ -2908,7 +2909,7 @@
             }
         }
     }
-    @media screen and (max-width: $BP) {
+    @media screen and (max-width: var.$BP) {
         .clenz__fv {
             margin-top: 1vw;
             &--swipwrap {
@@ -2951,7 +2952,7 @@
             }
         }
         .mySwiper .swiper-slide-thumb-active {
-            border-bottom: solid 1px $cColor;
+            border-bottom: solid 1px var.$cColor;
             padding-bottom: 4px;
         }
     }
@@ -3062,7 +3063,7 @@
                 height: 1050px;
                 transition: height 2s linear;
             }
-            @media screen and (max-width: $BP) {
+            @media screen and (max-width: var.$BP) {
                 &.scrollin{
                     height: 184.2vw;
                 }
@@ -3107,7 +3108,7 @@
                 height: 1319px;
                 transition: height 2s linear;
             }
-            @media screen and (max-width: $BP) {
+            @media screen and (max-width: var.$BP) {
                 &.scrollin{
                     height: 232vw;
                 }

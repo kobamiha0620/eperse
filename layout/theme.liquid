@@ -133,6 +133,7 @@
     }
     </script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
     <meta name="facebook-domain-verification" content="djqc79dg9aqat8x4n1m20ukrb9vhmo" />
 
   
@@ -238,7 +239,8 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-    <script src="{{ 'header.js' | asset_url }}"></script>	
+    <script src="{{ 'header.js' | asset_url }}" defer></script>	
+    <script src="{{ 'perse.js' | asset_url }}" defer></script>	
 
   </body>
 </html>

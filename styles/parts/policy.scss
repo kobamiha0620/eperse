@@ -1,12 +1,12 @@
 @charset "utf-8";
-@import "_reset";
+@use '../reset.scss' as var;
 
 .persePolicy{
-    color: $CR;
+    color: var.$CR;
 
     &__en{
         text-align: center;
-        color: $CR;
+        color: var.$CR;
         font-family: 'Outfit', sans-serif;
         font-size: 5.5rem;
         padding-top: 170px;
@@ -61,7 +61,7 @@
     }
 }
 //sp
-@media screen and (max-width: $BP) {
+@media screen and (max-width: var.$BP) {
     .persePolicy{
     
         &__en{
@@ -84,4 +84,4 @@
 }
 
 //tablet　画面サイズが750pxからはこのスタイルを読む
-@media screen and (min-width: $BP+1) {}
+@media screen and (min-width: var.$BP+1) {}

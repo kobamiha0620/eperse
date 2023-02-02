@@ -2,17 +2,29 @@
 // const {src, dest} = require('gulp');
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
-const sassGlob = require("gulp-sass-glob");
+const plumber = require("gulp-plumber");
+const sassGlob = require("gulp-sass-glob-use-forward");
+const cleancss = require("gulp-clean-css");
+
+const sassGlob2 = require("gulp-sass-glob");
+const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function(){
   return gulp
       .src('styles/*.scss')
+      .pipe(plumber())                   // watch中にエラーが発生してもwatchが止まらないようにする
+      .pipe(sassGlob2())
+
       .pipe(sassGlob())
-      .pipe(sass())
-      .pipe(sass({outputStyle: 'compressed'}))
       .pipe(sass({
-        includePaths: require('node-reset-scss').includePath
+        includePaths: require('node-reset-scss').includePath,
+        outputStyle: 'compressed'
       }))
+      .pipe(autoprefixer({
+        cascade: false
+      }))
+      .pipe(cleancss())                             // コード内の不要な改行やインデントを削除
+
       .pipe(gulp.dest('assets'))
 
   });

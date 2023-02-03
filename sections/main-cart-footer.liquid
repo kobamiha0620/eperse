@@ -32,7 +32,9 @@
     <div class="cart__footer">
       {%- if section.settings.show_cart_note -%}
         <cart-note class="cart__note field">
-          <label for="Cart-note">{{ 'sections.cart.note' | t }}</label>
+          {% comment %} <label for="Cart-note">{{ 'sections.cart.note' | t }}</label> {% endcomment %}
+          <label for="Cart-note">※ヨントンに参加希望のお客様は、商品購入画面の備考欄にてInstagramのアカウント名かTwitterのアカウント名をご入力ください。<br>
+          ※「ヨントン」は3月17日(金) 20:00〜21:00の実施予定です。（1人1分程度）</label>
           <textarea class="text-area text-area--resize-vertical field__input" name="note" form="cart" id="Cart-note" placeholder="{{ 'sections.cart.note' | t }}">{{ cart.note }}</textarea>
         </cart-note>
       {%- endif -%}

@@ -196,13 +196,14 @@
             &:hover{
                 opacity: 0.7;
             }
+            p{
+                font-family: 'Outfit', sans-serif;
+                font-size: 2rem;
+                margin: 0!important;
+                line-height: 1;
+            }
         }
-        p{
-            font-family: 'Outfit', sans-serif;
-            font-size: 2rem;
-            margin: 0!important;
-            line-height: 1;
-        }
+
         input{
             display: none;
         }
@@ -352,7 +353,7 @@
             font-family: 'Outfit', sans-serif;
             line-height: 1;
             font-size: 27px;
-            margin: 0 0 45px !important;
+            margin: 0 0 45px;
 
             span {
                 font-size: 19px;
@@ -1177,7 +1178,7 @@
         &--name{
             font-size: 1.44rem;
             line-height: 1.84;
-            margin: 0 0 10px!important;
+            margin: 0 0 10px;
         }
         &--price{
             font-size: 1.8rem;
@@ -1550,9 +1551,9 @@
         overflow: hidden;
         display: flex;
         padding: 55px 0 0;
-        margin: 0!important;
+        margin: 0;
         img{
-            height: 30px;
+            height:30px;
             display: inline-block;
             padding: 0 5px;
             &:first-child{
@@ -3217,5 +3218,226 @@
         br{
             display: block!important;
         }
+    }
+}
+
+
+//追記Paydi
+.product__cartbtn--note{
+    text-align: center;
+    font-size: 1.4rem;
+    color: #8C8C8C;
+    margin: 14px auto 0;
+
+}
+
+.product__review{
+    max-width: 460px;
+    width: 100%;
+    margin: 0 auto;
+    input, textarea{
+        padding: 12px;
+    }
+    a{
+        color: var.$CR;
+    }
+    .spr-header-title{
+    }
+    .spr-form-review-rating{
+       overflow: visible;
+    }
+    .spr-form{
+        border: none;
+    }
+    .spr-button, .spr-button-primary{
+        width: 100%;
+        border-radius: 80px;
+    }
+    .spr-container{
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        padding: 0 0 30px;
+        border-bottom: solid 1px #FFF;
+    }
+    .spr-form-title{
+    }
+    .spr-summary-caption{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .spr-summary-actions-newreview{
+        text-decoration: none;
+        background: #FFF;
+        border: solid var.$CR 1px;
+        color: var.$CR;
+        border-radius: 5px;
+        @include var.fz(16);
+        display: inline-block;
+        padding: 10px 30px;
+    }
+    @media screen and (max-width: var.$BP) {
+        max-width: 100%;
+        padding: 0 6vw;
+    }
+}
+
+
+//SlideToggle
+.slidetoggle{
+    position: relative;
+    &.selected{
+        .slidetoggle__btn{
+            &:before{
+                content: normal;
+
+            }
+        }
+    }
+    cursor: pointer;
+    &__next{
+        display: none;
+    }
+    &__btn{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        display: block;
+        width: 16px;
+        height: 16px;
+        text-indent: -9999px;
+        white-space: nowrap;
+        overflow: hidden;
+        &::before, &::after{
+            background: var.$CR;
+            display: block;
+            content: '';
+            position: absolute;
+            width: 106px;
+            height: 1px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &:before {
+            width: 1px;
+            height: 16px;
+        }
+    }
+}
+
+.eyeshadow{
+    .product__others {
+        width: 100%;
+        max-width: 796px;
+        margin: 0 auto
+    }
+
+    .product__others--list {
+        margin: 0;
+        padding: 0;
+        li {
+            width: 238px;
+            img {
+                border-top-left-radius: 84px;
+                display: block;
+                font-size: 0;
+            }
+
+            a{
+                display: block;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+            .product__others--list-rel{
+                position: relative;
+            }
+            .product__others--list-abso{
+                position: absolute;
+                width: 90px;
+                bottom: 6px;
+                right: -22px;
+                img{
+                    border-radius: 0;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .product__others--name {
+                white-space: nowrap;
+            }
+        }
+    }
+
+    .product__others--price {
+        margin-bottom: 0;
+
+        span {
+            display: inline-block;
+            margin-left: 4px;
+        }
+    }
+    @media screen and (max-width: var.$BP) {
+        .product__others--list {
+            li{
+                width: 52.8vw;
+                img {
+                    border-top-left-radius: 16vw;
+
+                }
+                .product__others--name {
+                    white-space: normal;
+                }
+                .product__others--list-abso{
+                    position: absolute;
+                    width: 21.6vw;
+                    bottom: 6px;
+                    right: -2.26vw;
+
+                }
+            }
+
+        }
+
+    }
+}
+
+@keyframes fadeUpAnime0 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUpAnime20 {
+    0% {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes rotate-anime {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }

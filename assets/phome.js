@@ -253,6 +253,8 @@ $(window).on('load scroll', function() {
   add_class_in_scrolling($('.phome__pararaSp2'));
   add_class_in_scrolling($('.rip06'));
   add_class_in_scrolling($('.product__nude--01'));
+
+
 });
 
 

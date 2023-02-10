@@ -1600,8 +1600,8 @@
 
 
 // @include var.webpBg('.upthome__fv', var.$imgpath +'fv_pc04');
-@include var.webpBg('.phome__slicktop--name01','bg_pallete01', 'png');
-@include var.webpBg('.phome__slicktop--name02','bg_pallete02', 'png');
+@include var.webpBg('.phome__slicktop--name01', var.$imgpath+'bg_pallete01', 'png');
+@include var.webpBg('.phome__slicktop--name02', var.$imgpath+'bg_pallete02', 'png');
 
 
 @media screen and (max-width: var.$BP) {

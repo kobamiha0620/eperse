@@ -20,10 +20,19 @@ function add_class_in_scrolling(target) {
 
 $(window).on('load scroll', function() {
     add_class_in_scrolling($('.clenz__01'));
-    // add_class_in_scrolling($('.clenz__02'));
-});
-
-$(window).scroll(function (){
+    add_class_in_scrolling($('.intro01__blc01'));
+    add_class_in_scrolling($('.intro01__blc02'));
+    add_class_in_scrolling($('.intro01__blc03'));
+    add_class_in_scrolling($('.intro01pre'));
+    add_class_in_scrolling($('.intro03'));
+    add_class_in_scrolling($('.intro04__fv'));
+    add_class_in_scrolling($('.intro04__blc'));
+    add_class_in_scrolling($('.intro04__blc02--top'));
+    add_class_in_scrolling($('.intro04__blc02--btm'));
+    add_class_in_scrolling($('.intro06'));
+    add_class_in_scrolling($('.eyeshadow__vegan'));
+    
+    
     $('.fadein_block').each(function(){
         var elemPos = $(this).offset().top;
         var scroll = $(window).scrollTop();
@@ -65,9 +74,7 @@ $(window).scroll(function (){
             },speed);
         }
     });
-});
 
-$(window).scroll(function (){
     $('.fadein_block02').each(function(){
         var elemPos = $(this).offset().top;
         var scroll = $(window).scrollTop();
@@ -109,6 +116,5 @@ $(window).scroll(function (){
             },speed);
         }
     });
+
 });
-
-

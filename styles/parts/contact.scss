@@ -3126,3 +3126,41 @@
         background-image: none;
     }
 }
+
+
+@keyframes fadeUpAnime0 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUpAnime20 {
+    0% {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes rotate-anime {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

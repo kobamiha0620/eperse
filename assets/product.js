@@ -22,6 +22,21 @@ $('.product__slick').slick({
     centerPadding: '21%'
   });
 
+
+  $('.intro02__blcsp').slick({
+    autoplay: false,//自動的に動き出すか。初期値はfalse。
+    infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+    slidesToShow: 1,//スライドを画面に3枚見せる
+    arrows: false,
+    slidesToScroll: 1,
+    dots: true,　//下部ドットナビゲーションの表示
+    // asNavFor: '.rip02__slick02',
+    centerMode: true,
+    speed: 300,
+    centerPadding: '9%'
+
+  });
+
   // $('.rip02__slick02').slick({
   //   fade: true,
   //   autoplay: false,//自動的に動き出すか。初期値はfalse。
@@ -76,3 +91,11 @@ $('.product__slick').slick({
 
   }
   contact();
+
+  $(function(){
+
+  $('.slidetoggle').click(function(){
+		$(this).toggleClass('selected');
+		$(this).next().slideToggle(450);
+	});
+});

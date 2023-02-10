@@ -1844,7 +1844,7 @@
 }
 
 //追加分
-.phome__slicktop--01 {
+.phome__slicktop--01, .intro02__blcsp {
 
     .slick-arrow:before {
         content: "" !important;
@@ -1885,28 +1885,28 @@
 
 
     .slick-dots li:nth-of-type(1) button:before {
-        background: url(var.$imgpath + "slick_eye01_dot.svg") no-repeat;
+        background: url(var.$assets_path + "slick_eye01_dot.svg") no-repeat;
         background-size: 100% auto;
         opacity: 1;
         content: "";
     }
 
     .slick-dots li:nth-of-type(2) button:before {
-        background: url(var.$imgpath + "slick_eye02_dot.svg") no-repeat;
+        background: url(var.$assets_path + "slick_eye02_dot.svg") no-repeat;
         background-size: 100% auto;
         opacity: 1;
         content: "";
     }
 
     .slick-dots li.slick-active:nth-of-type(1) button:before {
-        background: url(var.$imgpath + "slick_eye01_dot-active.svg") no-repeat;
+        background: url(var.$assets_path + "slick_eye01_dot-active.svg") no-repeat;
         background-size: 100% auto;
         opacity: 1;
         content: "";
     }
 
     .slick-dots li.slick-active:nth-of-type(2) button:before {
-        background: url(var.$imgpath + "slick_eye02_dot-active.svg") no-repeat;
+        background: url(var.$assets_path + "slick_eye02_dot-active.svg") no-repeat;
         background-size: 100% auto;
         opacity: 1;
         content: "";

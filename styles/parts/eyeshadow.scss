@@ -637,6 +637,8 @@
                 a{
                     display: block;
                     text-decoration: none;
+                    color: var.$CR;
+
                 }
 
             }
@@ -725,7 +727,7 @@
                 a{
                     display: block;
                     text-decoration: none;
-                    
+                    color: var.$CR;
                 }
                 .slick-slide {
                     margin: 0 7px;

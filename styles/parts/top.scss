@@ -1038,7 +1038,13 @@
             list-style-type: none;
             display: flex;
             justify-content: space-between;
-            a{
+            .phome__slicktop--name01{
+                display: block;
+                text-decoration: none;
+                float: right;
+                width: 407px;
+            }
+            .phome__slicktop--name02{
                 display: block;
                 text-decoration: none;
                 float: right;
@@ -1046,13 +1052,13 @@
             }
         }
         &ttla{
-            @include var.bgimg2('phome__slicktop--02ttla.svg');
+            @include var.bgimg('phome__slicktop--02ttla.svg');
             width: 187px;
             height: 26px;
             margin: 0;
         }
         &ttlb{
-            @include var.bgimg2('phome__slicktop--02ttlb.svg');
+            @include var.bgimg('phome__slicktop--02ttlb.svg');
             width: 223px;
             height: 26px;
             margin: 0;
@@ -1085,7 +1091,7 @@
         margin: 24px 0 0;
     }
     &--ttl{
-        @include var.bgimg2('ttl_slickeyeshadow.svg');
+        @include var.bgimg('ttl_slickeyeshadow.svg');
         height: 89px;
         margin: 18px 0 18px;
 
@@ -1253,7 +1259,12 @@
                 list-style-type: none;
                 display: flex;
                 justify-content: space-between;
-                a{
+                .phome__slicktop--name01{
+                    float: right;
+                    width: 50%;
+                    margin-top: 37%;
+                }
+                .phome__slicktop--name02{
                     float: right;
                     width: 50%;
                     margin-top: 37%;
@@ -1415,7 +1426,7 @@
             }
             .phome__slicktop--spttl{
                 text-align: center;
-                @include var.bgimg2('ttl_eyeshadow-sp.svg');
+                @include var.bgimg('ttl_eyeshadow-sp.svg');
                 width: 81.8%;
                 height: 0;
                 padding-top:18.8%;
@@ -1490,7 +1501,7 @@
                 overflow: hidden;
                 &img{
                     margin-right: 0;
-                    margin-top: calc(24.4vw + 81px);
+                    margin-top: calc(24.4vw + 60px);
                     width:  100%;
                     float: left;
                     img{
@@ -1507,13 +1518,13 @@
                 }
             }
             &ttla{
-                @include var.bgimg2('phome__slicktop--02ttla.svg');
+                @include var.bgimg('phome__slicktop--02ttla.svg');
                 width: 187px;
                 height: 26px;
                 margin: 0;
             }
             &ttlb{
-                @include var.bgimg2('phome__slicktop--02ttlb.svg');
+                @include var.bgimg('phome__slicktop--02ttlb.svg');
                 width: 223px;
                 height: 26px;
                 margin: 0;
@@ -1538,13 +1549,13 @@
     }
 
     .phome__slicktop--spttl01{
-        @include var.bgimg2('phome__slicktop--02ttla.svg');
+        @include var.bgimg('phome__slicktop--02ttla.svg');
         width: 39.6vw;
         height: 5.46vw; 
         margin: 6.9vw auto 2.13vw;
     }
     .phome__slicktop--spttl02{
-        @include var.bgimg2('phome__slicktop--02ttlb.svg');
+        @include var.bgimg('phome__slicktop--02ttlb.svg');
         width: 47.2vw;
         height: 5.46vw; 
         margin: 6.9vw auto 2.13vw;
@@ -1600,8 +1611,8 @@
 
 
 // @include var.webpBg('.upthome__fv', var.$imgpath +'fv_pc04');
-@include var.webpBg('.phome__slicktop--name01', var.$imgpath+'bg_pallete01', 'png');
-@include var.webpBg('.phome__slicktop--name02', var.$imgpath+'bg_pallete02', 'png');
+@include var.webpBg('.phome__slicktop--name01', var.$assets_path+'bg_pallete01', 'png');
+@include var.webpBg('.phome__slicktop--name02', var.$assets_path+'bg_pallete02', 'png');
 
 
 @media screen and (max-width: var.$BP) {

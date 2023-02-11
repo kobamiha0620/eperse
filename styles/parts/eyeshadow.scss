@@ -299,7 +299,7 @@
             &__blc01 {
                 &--ttl {
                     width: 67.6vw;
-                    height: 15, 6vw;
+                    height: 15.6vw;
                     position: absolute;
                     bottom: 13vw;
                     left: 50%;
@@ -365,6 +365,207 @@
 
     }
 }
+
+//商品詳細
+#eye02ambermood {
+    .intro01 {
+        max-width: 568px;
+        width: 100%;
+        margin: 0 auto 0;
+        position: relative;
+        padding-top: 100px;
+
+        &pre {
+            max-width: 568px;
+            width: 100%;
+            margin: 102px auto 0;
+            position: relative;
+
+        }
+
+        &_img {
+            border-top-right-radius: 128px;
+        }
+
+        &__blc01 {
+            position: relative;
+            width: 100%;
+            font-size: 0;
+            line-height: 0;
+
+            &--ttl {
+                @include var.bgimg('ttl_intro01-rosy.svg');
+                // width: 52.2vw;
+                width: 384px;
+                // height: 11.89vw;
+                height: 89px;
+                position: absolute;
+                bottom: 67px;
+                // bottom: 8.94vw;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        &__blc02 {
+            background: #D87A55;
+            padding: 80px 0;
+
+            &--ttl {
+                @include var.bgimg('ttl_intro01-amber.svg');
+                width: 417px;
+                height: 41px;
+                font-size: 0;
+                line-height: 0;
+                margin: 0 auto;
+            }
+
+            &--txtjp {
+                color: #FFF;
+                text-align: center;
+                font-size: 1.7rem;
+                line-height: 1.8;
+                margin: 34px auto;
+            }
+
+            &--txten {
+                color: #FFF;
+                text-align: center;
+                font-family: 'Outfit', sans-serif;
+                font-size: 1.5rem;
+                line-height: 1.5;
+                font-weight: lighter;
+                margin: 0;
+            }
+        }
+
+        &__blc03 {
+            background: url(var.$assets_path + 'bg_intro01-3-amber.svg');
+            background-color: #E9D2C0;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: top 290px right 0;
+            position: relative;
+            padding: 90px 0 91px;
+
+            &--img {
+                width: 405px;
+                display: block;
+                margin: 0 auto;
+                font-size: 0;
+                line-height: 0;
+            }
+
+            &a {
+                @include var.bgimg('bg_intro01-3a-amber.svg');
+                width: 259px;
+                height: 15px;
+                margin: 0 auto 48px;
+            }
+
+            &b {
+                @include var.bgimg('bg_intro01-3b-amber.svg');
+                width: 169px;
+                height: 13px;
+                margin: 55px auto 0;
+            }
+            &--texture1 {
+                position: absolute;
+                font-size: 0;
+                width: 261px;
+                left: -105px;
+                bottom: 782px;
+            }
+            &--texture2 {
+                position: absolute;
+                width: 270px;
+                right: -90px;
+                bottom: -37px
+            }
+        }
+
+        @media screen and (max-width: var.$BP) {
+            padding-top: 20vw;
+            margin: 0 auto;
+
+            &pre {
+                max-width: 100%;
+                margin: 22.4vw auto 0;
+            }
+
+            &_img {
+                border-top-right-radius: 22.5vw;
+            }
+
+            &__blc01 {
+                &--ttl {
+                    width: 67.6vw;
+                    height: 15.6vw;
+                    position: absolute;
+                    bottom: 13vw;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            &__blc02 {
+                padding: 14.2vw 0 16.1vw;
+
+                &--ttl {
+                    width: 73.466vw;
+                    height: 7.33vw;
+                }
+
+                &--txtjp {
+                    font-size: 1.2rem;
+                    line-height: 1.8;
+                    margin: 4.93vw auto 5.2vw;
+                }
+
+                &--txten {
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    font-weight: lighter;
+                    margin: 0;
+                }
+            }
+
+            &__blc03 {
+                background-position: top 48vw right 0;
+                padding: 15.8vw 0;
+
+                &--img {
+                    width: 71.3vw;
+                }
+
+                &a {
+                    width: 45.86vw;
+                    height: 2.66vw;
+                    margin: 0 auto 8.53vw;
+                }
+
+                &b {
+                    width: 29.74vw;
+                    height: 2.3vw;
+                    margin: 9.3vw auto 0;
+                }
+                &--texture1 {
+                    width: 46vw;
+                    left: -18.53vw;
+                    bottom: 138.6vw;
+                }
+
+                &--texture2 {
+                    width: 47.6vw;
+                    right: -20.26vw;
+                    bottom: -2.6vw
+                }
+            }
+        }
+
+    }
+}
+
 
 .eyeshadow {
     .intro02 {
@@ -599,7 +800,7 @@
     .intro03__points--list-img04 {
         @include var.bgimg('pointnum04_intro03-01.svg');
     }
-
+    //01 ROSY MOOD
     .intro04 {
         width: 568px;
         margin: 0 auto;
@@ -817,10 +1018,258 @@
 
     }
 
-    //01 ROSY MOOD
+}
 
+
+#eye02ambermood {
+    .intro03 {
+        background-color: #D87A55;
+    }
+
+    .intro03__points--points {
+        @include var.bgimg('point_intro03-02.svg');
+    }
+
+    .intro03__points--list-img01 {
+        @include var.bgimg('pointnum01_intro03-02.svg');
+    }
+
+    .intro03__points--list-img02 {
+        @include var.bgimg('pointnum02_intro03-02.svg');
+    }
+
+    .intro03__points--list-img03 {
+        @include var.bgimg('pointnum03_intro03-02.svg');
+    }
+
+    .intro03__points--list-img04 {
+        @include var.bgimg('pointnum04_intro03-02.svg');
+    }
+    // #eye02ambermood ------------------------------
+    .intro04 {
+        width: 568px;
+        margin: 0 auto;
+        font-size: 0;
+        &__fv {
+            padding-bottom: 53px;
+            font-size: 0;
+            &--inner{
+                position: relative;
+                padding-left: 100px;
+                padding-top: 60px;
+            }
+            &--txt {
+                @include var.bgimg('txt01_intro04-02eyeshadow.svg');
+                width: 22px;
+                height: 357px;
+                position: absolute;
+                left: 37px;
+                top: 107px;
+                margin: 0;
+            }
+
+            &--txt2 {
+                @include var.bgimg('txt02_intro04-02eyeshadow.svg');
+                width: 463px;
+                height: 48px;
+                margin: 60px auto 30px;
+            }
+            &--txt3{
+                text-align: center;
+                color: #D17A55;
+                font-size: 1.5rem;
+                line-height: 1.7;
+                font-family: 'Outfit', sans-serif;
+                margin: 0 auto;
+            }
+
+            &--img {
+                border-top-left-radius: 110px;
+            }
+        }
+    // #eye02ambermood ------------------------------
+
+        &__blc {
+            background-size: 100% auto;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            padding-top: 95px;
+            background-color: #E9D2C0;
+            &--subttl {
+                @include var.bgimg('bg_intro01-3b-amber.svg');
+                width: 252px;
+                height: 20px;
+                margin: 0 auto 50px;
+            }
+            &--img {
+                font-size: 0;
+                display: block;
+                margin: 0 auto;
+                width: 363px;
+            }
+
+            &--img2 {
+                font-size: 0;
+            }
+
+            &--txt {
+                color: #D17A55;
+                text-align: center;
+                font-family: 'Outfit', sans-serif;
+                font-size: 1.6rem;
+                line-height: 1.45;
+                margin: 54px 0 76px;
+                font-weight: 300;
+            }
+
+            @media screen and (max-width: var.$BP) {
+                padding-top: 16vw;
+                &--subttl {
+                    width: 43.6vw;
+                    height: 3.6vw;
+                    margin: 0 auto 8.26vw;
+                }
+                &--img {
+                    width: 64vw;
+                }
+                &--img2 {
+                    font-size: 0;
+                }
+                &--txt {
+                    font-size: 1.2rem;
+                    line-height: 1.45;
+                    margin: 8.8vw 0 12.8vw;
+                }
+            }
+        }
+    // #eye02ambermood ------------------------------
+
+        &__blc02 {
+            padding-bottom: 56px;
+            &--top {
+                overflow: hidden;
+                width: 100%;
+                margin-top: 90px;
+                margin-bottom: 69px;
+
+                &-txt {
+                    @include var.bgimg('txt03_intro04-02eyeshadow.svg');
+                    width: 16px;
+                    height: 113px;
+                    float: right;
+                    margin-right: 46px;
+                    margin-top: 14px;
+                }
+                &-img {
+                    float: left;
+                    width: 468px;
+                    img {
+                        border-top-right-radius: 60px;
+                    }
+                }
+            }
+
+            &--btm {
+                overflow: hidden;
+
+                &-img {
+                    width: 415px;
+                    float: right;
+                    font-size: 0;
+                    img {
+                        border-top-left-radius: 62px;
+                    }
+                }
+
+                &-txt {
+                    @include var.bgimg('txt04_intro04-02eyeshadow.svg');
+                    float: left;
+                    width: 45px;
+                    height: 190px;
+                    margin-left: 49px;
+                    margin-top: 18px;
+                }
+            }
+
+            //__blc02
+            @media screen and (max-width: var.$BP) {
+                padding-bottom: 9.6vw;
+                &--top {
+                    margin-top: 15.7vw;
+                    margin-bottom: 14vw;
+
+                    &-txt {
+                        width: 2.8vw;
+                        height: 20vw;
+                        margin-right: 8.2vw;
+                        margin-top: 2.53vw;
+                    }
+
+                    &-img {
+                        width: 82.4vw;
+
+                        img {
+                            border-top-right-radius: 10.66vw;
+                        }
+                    }
+                }
+
+                &--btm {
+                    &-img {
+                        width: 73vw;
+
+                        img {
+                            border-top-left-radius: 10.66vw;
+                        }
+                    }
+
+                    &-txt {
+                        width: 8vw;
+                        height: 33.333vw;
+                        margin-left: 8.6vw;
+                        margin-top: 3.4vw;
+                    }
+                }
+            }
+        }
+
+        //sp
+        @media screen and (max-width: var.$BP) {
+            width: 100%;
+            &__fv {
+                padding-bottom: 9.3vw;
+                &--inner{
+                    padding-left: 17vw;
+                    padding-top: 10.53vw;
+                }
+                &--txt {
+                    width: 3.86vw;
+                    height: 62.9vw;
+                    position: absolute;
+                    left: 6.11vw;
+                    top: 18.66vw;
+                }
+
+                &--txt2 {
+                    width: 81.6vw;
+                    height: 8.4vw;
+                    margin: 10.6vw auto 5.2vw;
+
+                }
+                &--txt3{
+                    font-size: 1.2rem;
+                    margin: 0 auto;
+                }
+                &--img {
+                    border-top-left-radius: 19.2vw;
+                }
+            }
+        }
+
+    }
 
 }
+
 
 //共通パート
 .eyeshadow {
@@ -1479,7 +1928,9 @@
 }
 
 @include var.webpBg('#eye01rosymood .intro04__blc', var.$assets_path+'bg_intro03-01eyeshadow', 'png');
+@include var.webpBg('#eye02ambermood .intro04__blc', var.$assets_path+'bg_intro04-02eyeshadow', 'png');
 @include var.webpBg('#eye01rosymood .intro05', var.$assets_path+'bg_intro05-01eyeshadow');
+@include var.webpBg('#eye02ambermood .intro05', var.$assets_path+'bg_intro05-02eyeshadow');
 
         //fadein_isshow
 

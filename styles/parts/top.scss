@@ -1607,7 +1607,16 @@
     }
 
 }
+@media screen and (max-width: var.$BP) {
 
+.phome__product--slickwrap{
+    
+        padding: 0 16.9%;
+    }
+    .phome__product--slick02wrapNew{
+        top: 7%;
+    }
+}
 
 
 // @include var.webpBg('.upthome__fv', var.$imgpath +'fv_pc04');

@@ -820,3 +820,11 @@ header-drawer {
 .header-wrapper.active{
     background: var.$BG;
 }
+.cart__note label{
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.2!important;
+    height: auto!important;
+    margin-bottom: 8px!important;
+    color: var.$CR!important;
+}

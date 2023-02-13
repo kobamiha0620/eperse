@@ -33,8 +33,12 @@
       {%- if section.settings.show_cart_note -%}
         <cart-note class="cart__note field">
           {% comment %} <label for="Cart-note">{{ 'sections.cart.note' | t }}</label> {% endcomment %}
-          <label for="Cart-note">【DAY5キャンペーン】<br>ヨントンに参加希望のお客様は、InstagramもしくはTwitterのアカウント名をご入力ください。</label>
-          <textarea class="text-area text-area--resize-vertical field__input" name="note" form="cart" id="Cart-note" placeholder="Instagramのアカウント名もしくは、Twitterのアカウント名">{{ cart.note }}</textarea>
+          
+      <label for="Cart-note">DAY5キャンペーンに参加希望のお客様は①と②を必ずご記入ください。<br>①InstagramもしくはTwitterのアカウント名
+      <br>②左右のカラコンの度数</label>
+        <textarea class="text-area text-area--resize-vertical field__input" name="note" form="cart" id="Cart-note" placeholder="">{{ cart.note }}</textarea>
+          {% comment %} <textarea class="text-area text-area--resize-vertical field__input" name="note" form="cart" id="Cart-note" placeholder="">{{ cart.note }}</textarea> {% endcomment %}
+
         </cart-note>
       {%- endif -%}
 

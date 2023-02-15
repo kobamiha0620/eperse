@@ -1,9 +1,10 @@
 <section class="eyeshadow__vegan">
     <div class="eyeshadow__vegan--img">
-        <picture>
+        {% comment %} <picture>
             <source srcset="{{ 'bg_vegan-eyeshadow.webp' | file_url }}" type="image/webp">
             <img src="{{ 'bg_vegan-eyeshadow.jpg' | file_url }}" alt="VEGAN 100%" width="545" height="800" loading="lazy" >
-        </picture>
+        </picture> {% endcomment %}
+        <img src="{{ 'bg_vegan-eyeshadow.jpg' | file_url }}" alt="VEGAN 100%" width="545" height="800" loading="lazy" >
 
         <h2 class="eyeshadow__vegan--ttl">100% VEGAN</h2>
         <p class="eyeshadow__vegan--txt">The Skin Eyeshadow Paletteは<br>

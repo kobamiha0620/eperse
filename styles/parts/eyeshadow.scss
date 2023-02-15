@@ -2003,12 +2003,12 @@
             } 
         }
     }
-    .intro03{
-        .intro03__01img--fv{
+    .intro03__points--list01, .intro03__points--list02, .intro03__points--list03, .intro03__points--list04{
+        .pointNum{
             opacity: 0;
         }
         &.is-show {
-            .intro03__01img--fv{
+            .pointNum{
                 opacity: 1;
                 animation-name: fadeUpAnime0;
                 animation-duration: 2s;
@@ -2075,18 +2075,7 @@
             } 
         } 
     }
-    .eyeshadow__vegan{
-        .eyeshadow__vegan--ttl{
-            opacity: 0;
-        }
-        &.is-show {
-            .eyeshadow__vegan--ttl{
-                opacity: 1;
-                animation-name: fadeUpAnime0;
-                animation-duration: 2s;
-            } 
-        } 
-    }
+
     @media screen and (max-width: var.$BP) {
 
     }

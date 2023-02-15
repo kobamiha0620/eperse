@@ -24,13 +24,15 @@ $(window).on('load scroll', function() {
     add_class_in_scrolling($('.intro01__blc02'));
     add_class_in_scrolling($('.intro01__blc03'));
     add_class_in_scrolling($('.intro01pre'));
-    add_class_in_scrolling($('.intro03'));
+    add_class_in_scrolling($('.intro03__points--list01'));
+    add_class_in_scrolling($('.intro03__points--list02'));
+    add_class_in_scrolling($('.intro03__points--list03'));
+    add_class_in_scrolling($('.intro03__points--list04'));
     add_class_in_scrolling($('.intro04__fv'));
     add_class_in_scrolling($('.intro04__blc'));
     add_class_in_scrolling($('.intro04__blc02--top'));
     add_class_in_scrolling($('.intro04__blc02--btm'));
     add_class_in_scrolling($('.intro06'));
-    add_class_in_scrolling($('.eyeshadow__vegan'));
     
     
     $('.fadein_block').each(function(){

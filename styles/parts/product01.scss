@@ -3404,6 +3404,15 @@
 
     }
 }
+.product__cartbtn--disable{
+    margin: 60px auto 60px;
+    display: block;
+    @media screen and (max-width: var.$BP) {
+        margin: 10vw 5vw;
+    }
+
+}
+
 
 @keyframes fadeUpAnime0 {
     0% {

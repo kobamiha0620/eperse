@@ -1,6 +1,8 @@
 /node_modules/
 /design/
+/file_url/
 /assets/*.png
 /assets/*.svg
 package.json
 package-lock.json
+/theme/

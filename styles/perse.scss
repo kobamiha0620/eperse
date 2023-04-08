@@ -1016,6 +1016,46 @@ header-drawer {
 #MainContent {
     padding-top: 0;
 }
+#headerIcons, #Details-menu-drawer-container{
+    .header__icon {
+        svg {
+            color:  #615243;
+
+            .st0 {
+                fill: #615243;
+            }
+
+        }
+    }
+
+}
+
+#rnLogo {
+
+    svg {
+        width: 144px;
+        height: 42px;
+        .st0 {
+            fill: #615243;
+        }
+
+    }
+
+    .header__icon {
+        color:  #615243;
+        svg {
+            color:  #615243;
+
+            .st0 {
+                fill: #615243;
+            }
+
+        }
+    }
+
+
+
+}   
 
 //topページ
 .homePerse {
@@ -1079,6 +1119,8 @@ header-drawer {
 
     }
 }
+
+
 #menu-drawer{
     .header__icon {
         svg {

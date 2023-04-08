@@ -1,0 +1,303 @@
+@charset "utf-8";
+@use './reset.scss'as var;
+.cormorant {
+    font-family: "cormorant-garamond", serif;
+}
+.ninbus {
+    font-family: "nimbus-sans", sans-serif;
+}
+
+.rnAbout {
+    width: 100%;
+    &__inner{
+        width: 520px;
+        margin: 0 auto;
+        background: var.$nYel;
+
+    }
+    &__picture{
+        position: relative;
+        font-size: 0;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__ttl{
+        @include var.bgimg('ttl_rnAbout.svg');
+        width: 290px;
+        height: 406px;
+        position: absolute;
+        top: 135px;
+        left: 125px;
+    }
+    &__txt{
+        color: #FFF;
+        font-size: 1.2rem;
+        line-height: 1.2;
+        text-align: center;
+        margin: 0 auto;
+        position: absolute;
+        top: 600px;
+        right: 0;
+        width: 100%;
+    }
+    @media screen and (max-width: var.$BP) {
+        &__inner{
+            width: 100%;
+        }
+        &__ttl{
+            width: 55.3vw;
+            height: 78.2vw;
+            position: absolute;
+            top: 26vw;
+            left: 25vw;
+        }
+        &__txt{
+            font-size: 1.1rem;
+            line-height: 1.3;
+            position: absolute;
+            top: 115.3vw;
+
+        }
+    }
+}
+
+
+.rnAbout02{
+    background: var.$nYel;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 35px;
+
+    
+    &__txt01{
+        margin: 0 auto 36px;
+    }
+    &__txt02{
+        margin: 0 auto 36px;
+    }
+    &__txt03{
+        margin: 0 auto 52px;
+    }
+    &__line{
+        white-space: nowrap;
+        text-indent: -9999px;
+        width: 1px;
+        height: 65px;
+        margin: 0 auto;
+        background: #FFF;
+
+    }
+    p{
+        text-align: center;
+        color: #FFF;
+        font-size: 1.6rem;
+        line-height: 1.9;
+    }
+    @media screen and (max-width: var.$BP) {
+
+    background: var.$nYel;
+    width: 100%;
+    padding-top: 14.8vw;
+    padding-bottom: 8.4vw;
+
+    &__txt01{
+        margin: 0 auto 8.8vw;
+    }
+    &__txt02{
+        margin: 0 auto 8.8vw;
+    }
+    &__txt03{
+        margin: 0 auto 12.2vw;
+    }
+    &__line{
+        height: 13.4vw;
+    }
+    p{
+        font-size: 1.4rem;
+        line-height: 1.75;
+    }
+}
+}
+.rnAbout03{
+    width: 100%;
+    padding-bottom: 72px;
+    height: 1223px;
+    position: relative;
+
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+    &__img01{
+        position: absolute;
+        right: 30px;
+        top: 0;
+        width: 199px;
+    }
+    &__img02{
+        position: absolute;
+        left: 0;
+        top: 198px;
+        width: 206px;
+    }
+    &__img03{
+        position: absolute;
+        right: 0;
+        top: 354px;
+        width: 254px;
+    }
+    &__img04{
+        position: absolute;
+        left: 23px;
+        top: 804px;
+        width: 401px;
+    }
+    &__txt01{
+        @include var.bgimg('ttl_rnAbout03.svg');
+        width: 429px;
+        height: 306px;
+        position: absolute;
+        margin: 0;
+        top: 70px;
+        left: 51px;
+    }   
+    &__txt02{
+        @include var.bgimg('txt_rnAbout03.svg');
+        width: 443px;
+        height: 317px;
+        position: absolute;
+        margin: 0;
+        top: 547px;
+        left: 29px;
+    }  
+    &__perse{
+        @include var.bgimg('rnAboutperse.svg');
+        width: 98px;
+        height: 43px;
+        margin: 0;
+        position: absolute;
+        top: 1102px;
+        left:212px;
+    }
+    @media screen and (max-width: var.$BP) {
+        width: 100%;
+        height: 256vw;
+        &__img01{
+            position: absolute;
+            right: 4.4vw;
+            top: 0;
+            width: 40.5vw;
+        }
+        &__img02{
+            position: absolute;
+            left: 0;
+            top: 41.2vw;
+            width: 39.6vw;
+        }
+        &__img03{
+            position: absolute;
+            right: 0;
+            top: 72.2vw;
+            width: 51.8vw;
+        }
+        &__img04{
+            position: absolute;
+            left: 0;
+            top: 163.4vw;
+            width: 82vw;
+        }
+        &__txt01{
+            width: 87.46vw;
+            height: 62.4vw;
+            top: 14vw;
+            left: 5.33vw;
+        }   
+        &__txt02{
+            width: 85.46vw;
+            height: 61.2vw; 
+            top: 111.8vw;
+            left: 7vw;
+        }  
+        &__perse{
+            @include var.bgimg('rnAboutperse.svg');
+            width: 20vw;
+            height: 8.7vw;
+            margin: 0;
+            position: absolute;
+            top: 228vw;
+            left: 40.5vw;
+        }
+    }
+}
+
+
+.rnProducer{
+    margin: 0 auto 130px;
+    &__inner{
+        width: 520px;
+        margin: 0 auto;
+    }
+    &__blc{
+        padding: 48px 18px;
+    }
+    &__txt{
+        font-size: 1.6rem;
+        line-height: 1.9;
+        color: var.$nBr;
+    }
+    &__sign{
+        width: 375px;
+        margin: 0 auto;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    @media screen and (max-width: var.$BP) {
+        margin: 0 auto 0;
+        padding-bottom: 13.33vw;
+        &__inner{
+            width: 100%;
+            margin: 0 auto;
+        }
+        &__blc{
+            padding: 10vw 8vw;
+        }
+        &__txt{
+            font-size: 1.3rem;
+        }
+        &__sign{
+            width: 76.5vw;
+            margin: 0 auto;
+        }
+    }
+}
+//tablet　画面サイズが750pxからはこのスタイルを読む
+@media screen and (min-width: var.$BP+1) {}
+
+//sp
+@media screen and (max-width: var.$BP) {}
+
+
+//PCTablet 画面サイズが990pxからはこのスタイルを読む
+@media screen and (min-width: 990px) {
+
+}
+
+
+// @include var.webpBg('.aboutRn__swiper', var.$assets_path + 'bg_aboutRn-sweipe');
+// @include var.webpBg('.phome__slicktop--name01', var.$assets_path+'bg_pallete01', 'png');
+// @include var.webpBg('.phome__slicktop--name02', var.$assets_path+'bg_pallete02', 'png');
+
+
+@media screen and (max-width: var.$BP) {
+    // @include var.webpBg('.aboutRn__swiper', var.$assets_path + 'bg_aboutRn-sweipe-sp');
+
+    // @include var.webpBg('.upthome__fv', var.$imgpath +'fv_sp');
+    // @include var.webpBg('.upthome__set--img-in', var.$imgpath +'home_setimg-sp', 'png');
+    // @include var.webpBg('.upthome__producer', var.$imgpath +'bg_yumi-sp02');
+
+}

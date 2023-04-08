@@ -1,3 +1,16 @@
+
+function load_effect() {
+  const element = document.getElementById('mainSns');
+
+ if(!element) return; // 要素がない場合は終了
+    
+  element.classList.add('is-show');
+ }
+setTimeout(load_effect, 800); // 600ミリ秒経過後に実行
+
+scrollingtoFooter();
+
+
 //トップページのみ
 function scrollingtoFooter() {
 
@@ -20,14 +33,3 @@ function scrollingtoFooter() {
   });
 
 }
-function load_effect() {
-      const element = document.getElementById('mainSns');
-
-     if(!element) return; // 要素がない場合は終了
-        
-     element.classList.add('is-show');
-     }
-    setTimeout(load_effect, 800); // 600ミリ秒経過後に実行
-    
-scrollingtoFooter();
-

@@ -12,6 +12,7 @@
 @use 'parts/top_renew.scss';
 @use 'parts/top_gmenu.scss';
 @use 'parts/renew_index.scss';
+@use 'parts/renew_about.scss';
 
 
 body {
@@ -901,7 +902,8 @@ header-drawer {
 //フェイドイン
 .scroll-up,
 .scroll-up02,
-.scroll-up03 {
+.scroll-up03, 
+.scroll-up04 {
     opacity: 0;
     visibility: hidden;
     transform: translateY(20px);
@@ -992,7 +994,7 @@ header-drawer {
 }
 
 #MainContent #wrapper {
-    margin-top: -84px;
+    margin-top: -80px;
 }
 
 #header-wrapper {
@@ -1016,7 +1018,19 @@ header-drawer {
 #MainContent {
     padding-top: 0;
 }
-#headerIcons, #Details-menu-drawer-container{
+.header__icon {
+    color:  #615243;
+    svg {
+        color:  #615243;
+
+        .st0 {
+            fill: #615243;
+        }
+
+    }
+}
+
+#headerIcons{
     .header__icon {
         svg {
             color:  #615243;
@@ -1058,7 +1072,24 @@ header-drawer {
 }   
 
 //topページ
+body.homePerse #MainContent{
+    padding-top: 0;
+}
+#MainContent{
+    padding-top: 81px;
+}
 .homePerse {
+    .header__icon {
+        color:  #FFF;
+        svg {
+            color:  #FFF;
+
+            .st0 {
+                fill: #FFF;
+            }
+
+        }
+    }
     #rnLogo {
         svg {
             width: 144px;
@@ -1135,7 +1166,7 @@ header-drawer {
 //header
 .header {
     padding-bottom: 0;
-    height: 84px;
+    height: 80px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -1157,9 +1188,7 @@ header-drawer {
 }
 //sp
 @media screen and (max-width: var.$BP) {
-    body.homePerse #MainContent{
-        padding-top: 0!important;
-    }
+
     #MainContent #wrapper {
         margin-top: -14.1vw;
     }

@@ -188,6 +188,10 @@
         {% render 'persehomerenewel' %}
       {%- endif -%}
 
+      {%- if page.handle == 'about' -%}
+        {% render 'about' %}
+      {%- endif -%}
+
       {% if request.path == '/policies/refund-policy' %}
         {% section 'refund-policy' %}
       {% elsif request.path contains '/policies/privacy-policy' %}

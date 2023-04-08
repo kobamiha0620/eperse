@@ -1,0 +1,227 @@
+@charset "utf-8";
+@use './reset.scss'as var;
+.cormorant {
+    font-family: "cormorant-garamond", serif;
+}
+.ninbus {
+    font-family: "nimbus-sans", sans-serif;
+}
+
+.rnVigan {
+    width: 100%;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .footer__fluid{
+        margin-bottom: 70px;
+    }
+    .footer__fluid--txt{
+        background: var.$nGreen;
+    }
+    &__inner{
+        width: 520px;
+        margin: 0 auto;
+
+    }
+    &__txt{
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 2;
+        color: var.$nGrR;
+        margin: 48px 0 15px;
+    }
+    &__logo{
+        text-align: center;
+        margin: 0 auto 35px;
+        img{
+            width: 200px;
+            height: auto;
+        }
+    }
+    &__accordion{
+        &--ttl {
+            border-top: solid 1px var.$nGrR;
+            border-bottom: solid 1px var.$nGrR;
+
+            text-align: center;
+            font-size: 1.2rem;
+            color: var.$nGrR;
+            cursor: pointer;
+            margin: 0;
+            font-size: 1.7rem;
+            line-height: 1;
+            padding: 30px 0;
+            background: url(var.$assets_path + 'rNvigan_plus.svg') no-repeat;
+            background-size: 15px 15px;
+            background-position: right 40px center;
+
+        }
+        &--close {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var.$nGrR;
+            cursor: pointer;
+            margin: 0;
+            font-size: 1.7rem;
+            line-height: 1;
+            padding: 30px 0;
+            background: url(var.$assets_path + 'rNvigan_minus.svg') no-repeat;
+            background-size: 15px 15px;
+            background-position: right 40px center;
+
+        }
+        &--cnt {
+            border-top: solid 1px var.$nGrR;
+            border-bottom: solid 1px var.$nGrR;
+            display: none;
+        }
+        &--txt{
+            font-size: 1.625rem;
+            line-height: 1.9;
+            color: var.$nGrR;
+        }
+
+    }
+    &__7free{
+        margin: 70px auto;
+        width: 420px;
+    }
+    @media screen and (max-width: var.$BP) {
+        &__inner{
+            width: 100%;
+        }
+        .footer__fluid{
+            margin-bottom: 0;
+        }
+        &__txt{
+            font-size: 1.2rem;
+            margin: 52px 0 0;
+        }
+        &__logo{
+            margin: 0 auto 12vw;
+            img{
+                width: 38vw;
+                height: auto;
+            }
+        }
+        &__accordion{
+            width: 82vw;
+            margin: 0 auto;
+            &--ttl {
+                width: 82vw;
+                margin: 0 auto;
+                font-size: 1.4rem;
+                padding: 18px 0;
+                background: url(var.$assets_path + 'rNvigan_plus.svg') no-repeat;
+                background-size: 15px 15px;
+                background-position: right 20px center;
+    
+            }
+            &--close {
+                font-size: 1.4rem;
+
+                line-height: 1;
+                padding: 18px 0;
+                background: url(var.$assets_path + 'rNvigan_minus.svg') no-repeat;
+                background-size: 15px 15px;
+                background-position: right 20px center;
+    
+            }
+
+            &--txt{
+                font-size: 0.9rem;
+                line-height: 1.5;
+            }
+    
+        }
+        &__7free{
+            margin: 16vw auto;
+            width: 80.8vw;
+        }
+    }
+}
+
+.seibunrN{
+    width: 520px;
+    margin: 0 auto;
+    padding-bottom: 170px;
+    @media screen and (max-width: var.$BP) {
+        width: 82vw;
+        margin: 0 auto;
+        padding-bottom: 26vw;
+}
+}
+
+
+.vitaOthers{
+    width: 100%;
+    background: #FFF;
+    padding-top: 86px;
+    &__inner{
+        max-width: 818px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto 56px;
+        a{
+            display: block;
+        }
+    }
+    &__blc{
+        max-width: 260px;
+        img{
+            width: 100%;
+            height: auto
+        }
+    }
+
+    &__ttl{
+        @include var.bgimg('ttl_other-vita.svg');
+        width: 178px;
+        height: 28px;
+        margin: 0 auto 57px;
+    }
+    &__name{
+        font-size: 1.4rem;
+        line-height: 1.64;
+        color: var.$nGrR;
+        margin: 0 0 10px;
+    }
+    &__price{
+        color: var.$nGrR;
+        font-size: 1.9rem;
+        font-family: "nimbus-sans", sans-serif;
+        margin: 0;
+        span{
+            font-size: 1.4rem;
+            line-height: 1;
+        }
+    }
+}
+//tablet　画面サイズが750pxからはこのスタイルを読む
+@media screen and (min-width: var.$BP+1) {}
+
+//sp
+@media screen and (max-width: var.$BP) {}
+
+
+//PCTablet 画面サイズが990pxからはこのスタイルを読む
+@media screen and (min-width: 990px) {
+
+}
+
+
+// @include var.webpBg('.aboutRn__swiper', var.$assets_path + 'bg_aboutRn-sweipe');
+// @include var.webpBg('.phome__slicktop--name01', var.$assets_path+'bg_pallete01', 'png');
+// @include var.webpBg('.phome__slicktop--name02', var.$assets_path+'bg_pallete02', 'png');
+
+
+@media screen and (max-width: var.$BP) {
+    // @include var.webpBg('.aboutRn__swiper', var.$assets_path + 'bg_aboutRn-sweipe-sp');
+
+    // @include var.webpBg('.upthome__fv', var.$imgpath +'fv_sp');
+    // @include var.webpBg('.upthome__set--img-in', var.$imgpath +'home_setimg-sp', 'png');
+    // @include var.webpBg('.upthome__producer', var.$imgpath +'bg_yumi-sp02');
+
+}

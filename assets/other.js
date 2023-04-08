@@ -1,4 +1,5 @@
 
+// PCのSNS表示
 function load_effect() {
   const element = document.getElementById('mainSns');
 
@@ -33,3 +34,21 @@ function scrollingtoFooter() {
   });
 
 }
+
+
+
+//VITA アコーディオン
+
+function vitaAcccordion(){
+  $(".rnVigan__accordion--ttl").click(function () {
+    $(this).slideToggle();
+    $(this).next('.rnVigan__accordion--cnt').slideToggle();
+
+  });
+  $('.rnVigan__accordion--close').click(function(){
+    console.log('clicked');
+    $(this).parent('.rnVigan__accordion--cnt').slideToggle();
+    $(this).parent('.rnVigan__accordion--cnt').prev('.rnVigan__accordion--ttl').slideToggle();
+  });
+}
+vitaAcccordion();

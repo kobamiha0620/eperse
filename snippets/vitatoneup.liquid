@@ -1,0 +1,72 @@
+<div class="product__cartbtn">
+    <form method="post" action="/cart/add">
+        <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+        <input type="hidden" min="1" type="number" id="quantity" name="quantity" value="1" />
+
+        <label for="persebtn">
+            <p>BUY</p>
+            <span class="product__cartbtn--img">cartimg<span>
+        </label>
+        <input type="submit" value="" class="" id="persebtn" />
+    </form>
+    <p class="product__cartbtn--note">あと払いpaidy対応</p>
+
+</div>
+
+{% render 'befriend' %}
+{% render 'rNvigan' %}
+
+<section class="seibunrN">
+
+    <div class="rnVigan__accordion">
+        <h3 class="rnVigan__accordion--ttl">全成分</h3>
+        <div class="rnVigan__accordion--cnt">
+            <p class="rnVigan__accordion--txt">
+                水、酸化亜鉛、シクロヘキサシロキサン、パンテノール、プロパンジオール、カプリル酸プロピルヘプチル、ナイアシンアミド、酸化チタン、カプリリルメチコン、サリチル酸ブチルオクチル、ポリグリセリル－３ポリジメチルシロキシエチルジメチコン、トリメチルシロキシケイ酸、メチルトリメチコン、水添レシチン、ジステアルジモニウムヘクトライト、硫酸Ｍｇ、メタクリル酸メチルクロスポリマー、トコフェロール、トリエトキシカプリリルシラン、１．２－ヘキサンジオール、ジポリヒドロキシステアリン酸ポリグリセリル－２、ラウリルポリグリセリル－３ポリジメチルシロキシエチルジメチコン、グリセリン、（カプリル酸／カプリン酸）ヤシアルキル、水酸化Ａｌ、ポリクオタニウム－５１、カプリル酸グリセリル、カプリリルグリコール、マイカ、ポリヒドロキシステアリン酸、エチルヘキシルグリセリン、アデノシン、ステアリン酸ポリグリセリル－１０、酢酸トコフェロール、アスコルビルリン酸Ｎａ、ピリドキシン、葉酸、ビオチン、チアミンＨＣｌ、アジピン酸ジブチル、ポリアクリル酸アルキル（Ｃ１０－３０）、シアノコバラミン、黄酸化鉄、ベンガラ、黒酸化鉄
+            </p>
+            <h4 class="rnVigan__accordion--close">CLOSE</h4>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="vitaOthers">
+    <h2 class="vitaOthers__ttl">OTHERS</h2>
+
+    <div class="vitaOthers__inner">
+        <div class="vitaOthers__blc">
+            <a href="{{ routes.root_url }}products/">
+                <picture>
+                    <source srcset="{{ 'img_other-vita01.webp' | file_url }}" type="image/webp">
+                    <img src="{{ 'img_other-vita01.png' | file_url }}" alt="OtherItems01" width="520" height="672"
+                        loading="eager">
+                </picture>
+            </a>
+            <p class="vitaOthers__name">ヴィーガンビタ<br>サンセラム</p>
+            <p class="vitaOthers__price">¥2,680<span> ( inc.tax )</span></p>
+        </div>
+        <div class="vitaOthers__blc">
+            <a href="{{ routes.root_url }}products/">
+                <picture>
+                    <source srcset="{{ 'img_other-vita02.webp' | file_url }}" type="image/webp">
+                    <img src="{{ 'img_other-vita02.png' | file_url }}" alt="OtherItems01" width="520" height="672"
+                        loading="eager">
+                </picture>
+            </a>
+            <p class="vitaOthers__name">ヴィーガンビタ<br>フィルターパウダー<br>01 クリア</p>
+            <p class="vitaOthers__price">¥2,180<span> ( inc.tax )</span></p>
+        </div>
+        <div class="vitaOthers__blc">
+            <a href="{{ routes.root_url }}products/">
+                <picture>
+                    <source srcset="{{ 'img_other-vita03.webp' | file_url }}" type="image/webp">
+                    <img src="{{ 'img_other-vita03.png' | file_url }}" alt="OtherItems01" width="520" height="672"
+                        loading="eager">
+                </picture>
+            </a>
+            <p class="vitaOthers__name">ベルベット フィックス リップバーム<br>01 ヌードローズ</p>
+            <p class="vitaOthers__price">¥1,680<span> ( inc.tax )</span></p>
+        </div>
+    </div>
+</section> 

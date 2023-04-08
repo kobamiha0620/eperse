@@ -188,6 +188,12 @@
         {% render 'persehomerenewel' %}
       {%- endif -%}
 
+      {% comment %} 商品ページ {% endcomment %}
+      {% if request.path contains '/vegan-vita-tone-up-base' %}
+        {% render 'vitatoneup' %}
+      {%- endif -%}
+      {% comment %} 商品ページ {% endcomment %}
+
       {%- if page.handle == 'about' -%}
         {% render 'about' %}
       {%- endif -%}

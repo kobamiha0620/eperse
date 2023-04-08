@@ -31,11 +31,18 @@
       "settings": {
         "include_margins": false
       }
+    },
+    "9cb45bd7-6d50-44eb-b286-1f84f7d0ec64": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"footer__insta\">\n\n    <div class=\"footer__icon\">\n      <a href=\"https:\/\/www.instagram.com\/perseofficial\/\" target=\"_blank\" class=\"footer__insta--link\">follow us on Instagram<\/a>\n      <div class=\"footer__icon--scroll\">\n        <span class=\"footer__icon--left\" id=\"js-left\"><\/span>\n        <span class=\"footer__icon--right\" id=\"js-right\"><\/span>\n      <\/div>\n    <\/div>\n    <\/div>"
+      }
     }
   },
   "order": [
     "main",
     "1646297629f1553bf8",
-    "1680932985c2e44d21"
+    "1680932985c2e44d21",
+    "9cb45bd7-6d50-44eb-b286-1f84f7d0ec64"
   ]
 }

@@ -7,6 +7,12 @@ $c02: #8C6351;
 $c03: #92B1BC;
 $c04: #7A9569;
 
+// renewel
+$nYel: #DDB76B;
+$nBr: #615243;
+$nGr: #E0DCDA;
+$nW: #F7F6F0;
+$nYelr: #E5D7AA;
 $assets_path: "//cdn.shopify.com/s/files/1/0618/4593/0220/files/";
 $imgpath: "//cdn.shopify.com/s/files/1/0618/4593/0220/t/37/assets/";
 $BP: 750px;
@@ -138,7 +144,9 @@ input, select {
     display: block;
 	@content;
 }
-
+:root {
+--root-font-size: 16;
+}
 @mixin fz($size) {
 	font-size: calc($size / 16) + rem;
 }

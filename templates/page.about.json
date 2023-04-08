@@ -10,10 +10,30 @@
       "settings": {
         "heading": "Contact form"
       }
+    },
+    "1680932985c2e44d21": {
+      "type": "apps",
+      "blocks": {
+        "c974980a-2585-45a1-bf90-4d7db917e2a1": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "c974980a-2585-45a1-bf90-4d7db917e2a1"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
     "main",
-    "1646297629f1553bf8"
+    "1646297629f1553bf8",
+    "1680932985c2e44d21"
   ]
 }

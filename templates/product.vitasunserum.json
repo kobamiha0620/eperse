@@ -90,7 +90,7 @@
           "settings": {
             "heading_size": 20,
             "feed_width": 100,
-            "html_area": ""
+            "html_area": "<div class=\"footer__insta--wrap\">\n<p class=\"footer__insta--ttl2\">Instagram<\/p>\n<p class=\"sp\"><span>@perse<\/span><\/p>\n<\/div>"
           }
         }
       },
@@ -103,6 +103,7 @@
     },
     "6072b650-442f-496f-bee7-88f5c2a31faf": {
       "type": "instafeed",
+      "disabled": true,
       "settings": {
         "heading_font": "helvetica_n4",
         "heading_size": 20,

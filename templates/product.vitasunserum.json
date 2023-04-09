@@ -100,11 +100,28 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "6072b650-442f-496f-bee7-88f5c2a31faf": {
+      "type": "instafeed",
+      "settings": {
+        "heading_font": "helvetica_n4",
+        "heading_size": 20,
+        "feed_width": 100,
+        "html_area": ""
+      }
+    },
+    "6696f7e4-c312-4e88-b3ef-64470aee1e7d": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"footer__insta\">\n\n    <div class=\"footer__icon\">\n      <a href=\"https:\/\/www.instagram.com\/perseofficial\/\" target=\"_blank\" class=\"footer__insta--link\">follow us on Instagram<\/a>\n      <div class=\"footer__icon--scroll\">\n        <span class=\"footer__icon--left\" id=\"js-left\"><\/span>\n        <span class=\"footer__icon--right\" id=\"js-right\"><\/span>\n      <\/div>\n    <\/div>\n    <\/div>"
+      }
     }
   },
   "order": [
     "main",
     "product-recommendations",
-    "16810474041366e26f"
+    "16810474041366e26f",
+    "6072b650-442f-496f-bee7-88f5c2a31faf",
+    "6696f7e4-c312-4e88-b3ef-64470aee1e7d"
   ]
 }

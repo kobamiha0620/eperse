@@ -1,0 +1,429 @@
+<div class="product">
+    <div class="vita toneup" id="toneup">
+        <div class="vita__fv">
+            <div class="vita__fv--swipwrap">
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" itemprop="image">
+                            <picture>
+                                <source srcset="{{ 'img_fv-serum01.webp' | file_url }}" type="image/webp">
+                                <img src="{{ 'img_fv-serum01.jpg' | file_url }}" alt="VITA tone up" width="1000"
+                                    height="1240" loading="eager" class="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="{{ 'img_fv-serum02.webp' | file_url }}" type="image/webp">
+                                <img src="{{ 'img_fv-serum02.jpg' | file_url }}" alt="VITA tone up" width="1000"
+                                    height="1240" loading="eager" class="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="{{ 'img_fv-serum03.webp' | file_url }}" type="image/webp">
+                                <img src="{{ 'img_fv-serum03.jpg' | file_url }}" alt="VITA tone up" width="1000"
+                                    height="1240" loading="eager" class="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="{{ 'img_fv-serum04.webp' | file_url }}" type="image/webp">
+                                <img src="{{ 'img_fv-serum04.jpg' | file_url }}" alt="VITA tone up" width="1000"
+                                    height="1240" loading="eager" class="">
+                            </picture>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="vita__fv--kadomaru">
+                    <svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 85 85"
+                        style="enable-background:new 0 0 85 85;" xml:space="preserve">
+
+                        <path class="st0" d="M0,85C0,38.1,38.1,0,85,0H0V85z" />
+                    </svg>
+
+
+                </div>
+            </div><!-- clenz__fv--swipwrap -->
+
+            <div class="mySwiper__wrapper">
+                <div thumbsSlider="" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="{{ 'img_fv-serum01.webp' | file_url }}" type="image/webp">
+                                <img src="{{ 'img_fv-serum01.jpg' | file_url }}" alt="VITA TONE UP" width="1000"
+                                    height="1240" loading="eager" class="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="{{ 'img_fv-serum02.webp' | file_url }}" type="image/webp">
+                                <img src="{{ 'img_fv-serum02.jpg' | file_url }}" alt="VITA TONE UP" width="1000"
+                                    height="1240" loading="eager" class="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="{{ 'img_fv-serum03.webp' | file_url }}" type="image/webp">
+                                <img src="{{ 'img_fv-serum03.jpg' | file_url }}" alt="VITA TONE UP" width="1000"
+                                    height="1240" loading="eager" class="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="{{ 'img_fv-serum04.webp' | file_url }}" type="image/webp">
+                                <img src="{{ 'img_fv-serum04.jpg' | file_url }}" alt="VITA TONE UP" width="1000"
+                                    height="1240" loading="eager" class="">
+                            </picture>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            {% comment %} <div class="swiper__arrow">
+                <div class="swiper-button-next">NEXT</div>
+                <div class="swiper-button-prev">PREV</div>
+            </div> {% endcomment %}
+
+        </div>
+
+
+        <section class="product__de">
+            <h1 class="product__de--en">Vegan Vita Sun Serum</h1>
+            <h2 class="product__de--jp">ヴィーガンビタ サンセラム</h2>
+            <h3 class="product__de--price">¥2,680<span> ( inc.tax )</span></h3>
+
+        </section>
+
+        <div class="product__cartbtn">
+            <form method="post" action="/cart/add">
+                <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                <input type="hidden" min="1" type="number" id="quantity" name="quantity" value="1" />
+
+                <label for="persebtn">
+                    <p>BUY</p>
+                    <span class="product__cartbtn--img">cartimg<span>
+                </label>
+                <input type="submit" value="" class="" id="persebtn" />
+            </form>
+            <p class="product__cartbtn--note">あと払いpaidy対応</p>
+        </div>
+
+        {% render 'campaignbnr' %}
+
+        <!-- ViganVita説明 -->
+        <div class="vitaSerum">
+            <div class="vitaSerum__inner">
+                <div class="vitaSerum__inner--fv">
+
+                    <div class="vitaSerum__picture load-fade">
+                        <picture>
+                            <source srcset="{{ 'mainimg_fv-serum.webp' | file_url }}" type="image/webp">
+                            <img src="{{ 'mainimg_fv-serum.jpg' | file_url }}" alt="VITA TONE UP" width="1040"
+                                height="1566" loading="eager" class="">
+                        </picture>
+                        <h2 class="vitaSerum__ttl scroll-up">Vegan VITA Sun Serum</h2>
+                        <h3 class="vitaSerum__subttl scroll-up02">ヴィーガンビタ サンセラム</h3>
+                    </div>
+
+
+
+                    <div class="load-fade vitaSerum__intro">
+                        <h3 class="vitaSerum__intro--ttl scroll-up">美容液感覚で使える⽔分ベースの<br>ジェル状⽇焼け⽌め</h3>
+                        <p class="vitaSerum__intro--txt scroll-up02">⽔分たっぷりの美容液のような<br>
+                            軽いジェル状テクスチャーで、<br>
+                            お肌が⽩浮きすることなくスキンケア感覚で<br>
+                            しっとりとした潤い感をチャージできる<br>
+                            新感覚の⽇焼け⽌めセラム下地。
+                        </p>
+                        <div class="vitaSerum__intro--img">
+                            <picture>
+                                <source srcset="{{ 'img_serumintro01.webp' | file_url }}" type="image/webp">
+                                <img src="{{ 'img_serumintro01.png' | file_url }}" alt="VITA SERUM" width="372"
+                                    height="372" loading="eager" class="">
+                            </picture>
+                        </div>
+
+                    </div>
+
+                    <div class="load-fade vitaSerum__intro2">
+                        <picture>
+                            <source srcset="{{ 'img_serumintro02.webp' | file_url }}" type="image/webp">
+                            <img src="{{ 'img_serumintro02.jpg' | file_url }}" alt="VITA SERUM" width="1040"
+                                height="1420" loading="eager" class="">
+                        </picture>
+                        <p class="vitaSerum__intro2--txt scroll-up">Vigan Vita Sun Serum</p>
+                    </div>
+
+
+
+                    <div class="vitaSerum__intro03">
+                        <picture>
+                            <source srcset="{{ 'img_serumintro03.webp' | file_url }}" type="image/webp">
+                            <img src="{{ 'img_serumintro03.jpg' | file_url }}" alt="VITA SERUM" width="1040"
+                                height="1452" loading="eager" class="">
+                        </picture>
+                    </div>
+
+
+                    <div class="vitaSerum__intro04 load-fade">
+                        <p class="vitaSerum__intro04--txt01">
+                            <img src="{{ 'txt_intro03.svg' | file_url }}" alt="VITA SERUM" width="462" height="18"
+                                loading="eager" class="">
+                        </p>
+                        <p class="vitaSerum__intro04--txt02 scroll-up02">
+                            <img src="{{ 'txt_intro03b.svg' | file_url }}" alt="VITA SERUM" width="316" height="118"
+                                loading="eager" class="">
+                        </p>
+                        <p class="vitaSerum__intro04--txt03 scroll-up03">
+                            <img src="{{ 'txt_intro03c.svg' | file_url }}" alt="VITA SERUM" width="126" height="56"
+                                loading="eager" class="">
+                        </p>
+                        <p class="vitaSerum__intro04--txt04 scroll-up04">
+                            <img src="{{ 'txt_intro03d.svg' | file_url }}" alt="VITA SERUM" width="368" height="70"
+                                loading="eager" class="">
+                        </p>
+                    </div>
+
+                    <div class="vitaSerum__intro05 load-fade">
+                        <picture>
+                            <source srcset="{{ 'img_intro05.webp' | file_url }}" type="image/webp">
+                            <img src="{{ 'img_intro05.jpg' | file_url }}" alt="VITA SERUM" width="1040" height="1552"
+                                loading="eager" class="">
+                        </picture>
+                        <p class="vitaSerum__intro05--txt01 scroll-up">
+                            <img src="{{ 'txt_intro05.svg' | file_url }}" alt="VITA SERUM" width="125" height="40"
+                                loading="eager" class="">
+                        </p>
+                        <p class="vitaSerum__intro05--txt02 scroll-up02">
+                            <img src="{{ 'txt_intro05b.svg' | file_url }}" alt="VITA SERUM" width="338" height="142"
+                                loading="eager" class="">
+                        </p>
+
+                    </div>
+                    <div class="vitaSerum__intro06 load-fade">
+                        <p class="vitaSerum__txt01 scroll-up">64%以上の⽔分ベースで<br>
+                            うるおいたっぷりな肌へ</p>
+                        <div class="vitaSerum__intro06--img">
+                            <picture>
+                                <source srcset="{{ 'img_intro06.webp' | file_url }}" type="image/webp">
+                                <img src="{{ 'img_intro06.jpg' | file_url }}" alt="VITA SERUM" width="436" height="436"
+                                    loading="eager" class="">
+                            </picture>
+                        </div>
+                        <p class="vitaSerum__txt02 scroll-up02">⽔分をたっぷり含んだモイストテクスチャーが<br>
+                            まるで美容液を塗ったような<br>
+                            しっとりした潤いのあるツヤ肌に。</p>
+                    </div>
+                    <div class="vitaSerum__intro07">
+                        <picture>
+                            <source srcset="{{ 'img_intro07.webp' | file_url }}" type="image/webp">
+                            <img src="{{ 'img_intro07.jpg' | file_url }}" alt="VITA SERUM" width="1040" height="1500"
+                                loading="eager" class="">
+                        </picture>
+                    </div>
+
+                    <div class="vitaSerum__intro08 load-fade">
+                        <div class="pc">
+                            <picture>
+                                <source srcset="{{ 'img_intro08.webp' | file_url }}" type="image/webp">
+                                <img src="{{ 'img_intro08.jpg' | file_url }}" alt="VITA SERUM" width=" " height="2078"
+                                    loading="eager" class="">
+                            </picture>
+                        </div>
+                        <div class="sp">
+                            <picture>
+                                <source srcset="{{ 'img_intro08sp.webp' | file_url }}" type="image/webp">
+                                <img src="{{ 'img_intro08sp.jpg' | file_url }}" alt="VITA SERUM" width="750"
+                                    height="1620" loading="eager" class="">
+                            </picture>
+                        </div>
+                        <p class="vitaSerum__txt02 scroll-up">UVセラムカプセルは<br>
+                            ゲル化の技術を使⽤することで<br>
+                            界⾯活性剤を⼀切使⽤せず、ベタベタ感のない<br>
+                            みずみずしい使⽤感を実現。</p>
+                        <p class="vitaSerum__intro08--txt scroll-up04">
+                            <img src="{{ 'txt_intro08.svg' | file_url }}" alt="VITA SERUM" width="57" height="52"
+                                loading="eager" class="">
+                        </p>
+                    </div>
+                </div>
+                <div class="vitaSerum__intro09 load-fade">
+                    <picture>
+                        <source srcset="{{ 'img_intro09.webp' | file_url }}" type="image/webp">
+                        <img src="{{ 'img_intro09.jpg' | file_url }}" alt="VITA SERUM" width="1040" height="1462"
+                            loading="eager" class="">
+                    </picture>
+                    <p class="vitaSerum__intro09--txt scroll-up">
+                        <img src="{{ 'txt_intro09.svg' | file_url }}" alt="VITA SERUM" width="435" height="85"
+                            loading="eager" class="">
+                    </p>
+                </div>
+
+                <div class="vitaSerum__intro10">
+                    <h3 class="vitaSerum__txt01"> 肌にやさしく⽯鹸落ち</h3>
+                    <p class="vitaSerum__txt02">デイリーで使って欲しいアイテムだからこそ、<br>
+                        ⾼SPFで紫外線から肌を守りながら<br>
+                        肌にやさしいヴィーガン処⽅。<br>
+                        クレンジングいらずで簡単に⽯鹸で落とせます。</p>
+                    <p class="vitaSerum__note">※単品使⽤の場合</p>
+                    <div class="vitaSerum__intro10--img">
+                        <picture>
+                            <source srcset="{{ 'img_intro10.webp' | file_url }}" type="image/webp">
+                            <img src="{{ 'img_intro10.jpg' | file_url }}" alt="VITA SERUM" width="900" height="1000"
+                                loading="eager" class="">
+                        </picture>
+                    </div>
+                </div>
+                <div class="vitaSerum__intro11 load-fade">
+                    <picture>
+                        <source srcset="{{ 'img_intro11.webp' | file_url }}" type="image/webp">
+                        <img src="{{ 'img_intro11.jpg' | file_url }}" alt="VITA SERUM" width="1040" height="1464"
+                            loading="eager" class="">
+                    </picture>
+                    <div class="vitaSerum__intro11--img scroll-up">
+                        <picture>
+                            <source srcset="{{ 'img_intro11b.webp' | file_url }}" type="image/webp">
+                            <img src="{{ 'img_intro11b.png' | file_url }}" alt="VITA SERUM" width="700" height="966"
+                                loading="eager" class="">
+                        </picture>
+                    </div>
+                </div>
+
+                <div class="vitaSerum__intro12">
+                    <div class="vitaSerum__intro12--inner">
+                        <h3 class="vitaSerum__txt01">欲張り美容成分<br>
+                            VITA-9 COMPLEX<sup>*1</sup><br>
+                            CICA<sup>*2</sup>配合</h3>
+                        <p class="vitaSerum__txt02">
+                            特許成分である9種のビタミン成分<br>
+                            コンプレックス（VITA-9 COMPLEX<sup>*1</sup>）が、<br>
+                            ⽔分が蒸発することのなく肌の奥まで<br>
+                            たっぷりと潤いを与え透明感<sup>*3</sup>をプラス。<br>
+                            その他にもCICA<sup>*2</sup>・ナイアシンアミド<sup>*4</sup>・<br>
+                            パンテーノール<sup>*5</sup>配合で素肌そのものを<br>
+                            いたわる美容成分を豊富に配合。
+                        </p>
+                        <div class="vitaSerum__intro12--img">
+                            <picture>
+                                <source srcset="{{ 'img_intro12.webp' | file_url }}" type="image/webp">
+                                <img src="{{ 'img_intro12.png' | file_url }}" alt="VITA SERUM" width="700" height="836"
+                                    loading="eager" class="">
+                            </picture>
+                        </div>
+
+                        <p class="vitaSerum__note">＊1アスコルビルリン酸Na、酢酸トコフェロール、パンテノール、シアノコバラミン、ビオチン、ピリドキシン、葉酸、チアミンHCl、ナイアシンアミド(保湿・整肌成分) ＊2ツボクサ根エキス(保湿剤) ＊3保湿による肌印象 ＊4保湿剤 ＊5保湿剤</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ViganVita説明 -->
+
+        <div class="vitaSerumFeture">
+            <div class="vitaSerumFeture__img">
+            <picture>
+                <source srcset="{{ 'img_serum-feature.webp' | file_url }}" type="image/webp">
+                <img src="{{ 'img_serum-feature.png' | file_url }}" alt="VITA TONE UP" width="472"
+                    height="608" loading="eager" class="">
+            </picture>
+        </div>
+            <p class="vitaSerum__txt02">デイリー使いにピッタリな爽やかで<br>
+                清潔感のある⾹り。<br>
+                みずみずしくほのかに⾹ります。</p>
+    
+        </div>
+
+        <div class="vitaSerumHowto">
+            <picture>
+                <source srcset="{{ 'img_serum-howto.webp' | file_url }}" type="image/webp">
+                <img src="{{ 'img_serum-howto.png' | file_url }}" alt="VITA TONE UP" width="972"
+                    height="1318" loading="eager" class="">
+            </picture>
+            <div class="vitaSerumHowto__blc">
+                <p class="vitaSerumHowto__blc--txt">スキンケアで肌を整えた後、<br>
+                    顔全体にムラなく馴染ませてください。</p>
+                <p class="vitaSerumHowto__blc--txt2">VEGAN VITA SUN SERUMの<br>
+                    次に使⽤するアイテムがある際には、<br>
+                    ⼗分に吸収した後にご使⽤することをお勧めします。</p>
+            </div>
+        </div>
+        {% render 'befriend' %}
+        {% render 'rNvigan' %}
+
+        <section class="seibunrN">
+            <div class="seibunrN__inner">
+                <div class="rnVigan__accordion">
+                    <h3 class="rnVigan__accordion--ttl">全成分</h3>
+                    <div class="rnVigan__accordion--cnt">
+                        <p class="rnVigan__accordion--txt">
+                            水、アジピン酸ジブチル、サリチル酸ブチルオクチル、トリ（カプリル酸／カプリン酸）グリセリル、エチルヘキシルトリアゾン、パンテノール、テレフタリリデンジカンフルスルホン酸、ビスエチルヘキシルオキシフェノールメトキシフェニルトリアジン、ナイアシンアミド、トロメタミン、水添ポリオレフィン（Ｃ６－２０）、１．２－ヘキサンジオール、ジエチルアミノヒドロキシベンゾイル安息香酸ヘキシル、ペンチレングリコール、ポリシリコーン－１５、ツボクサエキス、水添レシチン、（アクリレーツ／アクリル酸アルキル（Ｃ１０－３０））クロスポリマー、（ＨＤＩ／トリメチロールヘキシルラクトン）クロスポリマー、アデノシン、トコフェロール、グリセリン、ステアリン酸ポリグリセリル－１０、アスコルビルリン酸Ｎａ、酢酸トコフェロール、ビオチン、チアミンＨＣｌ、葉酸、ピリドキシン、シアノコバラミン、香料、エチルヘキシルグリセリン
+                        </p>
+                        <h4 class="rnVigan__accordion--close">CLOSE</h4>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="vitaOthers">
+            <h2 class="vitaOthers__ttl">OTHERS</h2>
+
+            <div class="vitaOthers__inner">
+                <div class="vitaOthers__blc">
+                    <a href="{{ routes.root_url }}products/vegan-vita-tone-up-base/">
+                        <picture>
+                            <source srcset="{{ 'img_other-vita01a.webp' | file_url }}" type="image/webp">
+                            <img src="{{ 'img_other-vita01a.png' | file_url }}" alt="OtherItems01" width="520"
+                                height="672" loading="eager">
+                        </picture>
+                    </a>
+                    <p class="vitaOthers__name">ヴィーガンビタ<br>トーンアップベース</p>
+                    <p class="vitaOthers__price">¥2,480<span> ( inc.tax )</span></p>
+                </div>
+                <!-- <div class="vitaOthers__blc">
+                    <a href="{{ routes.root_url }}products/">
+                        <picture>
+                            <source srcset="{{ 'img_other-vita01.webp' | file_url }}" type="image/webp">
+                            <img src="{{ 'img_other-vita01.png' | file_url }}" alt="OtherItems01" width="520"
+                                height="672" loading="eager">
+                        </picture>
+                    </a>
+                    <p class="vitaOthers__name">ヴィーガンビタ<br>サンセラム</p>
+                    <p class="vitaOthers__price">¥2,680<span> ( inc.tax )</span></p>
+                </div> -->
+                <div class="vitaOthers__blc">
+                    <a href="{{ routes.root_url }}products/">
+                        <picture>
+                            <source srcset="{{ 'img_other-vita02.webp' | file_url }}" type="image/webp">
+                            <img src="{{ 'img_other-vita02.png' | file_url }}" alt="OtherItems01" width="520"
+                                height="672" loading="eager">
+                        </picture>
+                    </a>
+                    <p class="vitaOthers__name">ヴィーガンビタ<br>フィルターパウダー<br>01 クリア</p>
+                    <p class="vitaOthers__price">¥2,180<span> ( inc.tax )</span></p>
+                </div>
+                <div class="vitaOthers__blc">
+                    <a href="{{ routes.root_url }}products/">
+                        <picture>
+                            <source srcset="{{ 'img_other-vita03.webp' | file_url }}" type="image/webp">
+                            <img src="{{ 'img_other-vita03.png' | file_url }}" alt="OtherItems01" width="520"
+                                height="672" loading="eager">
+                        </picture>
+                    </a>
+                    <p class="vitaOthers__name">ベルベット フィックス リップバーム<br>01 ヌードローズ</p>
+                    <p class="vitaOthers__price">¥1,680<span> ( inc.tax )</span></p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+    </div>
+</div>

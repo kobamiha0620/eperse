@@ -189,9 +189,27 @@
       {%- endif -%}
 
       {% comment %} 商品ページ {% endcomment %}
+      
+      {% if request.path contains '/skineyeshadow-01rosymood' %}
+        {% render 'eyeshadow01rosy' %}
+      {%- endif -%}
+      
+      {% if request.path contains '/skineyeshadow-02ambermood' %}
+        {% render 'eyeshadow02amber' %}
+      {%- endif -%}
+      
       {% if request.path contains '/vegan-vita-tone-up-base' %}
         {% render 'vitatoneup' %}
       {%- endif -%}
+
+      {% if request.path contains '/vegan-vita-sun-serum' %}
+        {% render 'vitasunserum' %}
+      {%- endif -%}
+      
+      {% comment %} {% if request.path contains '/vegan-vita-filter-powder' %}
+        {% render 'vitasunserum' %}
+      {%- endif -%} {% endcomment %}
+
       {% comment %} 商品ページ {% endcomment %}
 
       {%- if page.handle == 'about' -%}
@@ -212,6 +230,7 @@
 
       
       {{ content_for_layout }}
+
 
 
     </div>

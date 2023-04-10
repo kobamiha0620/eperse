@@ -1,0 +1,299 @@
+@charset "utf-8";
+@use './reset.scss'as var;
+
+.cormorant {
+    font-family: "cormorant-garamond", serif;
+}
+
+.ninbus {
+    font-family: "nimbus-sans", sans-serif;
+}
+///VITAシリーズ
+#vegan-vita-tone-up-base,
+#vegan-vita-sun-serum{
+    .mySwiper{
+        background-color: transparent;
+    }
+    #shopify-section-header{
+        background: #F7F6F0;
+        font-size: 0;
+    }
+    #MainContent{
+        margin-top: -1px;
+    }
+    .product{
+        padding-bottom: 5rem;
+    }
+}
+@media screen and (min-width: var.$BP+1) {
+
+#vegan-vita-sun-serum{
+    .vita__fv .mySwiper{
+        margin: 0 auto;
+        .swiper-wrapper{
+            justify-content: center;
+        }
+    }
+}
+}
+
+.vita {
+    width: 100%;
+    background: #F7F6F0;
+    .product__cartbtn label{
+        background: var.$nBr;
+        font-family: "nimbus-sans", sans-serif;
+        width: 466px;
+    }
+    &__picture{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .campaignBnr{
+        margin-bottom: 102px;
+    }
+
+
+    &__inner {
+        width: 520px;
+        margin: 0 auto;
+    }
+
+    .product__de {
+        border-bottom: solid 1px var.$nGrR;
+        margin-bottom: 30px;
+        padding-bottom: 26px;
+    }
+
+    .product__de--price {
+        margin-bottom: 26px;
+        font-family: "nimbus-sans", sans-serif;
+
+    }
+    &__fv {
+        width: 500px;
+        margin: 0 auto;
+        padding: 0 0 50px;
+        &--kadomaru{
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            top: 0;
+            .st0{fill:#F7F6F0;}
+            width: 85px;
+            height: 85px;
+        }
+        &--swipwrap {
+            position: relative;
+            margin: 0 0 26px;
+            // img{
+            //     border-top-left-radius: 120px;
+            // }
+        }
+
+        .swiper-slide {
+            background: var.$BG;
+        }
+
+        .clenz__disablebtn {
+            margin: 0;
+        }
+
+        .clenz__btn {
+            margin: 0;
+        }
+
+        .mySwiper__wrapper {
+            margin: 0 0 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .mySwiper {
+
+            margin: 0;
+            padding: 0 38px;
+        }
+
+        .mySwiper .swiper-slide-thumb-active {
+            border-bottom: solid 2px var.$nBr;
+        }
+
+        .swiper__arrow {
+            width: 500px;
+            position: relative;
+            margin: -120px 0 120px;
+
+            .swiper-button-next {
+                @include var.bgimg('arrow_vita.svg');
+                width: 43px;
+                height: 130px;
+                position: absolute;
+                right: 0px;
+                top: 15px;
+                z-index: 1;
+                background-color: #F7F6F0;
+                background-size: 43px 130px;
+            }
+
+            .swiper-button-prev {
+                  transform: scale(-1, 1);
+
+                @include var.bgimg('arrow_vita.svg');
+                width: 42px;
+                height: 130px;
+                position: absolute;
+                left: 0;
+                top: 15px;
+                z-index: 1;
+                background-color: #F7F6F0;
+                background-size: 43px 130px;
+            }
+        }
+
+        .swiper-button-next.swiper-button-disabled,
+        .swiper-button-prev.swiper-button-disabled {
+            opacity: 1 !important;
+            z-index: 1;
+            background-image: none;
+        }
+
+    }
+
+
+    //NewText
+    &__ptxt {
+        max-width: 460px;
+        width: 100%;
+        margin: 0 auto;
+
+        &--ttl {
+            font-size: 2.5rem;
+            font-family: "nimbus-sans", sans-serif;
+            margin-bottom: 1.6rem;
+
+            span {
+                margin-bottom: 3px;
+                border-bottom: solid 1px var.$nBr;
+            }
+        }
+
+        &--txt {
+            font-size: 1.5rem;
+            color: var.$nBr;
+            color: var.$nBr;
+
+        }
+
+        &--txt2 {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            color: #666;
+            margin: 0;
+
+        }
+
+        @media screen and (max-width: var.$BP) {
+            max-width: 100%;
+            padding: 0 6vw;
+
+            &--ttl {
+                font-size: 1.85rem;
+                margin-bottom: 1.6rem;
+            }
+
+            &--txt {
+                font-size: 1.2rem;
+                margin: 17px 0;
+                line-height: 1;
+            }
+
+            &--txt2 {
+                font-size: 1.2rem;
+                line-height: 1.9;
+            }
+        }
+
+    }
+
+    @media screen and (max-width: var.$BP) {
+        .product__de {
+            margin-bottom: 9.28vw;
+        }
+        .campaignBnr{
+            margin-bottom: 16vw;
+        }
+    
+        &__fv {
+            width: 100%;
+            margin: 0 auto 0;
+
+            &--inner {
+                padding: 0 5.3vw;
+                width: 100%;
+            }
+
+
+            .clenz__disablebtn {
+                margin: 0;
+            }
+
+            .clenz__btn {
+                margin: 0;
+            }
+
+            &--swipwrap {
+                margin: 0 0 3.4vw 5.3vw;
+                // img{
+                //     border-top-left-radius: 120px;
+                // }
+            }
+
+            &--swraper {
+                margin: 0 0 3.4vw 5.3vw;
+            }
+
+            .mySwiper__wrapper {
+                margin: 0 0 0 5.3vw;
+            }
+
+            .mySwiper {
+                margin: 0 0 0;
+                padding: 0;
+            }
+
+            .swiper__arrow {
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+//tablet　画面サイズが750pxからはこのスタイルを読む
+@media screen and (min-width: var.$BP+1) {}
+
+//sp
+@media screen and (max-width: var.$BP) {}
+
+
+//PCTablet 画面サイズが990pxからはこのスタイルを読む
+@media screen and (min-width: 990px) {}
+
+
+// @include var.('.aboutRn__swiper', var.$assets_path + 'bg_aboutRn-sweipe');
+// @include var.webpBg('.phome__slicktop--name01', var.$assets_path+'bg_pallete01', 'png');
+// @include var.webpBg('.phome__slicktop--name02', var.$assets_path+'bg_pallete02', 'png');
+
+
+@media screen and (max-width: var.$BP) {
+    // @include var.webpBg('.aboutRn__swiper', var.$assets_path + 'bg_aboutRn-sweipe-sp');
+
+    // @include var.webpBg('.upthome__fv', var.$imgpath +'fv_sp');
+    // @include var.webpBg('.upthome__set--img-in', var.$imgpath +'home_setimg-sp', 'png');
+    // @include var.webpBg('.upthome__producer', var.$imgpath +'bg_yumi-sp02');
+
+}

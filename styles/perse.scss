@@ -14,8 +14,10 @@
 @use 'parts/renew_index.scss';
 @use 'parts/renew_about.scss';
 @use 'parts/renew_rnVigan.scss';
+@use 'parts/vita_fv.scss';
 @use 'parts/vita_bfriend.scss';
-
+@use 'parts/vita_tone.scss';
+@use 'parts/vita_serum.scss';
 
 body {
     background: var.$BG;
@@ -1075,10 +1077,14 @@ header-drawer {
 
 //topページ
 body.homePerse #MainContent{
-    padding-top: 0;
+    padding-top: 0!important;
+    
 }
 #MainContent{
     padding-top: 81px;
+    @media screen and (max-width: var.$BP) {
+        padding-top: 60px;
+    }
 }
 .homePerse {
     .header__icon {
@@ -1226,4 +1232,14 @@ body.homePerse #MainContent{
         padding-bottom: 0.5rem;
     }
 
+}
+
+//VITA追記
+#vegan-vita-tone-up-base,
+#vegan-vita-sun-serum{
+    background: #FFF;
+    .footer{
+        background: #FFF;
+
+    }
 }

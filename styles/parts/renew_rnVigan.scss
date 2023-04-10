@@ -9,6 +9,7 @@
 
 .rnVigan {
     width: 100%;
+    background: #F7F6F0;
     img{
         width: 100%;
         height: auto;
@@ -84,7 +85,8 @@
 
     }
     &__7free{
-        margin: 70px auto;
+        margin: 70px auto 0;
+        padding-bottom: 70px;
         width: 420px;
     }
     @media screen and (max-width: var.$BP) {
@@ -136,20 +138,28 @@
     
         }
         &__7free{
-            margin: 16vw auto;
+            margin: 16vw auto 0;
+            padding-bottom: 16vw;
             width: 80.8vw;
         }
     }
 }
 
 .seibunrN{
-    width: 520px;
-    margin: 0 auto;
-    padding-bottom: 170px;
-    @media screen and (max-width: var.$BP) {
-        width: 82vw;
+
+    background: #F7F6F0;
+    &__inner{
+        width: 520px;
         margin: 0 auto;
-        padding-bottom: 26vw;
+        padding-bottom: 170px;
+    }
+    @media screen and (max-width: var.$BP) {
+
+        &__inner{
+            width: 82vw;
+            margin: 0 auto;
+            padding-bottom: 26vw;
+        }
 }
 }
 
@@ -198,6 +208,45 @@
             line-height: 1;
         }
     }
+    @media screen and (max-width: var.$BP) {
+        width: 100%;
+        padding-top: 14.6vw;
+        &__inner{
+            max-width: 200vw;
+            padding-left: 9vw;
+
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 8vw;
+            margin: 0 auto 25.6vw;
+            overflow-x: scroll;
+            a{
+                display: block;
+            }
+        }
+        &__blc{
+            min-width: 63.6vw;
+            max-width: 63.6vw;
+            margin-right: 6.66vw;
+        }
+    
+        &__ttl{
+            @include var.bgimg('ttl_other-vita.svg');
+            width: 34.2vw;
+            height: 5.46vw;
+            margin: 0 auto 11vw;
+        }
+        &__name{
+            font-size: 1.3rem;
+            line-height: 1.76;
+            margin: 0 0 10px;
+        }
+        &__price{
+            font-size: 1.7rem;
+            margin: 0;
+        }
+    }
 }
 //tablet　画面サイズが750pxからはこのスタイルを読む
 @media screen and (min-width: var.$BP+1) {}
@@ -210,6 +259,8 @@
 @media screen and (min-width: 990px) {
 
 }
+
+
 
 
 // @include var.webpBg('.aboutRn__swiper', var.$assets_path + 'bg_aboutRn-sweipe');

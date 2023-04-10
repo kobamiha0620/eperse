@@ -37,7 +37,7 @@ async function supportsWebp() {
                         
     var scrollY = window.pageYOffset;
     var windowH = window.innerHeight;
-    var showTiming = 200; // 要素を表示するタイミング
+    var showTiming = 160; // 要素を表示するタイミング
     for(var i = 0; i < element.length; i++) { 
       var elemClientRect = element[i].getBoundingClientRect(); 
       var elemY = scrollY + elemClientRect.top; 

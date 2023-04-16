@@ -8,7 +8,7 @@
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
-
+<p style="font-size: 49px;">test</p>
 
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
@@ -172,6 +172,8 @@
         {%- endif -%}
       </media-gallery>
     </div>
+
+
     <div class="product__info-wrapper grid__item">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
@@ -377,6 +379,7 @@
                 </div>
               </div>
             </noscript>
+            
           {%- when 'buy_buttons' -%}
             <div {{ block.shopify_attributes }}>
               <product-form class="product-form">
@@ -468,6 +471,8 @@
         {%- endfor -%}
       </div>
     </div>
+
+    
   </div>
 
   <product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">

@@ -107,7 +107,6 @@ function announcementBar() {
     
     if (scroll > ah) {
       header.classList.add('fixed');
-
     } else {
       header.classList.remove('fixed');
     }

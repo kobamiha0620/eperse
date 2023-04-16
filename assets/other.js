@@ -52,3 +52,26 @@ function vitaAcccordion(){
   });
 }
 vitaAcccordion();
+
+
+//バリエーション
+function validation(){
+
+  let radio_btns = document.querySelectorAll(`input[type='radio'][name='powder']`);
+  // const validationName = document.getElementById('js-validastionname');
+  for (let target of radio_btns) {
+    target.addEventListener(`change`, function () {
+      let radio = document.querySelector('[name="powder"]:checked');
+      let val = radio.value;
+      let text = radio.parentElement.innerText;
+      document.querySelector(`#js-validastionname`).innerHTML = `${target.value} `;
+      document.querySelector(`#js-cartlink`).setAttribute('href', `${target.dataset.url} `);
+      // document.querySelector(`#js-cartlink`).classList.toggle('change');
+
+      
+    });
+  }
+  
+}
+
+validation();

@@ -18,6 +18,7 @@
 @use 'parts/vita_bfriend.scss';
 @use 'parts/vita_tone.scss';
 @use 'parts/vita_serum.scss';
+@use 'parts/vita_powder.scss';
 
 body {
     background: var.$BG;
@@ -1236,6 +1237,7 @@ body.homePerse #MainContent{
 
 //VITA追記
 #vegan-vita-tone-up-base,
+#vegan-vita-filter-powder,
 #vegan-vita-sun-serum{
     background: #FFF;
     .footer{

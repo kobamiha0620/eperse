@@ -206,9 +206,10 @@
         {% render 'vitasunserum' %}
       {%- endif -%}
       
-      {% comment %} {% if request.path contains '/vegan-vita-filter-powder' %}
-        {% render 'vitasunserum' %}
-      {%- endif -%} {% endcomment %}
+      {% if request.path contains '/vegan-vita-filter-powder' %}
+        {% render 'vitapowders' %}
+      {%- endif -%}
+
 
       {% comment %} 商品ページ {% endcomment %}
 

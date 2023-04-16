@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "main-product",
+      "disabled": true,
       "blocks": {
         "vendor": {
           "type": "text",
@@ -66,7 +67,7 @@
         "share"
       ],
       "settings": {
-        "enable_sticky_info": true,
+        "enable_sticky_info": false,
         "gallery_layout": "stacked",
         "media_size": "large",
         "mobile_thumbnails": "hide",
@@ -76,6 +77,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "image_ratio": "adapt",
@@ -85,10 +87,30 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "16816521625dc1ab96": {
+      "type": "apps",
+      "blocks": {
+        "7e8f50cf-48be-44b5-824c-5fd5d6af024b": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "7e8f50cf-48be-44b5-824c-5fd5d6af024b"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "16816521625dc1ab96"
   ]
 }

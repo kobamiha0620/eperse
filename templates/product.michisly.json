@@ -96,7 +96,7 @@
           "settings": {
             "heading_size": 20,
             "feed_width": 100,
-            "html_area": ""
+            "html_area": "<div class=\"footer__insta\">\n\n    <div class=\"footer__icon\">\n      <a href=\"https:\/\/www.instagram.com\/perseofficial\/\" target=\"_blank\" class=\"footer__insta--link\">follow us on Instagram<\/a>\n      <div class=\"footer__icon--scroll\">\n        <span class=\"footer__icon--left\" id=\"js-left\"><\/span>\n        <span class=\"footer__icon--right\" id=\"js-right\"><\/span>\n      <\/div>\n    <\/div>\n    <\/div>"
           }
         }
       },
@@ -106,11 +106,18 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "bab1c179-26c9-44c7-b4c0-547efe806120": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"footer__insta\">\n\n    <div class=\"footer__icon\">\n      <a href=\"https:\/\/www.instagram.com\/perseofficial\/\" target=\"_blank\" class=\"footer__insta--link\">follow us on Instagram<\/a>\n      <div class=\"footer__icon--scroll\">\n        <span class=\"footer__icon--left\" id=\"js-left\"><\/span>\n        <span class=\"footer__icon--right\" id=\"js-right\"><\/span>\n      <\/div>\n    <\/div>\n    <\/div>"
+      }
     }
   },
   "order": [
     "main",
     "product-recommendations",
-    "16816521625dc1ab96"
+    "16816521625dc1ab96",
+    "bab1c179-26c9-44c7-b4c0-547efe806120"
   ]
 }

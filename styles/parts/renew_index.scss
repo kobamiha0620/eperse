@@ -403,51 +403,27 @@
         }
 
         &--ttl {
-            font-family: "nimbus-sans", sans-serif;
-            margin: 0;
-            color: #FFF;
-            height: clamp(30px, 30px, 30px);
-            display: flex;
-            align-items: center;
+
             margin-bottom: 38px;
-            position: absolute;
-            top: 0;
-            left: 0;
 
-            &mid {
-                display: inline-block;
-                background: var.$nBr;
-                height: clamp(30px, 30px, 30px);
-                display: flex;
-                line-height: 1;
-                align-items: center;
-
-                b {
-                    line-height: 1;
-                    font-weight: normal;
-                }
+            &-new{
+                @include var.bgimg('rnNew.svg');
+                width:  54px;
+                height: 20px;
+                margin: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
             }
-
-            &prev {
-                background: url(var.$assets_path + 'bg_arrow-rn.svg');
-                background-size: 100% auto;
-                width: 15px;
-                height: 30px;
-                background-repeat: no-repeat;
-                display: inline-block;
+            &-recom{
+                @include var.bgimg('rnRecom.svg');
+                width:  118px;
+                height: 20px;
+                margin: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
             }
-
-            &next {
-                transform: scale(-1, 1);
-                background: url(var.$assets_path + 'bg_arrow-rn.svg');
-                background-size: 100% auto;
-                width: 15px;
-                height: 30px;
-
-                background-repeat: no-repeat;
-                display: inline-block;
-            }
-
         }
 
 
@@ -465,6 +441,11 @@
 
             &.tag {
                 padding-top: 56px;
+                .allproRn__cr--ttl-new{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
             }
 
         }

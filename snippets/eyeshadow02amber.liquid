@@ -126,19 +126,7 @@
         </section>
  
 
-        <div class="product__cartbtn">
-            <form method="post" action="/cart/add">
-                <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-                <input type="hidden" min="1" type="number" id="quantity" name="quantity" value="1"/>
-                
-                <label for="persebtn">
-                    <p>BUY</p>
-                    <span class="product__cartbtn--img">cartimg<span>
-                </label>
-                <input type="submit" value="" class="" id="persebtn" />
-            </form>  
-            <p class="product__cartbtn--note">あと払いpaidy対応</p>
-        </div>
+        {% render 'kessai' %}
 
 
         {% render 'campaignbnr' %} 
@@ -280,19 +268,7 @@
             </div>
             <p class="intro06__price">¥2,490<span>( inc.tax )</span></p>
 
-            <div class="product__cartbtn">
-                <form method="post" action="/cart/add">
-                    <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-                    <input type="hidden" min="1" type="number" id="quantity" name="quantity" value="1"/>
-                    
-                    <label for="persebtn">
-                        <p>BUY</p>
-                        <span class="product__cartbtn--img">cartimg<span>
-                    </label>
-                    <input type="submit" value="" class="" id="persebtn" />
-                </form>  
-                <p class="product__cartbtn--note">あと払いpaidy対応</p>
-            </div>
+            {% render 'kessai' %}
 
             <a href="{{ routes.root_url }}products/skineyeshadow-01rosymood/" class="intro06__bnrlink">
                 <picture>
@@ -322,7 +298,9 @@
         
         <div class="product__others">
             <p class="product__others--ttl">
-                <img src="{{ 'product_other_8a8d88e1-9c92-4dd2-806c-833d104bd176.svg?v=1644594499' | file_url }}"  alt="01 NUDE ROSE" width="auto" height="auto" loading="eager">
+                <img src="{{ 'otheritems_new.svg' | file_url }}"  alt="01 NUDE ROSE" width="auto" height="auto" loading="eager">
+
+                {% comment %} <img src="{{ 'product_other_8a8d88e1-9c92-4dd2-806c-833d104bd176.svg?v=1644594499' | file_url }}"  alt="01 NUDE ROSE" width="auto" height="auto" loading="eager"> {% endcomment %}
             </p>
             <div class="product__others--scroll">
                 <ul class="product__others--list">	

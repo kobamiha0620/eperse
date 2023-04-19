@@ -11,12 +11,13 @@
 ///VITAシリーズ
 #vegan-vita-tone-up-base,
 #vegan-vita-filter-powder,
+#michixsly-velvet-fix-lip-balm,
 #vegan-vita-sun-serum{
     .mySwiper{
         background-color: transparent;
     }
     #shopify-section-header{
-        background: #F7F6F0;
+        background: var.$nW;
         font-size: 0;
     }
     #MainContent{
@@ -40,7 +41,7 @@
 
 .vita {
     width: 100%;
-    background: #F7F6F0;
+    background: var.$nW;
     .product__cartbtn label{
         background: var.$nBr;
         font-family: "nimbus-sans", sans-serif;
@@ -82,7 +83,7 @@
             z-index: 2;
             left: 0;
             top: 0;
-            .st0{fill:#F7F6F0;}
+            .st0{fill:var.$nW;}
             width: 85px;
             height: 85px;
         }
@@ -135,7 +136,7 @@
                 right: 0px;
                 top: 15px;
                 z-index: 1;
-                background-color: #F7F6F0;
+                background-color: var.$nW;
                 background-size: 43px 130px;
             }
 
@@ -149,7 +150,7 @@
                 left: 0;
                 top: 15px;
                 z-index: 1;
-                background-color: #F7F6F0;
+                background-color: var.$nW;
                 background-size: 43px 130px;
             }
         }

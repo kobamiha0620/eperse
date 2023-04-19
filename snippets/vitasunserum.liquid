@@ -97,20 +97,8 @@
             <h3 class="product__de--price">¥2,680<span> ( inc.tax )</span></h3>
 
         </section>
-
-        <div class="product__cartbtn">
-            <form method="post" action="/cart/add">
-                <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-                <input type="hidden" min="1" type="number" id="quantity" name="quantity" value="1" />
-
-                <label for="persebtn">
-                    <p>BUY</p>
-                    <span class="product__cartbtn--img">cartimg<span>
-                </label>
-                <input type="submit" value="" class="" id="persebtn" />
-            </form>
-            <p class="product__cartbtn--note">あと払いpaidy対応</p>
-        </div>
+        
+        {% render 'kessai' %}
 
         {% render 'campaignbnr' %}
 

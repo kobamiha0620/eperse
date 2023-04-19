@@ -1,0 +1,205 @@
+@charset "utf-8";
+@use './reset.scss'as var;
+
+
+.rip07renew {
+    width: 377px;
+    margin: 0 auto 127px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    @media screen and (max-width: var.$BP) {
+        width: 78.6vw;
+        margin: 0 auto 23vw;
+    }
+}
+
+.rip08rn {
+    width: 89%;
+    max-width: 463px;
+    background-color: #FFF;
+    margin: 0 auto;
+    padding: 51px 30px 24px;
+    border-radius: 14px;
+
+    &__ttl {
+        font-size: 1.5rem;
+        color: #666666;
+        line-height: 1;
+        margin: 0 auto 30px;
+        text-align: center;
+    }
+
+    &__txt {
+        color: #666666;
+        font-size: 1.4rem;
+        padding-left: 1em;
+        text-indent: -1em;
+        line-height: 1.77;
+        margin: 0 auto 23px;
+
+        span {
+            font-size: 1.2rem;
+        }
+
+    }
+
+    &__wrapper {
+        padding-bottom: 80px;
+
+    }
+
+}
+.sly {
+    .seibunrN__inner {
+        padding-bottom: 75px;
+    }
+}
+
+.rip05new{
+    .rip05__inner{
+        background-color: #E2ABBA;
+    }
+    .rip05__fv{
+        margin-bottom: 0;
+    }
+    
+    .rip05__fv--rnimg{
+        font-size: 0;
+        width: 468px;
+        height: 488px;
+        top: 86px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    @media screen and (max-width: var.$BP) {
+        .rip05__fv--rnimg{
+            width: 83vw;
+            height: auto;
+            top: 15vw;
+
+        }
+        .rip05__fv--checkpoint{
+            bottom: 15vw;
+            right: 0;
+            font-size: 0;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+}
+
+.rip02__slick, .rip02b__slick{
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+.rip02renew{
+    &.rip02{
+        border-top: none;
+
+    }
+    .rip02__slick--txt{
+        color: #635444;
+    }
+    .slick-dots{
+        margin-top: 30px;
+    }
+}
+
+.rip03rnew{
+    .rip03__img--renew{
+        width: 332px;
+        margin: 0 auto 60px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .rip03__blc{
+        a{
+            display: block;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .rip03__img{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .rip03__ttl{
+        color: #683920;
+        span{
+            border-bottom: solid 1px #683920;
+        }
+    }
+    @media screen and (max-width: var.$BP) {
+        .rip03__img--renew{
+            width: 58.6vw;
+            margin: 0 auto 10.6vw;
+
+        }
+        .rip03__img{
+            margin: 0 auto 10.6vw;
+
+        }
+    }
+}
+@media screen and (max-width: var.$BP) {
+    .sly {
+        .seibunrN__inner {
+            padding-bottom: 11.8vw;
+        }
+    }
+    .rip08rn {
+        width: 82.6vw;
+        padding: 8vw 5.8vw 1.6vw;
+        &__ttl {
+            font-size: 1.3rem;
+            margin: 0 auto 6.66vw;
+            text-align: center;
+        }
+
+        &__txt {
+            font-size: 1.2rem;
+            padding-left: 1em;
+            text-indent: -1em;
+            line-height: 1.7;
+            margin: 0 auto 5.3vw;
+
+            span {
+                font-size: 1rem;
+            }
+
+        }
+
+        &__wrapper {
+            padding-bottom: 22.2vw;
+
+        }
+
+    }
+
+
+}
+
+.product__de--color-rnwrap{
+    .product__deLink{
+        &.product__deLink{
+            margin-top: 10px;
+        }
+    }
+}

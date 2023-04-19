@@ -9,7 +9,7 @@
 
 .rnVigan {
     width: 100%;
-    background: #F7F6F0;
+    background: var.$nW;
     img{
         width: 100%;
         height: auto;
@@ -146,8 +146,6 @@
 }
 
 .seibunrN{
-
-    background: #F7F6F0;
     &__inner{
         width: 520px;
         margin: 0 auto;
@@ -245,6 +243,81 @@
         &__price{
             font-size: 1.7rem;
             margin: 0;
+        }
+    }
+}
+
+#slyblc {
+    .product__de {
+        border-bottom: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .product {
+        &__cartbtn {
+            max-width: 490px;
+            display: block;
+            margin: 53px auto 32px;
+            text-decoration: none;
+            max-width: 490px;
+            display: block;
+            background: #625343;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            padding: 20px 0;
+            position: relative;
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            p {
+                font-family: 'Outfit', sans-serif;
+                font-size: 2rem;
+                margin: 0 !important;
+                line-height: 1;
+            }
+
+
+
+            &--img {
+                width: 23px;
+                height: 23px;
+                display: inline-block;
+                white-space: nowrap;
+                text-indent: -9999px;
+                background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/cartIcon.png?v=1644814375') no-repeat 0 0;
+                background-size: 100% auto;
+                position: absolute;
+                right: 48px;
+                top: 17px;
+            }
+
+            &--disable {
+                max-width: 490px;
+                display: block;
+                background: #E8E3DD;
+                color: #FFF;
+                border-radius: 50px;
+                text-align: center;
+                font-family: 'Outfit', sans-serif;
+                letter-spacing: 0.1em;
+                padding: 20px 0;
+                position: relative;
+            }
+
+            &--notice {
+                text-align: center;
+                color: var.$CR;
+                font-size: 1.4rem;
+                margin-top: 5px;
+                display: block;
+            }
         }
     }
 }

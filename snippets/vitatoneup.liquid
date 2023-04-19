@@ -111,19 +111,8 @@
 
         </section>
 
-        <div class="product__cartbtn">
-            <form method="post" action="/cart/add">
-                <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-                <input type="hidden" min="1" type="number" id="quantity" name="quantity" value="1" />
+        {% render 'kessai' %}
 
-                <label for="persebtn">
-                    <p>BUY</p>
-                    <span class="product__cartbtn--img">cartimg<span>
-                </label>
-                <input type="submit" value="" class="" id="persebtn" />
-            </form>
-            <p class="product__cartbtn--note">あと払いpaidy対応</p>
-        </div>
 
         {% render 'campaignbnr' %}
 
@@ -145,7 +134,7 @@
                         <div class="vitaTone__product">
                             <picture>
                                 <source srcset="{{ 'img_toneup_clearbeige.webp' | file_url }}" type="image/webp">
-                                <img src="{{ 'img_toneup_clearbeige.jpg' | file_url }}" alt="VITA TONE UP" width="516"
+                                <img src="{{ 'img_toneup_clearbeige.png' | file_url }}" alt="VITA TONE UP" width="516"
                                     height="516" loading="eager" class="">
                             </picture>
                             <p class="vitaTone__product--txt scroll-up">Clear Beighe</p>

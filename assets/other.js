@@ -75,3 +75,73 @@ function validation(){
 }
 
 validation();
+
+
+//バリエーション
+function slyvalidation(){
+
+  const slymain = document.getElementById('slyxmichi');
+  let radio_btns = document.querySelectorAll(`input[type='radio'][name='slymich']`);
+  // const validationName = document.getElementById('js-validastionname');
+  for (let target of radio_btns) {
+    target.addEventListener(`change`, function () {
+      let radio = document.querySelector('[name="slymich"]:checked');
+      let val = radio.value;
+      let text = radio.parentElement.innerText;
+      document.querySelector(`#js-validastionname`).innerHTML = `${target.value} `;
+      document.querySelector(`#js-cartlink`).setAttribute('href', `${target.dataset.url} `);
+      // document.querySelector(`#js-cartlink`).classList.toggle('change');
+
+      if(slymain.classList.contains("sly07")){
+        slymain.classList.remove('sly07');
+      }else{
+        slymain.classList.add('sly07');
+      }
+    });
+  }
+  
+}
+
+
+//SLY
+$(function(){
+  var val = location.search.match(/[&|\?]variant=(.*?)[&|$]/);
+
+  if(val) {
+    // prm = decodeURIComponent(val[1]);
+    // location.replace("https://testtest.co.jp/index.html?test=" + prm);
+    // const mainClass = document.getElementById('slyxmichi');
+    const main = $('#slyxmichi');
+    console.log('test');
+    main.addClass('sly07');
+    $("#js-validastionname").text("07 BRICK BROWN");
+    $('#js-cartlink').attr('href', 'https://perseperse.myshopify.com/cart/add?id=43784364523756&quantity=1');
+    $('#06pinkm').prop('checked', false);
+    $('#07bbrown').prop('checked', true);
+
+    slyvalidation();
+
+  }else{
+    slyvalidation();
+
+  }
+
+
+  // if(val) {
+  //   mainClass.addClass('sly07');
+  // $('.'+val[1]+' p').addClass('hoge');
+  // }else{
+  // //パラメータがないときデフォルトは06万
+  //   //パラメータがないとき
+
+    
+  // }
+  // //パラメータがあるとき
+
+
+
+
+});
+
+
+

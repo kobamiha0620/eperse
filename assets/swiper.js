@@ -19,6 +19,7 @@ const swiperRip = new Swiper('.swiper_makeup02', {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 30,
+    initialSlide: 5,
     effect: "fade",
     // If we need pagination
     pagination: {
@@ -94,9 +95,8 @@ const fvSwipe = new Swiper('.fvRnSwipe', {
     }
 });
 
-
-//thumb
-var swiper = new Swiper(".mySwiper", {
+// アイシャドウ
+var swiperEyeshadow = new Swiper(".eyeshadow .mySwiper", {
     // デフォルトの設定
     loop: false,
     spaceBetween: 3.5,
@@ -111,7 +111,34 @@ var swiper = new Swiper(".mySwiper", {
   });
   
   //fv
-  var swiper2 = new Swiper(".mySwiper2", {
+  var swiperEyeshadow02 = new Swiper(".eyeshadow .mySwiper2", {
+    loop: true,
+    spaceBetween: 0,
+    slidesPerView: 1,
+    thumbs: {
+      swiper: swiperEyeshadow,
+    }
+  });
+  
+
+
+//thumb
+var swiper = new Swiper("#slyxmich__swiper01 .mySwiper", {
+    // デフォルトの設定
+    loop: false,
+    spaceBetween: 3.5,
+    slidesPerView: 4.5,
+    slidesPerGroup: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }
+  });
+  
+  //fv
+  var swiper2 = new Swiper("#slyxmich__swiper01 .mySwiper2", {
     loop: true,
     spaceBetween: 0,
     slidesPerView: 1,
@@ -121,5 +148,29 @@ var swiper = new Swiper(".mySwiper", {
   });
   
   
-
+  var swiperSly02 = new Swiper("#slyxmich__swiper02 .mySwiper", {
+    // デフォルトの設定
+    loop: false,
+    spaceBetween: 3.5,
+    slidesPerView: 4.5,
+    slidesPerGroup: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }
+  });
+  
+  //fv
+  var swiper2Sly02 = new Swiper("#slyxmich__swiper02 .mySwiper2", {
+    loop: true,
+    spaceBetween: 0,
+    slidesPerView: 1,
+    thumbs: {
+      swiper: swiperSly02,
+    }
+  });
+  
+  
 

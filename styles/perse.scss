@@ -19,6 +19,8 @@
 @use 'parts/vita_tone.scss';
 @use 'parts/vita_serum.scss';
 @use 'parts/vita_powder.scss';
+@use 'parts/sly.scss';
+@use 'parts/riprenew.scss';
 
 body {
     background: var.$BG;
@@ -287,19 +289,37 @@ header-drawer {
 
     .menu-drawer-close {
         color: var.$cColor;
-
+        color: #FFF;
         span {
             &::before {
                 background: var.$cColor;
+                background: #FFF;
             }
 
             &::after {
                 background: var.$cColor;
+                background: #FFF;
 
             }
 
         }
     }
+    #menu-drawer{
+        .cart-count-bubble{
+            background: #FFF!important;
+    
+        }
+        
+    }
+    
+}
+
+#menu-drawer{
+    .cart-count-bubble{
+        background: #FFF;
+
+    }
+    
 }
 
 
@@ -497,11 +517,11 @@ header-drawer {
 
 
 .cart-count-bubble {
-    width: 8px;
-    height: 8px;
-    left: 27px;
+    width: 10px;
+    height: 10px;
+    left: 32px;
     bottom: 10px;
-
+    background-color: #ddb76b;
     span {
         font-size: 0;
     }
@@ -736,6 +756,9 @@ header-drawer {
 #palm-green {
     #shopify-section-announcement-bar-nidan {
         background: #82B1BB;
+    }
+    .header-wrapper{
+        background-color: transparent!important;
     }
 }
 
@@ -1238,10 +1261,35 @@ body.homePerse #MainContent{
 //VITA追記
 #vegan-vita-tone-up-base,
 #vegan-vita-filter-powder,
-#vegan-vita-sun-serum{
+#vegan-vita-sun-serum,
+#michixsly-velvet-fix-lip-balm{
     background: #FFF;
     .footer{
         background: #FFF;
 
     }
+}
+
+
+.othersRn{
+    &__ttl{
+        @include var.bgimg('otheritems_new.svg');
+        width: 178px;
+        height: 28px;
+        margin: 0 auto 57px;
+    }
+
+    @media screen and (max-width: var.$BP) {
+        &__ttl{
+            @include var.bgimg('otheritems_new.svg');
+            width: 34.2vw;
+            height: 5.46vw;
+            margin: 0 auto 11vw;
+        }
+
+    }
+}
+
+.product__others--name, .product__others--price{
+    color: var.$nBr;
 }

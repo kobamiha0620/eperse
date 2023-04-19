@@ -210,6 +210,10 @@
         {% render 'vitapowders' %}
       {%- endif -%}
 
+      {% if request.path contains '/michixsly-velvet-fix-lip-balm' %}
+        {% render 'michixsly' %}
+      {%- endif -%}
+
 
       {% comment %} 商品ページ {% endcomment %}
 

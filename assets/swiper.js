@@ -71,29 +71,10 @@ const about = new Swiper('.aboutRnSwiper', {
     autoplay: {
         delay: 800 //3秒ごとにスライダを切り替える
       }
-    // If we need pagination
 });
 
 
 
-const fvSwipe = new Swiper('.fvRnSwipe', {
-    // Optional parameters
-    loop: true,
-    slidesPerView: 1,
-    effect: "fade",
-
-    // spaceBetween: 30,
-
-      // Navigation arrows
-      navigation: {
-        nextEl: '.fvRnSwipe-button-next',
-        prevEl: '.fvRnSwipe-button-prev',
-      },
-    
-    // autoplay: {
-    //     delay: 2000 //3秒ごとにスライダを切り替える
-    // }
-});
 
 // アイシャドウ
 var swiperEyeshadow = new Swiper(".eyeshadow .mySwiper", {

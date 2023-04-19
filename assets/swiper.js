@@ -121,6 +121,32 @@ var swiperEyeshadow = new Swiper(".eyeshadow .mySwiper", {
   });
 
 
+// コンタクト
+var swiperEyeshadow = new Swiper(".clenz .mySwiper", {
+  // デフォルトの設定
+  loop: false,
+  spaceBetween: 3.5,
+  slidesPerView: 4.5,
+  slidesPerGroup: 4,
+  freeMode: true,
+  watchSlidesProgress: true,  
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  }
+});
+
+//fv
+var swiperEyeshadow02 = new Swiper(".clenz .mySwiper2", {
+  loop: true,
+  spaceBetween: 0,
+  slidesPerView: 1,
+  thumbs: {
+    swiper: swiperEyeshadow,
+  }
+});
+
+
   
 // ベースメイク
 var swiperVitas = new Swiper(".vita__fv .mySwiper", {

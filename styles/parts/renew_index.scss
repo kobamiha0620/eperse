@@ -386,7 +386,11 @@
         justify-content: space-between;
         padding: 0 30px;
         margin: 0 0 76px;
+        span{
+            margin: 0;
+            font-size:0;
 
+        }
         &+.allproRn__cr {
             margin-top: -30px;
         }
@@ -427,7 +431,7 @@
 
             &prev {
                 background: url(var.$assets_path + 'bg_arrow-rn.svg');
-                background-size: 15px 30px;
+                background-size: 100% auto;
                 width: 15px;
                 height: 30px;
                 background-repeat: no-repeat;
@@ -437,7 +441,7 @@
             &next {
                 transform: scale(-1, 1);
                 background: url(var.$assets_path + 'bg_arrow-rn.svg');
-                background-size: 15px 30px;
+                background-size: 100% auto;
                 width: 15px;
                 height: 30px;
 

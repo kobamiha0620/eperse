@@ -80,7 +80,7 @@ const fvSwipe = new Swiper('.fvRnSwipe', {
     // Optional parameters
     loop: true,
     slidesPerView: 1,
-    // effect: "fade",
+    effect: "fade",
 
     // spaceBetween: 30,
 
@@ -90,9 +90,9 @@ const fvSwipe = new Swiper('.fvRnSwipe', {
         prevEl: '.fvRnSwipe-button-prev',
       },
     
-    autoplay: {
-        delay: 3000 //3秒ごとにスライダを切り替える
-    }
+    // autoplay: {
+    //     delay: 2000 //3秒ごとにスライダを切り替える
+    // }
 });
 
 // アイシャドウ

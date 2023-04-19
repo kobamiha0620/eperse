@@ -106,37 +106,22 @@ function slyvalidation(){
 //SLY
 $(function(){
   var val = location.search.match(/[&|\?]variant=(.*?)[&|$]/);
+    if(val) {
+      // prm = decodeURIComponent(val[1]);
+      // location.replace("https://testtest.co.jp/index.html?test=" + prm);
+      // const mainClass = document.getElementById('slyxmichi');
+      const main = $('#slyxmichi');
+      main.addClass('sly07');
+      $("#js-validastionname").text("07 BRICK BROWN");
+      $('#js-cartlink').attr('href', 'https://perseperse.myshopify.com/cart/add?id=43784364523756&quantity=1');
+      $('#06pinkm').prop('checked', false);
+      $('#07bbrown').prop('checked', true);
 
-  if(val) {
-    // prm = decodeURIComponent(val[1]);
-    // location.replace("https://testtest.co.jp/index.html?test=" + prm);
-    // const mainClass = document.getElementById('slyxmichi');
-    const main = $('#slyxmichi');
-    console.log('test');
-    main.addClass('sly07');
-    $("#js-validastionname").text("07 BRICK BROWN");
-    $('#js-cartlink').attr('href', 'https://perseperse.myshopify.com/cart/add?id=43784364523756&quantity=1');
-    $('#06pinkm').prop('checked', false);
-    $('#07bbrown').prop('checked', true);
+      slyvalidation();
 
-    slyvalidation();
-
-  }else{
-    slyvalidation();
-
+    }else{
+      slyvalidation();
   }
-
-
-  // if(val) {
-  //   mainClass.addClass('sly07');
-  // $('.'+val[1]+' p').addClass('hoge');
-  // }else{
-  // //パラメータがないときデフォルトは06万
-  //   //パラメータがないとき
-
-    
-  // }
-  // //パラメータがあるとき
 
 
 

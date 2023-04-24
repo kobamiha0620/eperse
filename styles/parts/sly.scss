@@ -1247,8 +1247,21 @@
         opacity: 0;
         height: 0;
     }
+    .vitaOthers__for07{
+        display: none;
+    }
+    .vitaOthers__for06{
+        display: block;
+
+    }
 
     &.sly07 {
+        .vitaOthers__for06{
+            display: none;
+        }
+        .vitaOthers__for07{
+            display: block;
+        }
         .slyxmichi06 {
             display: none;
         }

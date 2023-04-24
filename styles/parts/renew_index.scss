@@ -162,11 +162,35 @@
         display: flex;
         justify-content: space-between;
     }
+    &__prob{
+        max-width: 150px;
+        a{
+            display: block;
+            text-decoration: none;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+        img {
+            max-width: 132px;
 
+            width: 100%;
+            height: auto;
+        }
+
+    }
     &__pro {
         max-width: 132px;
-
+        a{
+            display: block;
+            text-decoration: none;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
         img {
+            max-width: 132px;
+
             width: 100%;
             height: auto;
         }
@@ -188,7 +212,7 @@
             text-align: center;
             display: block;
 
-            span {
+            span{
                 display: inline-block;
                 text-decoration: underline;
                 color: var.$nBr;
@@ -236,7 +260,11 @@
             scrollbar-width: thin;
             scrollbar-color: var.$nBr #FFF;
         }
-
+        &__prob {
+            .rnRecom__pro--name-wrapper{
+                height: 90px;
+            }
+        }
         &__pro {
             float: left;
             max-width: 30vw;
@@ -405,7 +433,15 @@
         &--ttl {
 
             margin-bottom: 38px;
-
+            &-com{
+                @include var.bgimg('commingsoon.svg');
+                width:  127px;
+                height: 21px;
+                margin: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
             &-new{
                 @include var.bgimg('rnNew.svg');
                 width:  54px;
@@ -585,12 +621,12 @@
     }
 
     .swiper_makeup02_6 {
-        background: url(var.$assets_path + '06_makeup02pc.svg');
+        background: url(var.$assets_path + '06_makeup02pc_b.svg');
         background-size: 100% auto;
     }
 
     .swiper_makeup02_7 {
-        background: url(var.$assets_path + '07_makeup02pc.svg');
+        background: url(var.$assets_path + '07_makeup02pc_b.svg');
         background-size: 100% auto;
     }
 
@@ -739,6 +775,9 @@
 
                 &.tag {
                     padding-top: 11.3vw;
+                }
+                &.tagbtm{
+                    margin-top: 6vw;
                 }
             }
 

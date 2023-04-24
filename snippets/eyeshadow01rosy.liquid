@@ -125,13 +125,16 @@
             <p class="eyeshadow__ptxt--txt2">新しくて頼もしい究極のベーシックアイパレット<br>
                 ひとつのパレットで洗練された上質な⽬元に</p>
         </section>
-        {% render 'kessai' %}
+        <div class="product__cartbtn--disable" style="overflow: hidden; display: block; margin-bottom :100px;">
+            COMING SOON  
+        </div>
+        {% comment %} {% render 'kessai' %} {% endcomment %}
 
 
-        <div class="product__review">
+        {% comment %} <div class="product__review">
             <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
             <strong>{{ review.author }}</strong>  <strong>{{ review.created_at | date: '%b %d, %Y' }}</strong>
-        </div>
+        </div> {% endcomment %}
         
         {% render 'campaignbnr' %} 
 

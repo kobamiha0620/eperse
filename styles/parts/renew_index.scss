@@ -548,6 +548,9 @@
     &__pagewrapper {
         display: block;
         height: 58px;
+        .swiper-pagination{
+            z-index: 1!important;
+        }
     }
 
     //Swiper
@@ -823,6 +826,9 @@
         &__pagewrapper {
             display: block;
             height: 14vw;
+            .swiper-pagination{
+                z-index: 1!important;
+            }
         }
 
         .swiper-container {

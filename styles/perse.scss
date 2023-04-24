@@ -882,7 +882,7 @@ header-drawer {
 }
 
 .announcement-bar__message {
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
 }
 
 .spmodalblc {
@@ -1261,6 +1261,8 @@ body.homePerse #MainContent{
 //VITA追記
 .announcement-bar__message{
     margin: 0 auto;
+    padding-right: 0;
+    padding-left: 0;
 }
 #vegan-vita-tone-up-base,
 #vegan-vita-filter-powder,

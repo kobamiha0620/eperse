@@ -4,7 +4,6 @@
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 
  
-{% if item in cart.items %}
   {% if item.product.id == 7908150771948 %}
     <div class="cartAttention">
       <p>予約商品がはいっているため<br>5月12日（金）より順次発送致します</p>
@@ -14,7 +13,6 @@
       <p>5月11日（木）23: 59まで送料無料</p>
     </div>
   {% endif %}
-{% endif %}
 
 <div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
   <div>

@@ -3,29 +3,28 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 
-{% comment %} {% for item in cart.items %}
+ {% for item in cart.items %}
   {% if cart.item_count >= 2 %}
-    {% if item.product.id == 7718631604460 %}
+    {% if item.product.id == 43784364490988 or item.product.id == 43784364523756 %}
       <div class="cartAttention">
-          <p>新色「05 FRENCH BROWN」を同時にご購入のため、全ての商品は8/19(金)より順次発送致します</p>
+          <p>新色 MICHIXSLY Velvet Fix Lip Balm を同時にご購入のため、全ての商品は5月12日（金）より順次発送致します</p>
       </div>
     {% endif %}
     
   {% elsif cart.item_count >= 1 %}
-    {% if item.product.id == 7718631604460 %}
-
+  {% if item.product.id == 43784364490988 or item.product.id == 43784364523756 %}
       <div class="cartAttention">
-        <p>こちらの商品は予約商品となります。<br>8月19日（金）より順次発送致します</p>
+        <p>こちらの商品は予約商品となります。<br>5月12日（金）より順次発送致します</p>
       </div>
     
     {% else %}
     <div class="cartAttention green">
-      <p>新色「05 FRENCH BROWN」を同時にご購入の場合、8/19(金)より順次発送致します</p>
+      <p>送料無料です</p>
     </div>
   {% endif %}
 
   {% endif %}
-{% endfor %} {% endcomment %}
+{% endfor %} 
 
 <div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
   <div>

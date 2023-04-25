@@ -3,7 +3,6 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 
- {% for item in cart.items %}
   {% if cart.item_count >= 1 %}
 
   {% if item.product.id == 7908150771948 and item.product.id != 7908150771948 %}
@@ -21,7 +20,6 @@
   {% endif %}
 
   {% endif %}
-{% endfor %} 
 
 <div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
   <div>

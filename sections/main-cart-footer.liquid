@@ -12,9 +12,14 @@
           const tag = $('#cartAttention');
           tag.html('<div class="cartAttention"><p>予約商品がはいっているため<br>5月12日(金)より順次発送致します</p></div>');
       })
-    
     </script>
-
+  {% elsif cart == empty %}
+  <script>
+    $(function(){
+        const tag = $('#cartAttention');
+        tag.html('');
+    })
+  </script>
   {% endif %}
 {% endfor %}
 </div>

@@ -201,7 +201,7 @@
         {% render 'eyeshadow02amber' %}
       {%- endif -%}
       
-      {% if request.path contains '/vegan-vita-tone-up-base' %}
+      {% comment %} {% if request.path contains '/vegan-vita-tone-up-base' %}
         {% render 'vitatoneup' %}
       {%- endif -%}
 
@@ -211,7 +211,7 @@
       
       {% if request.path contains '/vegan-vita-filter-powder' %}
         {% render 'vitapowders' %}
-      {%- endif -%}
+      {%- endif -%} {% endcomment %}
 
       {% if request.path contains '/michixsly-velvet-fix-lip-balm' %}
         {% render 'michixsly' %}

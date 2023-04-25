@@ -3,3 +3,4 @@ development:
   theme_id: "136542060780"
   store: perseperse.myshopify.com
 
+shopify theme pull -i 136542060780

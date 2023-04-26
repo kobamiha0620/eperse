@@ -76,9 +76,9 @@ const swiperContact = new Swiper('.swiper_makeup04', {
 const topSwiper = new Swiper('.fvRnslick', {
   // Optional parameters
   loop: true,
-//   autoplay: {
-//     delay: 2400,
-// },
+  autoplay: {
+    delay: 2400,
+},
   slidesPerView: 1,
   spaceBetween: 30,
   effect: "fade",

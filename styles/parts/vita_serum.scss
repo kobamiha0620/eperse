@@ -15,15 +15,23 @@
     margin: 0 auto 110px;
     &__txt01{
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         color: var.$vitaSerum;
         line-height: 1.66;
+        font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro";
+        sup{
+            font-size: 0.6em;
+        }
     }
     &__txt02{
         text-align: center;
         font-size: 1.5rem;
         color: #666666;
         line-height: 2;
+        font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro";
+        sup{
+            font-size: 0.6em;
+        }
     }
     &__note{
         text-align: center;
@@ -45,7 +53,7 @@
         }
     }
     &__ttl{
-        @include var.bgimg('ttl_serum.svg');
+        @include var.bgimg('ttl_serumb.svg');
         width: 270px;
         height: 99px;
         position: absolute;
@@ -67,13 +75,14 @@
     &__intro{
         background: var.$vitaSerum;
         padding: 70px 0 80px;
+        font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro";
 
         &--ttl{
             text-align: center;
             color: #FFF;
             line-height: 1.9;
             font-size: 2rem;
-            font-weight: bold;
+            font-weight: 600;
             margin: 0 auto 36px;
         }
         &--txt{
@@ -354,7 +363,7 @@
             margin: 0 auto 20px;
         }
         &__ttl{
-            @include var.bgimg('ttl_serum.svg');
+            @include var.bgimg('ttl_serumb.svg');
    
             position: absolute;
             top: 12.8vw;

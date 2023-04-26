@@ -34,6 +34,8 @@
     }
 
     &__txt {
+        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+
         color: #666666;
         font-size: 1.4rem;
         padding-left: 1em;
@@ -76,6 +78,10 @@
             width: 100%;
             height: auto;
         }
+    }
+    .rip05__txt, .rip05__note{
+        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+
     }
     @media screen and (max-width: var.$BP) {
         .rip05__fv--rnimg{
@@ -202,4 +208,12 @@
             margin-top: 10px;
         }
     }
+}
+
+.sly{
+    .rip06__txt{
+        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+
+    }
+
 }

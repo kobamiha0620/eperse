@@ -1514,3 +1514,35 @@
     /*つまみの色 軌道の色*/
   }
 }
+
+//追記流れるテキスト
+#vegan-vita-filter-powder,
+#vegan-vita-sun-serum,
+#vegan-vita-tone-up-base{
+  *{
+    // font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+  }
+  .product__de--jp{
+    font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+
+  }
+  .footer__fluid--txt{
+    font-size: 0;
+    img{
+      height: 24px;
+      width: 2073px;
+      font-size: 0;
+    }
+  }
+  @media screen and (max-width: var.$BP) {
+    .footer__fluid--txt{
+      font-size: 0;
+      img{
+        height: 18px;
+        width: 1588px;
+        font-size: 0;
+      }
+    }
+  }
+}
+

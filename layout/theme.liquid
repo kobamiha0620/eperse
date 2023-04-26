@@ -7,7 +7,7 @@
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
-
+    <meta name="theme-color" content="#FFFFFF">
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
     {%- endif -%}
@@ -201,7 +201,7 @@
         {% render 'eyeshadow02amber' %}
       {%- endif -%}
       
-      {% comment %} {% if request.path contains '/vegan-vita-tone-up-base' %}
+     {% if request.path contains '/vegan-vita-tone-up-base' %}
         {% render 'vitatoneup' %}
       {%- endif -%}
 
@@ -211,7 +211,7 @@
       
       {% if request.path contains '/vegan-vita-filter-powder' %}
         {% render 'vitapowders' %}
-      {%- endif -%} {% endcomment %}
+      {%- endif -%} 
 
       {% if request.path contains '/michixsly-velvet-fix-lip-balm' %}
         {% render 'michixsly' %}

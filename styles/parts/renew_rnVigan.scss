@@ -31,6 +31,8 @@
         line-height: 2;
         color: var.$nGrR;
         margin: 48px 0 15px;
+        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+
     }
     &__logo{
         text-align: center;
@@ -44,6 +46,7 @@
         &--ttl {
             border-top: solid 1px var.$nGrR;
             border-bottom: solid 1px var.$nGrR;
+            font-family: "dnp-shuei-gothic-gin-std", sans-serif;
 
             text-align: center;
             font-size: 1.2rem;
@@ -70,7 +73,9 @@
             background: url(var.$assets_path + 'rNvigan_minus.svg') no-repeat;
             background-size: 15px 15px;
             background-position: right 40px center;
-
+            font-family: "nimbus-sans", sans-serif;
+            font-weight: 100;
+            font-weight: lighter;
         }
         &--cnt {
             border-top: solid 1px var.$nGrR;
@@ -78,9 +83,11 @@
             display: none;
         }
         &--txt{
-            font-size: 1.625rem;
+            font-size: 1.3rem;
             line-height: 1.9;
             color: var.$nGrR;
+            font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+            padding-top: 56px;
         }
 
     }
@@ -195,6 +202,8 @@
         line-height: 1.64;
         color: var.$nGrR;
         margin: 0 0 10px;
+        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+
     }
     &__price{
         color: var.$nGrR;
@@ -321,6 +330,15 @@
         }
     }
 }
+
+// 追記
+.product__de--jp{
+    span{
+      font-size: 0.8em;
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
 //tablet　画面サイズが750pxからはこのスタイルを読む
 @media screen and (min-width: var.$BP+1) {}
 

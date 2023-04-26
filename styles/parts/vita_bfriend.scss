@@ -7,6 +7,7 @@
     font-family: "nimbus-sans", sans-serif;
 }
 
+
 .befriend {
     width: 100%;
     background: var.$nW;
@@ -69,26 +70,39 @@
 .befriend02{
     background: #DFD134;
     padding: 66px 45px;
+
     &__ttl{
         color: #FFF;
         font-size: 1.9rem;
         line-height: 1.78;
         text-align: center;
         margin: 0 auto 38px;
+        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+
     }
     &__txt{
+        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+
         color: #FFF;
         font-size: 1.6rem;
         line-height: 1.78;
         text-align: center;
         margin: 0 auto 38px;
+        font-weight: lighter;
+        sup{
+            font-size: 0.6em;
+        }
     }
     &__note{
+        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+
         color: #FFF;
         font-size: 1.2rem;
         line-height: 1.8;
         margin-top: 58px;
         margin-bottom: 0;
+        font-weight: lighter;
+
     }
     @media screen and (max-width: var.$BP) {
         padding: 15vw 8.6vw 18.9vw;
@@ -119,6 +133,8 @@
         width: 265px;
         height: 12px;
         margin: 0 auto 50px;
+        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+
     }
     &__imglink{
         display: block;

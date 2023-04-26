@@ -8,6 +8,8 @@
 .ninbus {
     font-family: "nimbus-sans", sans-serif;
 }
+// font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+// font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro";
 
 ///VITAシリーズ
 
@@ -67,6 +69,8 @@
         position: absolute;
         font-size: 1.6rem;
         top: 725px;
+        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+
     }
     &__fvtxt{
         padding: 68px 0;
@@ -75,7 +79,8 @@
             @include var.bgimg('ttl_fv-powder.svg');
             width: 285px;
             height: 70px;
-    
+            font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro";
+
         }
         &--txt{
             margin: 0 auto;
@@ -83,6 +88,8 @@
             color: #666;
             font-size: 1.5rem;
             line-height: 2;
+            font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro";
+
         }
     }
     &__color{
@@ -102,6 +109,8 @@
             margin: 0 auto 70px;
         }
         &--txt{
+            font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro";
+
             text-align: center;
             color: #666666;
             line-height: 1.7;
@@ -145,10 +154,21 @@
                 margin: 0;
             }
             &--subttl{
-                @include var.bgimg('subttl_intro01-powder.svg');
-                width: 278px;
-                height: 13px;
-                margin: 93px auto 0;
+                text-align: right;
+                margin-top: 28px;
+                white-space: nowrap;
+                text-indent: -9999px;
+                margin-right: 40px;
+                font-size: 0;
+                span{
+                    @include var.bgimg('subttl_intro01-powder.svg');
+                    width: 278px;
+                    height: 13px;
+                    display: inline-block;
+                    white-space: nowrap;
+                    text-indent: -9999px;
+                    font-size: 0;
+                }
             }
         }
         &02{
@@ -198,12 +218,16 @@
                 font-size: 1.9rem;
                 line-height: 1.6;
                 margin: 0 auto 34px;
+                font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro";
+
             }
             &--txt{
                 font-size: 1.5rem;
                 line-height: 1.9;
                 color: #634E45;
                 margin: 0;
+                font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro";
+
             }
         }
         &04{
@@ -260,14 +284,21 @@
                 margin: 0 auto 32px;
             }
             &--subttl{
+                font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro";
+
                 color: #FFF;
                 text-align: center;
                 font-weight: bold;
                 font-size: 1.9rem;
                 line-height: 1.6;
                 margin: 0 auto 34px;
+                sup{
+                    font-family:"ＭＳ Ｐゴシック",arial,sans-serif;
+                }
             }
             &--txt{
+                font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro";
+
                 font-size: 1.5rem;
                 line-height: 1.9;
                 text-align: center;
@@ -275,11 +306,16 @@
                 margin: 0 auto 26px;
             }
             &--note{
+                font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro";
+
                 font-size: 1.2rem;
                 line-height: 1;
                 text-align: center;
                 color: #634E45;
                 margin: 0;
+                span{
+                    font-family:"ＭＳ Ｐゴシック",arial,sans-serif;
+                }
             }
         }
         &07{
@@ -531,9 +567,17 @@
                     margin: 0;
                 }
                 &--subttl{
-                    width: 54vw;
-                    height: 2.53vw;
-                    margin: 17.5vw auto 0;
+
+                    margin-top: 17.5vw;
+                    margin-right: 7.4vw;
+                    span{
+                        width: 54vw;
+                        height: 2.53vw;
+                        display: inline-block;
+                        white-space: nowrap;
+                        text-indent: -9999px;
+                        font-size: 0;
+                    }
                 }
             }
             &02{
@@ -608,7 +652,7 @@
                 background-size: 100% auto;
                 background-repeat: no-repeat;
                 background-position: bottom 0 center;
-   
+                
                 &--ttl{
                     width: 20.5vw;
                     height: 8vw;
@@ -761,13 +805,13 @@
         margin-right: 16px;
     }
 
-    input[type=radio][value="01 クリア"]+label:before {
+    input[type=radio][value="01 CLEAR"]+label:before {
         background-image: url(var.$assets_path + 'img_color-powder01.svg');
         background-size: 100% auto;
         background-repeat: no-repeat;
     }
 
-    input[type=radio][value="02 ベージュ"]+label:before {
+    input[type=radio][value="02 SKIN BEIGE"]+label:before {
         background-image: url(var.$assets_path + 'img_color-powder02.svg');
         background-size: 100% auto;
         background-repeat: no-repeat;
@@ -800,6 +844,8 @@
         font-size: 1.7rem;
         line-height: 1;
         margin: 0;
+        font-family: "nimbus-sans", sans-serif;
+        font-weight: lighter;
     }
     @media screen and (max-width: var.$BP) {
         &__inner {
@@ -948,7 +994,7 @@
 
 
 @media screen and (max-width: var.$BP) {
-    // @include var.webpBg('.vitaPowder__intro06', var.$assets_path+'bg_intro06sp', 'png');
+    @include var.webpBg('.vitaPowder__intro06', var.$assets_path+'bg_intro06sp', 'png');
 
     // @include var.webpBg('.aboutRn__swiper', var.$assets_path + 'bg_aboutRn-sweipe-sp');
 

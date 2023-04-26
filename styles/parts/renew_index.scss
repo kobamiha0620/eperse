@@ -1022,67 +1022,67 @@
         height: 100%
     }
 }
-.swiper-pagination{
-    position: absolute;
-    left: auto;
-    left: 97.4vw!important;
-    height: 200px;
-    width: 2px!important;
-    top: 23.4vw!important; 
-    @media screen and (max-width: var.$BP) {
-        top: 56.2vw!important; 
-        height: 41vw;
-        left: 95.8vw!important;
 
-    }
-    &.fvRnslickpagenation{
-        .swiper-pagination-bullet{
-            border-radius: none;
-        }
-        .swiper-pagination-bullet {
-            border-radius: inherit;
-            margin: 0 5px!important;
-            width: 1px;
-            height: 58px;
-            background: rgba(165,165,165,0.4);
-            opacity: 1;
-            margin: 8px 0!important;
-            display: block;
-            &::before{
-                background: #FFF;
-                content: "";
-                display: block;
-                transform-origin: top center;
-
-            }
-            @media screen and (max-width: var.$BP) {
-                height: 12vw;
-            }
-          }
-          .swiper-pagination-bullet-active {
-            background: rgba(165,165,165,0.4);
-
-            opacity: 1;
-            &::before{
-                background: #FFF;
-
-                animation-name: countingBar;
-                animation-duration: 2.4s;
-                animation-timing-function: ease-in;
-                animation-iteration-count: 1;
-                animation-direction: alternate;
-                animation-fill-mode: forwards
-            }
-          }
-          .fvRnslick_1{
-
-          }
-          
-
-    }
-}
 .fvRnSwipe{
-
+    .swiper-pagination{
+        position: absolute;
+        left: auto;
+        left: 97.4vw!important;
+        height: 200px;
+        width: 2px!important;
+        top: 23.4vw!important; 
+        @media screen and (max-width: var.$BP) {
+            top: 56.2vw!important; 
+            height: 41vw;
+            left: 95.8vw!important;
+    
+        }
+        &.fvRnslickpagenation{
+            .swiper-pagination-bullet{
+                border-radius: none;
+            }
+            .swiper-pagination-bullet {
+                border-radius: inherit;
+                margin: 0 5px!important;
+                width: 1px;
+                height: 58px;
+                background: rgba(165,165,165,0.4);
+                opacity: 1;
+                margin: 8px 0!important;
+                display: block;
+                &::before{
+                    background: #FFF;
+                    content: "";
+                    display: block;
+                    transform-origin: top center;
+    
+                }
+                @media screen and (max-width: var.$BP) {
+                    height: 12vw;
+                }
+              }
+              .swiper-pagination-bullet-active {
+                background: rgba(165,165,165,0.4);
+    
+                opacity: 1;
+                &::before{
+                    background: #FFF;
+    
+                    animation-name: countingBar;
+                    animation-duration: 2.4s;
+                    animation-timing-function: ease-in;
+                    animation-iteration-count: 1;
+                    animation-direction: alternate;
+                    animation-fill-mode: forwards
+                }
+              }
+              .fvRnslick_1{
+    
+              }
+              
+    
+        }
+    }
     .fvRnSlick__blc{
         position: relative;
         height: 100%;

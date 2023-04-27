@@ -79,6 +79,14 @@
             height: auto;
         }
     }
+    .rip05__txt{
+        font-size: 1.8rem;
+        @media screen and (max-width: var.$BP) {
+            font-size: 13px;
+
+        }
+
+    }
     .rip05__txt, .rip05__note{
         font-family: "dnp-shuei-gothic-gin-std", sans-serif;
 
@@ -114,7 +122,10 @@
         border-top: none;
 
     }
+
     .rip02__slick--txt{
+        font-family: "nimbus-sans", sans-serif;
+
         color: #635444;
     }
     .slick-dots{
@@ -216,4 +227,12 @@
 
     }
 
+}
+
+.product__de--price{
+    .dashed{
+        display: inline-block;
+        text-decoration: line-through;
+        margin: 0 10px 0 0;
+    }
 }

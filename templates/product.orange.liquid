@@ -55,17 +55,19 @@
         <div class="product__de">
             <p class="product__de--en">Velvet Fix Lip Balm</p>
             <p class="product__de--jp">ベルベット フィックス リップバーム</p>
-            <p class="product__de--price">¥1,680<span> ( inc.tax )</span></p>
+            <h3 class="product__de--price"><p class="dashed">¥1,680</p>¥1,344<span> ( inc.tax )</span></h3>
+
+            {% comment %} <p class="product__de--price">¥1,680<span> ( inc.tax )</span></p> {% endcomment %}
             <div class="product__de--color">
                 <div class="product__de--color-rnwrap"> 
                 <ul class="product__deLink">
                     <li>
-                        <a href="{{ routes.root_url }}products/velvet-fix-lip-balm-1/">
+                        <a href="{{ routes.root_url }}products/01nuderose-limited/">
                             <img src="{{ 'dot_rip01.png' | file_url }}" alt="01" width="auto" height="auto" loading="lazy">
                         </a>
                     </li>
                     <li>
-                        <a href="{{ routes.root_url }}products/velvet-fix-lip-balm-innocent-red/">
+                        <a href="{{ routes.root_url }}products/02innocentred-limited/">
                             <img src="{{ 'dot_rip02.png' | file_url }}" alt="02" width="auto" height="auto" loading="lazy">
                         </a>
                     </li>
@@ -73,33 +75,32 @@
                         <img src="{{ 'dot_rip03_active.png' | file_url }}" alt="03" width="auto" height="auto" loading="lazy">
                     </li>
                     <li>
-                        <a href="{{ routes.root_url }}products/velvet-fix-lip-balm-almond-brown/">
+                        <a href="{{ routes.root_url }}products/04almond-limited/">
                             <img src="{{ 'dot_rip04.png' | file_url }}" alt="04" width="auto" height="auto" loading="lazy">
                         </a>
                     </li>
                     <li>
-                        <a href="{{ routes.root_url }}products/velvetfixlipbalm-frenchbrown/">
+                        <a href="{{ routes.root_url }}products/off05french-limited/">
                             <img src="{{ 'dot_rip05.png' | file_url }}" alt="05 French Brown" loading="lazy" width="auto" height="auto">
                         </a>
                     </li>
                 </ul>
                 <ul class="product__deLink">
                     <li>
-                        <a href="{{ routes.root_url }}products/michixsly-velvet-fix-lip-balm/">
+                        <a href="{{ routes.root_url }}products/off-michixsly-velvet-fix-lip-balm/">
                             <img src="{{ 'dotted_rip06.svg' | file_url }}" alt="06" width="auto" height="auto" loading="lazy">
                         </a>
                     </li>
                     <li>
-                        <a href="{{ routes.root_url }}products/michixsly-velvet-fix-lip-balm?variant=43784364523756&aaa=007/">
+                        <a href="{{ routes.root_url }}products/off-michixsly-velvet-fix-lip-balm?variant=43798185935084&aaa=007/">
                             <img src="{{ 'dotted_rip07.svg' | file_url }}" alt="07" width="auto" height="auto" loading="lazy">
                         </a>
                     </li>
                 </ul>
             </div>
-                <p class="product__de--cname">02 INNOCENT RE</p>
-            </div>
+            <p class="product__de--cname">03 CHILI ORANGE</p>
         </div>
-
+        </div>
         {% render 'kessai' %}
 
         {% render 'campaignbnr' %} 
@@ -213,14 +214,14 @@
                 <ul class="product__others--list">	
                 
                     <li>
-                        <a href="{{ routes.root_url }}products/velvet-fix-lip-balm-1/">
+                        <a href="{{ routes.root_url }}products/01nuderose-limited/">
                            <img src="{{ 'prdocut_otherimte01.png' | file_url }}" alt="01 ヌードローズ" width="auto" height="auto" loading="lazy">
                            <p class="product__others--name"><strong>ベルベット フィックス リップバーム</strong><br>01 ヌードローズ</p>
                            <p class="product__others--price">¥1,680<span>( inc.tax )</span></p>
                        </a>
                    </li> 
                     <li>
-                        <a href="{{ routes.root_url }}products/velvet-fix-lip-balm-innocent-red/">
+                        <a href="{{ routes.root_url }}products/02innocentred-limited/">
                             <img src="{{ 'prdocut_otherimte02.png' | file_url }}" alt="02 イノセントレッド" width="auto" height="auto" loading="lazy">
                             <p class="product__others--name"><strong>ベルベット フィックス リップバーム</strong><br>02 イノセントレッド</p>
                             <p class="product__others--price">¥1,680<span>( inc.tax )</span></p>
@@ -228,14 +229,14 @@
                     </li>
 
                     <li>
-                        <a href="{{ routes.root_url }}products/velvet-fix-lip-balm-almond-brown">
+                        <a href="{{ routes.root_url }}products/04almond-limited">
                             <img src="{{ 'prdocut_otherimte04.png' | file_url }}" alt="04 アーモンドブラウン" width="auto" height="auto" loading="lazy">
                             <p class="product__others--name"><strong>ベルベット フィックス リップバーム</strong><br>04 アーモンドブラウン</p>
                             <p class="product__others--price">¥1,680<span>( inc.tax )</span></p>
                         </a>
                     </li> 
                     <li>
-                        <a href="{{ routes.root_url }}products/velvetfixlipbalm-frenchbrown/">
+                        <a href="{{ routes.root_url }}products/off05french-limited/">
                             <img src="{{ 'prdocut_otherimte05.png' | file_url }}" alt="05 フレンチブラウン" width="auto" height="auto" loading="lazy">
                             <p class="product__others--name"><strong>ベルベット フィックス リップバーム</strong><br>05 フレンチブラウン</p>
                             <p class="product__others--price">¥1,680<span>( inc.tax )</span></p>

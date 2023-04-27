@@ -832,27 +832,43 @@
     </section>
 </div>
 
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<div id="overlay" class="overlay js-close0803">overlay</div>
+<div class="modal-window0803">
+    <div class="modal-window0803--inner">
+        <div class="modal__frame--popup02">
+            <div class="pc">
+                <a class="js-close0803">
+                    <img src="{{ '230425_popup_sp2.jpg' | file_url }}" alt="PC1" loading="eager" width="594"
+                        height="436">
+                </a>
+            </div>
+            <div class="sp">
+                <a class="js-close0803">
 
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+                    <img src="{{ '230425_popup_pc2.jpg' | file_url }}" alt="SP1" loading="eager" width="628"
+                        height="824">
+                </a>
+
+            </div>
+        </div>
+        <div class="modal__frame--popup01">
+            <div class="pc">
+                <a class="js-nextlink0803">
+                    <img src="{{ '230425_popup_sp1.jpg' | file_url }}" alt="PC2" loading="eager" width="594"
+                        height="436">
+                </a>
+            </div>
+            <div class="sp">
+                <a class="js-nextlink0803">
+                    <img src="{{ '230425_popup_pc1.jpg' | file_url }}" alt="SP2" loading="eager" width="628"
+                        height="824">
+                </a>
+
+            </div>
+        </div>
 
 
-{% comment %} <script>
-    $('#fvRnSwipe .mySwiper').slick({
-        dots: false,
-        infinite: true,
-        speed: 300,
-        autoplay: false,
-        fade: true,
-        cssEase: 'linear',
-        arrows: false,
-        // arrows: false {
-        //     % comment %
-        // }
-        // nextArrow: '<img src="https://cdn.shopify.com/s/files/1/0618/4593/0220/files/slickarrowfv.svg?v=1681886593" class="slide-arrow next-arrow">',
-        // {
-        //     % endcomment %
-        // }
+    </div>
+</div>
 
-    });
-</script> {% endcomment %}
+<script src="{{ 'popup0803.js' | asset_url }}" defer="defer"></script>

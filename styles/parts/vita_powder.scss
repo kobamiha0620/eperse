@@ -313,9 +313,9 @@
                 text-align: center;
                 color: #634E45;
                 margin: 0;
-                span{
-                    font-family:"ＭＳ Ｐゴシック",arial,sans-serif;
-                }
+                // span{
+                //     font-family:"ＭＳ Ｐゴシック",arial,sans-serif;
+                // }
             }
         }
         &07{
@@ -412,9 +412,14 @@
                 color: #FFF;
                 text-align: center;
                 font-weight: bold;
-                font-size: 1.9rem;
+                font-size: 1.8rem;
                 line-height: 1.6;
                 margin: 0 auto 34px;
+                sup{
+                    font-size: 0.6em;
+                    display: inline-block;
+                    margin-right: 2px;
+                }
             }
             &--txt{
                 font-size: 1.5rem;
@@ -422,6 +427,9 @@
             
                 color: #FFF;
                 margin: 0 auto 26px;
+                sup{
+                    font-size: 0.6em;
+                }
             }
             &--note{
                 font-size: 1.2rem;

@@ -1026,6 +1026,7 @@
 .fvRnSwipe{
     .swiper-pagination{
         position: absolute;
+        z-index: 1!important;
         left: auto;
         left: 97.4vw!important;
         height: 200px;

@@ -203,7 +203,7 @@
         color: var.$nGrR;
         margin: 0 0 10px;
         font-family: "dnp-shuei-gothic-gin-std", sans-serif;
-
+        letter-spacing: -0.1px;
     }
     &__price{
         color: var.$nGrR;
@@ -333,6 +333,7 @@
 
 // 追記
 .product__de--jp{
+    letter-spacing: -0.2px;
     span{
       font-size: 0.8em;
       display: inline-block;

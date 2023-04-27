@@ -321,12 +321,18 @@
         line-height: 1.8;
         margin: 0 auto 38px;
         font-family: "dnp-shuei-gothic-gin-std", sans-serif;
-
+        // font-family: dnp-shuei-gothic-gin-std, sans-serif;
+        font-style: normal;
+       font-weight: 600;
+       letter-spacing: 0.2em;
     }
 
     &__txts {
         font-family: "dnp-shuei-gothic-gin-std", sans-serif;
-
+        font-family: dnp-shuei-gothic-gin-std, sans-serif;
+font-style: normal;
+          font-weight: 500;
+        letter-spacing: 1px;
         text-align: center;
         color: #666666;
         font-size: 1.6rem;

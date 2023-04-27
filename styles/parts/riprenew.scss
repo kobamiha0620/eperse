@@ -35,16 +35,18 @@
 
     &__txt {
         font-family: "dnp-shuei-gothic-gin-std", sans-serif;
-
         color: #666666;
         font-size: 1.4rem;
         padding-left: 1em;
         text-indent: -1em;
         line-height: 1.77;
         margin: 0 auto 23px;
+        letter-spacing: -0.1px;
 
         span {
             font-size: 1.2rem;
+            letter-spacing: -0.1px;
+
         }
 
     }
@@ -223,8 +225,11 @@
 
 .sly{
     .rip06__txt{
-        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
-
+        font-family: dnp-shuei-gothic-gin-std, sans-serif;
+        font-style: normal;
+                  font-weight: 500;
+        letter-spacing: 2px;
+        word-break: break-all;
     }
 
 }
@@ -234,5 +239,19 @@
         display: inline-block;
         text-decoration: line-through;
         margin: 0 10px 0 0;
+    }
+}
+
+.rip06__inner{
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.rip05__check{
+    img{
+        width: 100%;
+        height: auto;
     }
 }

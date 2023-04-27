@@ -1309,7 +1309,11 @@ body.homePerse #MainContent{
     color: var.$nBr;
 }
 //クソ追記
+#shopify-section-announcement-bar{
+    border-top: solid 1px #FFF!important;
+}
 .announcement-bar{
+    background: #615243!important;
 }
 #nudie-beige,
 #teddy-brown,

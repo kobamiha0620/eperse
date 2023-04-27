@@ -212,7 +212,7 @@ body {
 
 header-drawer {
     position: absolute;
-    right: 50px;
+    right: 45px;
 }
 
 .header-wrapper--border-bottom {
@@ -1107,7 +1107,7 @@ body.homePerse #MainContent{
 #MainContent{
     padding-top: 81px;
     @media screen and (max-width: var.$BP) {
-        padding-top: 60px;
+        padding-top: 17.8vw;
     }
 }
 .homePerse {
@@ -1202,6 +1202,7 @@ body.homePerse #MainContent{
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    
 }
 
 .page-width {
@@ -1222,7 +1223,7 @@ body.homePerse #MainContent{
 @media screen and (max-width: var.$BP) {
 
     #MainContent #wrapper {
-        margin-top: -14.1vw;
+        margin-top: -17.7vw;
     }
     
     //topページ
@@ -1237,17 +1238,26 @@ body.homePerse #MainContent{
         }
         
     }
+    #rnLogo {
+        svg {
+            width: 26.66vw;
+            height: 7.8vw;
 
+        }
+
+    }
     .header {
         padding-bottom: 0;
-        height: 14.1vw;
+        height: 17.7vw;
+        align-items: center!important;
+        background-color: transparent;
     }
     
     .page-width {
 
         padding-left: 0;
         padding-right: 0;
-        padding-left: 2.9rem;
+        padding-left: 6vw;
         padding-right: 2.2rem;
     }
     
@@ -1298,3 +1308,20 @@ body.homePerse #MainContent{
 .product__others--name, .product__others--price{
     color: var.$nBr;
 }
+//クソ追記
+#shopify-section-announcement-bar{
+    border-top: solid 1px #FFF!important;
+}
+.announcement-bar{
+    background: #615243!important;
+}
+#nudie-beige,
+#teddy-brown,
+#air-gray,
+#palm-green {
+    svg {
+        .st0 {
+            fill: #82B1BC;
+        }
+    }
+}    

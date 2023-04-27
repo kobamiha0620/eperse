@@ -215,8 +215,8 @@
 
         &__fv {
             width: 100%;
-            margin: 0 auto 0;
-
+            margin: 0 auto 9vw;
+            padding-bottom: 0;
             &--inner {
                 padding: 0 5.3vw;
                 width: 100%;
@@ -320,9 +320,13 @@
         font-size: 2rem;
         line-height: 1.8;
         margin: 0 auto 38px;
+        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+
     }
 
     &__txts {
+        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+
         text-align: center;
         color: #666666;
         font-size: 1.6rem;
@@ -377,6 +381,8 @@
     }
 
     &__txt {
+        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+        font-weight: lighter;
         text-align: center;
         color: #FFF;
         margin: 0 auto;
@@ -439,6 +445,8 @@
     }
 
     &__txt {
+        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+        font-weight: lighter;
         text-align: center;
         color: #FFF;
         margin: 0 auto;
@@ -1050,9 +1058,20 @@
 
     @media screen and (max-width: var.$BP) {
         input[type=radio]+label:before {
-            width: 25px;
-            height: 25px;
-            margin-right: 3vw;
+            width: 4.53vw;
+            height: 4.53vw;
+            margin-right: 4vw;
+        }
+        input[type=radio][value="06 PINK MAUVETTE"]+label:before {
+            background-image: url(var.$assets_path + 'dotted_rip06-sp.svg');
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+        }
+    
+        input[type=radio][value="07 BRICK BROWN"]+label:before {
+            background-image: url(var.$assets_path + 'dotted_rip07-sp.svg');
+            background-size: 100% auto;
+            background-repeat: no-repeat;
         }
 
         &__inner {
@@ -1074,19 +1093,71 @@
                 padding: 0;
                 display: flex;
 
+
                 li {
                     list-style-type: none;
-                    width: 25px;
-                    height: 25px;
-                    margin-right: 3vw;
-
+                    width: 4.53vw;
+                    height: 4.53vw;
+                    margin-right: 4vw;
+    
+                    &:first-child {
+                        a {
+                            @include var.bgimg('dotted_rip01-sp.svg');
+                            width: 4.53vw;
+                            height: 4.53vw;
+                        }
+                    }
+    
+                    &:nth-child(2) {
+                        a {
+                            @include var.bgimg('dotted_rip02-sp.svg');
+                            width: 4.53vw;
+                            height: 4.53vw;
+                        }
+                    }
+    
+                    &:nth-child(3) {
+                        a {
+                            @include var.bgimg('dotted_rip03-sp.svg');
+                            width: 4.53vw;
+                            height: 4.53vw;
+                        }
+                    }
+    
+                    &:nth-child(4) {
+                        a {
+                            @include var.bgimg('dotted_rip04-sp.svg');
+                            width: 4.53vw;
+                            height: 4.53vw;
+                        }
+                    }
+    
+                    &:nth-child(5) {
+                        a {
+                            @include var.bgimg('dotted_rip05-sp.svg');
+                            width: 4.53vw;
+                            height: 4.53vw;
+                        }
+                    }
+                    &:nth-child(6) {
+                        a {
+                            width: 4.53vw;
+                            height: 4.53vw;
+                        }
+                    }
+                    &:nth-child(7) {
+                        a {
+                            width: 4.53vw;
+                            height: 4.53vw;
+                        }
+                    }
                 }
             }
         }
 
         &__name {
             color: #625343;
-            font-size: 1.7rem;
+            font-size: 1.3rem;
             line-height: 1;
             margin: 0;
         }
@@ -1134,6 +1205,7 @@
     .intro06__name,
     .intro06__price {
         color: var.$nBr;
+
     }
 
     .seibunrN__inner {
@@ -1216,7 +1288,6 @@
         @media screen and (max-width: var.$BP) {}
     }
 
-
 }
 
 //tablet　画面サイズが750pxからはこのスタイルを読む
@@ -1231,6 +1302,11 @@
 
 //sly06
 #slyxmichi {
+    .product__de--en{
+        font-family: "nimbus-sans", sans-serif;
+
+    }
+
     .slyxmichi06{
         display: block;
     }
@@ -1281,6 +1357,30 @@
     
     }
 }
+
+#slyxmichi,
+#innocentred,
+.nuderose,
+.innocentred,
+.orange,
+.almond,
+.velvetfixlipbalm-frenchbrown {
+    .product__de--jp{
+        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+    
+    }
+    .vitaOthers__ttl{
+        background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/rip_others-ttl.svg?v=1682490622');
+    }
+    .vitaOthers__name{
+        color: #635444;
+    }
+    .vitaOthers__price{
+        color: #635444;
+
+    }
+}
+
 // @include var.('.aboutRn__swiper', var.$assets_path + 'bg_aboutRn-sweipe');
 @include var.webpBg('.sly__intro03', var.$assets_path + 'bg_sly-intro03', 'png');
 

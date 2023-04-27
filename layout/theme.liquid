@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 
@@ -141,6 +140,9 @@
     />
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFFFF">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#FFFFFF">
   </head>
   
   {% if handle %}
@@ -201,7 +203,7 @@
         {% render 'eyeshadow02amber' %}
       {%- endif -%}
       
-      {% if request.path contains '/vegan-vita-tone-up-base' %}
+     {% if request.path contains '/vegan-vita-tone-up-base' %}
         {% render 'vitatoneup' %}
       {%- endif -%}
 
@@ -211,7 +213,7 @@
       
       {% if request.path contains '/vegan-vita-filter-powder' %}
         {% render 'vitapowders' %}
-      {%- endif -%}
+      {%- endif -%}  
 
       {% if request.path contains '/michixsly-velvet-fix-lip-balm' %}
         {% render 'michixsly' %}

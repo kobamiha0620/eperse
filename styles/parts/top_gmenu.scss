@@ -677,6 +677,218 @@
     .menu-drawer__navigation-container{
         display: block!important;
     }
+    @media screen and (max-width: var.$BP) {
+         .newgmenu{
+        border-top-right-radius: 0;
+        padding-top: 10.6vw;
+        padding-right: 0;
+        padding-left: 0;
+
+        &__product {
+            padding-right: 7vw;
+            padding-left: 8vw;
+
+            &--inblc {
+                display: block;
+                max-width: 100%;
+                width: 100%;
+                margin: 0;
+                padding-bottom: 8.2vw;
+            }
+
+            &--link {
+                &-ttl {
+                    margin: 0 0 3.6vw 0;
+                }
+            }
+
+            &--subttl {
+                font-size: 2.4rem;
+                margin: 0 0 5.5vw;
+                line-height: 1;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            &--blc {
+                // margin-bottom: 5vw;
+                .newgmenu__product--linkblc{
+                    display: none;
+                    opacity: 0;
+                    visibility: hidden;
+                    
+                }
+
+                .newgmenu__product--subttl{
+                    span {
+                        display: block;
+                        position: relative;
+                        width: 13px;
+                        height: 13px;
+    
+                        &::before {
+                            content: "";
+                            display: block;
+                            width: 13px;
+                            height: 1px;
+                            background: #FFF;
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+    
+                        &::after {
+                            content: "";
+                            display: block;
+                            width: 13px;
+                            height: 1px;
+                            background: #FFF;
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+    
+                        &::after {
+                            background: #FFF;
+                            /* 横棒を縦にするために90℃回転させる */
+                            transform: translateY(-50%) rotate(90deg);
+                            /* プラスからマイナスへの切り替えをゆっくり行いアニメーションさせる */
+                            transition: 0.5s;
+                        }
+    
+                        .active::after {
+                            transform: rotate(0) !important;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+                //閉じ
+                .newgmenu__product--slide{
+                    transition: border-top 0.3s ease-out,
+                        padding-top 0.3s ease-out,
+                        padding-bottom 0.3s ease-out;
+                    opacity: 0;
+                    visibility: hidden;
+
+                    a,p {
+                        
+                    
+                        line-height: 0;
+                        opacity: 0;
+                        transition: line-height 0.3s ease-out, opacity 0.1s linear 0.1s,
+                            padding-top 0.3s ease-out, visibility 0.1s linear 0.1s;
+                        line-height: 0;
+                        opacity: 0;
+                        visibility: hidden;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        line-height: 0;
+                        margin: 0;
+                        padding: 0;
+                        transition: 0.5s;
+                    }
+                }
+                //開き
+                &.active{
+                    .newgmenu__product--linkblc{
+                        margin: 0 0 0 8px;
+                        padding-bottom: 12px;
+                        display: block;
+                    }
+                    .newgmenu__product--slide{
+                        padding-bottom: 38px;
+                    }
+                    .newgmenu__product--slide, .newgmenu__product--linkblc{
+                        transition: border-top 0.3s ease-out, padding-top 0.3s ease-out,
+                            padding-bottom 0.3s ease-out;
+                        opacity: 1;
+                        visibility: visible;
+                        a,p {
+                            opacity: 1!important;
+                            visibility: visible;
+                            line-height: 1;
+                            margin-bottom: 18px;
+                            font-size: 1.6rem;
+                            transition: line-height 0.3s ease-out, opacity 0.1s linear 0.1s,
+                                padding-top 0.3s ease-out, visibility 0.1s linear 0.1s!important;;
+                        }
+                    }
+
+                    .newgmenu__product--subttl{
+                        span {
+                            &::after {
+                                transform: rotate(0);
+                                transition: 0.5s;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &--ttl {
+                font-size: 2.5rem;
+                margin: 0 0 8vw 0;
+            }
+
+        }
+
+        &__links {
+            padding: 12vw 8vw;
+            border-top: solid 1px #FFF;
+            max-width: 100%;
+            width: 100%;
+            margin: 0 auto;
+            font-size: 2.4rem;
+            display: flex;
+            justify-content: space-between;
+
+            &--leftL {
+                display: block;
+                width: 50%;
+                max-width: 188px;
+                min-width: 188px;
+
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                li {
+                    margin: 0 0 24px;
+                    line-height: 1;
+
+                    a {
+                        display: block;
+                    }
+                }
+            }
+
+            &--sns {
+                display: block;
+                max-width: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                li {
+                    margin: 0 0 24px;
+                    line-height: 1;
+                    a {
+                        display: block;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: var.$BP) {
+            .newgmenu__links{
+                padding-bottom: 30px;
+            }
+        }
+
+
+    }
+    }
 }
 .menu-drawer{
     background: var.$nYel!important;
@@ -699,6 +911,15 @@
         position: relative;
         top: auto;
         right: auto;
+
+    }
+    @media screen and (max-width: var.$BP) {
+        padding: 10px 10px 8px 6vw;
+        .newgmenu__logo{
+            width: 26.66vw;
+            height: 7.8vw;
+        }
+
     }
 }
 
@@ -737,7 +958,11 @@
 @media screen and (min-width: var.$BP+1) {}
 
 //sp
-@media screen and (max-width: var.$BP) {}
+@media screen and (max-width: var.$BP) {
+    .menu-drawer{
+        width: 100vw;
+    }
+}
 
 
 //PCTablet 画面サイズが990pxからはこのスタイルを読む

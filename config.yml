@@ -4,7 +4,4 @@ development:
   store: perseperse.myshopify.com
 
 
-shopify theme pull
-shopify theme serve
-theme get --list -p=shptka_03583c0631c86f75bdb63fbf9da5dedc -s=perseperse.myshopify.com
-
+shopify theme pull -i 136542060780

@@ -50,8 +50,8 @@ const swiperVita = new Swiper('.swiper_makeup03', {
 const swiperContact = new Swiper('.swiper_makeup04', {
     // Optional parameters
     loop: true,
+    spaceBetween: 0,
     slidesPerView: 1,
-    spaceBetween: 30,
     effect: "fade",
     // If we need pagination
     pagination: {
@@ -63,16 +63,35 @@ const swiperContact = new Swiper('.swiper_makeup04', {
     }
 });
 
-const about = new Swiper('.aboutRnSwiper', {
-    // Optional parameters
-    loop: true,
-    slidesPerView: 1,
-    effect: "fade",
-    autoplay: {
-        delay: 800 //3秒ごとにスライダを切り替える
-      }
-});
+// const about = new Swiper('.aboutRnSwiper', {
+//     // Optional parameters
+//     loop: true,
+//     slidesPerView: 1,
+//     effect: "fade",
+//     autoplay: {
+//         delay: 800 //3秒ごとにスライダを切り替える
+//       }
+// });
 
+const topSwiper = new Swiper('.fvRnslick', {
+  // Optional parameters
+  loop: true,
+  autoplay: {
+    delay: 2400,
+},
+  slidesPerView: 1,
+  spaceBetween: 30,
+  effect: "fade",
+
+  // If we need pagination
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+          return `<span class="${className} fvRnslick_${index + 1}"></span>`
+      },
+  }
+});
 
 
 

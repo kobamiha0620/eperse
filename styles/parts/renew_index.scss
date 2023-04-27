@@ -1,6 +1,7 @@
 @charset "utf-8";
 @use './reset.scss'as var;
 
+
 .cormorant {
     font-family: "cormorant-garamond", serif;
 }
@@ -173,11 +174,15 @@
         }
         img {
             max-width: 132px;
-
+            margin: 0 auto;
+            display: block;
             width: 100%;
             height: auto;
         }
-
+        &--img{
+            margin: 0 auto;
+            display: block;
+        }
     }
     &__pro {
         max-width: 132px;
@@ -211,12 +216,15 @@
             margin: 22px 0 0;
             text-align: center;
             display: block;
+            font-family: "nimbus-sans", sans-serif;
 
             span{
                 display: inline-block;
                 text-decoration: underline;
                 color: var.$nBr;
                 font-size: 1.4rem;
+                font-family: "nimbus-sans", sans-serif;
+
             }
         }
     }
@@ -261,8 +269,16 @@
             scrollbar-color: var.$nBr #FFF;
         }
         &__prob {
+            max-width: 35.7vw;
+            min-width: 35.7vw;
+            width: 35.7vw;
+            padding: 0 1.6vw;
             .rnRecom__pro--name-wrapper{
                 height: 90px;
+            }
+            &--img{
+                display: block;
+                margin: 0 auto;
             }
         }
         &__pro {
@@ -510,6 +526,8 @@
             line-height: 2;
             color: var.$nBr;
             margin: 0 auto;
+            font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+
         }
 
         &--price {
@@ -518,6 +536,7 @@
             line-height: 1;
             color: var.$nBr;
             margin: 0;
+            font-family: "nimbus-sans", sans-serif;
 
             span {
                 font-size: 1.5rem;
@@ -767,8 +786,37 @@
                     width: 2vw;
                     height: 4vw;
                 }
+                &-com{
+                    @include var.bgimg('commingsoon.svg');
+                    width:  89px;
+                    height: 15px;
+                    margin: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                &-new{
+                    @include var.bgimg('rnNew.svg');
+                    width:  36px;
+                    height: 15px;
+                    margin: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                &-recom{
+                    @include var.bgimg('rnRecom.svg');
+                    width:  83px;
+                    height: 14px;
+                    margin: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
 
             }
+
+
 
             &--ch {
                 min-width: 38.4vw;
@@ -826,6 +874,10 @@
         &__pagewrapper {
             display: block;
             height: 14vw;
+            margin: 0 auto;
+            font-size: 0;
+            max-width: 120px;
+            min-width: 120px;
             .swiper-pagination{
                 z-index: 1!important;
             }
@@ -839,10 +891,10 @@
             width: 16px;
             height: 16px;
             opacity: 1;
-            margin: 0 4px !important;
+            margin: 3px 4px !important;
         }
     }
-
+    
 }
 
 //about
@@ -863,6 +915,10 @@
         font-size: 0;
         line-height: 0;
         padding: 80px 50px;
+        img{
+            width: 100%;
+            height: auto;
+        }
     }
 
     &__about {
@@ -955,11 +1011,210 @@
 }
 
 
+
+//追記
+@keyframes countingBar {
+    0% {
+        height: 0
+    }
+
+    to {
+        height: 100%
+    }
+}
+
+.fvRnSwipe{
+    .swiper-pagination{
+        position: absolute;
+        z-index: 1!important;
+        left: auto;
+        left: 97.4vw!important;
+        height: 200px;
+        width: 2px!important;
+        top: 23.4vw!important; 
+        @media screen and (max-width: var.$BP) {
+            top: 56.2vw!important; 
+            height: 41vw;
+            left: 95.8vw!important;
+    
+        }
+        &.fvRnslickpagenation{
+            .swiper-pagination-bullet{
+                border-radius: none;
+            }
+            .swiper-pagination-bullet {
+                border-radius: inherit;
+                margin: 0 5px!important;
+                width: 1px;
+                height: 58px;
+                background: rgba(165,165,165,0.4);
+                opacity: 1;
+                margin: 8px 0!important;
+                display: block;
+                &::before{
+                    background: #FFF;
+                    content: "";
+                    display: block;
+                    transform-origin: top center;
+    
+                }
+                @media screen and (max-width: var.$BP) {
+                    height: 12vw;
+                }
+              }
+              .swiper-pagination-bullet-active {
+                background: rgba(165,165,165,0.4);
+    
+                opacity: 1;
+                &::before{
+                    background: #FFF;
+    
+                    animation-name: countingBar;
+                    animation-duration: 2.4s;
+                    animation-timing-function: ease-in;
+                    animation-iteration-count: 1;
+                    animation-direction: alternate;
+                    animation-fill-mode: forwards
+                }
+              }
+              .fvRnslick_1{
+    
+              }
+              
+    
+        }
+    }
+    .fvRnSlick__blc{
+        position: relative;
+        height: 100%;
+    }
+    .fvRnSlick__more{
+        position: absolute;
+        color: #FFF;
+        font-family: "nimbus-sans", sans-serif;
+        font-size: 16px;
+        letter-spacing: 1px;
+        position: absolute;
+        bottom: 5vw;
+        border-bottom: solid 1px #FFF;
+        line-height: 1.1;
+        left: 4vw;
+        margin: 0;
+        text-decoration: none!important;
+    }
+    .fvRnSlick{
+        //swiper{
+        background: #E5D7AA;
+        position: relative;
+        .swiper-wrapper{
+            background: #E5D7AA;
+            height: auto!important;
+        }
+        .swiper-slide{
+            height: 100%!important;
+            position: relative;
+        }
+        &__slyrip{
+            @include var.bgimg('slyrip_pc-ttl.svg');
+            position: absolute;
+            width: 44.1vw;
+            height: 4.41vw;
+            left: 3.63vw;
+            bottom: 11.48vw;
+        }
+        &__eyeShadow{
+            @include var.bgimg('eyeshadow__pc-ttl.svg');
+            width: 39vw;
+            height: 4.5vw;
+            position: absolute;
+            left: 3.75vw;
+            bottom: 11.33vw;
+        }
+        &__vita{
+            @include var.bgimg('vita_pc-ttl.svg');
+            position: absolute;
+            width: 30vw;
+            height: 4.5vw;
+            left: 3.98vw;
+            bottom: 11.56vw;
+        }
+        &__txt{
+            color: #FFF;
+            font-size: 14px;
+            font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+            margin: 0;
+            left: 3.75vw;
+            bottom: 8.5vw;
+            position: absolute;
+            line-height: 1;
+            br{
+                display: none;
+            }
+        }
+    }
+    @media screen and (max-width: var.$BP) {
+        .fvRnSlick__more{
+
+            font-size: 13px;
+            letter-spacing: 1px;
+            position: absolute;
+            bottom: 10.4vw;
+            border-bottom: solid 1px #FFF;
+            line-height: 1.1;
+            left: auto;
+            right: 8.5vw;
+            margin: 0;
+        }
+        .fvRnSlick{
+            &__slyrip{
+                @include var.bgimg('slyrip_sp-ttl.svg');
+                position: absolute;
+                width: 63.2vw;
+                height: 20.4vw;
+                left: 6vw;
+                bottom: 22.9vw;
+            }
+            &__eyeShadow{
+                @include var.bgimg('eyeshadow_sp-ttl.svg');
+                width: 59vw;
+                height: 21.5vw;
+                position: absolute;
+                left: 6vw;
+                bottom: 23vw;
+            }
+            &__vita{
+                @include var.bgimg('vita_pc-ttl.svg');
+                position: absolute;
+                width: 68.8vw;
+                height: 10.2vw;
+                left: 6vw;
+                bottom: 24.5vw;
+            }
+            &__txt{
+                font-size: 12px;
+                margin: 0;
+                left: 6vw;
+                bottom: 11.2vw;
+                position: absolute;
+                line-height: 1.6;
+                br{
+                    display: block;
+                }
+            }
+        }
+    }
+}
 //tablet　画面サイズが750pxからはこのスタイルを読む
 @media screen and (min-width: var.$BP+1) {}
 
 //sp
-@media screen and (max-width: var.$BP) {}
+@media screen and (max-width: var.$BP) {
+    .swiper_makeup02{
+        .allproRn__pagewrapper{
+            margin-bottom: 20px;
+        }
+    }
+}
 
 
 //PCTablet 画面サイズが990pxからはこのスタイルを読む

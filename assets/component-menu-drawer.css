@@ -38,7 +38,8 @@ menu-drawer > details[open] > summary::before {
   z-index: 5!important;
   right: 0;
   top: 0;
-  width: calc(100vw - 4rem);
+  /* width: calc(100vw - 4rem); */
+  width: 100vw;
   padding: 0;
   border: 0.1rem solid rgba(var(--color-foreground), 0.2);
   border-left: 0;

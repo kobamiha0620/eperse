@@ -161,9 +161,23 @@
     }
     .rip03__ttl{
         color: #683920;
+        margin: 0;
+        text-align: center;
         span{
-            border-bottom: solid 1px #683920;
+            @include var.bgimg('swatch.svg');
+            width: 104px;
+            height: 26px;
+            margin: 0 auto;
+            border-bottom: 0!important;
+            border-bottom: none!important;
         }
+        @media screen and (max-width: var.$BP) {
+            span{
+                width: 18.7vw;
+                height: 4.7vw;
+           }
+        }
+
     }
     @media screen and (max-width: var.$BP) {
         .rip03__img--renew{

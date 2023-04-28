@@ -290,7 +290,6 @@
             max-width: 30vw;
             min-width: 30vw;
             margin-right: 4.8vw;
-
             &--name {
                 text-align: center;
                 color: var.$nBr;
@@ -304,7 +303,7 @@
             }
 
             &--price {
-                margin: 22px 0 0;
+                margin: 0 0 0;
                 padding-bottom: 9vw;
                 text-align: center;
                 display: block;

@@ -833,7 +833,7 @@
 </div>
 
 <div id="overlay" class="overlay js-close0803">overlay</div>
-<div class="modal-window0803">
+{% comment %} <div class="modal-window0803">
     <div class="modal-window0803--inner">
         <div class="modal__frame--popup02">
             <div class="pc">
@@ -869,6 +869,32 @@
 
 
     </div>
+</div> {% endcomment %}
+
+<div class="modal-window">
+    <div class="modal-window--inner">
+        <div class="modal__frame--popup02">
+            <div class="pc">
+                <a class="js-close">
+                    <img src="{{ '230508_popup_pc.jpg' | file_url }}" alt="PC1" loading="eager" width="594"
+                        height="436">
+                </a>
+            </div>
+            <div class="sp">
+                <a class="js-close">
+
+                    <img src="{{ '230508_popup_sp.jpg' | file_url }}" alt="SP1" loading="eager" width="628"
+                        height="824">
+                </a>
+
+            </div>
+        </div>
+
+        
+
+
+    </div>
 </div>
 
-<script src="{{ 'popup0803.js' | asset_url }}" defer="defer"></script>
+{% comment %} <script src="{{ 'popup0803.js' | asset_url }}" defer="defer"></script> {% endcomment %}
+<script src="{{ 'popup.js' | asset_url }}" defer="defer"></script>

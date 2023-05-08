@@ -698,7 +698,10 @@
             padding: 11.2vw 6.2vw 5.33vw;
             border-top-left-radius: 9.46vw;
             border-bottom-right-radius: 9.46vw;
-
+            img{
+                width: 90vw;
+                height: auto;
+            }
             &.campaign02{
                 margin: 0!important;
                 padding: 0;

@@ -3443,8 +3443,12 @@
     }
 }
 .product__cartbtn--disable{
-    margin: 60px auto 60px;
+    margin: 50px auto 50px;
     display: block;
+    line-height: 1.3;
+    span{
+        font-size: 0.8em;
+    }
     @media screen and (max-width: var.$BP) {
         margin: 10vw 5vw;
     }

@@ -113,8 +113,8 @@ $(function(){
       const main = $('#slyxmichi');
       main.addClass('sly07');
       $("#js-validastionname").text("07 BRICK BROWN");
-      // $('#js-cartlink').attr('href', 'https://perseperse.myshopify.com/cart/add?id=43784364523756&quantity=1');
-      $('#js-cartlink').attr('href', 'https://perseperse.myshopify.com/cart/add?id=43798185935084&quantity=1');
+      $('#js-cartlink').attr('href', 'https://perseperse.myshopify.com/cart/add?id=43784364523756&quantity=1');
+      // $('#js-cartlink').attr('href', 'https://perseperse.myshopify.com/cart/add?id=43798185935084&quantity=1');
 
       $('#06pinkm').prop('checked', false);
       $('#07bbrown').prop('checked', true);

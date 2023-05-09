@@ -3,7 +3,7 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 
-<div id="cartAttention" style="margin: 0; padding: 0;">
+{% comment %} <div id="cartAttention" style="margin: 0; padding: 0;">
 
 {% for item in cart.items %}
   {% if item.product.id == 7915224072428 %}
@@ -16,7 +16,7 @@
 
   {% endif %}
 {% endfor %}
-</div>
+</div> {% endcomment %}
 {% comment %} <script>
   $(function(){
     $('cart-remove-button').click(function(){

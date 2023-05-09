@@ -211,9 +211,9 @@
         <section class="product__de">
             <h1 class="product__de--en">MICHIXSLY Velvet Fix Lip Balm</h1>
             <h2 class="product__de--jp">ベルベット フィックス リップバーム</h2>
-            <h3 class="product__de--price"><p class="dashed">¥1,680</p>¥1,344<span> ( inc.tax )</span></h3>
+            {% comment %} <h3 class="product__de--price"><p class="dashed">¥1,680</p>¥1,344<span> ( inc.tax )</span></h3> {% endcomment %}
 
-            {% comment %} <h3 class="product__de--price">¥1,680<span> ( inc.tax )</span></h3> {% endcomment %}
+            <h3 class="product__de--price">¥1,680<span> ( inc.tax )</span></h3>
         </section>
 
         <section class="rnCartbtn">
@@ -223,19 +223,19 @@
                     <div>
                         <ul class="rnCartbtn__blc--ripcolor">
                             <li>
-                                <a href="{{ routes.root_url }}products/01nuderose-limited/">01 ヌードローズ</a>
+                                <a href="{{ routes.root_url }}products/velvet-fix-lip-balm-1/">01 ヌードローズ</a>
                             </li>
                             <li>
-                                <a href="{{ routes.root_url }}products/02innocentred-limited/">02 イノセントレッド</a>
+                                <a href="{{ routes.root_url }}products/velvet-fix-lip-balm-innocent-red/">02 イノセントレッド</a>
                             </li>
                             <li>
-                                <a href="{{ routes.root_url }}products/03orange-limited/">03 チリオレンジ</a>
+                                <a href="{{ routes.root_url }}products/velvet-fix-lip-balm-chili-orange/">03 チリオレンジ</a>
                             </li>
                             <li>
-                                <a href="{{ routes.root_url }}products/04almond-limited/">04 アーモンドブラウン</a>
+                                <a href="{{ routes.root_url }}products/velvet-fix-lip-balm-almond-brown/">04 アーモンドブラウン</a>
                             </li>
                             <li>
-                                <a href="{{ routes.root_url }}products/off05french-limited/">05 フレンチブラウン</a>
+                                <a href="{{ routes.root_url }}products/velvetfixlipbalm-frenchbrown/">05 フレンチブラウン</a>
                             </li>
                         </ul>
                     <fieldset>
@@ -246,7 +246,7 @@
                             <label for="06pinkm"></label>
 
                             <input type="radio" id="07bbrown" name="slymich"
-                                data-url="https://perseperse.myshopify.com/cart/add?id=43798185935084&quantity=1"
+                                data-url="https://perseperse.myshopify.com/cart/add?id=43784364523756&quantity=1"
                                 value="07 BRICK BROWN" />
                             <label for="07bbrown"></label>
                         </div>
@@ -262,12 +262,11 @@
                     <span class="product__cartbtn--img">cartimg<span>
                 </a> {% endcomment %}
                 <a class="product__cartbtn"
-                    href="https://perseperse.myshopify.com/cart/add?id=43798185902316&quantity=1" id="js-cartlink">
-                    <p>PRE ORDER</p>
+                    href="https://perseperse.myshopify.com/cart/add?id=43784364490988&quantity=1" id="js-cartlink">
+                    <p>BUY</p>
                     <span class="product__cartbtn--img">cartimg<span>
                 </a>
-                <p class="product__cartbtn--note">※発送は5/12(金)より順次発送致します<br>
-                ※4/28 (⾦) 12:00〜5/11 (木) 23:59迄送料無料</p>
+
             </div>
         </section>
 
@@ -518,7 +517,7 @@
         <div class="vitaOthers__for06">
             <div class="vitaOthers__inner">
                 <div class="vitaOthers__blc">
-                    <a href="{{ routes.root_url }}products/off-michixsly-velvet-fix-lip-balm?variant=43798185935084&aaa=007/">
+                    <a href="{{ routes.root_url }}products/michixsly-velvet-fix-lip-balm?variant=43798185935084&aaa=007/">
                         <picture>
                             <source srcset="{{ 'img_other-rip07.webp' | file_url }}" type="image/webp">
                             <img src="{{ 'img_other-rip07.png' | file_url }}" alt="OtherItems01" width="520"
@@ -530,7 +529,7 @@
                 </div>
 
                 <div class="vitaOthers__blc">
-                    <a href="{{ routes.root_url }}products/01nuderose-limited/">
+                    <a href="{{ routes.root_url }}products/velvet-fix-lip-balm-1/">
                         <picture>
                             <source srcset="{{ 'img_other-vita03.webp' | file_url }}" type="image/webp">
                             <img src="{{ 'img_other-vita03.png' | file_url }}" alt="OtherItems01" width="520"
@@ -541,7 +540,7 @@
                     <p class="vitaOthers__price">¥1,680<span> ( inc.tax )</span></p>
                 </div>
                 <div class="vitaOthers__blc">
-                    <a href="{{ routes.root_url }}products/02innocentred-limited/">
+                    <a href="{{ routes.root_url }}products/velvet-fix-lip-balm-innocent-red/">
                         <picture>
                             <source srcset="{{ 'img_other-rip02.webp' | file_url }}" type="image/webp">
                             <img src="{{ 'img_other-rip02.png' | file_url }}" alt="OtherItems01" width="520"
@@ -571,7 +570,7 @@
                 </div>
 
                 <div class="vitaOthers__blc">
-                    <a href="{{ routes.root_url }}products/off05french-limited/">
+                    <a href="{{ routes.root_url }}products/velvetfixlipbalm-frenchbrown/">
                         <picture>
                             <source srcset="{{ 'img_rnRip05-others.webp' | file_url }}" type="image/webp">
                             <img src="{{ 'img_rnRip05-others.png' | file_url }}" alt="OtherItems01" width="520"
@@ -582,7 +581,7 @@
                     <p class="vitaOthers__price">¥1,680<span> ( inc.tax )</span></p>
                 </div>
                 <div class="vitaOthers__blc">
-                    <a href="{{ routes.root_url }}products/04almond-limited/">
+                    <a href="{{ routes.root_url }}products/velvet-fix-lip-balm-almond-brown/">
                         <picture>
                             <source srcset="{{ 'img_rnRip04-others.webp' | file_url }}" type="image/webp">
                             <img src="{{ 'img_rnRip04-others.png' | file_url }}" alt="OtherItems01" width="520"

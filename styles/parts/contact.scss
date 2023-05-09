@@ -3164,3 +3164,38 @@
         transform: rotate(360deg);
     }
 }
+
+
+//追記
+.youtube{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    &__wrapper{
+        margin: 0 auto 40px;
+
+    }
+    iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    @media screen and (max-width: var.$BP) {
+
+        &__wrapper{
+            padding: 0 5vw;
+            margin: 20vw auto -15vw;
+
+        }
+    }
+}
+.clenz__fv .swiper__arrow .swiper-button-next,
+.clenz__fv .swiper__arrow .swiper-button-prev{
+    background-color: #f7f5f0;
+
+}
+
+        

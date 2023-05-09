@@ -1,0 +1,370 @@
+@charset "utf-8";
+@use './reset.scss'as var;
+.cormorant {
+    font-family: "cormorant-garamond", serif;
+}
+.ninbus {
+    font-family: "nimbus-sans", sans-serif;
+}
+
+.rnVigan {
+    width: 100%;
+    background: var.$nW;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .footer__fluid{
+        margin-bottom: 70px;
+    }
+    .footer__fluid--txt{
+        background: var.$nGreen;
+    }
+    &__inner{
+        width: 520px;
+        margin: 0 auto;
+
+    }
+    &__txt{
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 2;
+        color: var.$nGrR;
+        margin: 48px 0 15px;
+        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+
+    }
+    &__logo{
+        text-align: center;
+        margin: 0 auto 35px;
+        img{
+            width: 200px;
+            height: auto;
+        }
+    }
+    &__accordion{
+        &--ttl {
+            border-top: solid 1px var.$nGrR;
+            border-bottom: solid 1px var.$nGrR;
+            font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+
+            text-align: center;
+            font-size: 1.2rem;
+            color: var.$nGrR;
+            cursor: pointer;
+            margin: 0;
+            font-size: 1.7rem;
+            line-height: 1;
+            padding: 30px 0;
+            background: url(var.$assets_path + 'rNvigan_plus.svg') no-repeat;
+            background-size: 15px 15px;
+            background-position: right 40px center;
+
+        }
+        &--close {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var.$nGrR;
+            cursor: pointer;
+            margin: 0;
+            font-size: 1.7rem;
+            line-height: 1;
+            padding: 30px 0;
+            background: url(var.$assets_path + 'rNvigan_minus.svg') no-repeat;
+            background-size: 15px 15px;
+            background-position: right 40px center;
+            font-family: "nimbus-sans", sans-serif;
+            font-weight: 100;
+            font-weight: lighter;
+        }
+        &--cnt {
+            border-top: solid 1px var.$nGrR;
+            border-bottom: solid 1px var.$nGrR;
+            display: none;
+        }
+        &--txt{
+            font-size: 1.3rem;
+            line-height: 1.9;
+            color: var.$nGrR;
+            font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+            padding-top: 56px;
+        }
+
+    }
+    &__7free{
+        margin: 70px auto 0;
+        padding-bottom: 70px;
+        width: 420px;
+    }
+    @media screen and (max-width: var.$BP) {
+        &__inner{
+            width: 100%;
+        }
+        .footer__fluid{
+            margin-bottom: 0;
+        }
+        &__txt{
+            font-size: 1.2rem;
+            margin: 52px 0 0;
+        }
+        &__logo{
+            margin: 0 auto 12vw;
+            img{
+                width: 38vw;
+                height: auto;
+            }
+        }
+        &__accordion{
+            width: 82vw;
+            margin: 0 auto;
+            &--ttl {
+                width: 82vw;
+                margin: 0 auto;
+                font-size: 1.4rem;
+                padding: 18px 0;
+                background: url(var.$assets_path + 'rNvigan_plus.svg') no-repeat;
+                background-size: 15px 15px;
+                background-position: right 20px center;
+    
+            }
+            &--close {
+                font-size: 1.4rem;
+
+                line-height: 1;
+                padding: 18px 0;
+                background: url(var.$assets_path + 'rNvigan_minus.svg') no-repeat;
+                background-size: 15px 15px;
+                background-position: right 20px center;
+    
+            }
+
+            &--txt{
+                font-size: 0.9rem;
+                line-height: 1.5;
+            }
+    
+        }
+        &__7free{
+            margin: 16vw auto 0;
+            padding-bottom: 16vw;
+            width: 80.8vw;
+        }
+    }
+}
+
+.seibunrN{
+    &__inner{
+        width: 520px;
+        margin: 0 auto;
+        padding-bottom: 170px;
+    }
+    @media screen and (max-width: var.$BP) {
+
+        &__inner{
+            width: 82vw;
+            margin: 0 auto;
+            padding-bottom: 26vw;
+        }
+}
+}
+
+
+.vitaOthers{
+    width: 100%;
+    background: #FFF;
+    padding-top: 86px;
+    &__inner{
+        max-width: 818px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto 56px;
+        a{
+            display: block;
+        }
+    }
+    &__blc{
+        max-width: 260px;
+        img{
+            width: 100%;
+            height: auto
+        }
+    }
+
+    &__ttl{
+        @include var.bgimg('ttl_other-vita.svg');
+        width: 178px;
+        height: 28px;
+        margin: 0 auto 57px;
+    }
+    &__name{
+        font-size: 1.4rem;
+        line-height: 1.64;
+        color: var.$nGrR;
+        margin: 0 0 10px;
+        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+        letter-spacing: -0.1px;
+    }
+    &__price{
+        color: var.$nGrR;
+        font-size: 1.9rem;
+        font-family: "nimbus-sans", sans-serif;
+        margin: 0;
+        span{
+            font-size: 1.4rem;
+            line-height: 1;
+        }
+    }
+    @media screen and (max-width: var.$BP) {
+        width: 100%;
+        padding-top: 14.6vw;
+        &__inner{
+            max-width: 200vw;
+            padding-left: 9vw;
+
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 8vw;
+            margin: 0 auto 25.6vw;
+            overflow-x: scroll;
+            a{
+                display: block;
+            }
+        }
+        &__blc{
+            min-width: 63.6vw;
+            max-width: 63.6vw;
+            margin-right: 6.66vw;
+        }
+    
+        &__ttl{
+            @include var.bgimg('ttl_other-vita.svg');
+            width: 34.2vw;
+            height: 5.46vw;
+            margin: 0 auto 11vw;
+        }
+        &__name{
+            font-size: 1.3rem;
+            line-height: 1.76;
+            margin: 0 0 10px;
+        }
+        &__price{
+            font-size: 1.7rem;
+            margin: 0;
+        }
+    }
+}
+
+#slyblc {
+    .product__de {
+        border-bottom: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .product {
+        &__cartbtn {
+            max-width: 490px;
+            display: block;
+            margin: 53px auto 32px;
+            text-decoration: none;
+            max-width: 490px;
+            display: block;
+            background: #625343;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            padding: 20px 0;
+            position: relative;
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            p {
+                font-family: 'Outfit', sans-serif;
+                font-size: 2rem;
+                margin: 0 !important;
+                line-height: 1;
+            }
+
+
+
+            &--img {
+                width: 23px;
+                height: 23px;
+                display: inline-block;
+                white-space: nowrap;
+                text-indent: -9999px;
+                background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/cartIcon.png?v=1644814375') no-repeat 0 0;
+                background-size: 100% auto;
+                position: absolute;
+                right: 48px;
+                top: 17px;
+            }
+
+            &--disable {
+                max-width: 490px;
+                display: block;
+                background: #E8E3DD;
+                color: #FFF;
+                border-radius: 50px;
+                text-align: center;
+                font-family: 'Outfit', sans-serif;
+                letter-spacing: 0.1em;
+                padding: 20px 0;
+                position: relative;
+            }
+
+            &--notice {
+                text-align: center;
+                color: var.$CR;
+                font-size: 1.4rem;
+                margin-top: 5px;
+                display: block;
+            }
+        }
+    }
+}
+
+// 追記
+.product__de--jp{
+    letter-spacing: -0.2px;
+    span{
+      font-size: 0.8em;
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+//tablet　画面サイズが750pxからはこのスタイルを読む
+@media screen and (min-width: var.$BP+1) {}
+
+//sp
+@media screen and (max-width: var.$BP) {}
+
+
+//PCTablet 画面サイズが990pxからはこのスタイルを読む
+@media screen and (min-width: 990px) {
+
+}
+
+
+
+
+// @include var.webpBg('.aboutRn__swiper', var.$assets_path + 'bg_aboutRn-sweipe');
+// @include var.webpBg('.phome__slicktop--name01', var.$assets_path+'bg_pallete01', 'png');
+// @include var.webpBg('.phome__slicktop--name02', var.$assets_path+'bg_pallete02', 'png');
+
+
+@media screen and (max-width: var.$BP) {
+    // @include var.webpBg('.aboutRn__swiper', var.$assets_path + 'bg_aboutRn-sweipe-sp');
+
+    // @include var.webpBg('.upthome__fv', var.$imgpath +'fv_sp');
+    // @include var.webpBg('.upthome__set--img-in', var.$imgpath +'home_setimg-sp', 'png');
+    // @include var.webpBg('.upthome__producer', var.$imgpath +'bg_yumi-sp02');
+
+}

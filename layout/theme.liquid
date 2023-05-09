@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 
@@ -135,8 +134,15 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
     <meta name="facebook-domain-verification" content="djqc79dg9aqat8x4n1m20ukrb9vhmo" />
-
-  
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFFFF">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#FFFFFF">
   </head>
   
   {% if handle %}
@@ -145,7 +151,7 @@
     {% assign body_id = 'other' %}
   {% endif %}
     
-  <body class="gradient" id="{{ body_id | escape }}" style="overflow-x: hidden;">
+  <body class="gradient {{ body_id | escape }}" id="{{ body_id | escape }}" style="overflow-x: hidden;">
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-542T6SP"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -166,13 +172,17 @@
       {% if template contains 'cart' %}
         <div id="perseCart">
       {%- endif -%}
-      <div class="main__sns" id="mainSns">
-        <a href="https://twitter.com/perseofficial" target="_bland" rel="noopenner" class="main__sns--tw">twitter</a>
-        <a href="https://www.instagram.com/perseofficial/" target="_bland" rel="noopenner" class="main__sns--insta">insta</a>
-        <a href="https://page.line.me/?accountId=perse_official" target="_bland" rel="noopenner" class="main__sns--line">line</a>
-        <a href="https://www.youtube.com/channel/UCiJkV6aSJpX9xEJUu00tVlw" target="_bland" rel="noopenner" class="main__sns--youtube">youtube</a>
+      <div class="pc">
+      <div class="rnsns" id="mainSns">
+        <a href="https://twitter.com/perseofficial" target="_bland" rel="noopenner" class="rnsns__tw">twitter</a>
+
+        <a href="https://www.instagram.com/perseofficial/" target="_bland" rel="noopenner" class="rnsns__insta originInsta">insta</a>
+        <a href="https://www.instagram.com/perse_lens/" target="_bland" rel="noopenner" class="rnsns__insta contactInsta">insta</a>
+
+        <a href="https://page.line.me/?accountId=perse_official" target="_bland" rel="noopenner" class="rnsns__line">line</a>
+        <a href="https://www.youtube.com/channel/UCiJkV6aSJpX9xEJUu00tVlw" target="_bland" rel="noopenner" class="rnsns__youtube">youtube</a>
       </div>
-      <div class="main__logo" id="mainRlogo">produce by yoshiyuki nd michi</div>
+    </div>
 
       {% if template contains 'cart' %}
       </div>
@@ -180,7 +190,43 @@
       <div id="wrapper">
 
       {%- if template == 'index' -%}
-        {% render 'persehome' %}
+        {% render 'persehomerenewel' %}
+      {%- endif -%}
+
+      {% comment %} 商品ページ {% endcomment %}
+      
+      {% if request.path contains '/off-skineyeshadow-01rosymood' %}
+        {% render 'eyeshadow01rosy' %}
+      {%- endif -%}
+      
+      {% if request.path contains '/off-skineyeshadow-02ambermood' %}
+        {% render 'eyeshadow02amber' %}
+      {%- endif -%}
+{% comment %}       
+     {% if request.path contains '/vegan-vita-tone-up-base' %}
+        {% render 'vitatoneup' %}
+      {%- endif -%}
+
+      {% if request.path contains '/vegan-vita-sun-serum' %}
+        {% render 'vitasunserum' %}
+      {%- endif -%}
+      
+      {% if request.path contains '/vegan-vita-filter-powder' %}
+        {% render 'vitapowders' %}
+      {%- endif -%}  {% endcomment %}
+
+      {% if request.path contains '/off-michixsly-velvet-fix-lip-balm' %}
+        {% render 'michixsly' %}
+      {%- endif -%}
+
+      {% if request.path contains '/michixsly-velvet-fix-lip-balm' %}
+        {% render 'michixsly' %}
+      {%- endif -%}
+
+      {% comment %} 商品ページ {% endcomment %}
+
+      {%- if page.handle == 'about' -%}
+        {% render 'about' %}
       {%- endif -%}
 
       {% if request.path == '/policies/refund-policy' %}
@@ -197,6 +243,7 @@
 
       
       {{ content_for_layout }}
+
 
 
     </div>
@@ -239,8 +286,29 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+
+
     <script src="{{ 'header.js' | asset_url }}" defer></script>	
     <script src="{{ 'perse.js' | asset_url }}" defer></script>	
+    <script src="{{ 'swiper.js' | asset_url }}" defer></script>	
+
+    {%- if template == 'index' -%}
+      <script src="{{ 'top.js' | asset_url }}" defer></script>	
+    {%- endif -%}
+    {% if template != 'index' %}
+      <script src="{{ 'other.js' | asset_url }}" defer></script>	
+      {% endif %}
+  <script>
+    (function(d) {
+    var config = {
+      kitId: 'qmd3kbn',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
 
   </body>
 </html>

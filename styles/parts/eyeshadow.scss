@@ -2157,7 +2157,7 @@
     }
 }
 
-#nuderose, #innocentred, #orange, #almond, #nuderose, #velvetfixlipbalm-frenchbrown{
+#nuderose, #innocentred, #orange, #almond, #nuderose, #velvetfixlipbalm-frenchbrown, #off05french-limited{
     .campaignBnr{
         margin-top: -50px;
         margin-bottom: 100px;
@@ -2167,4 +2167,91 @@
         margin-bottom: 21vw;
         }
     }
+
+
+}
+
+//追記リニューアル
+.sly{
+    .rnVigan__accordion--ttl{
+        color: #666666;
+    }
+    }
+.eyeshadow {
+    .product__de--cname, .intro02__blc--ttl, .intro06__ttljp, .intro06__name, .intro06__price{
+        color: var.$nBr;
+    }
+    .eyeshadow__component{
+        border-color: var.$nBr;
+    }
+    .product__cartbtn label{
+        background: var.$nBr;
+    }
+    .slidetoggle__btn::after, .slidetoggle__btn::before{
+        background: var.$nBr;
+    }
+    .eyeshadow__component--slide{
+        p{
+            color: var.$nBr;
+
+        }
+    }
+    &__fv {
+
+
+        .mySwiper .swiper-slide-thumb-active {
+            border-bottom: solid 2px var.$nBr;
+        }
+
+        .swiper__arrow {
+
+
+            .swiper-button-next {
+                @include var.bgimg('arrow_vita.svg');
+
+                background-color: var.$nW;
+            }
+
+            .swiper-button-prev {
+                @include var.bgimg('arrow_vita.svg');
+                transform: scale(-1, 1);
+
+                background-color: var.$nW;
+
+            }
+        }
+
+    }
+
+
+    //NewText
+    &__ptxt {
+
+        &--ttl {
+
+
+            span {
+                border-bottom: solid 1px var.$nBr;
+            }
+        }
+
+        &--txt {
+            color: var.$nBr;
+
+        }
+
+        &--txt2 {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            color: #666;
+            margin: 0;
+
+        }
+
+        @media screen and (max-width: var.$BP) {
+
+
+    }    }
+
+
 }

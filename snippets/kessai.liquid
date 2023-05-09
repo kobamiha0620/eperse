@@ -1,0 +1,20 @@
+{% if product.available %}
+    <div class="product__cartbtn">
+        <form method="post" action="/cart/add">
+            <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+            <input type="hidden" min="1" type="number" id="quantity" name="quantity" value="1"/>
+            
+            <label for="persebtn">
+                <p>BUY</p>
+                <span class="product__cartbtn--img">cartimg<span>
+            </label>
+            <input type="submit" value="" class="" id="persebtn" />
+        </form>  
+        {% comment %} <p class="product__cartbtn--note" style="text-align: left; padding-left:1em; text-indent: -1em; line-height: 1.4;">※新色「06 PINK MAUVETTE」もしくは「07 BRICK BROWN」を同時にご購入の場合、発送は5/12(金)より順次発送致します</p>
+        <p class="product__cartbtn--note" style="margin-top: 0;text-align: left; padding-left:1em; text-indent: -1em; line-height: 1.4;">※4/28 (⾦) 12:00〜5/11 (木) 23:59迄送料無料</p> {% endcomment %}
+    </div>
+    {% else %}
+    <div class="product__cartbtn--disable" style="overflow: hidden; display: block; margin-bottom :100px;">
+        売り切れ中  
+    </div>
+    {% endif %}

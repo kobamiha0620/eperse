@@ -8,7 +8,7 @@ $('.product__slick').slick({
   });
 
 
-  $('.rip02__slick').slick({
+  $('#rip01slick-origin').slick({
     autoplay: false,//自動的に動き出すか。初期値はfalse。
     infinite: true,//スライドをループさせるかどうか。初期値はtrue。
     slidesToShow: 1,//スライドを画面に3枚見せる
@@ -18,7 +18,20 @@ $('.product__slick').slick({
     // asNavFor: '.rip02__slick02',
     centerMode: true,
     speed: 300,
-    initialSlide: 4,
+    initialSlide: 5,
+    centerPadding: '21%'
+  });
+  $('#rip01slick-duplicate').slick({
+    autoplay: false,//自動的に動き出すか。初期値はfalse。
+    infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+    slidesToShow: 1,//スライドを画面に3枚見せる
+    arrows: true,
+    slidesToScroll: 1,//1回のスクロールで3枚の写真を移動して見せる
+    dots: true,　//下部ドットナビゲーションの表示
+    // asNavFor: '.rip02__slick02',
+    centerMode: true,
+    speed: 300,
+    initialSlide: 6,
     centerPadding: '21%'
   });
 

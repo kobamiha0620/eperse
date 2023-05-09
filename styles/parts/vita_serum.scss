@@ -1,0 +1,696 @@
+@charset "utf-8";
+@use './reset.scss'as var;
+
+.cormorant {
+    font-family: "cormorant-garamond", serif;
+}
+
+.ninbus {
+    font-family: "nimbus-sans", sans-serif;
+}
+///VITAシリーズ
+
+
+.vitaSerum {
+    margin: 0 auto 110px;
+    &__txt01{
+        text-align: center;
+        font-size: 1.7rem;
+        color: var.$vitaSerum;
+        line-height: 1.66;
+        font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro";
+        sup{
+            font-size: 0.6em;
+        }
+    }
+    &__txt02{
+        text-align: center;
+        font-size: 1.5rem;
+        color: #666666;
+        line-height: 2;
+        font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro";
+        sup{
+            font-size: 0.6em;
+        }
+    }
+    &__note{
+        text-align: center;
+        font-size: 1.2rem;
+        color: #666666;
+        line-height: 2;
+    }
+    &__inner{
+        width: 520px;
+        margin: 0 auto;
+    }
+    &__picture{
+        position: relative;
+        width: 100%;
+        font-size: 0;
+        img{
+            width: 100%;
+            height: auto
+        }
+    }
+    &__ttl{
+        @include var.bgimg('ttl_serumb.svg');
+        width: 270px;
+        height: 99px;
+        position: absolute;
+
+        top: 64px;
+        left: 48px;
+        margin: 0;
+    }
+    &__subttl{
+        position: absolute;
+        color: #FFF;
+        font-family: "nimbus-sans", sans-serif;
+        font-size: 1.6rem;
+
+        top: 184px;
+        left: 48px;
+        margin: 0;
+    }
+    &__intro{
+        background: var.$vitaSerum;
+        padding: 70px 0 80px;
+        font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro";
+
+        &--ttl{
+            text-align: center;
+            color: #FFF;
+            line-height: 1.9;
+            font-size: 2rem;
+            font-weight: 600;
+            margin: 0 auto 36px;
+        }
+        &--txt{
+            text-align: center;
+            color: #FFF;
+            line-height: 2;
+            font-size: 1.6rem;
+            margin: 0 auto 56px;
+        }
+        &--img{
+            width: 186px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    &__intro2{
+        position: relative;
+        font-size: 0;
+        img{
+            width: 100%;
+            height: auto
+        }
+        &--txt{
+            @include var.bgimg('img_serumintro02b.svg');
+            width: 115px;
+            height: 118px;
+            position: absolute;
+            right:31px;
+            bottom: 46px;
+        }
+
+    }
+    &__intro03{
+        font-size: 0;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__intro04{
+        padding: 25px 0 135px;
+        background-size: 1px 68px;
+        background-position: center bottom 0;
+        background-image: url(var.$assets_path + 'txt_intro03_line.svg');
+        background-repeat: no-repeat;
+        font-size: 0;
+        background-color: var.$vitaSerum;
+
+        &--txt01{
+            width: 462px;
+            margin: 0 auto 114px;
+            text-align: center;
+
+        }
+        &--txt02{
+            width: 316px;
+            margin: 0 auto 51px;
+            text-align: center;
+        }
+        
+        &--txt03{
+            width: 126px;
+            margin: 0 auto 48px;
+            text-align: center;
+        }
+        &--txt04{
+            width: 368px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+    }
+    &__intro05{
+        position: relative;
+        font-size: 0;
+        width: 520px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        &--txt01{
+            width: 125px;
+            position: absolute;
+            left: 38px;
+            bottom: 234px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        &--txt02{
+            width: 338px;
+            position: absolute;
+            left: 40px;
+            bottom: 52px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    &__intro06{
+        padding: 64px 0 75px;
+        background: #FFF;
+        .vitaSerum__txt01{
+            margin: 0 auto 44px;
+        }
+        .vitaSerum__txt02{
+            margin: 48px auto 0;
+        }
+        &--img{
+            width: 218px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+                border: 1px var.$vitaSerum solid;
+            }
+        }
+    }
+    &__intro07{
+        font-size: 0;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__intro08{
+        font-size: 0;
+        position: relative;
+        &--txt{
+            position: absolute;
+            width: 57px;
+            height: auto;
+            bottom: 311px;
+            right: 148px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .vitaSerum__txt02{
+            width: 100%;
+            margin: 0 auto;
+            position: absolute;
+            top:  509px;
+
+
+        }
+    }
+    &__intro09{
+        font-size: 0;
+        position: relative;
+        &--txt{
+            position: absolute;
+            width: 435px;
+            height: auto;
+            bottom: 148px;
+            left: 43px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+
+    }
+    &__intro10{
+        padding: 70px 0 80px;
+        font-size: 0;
+        position: relative;
+        background: #FFF;
+        .vitaSerum__txt01{
+            margin: 0 auto 35px;
+        }
+        .vitaSerum__txt01{
+            margin: 0 auto 30px;
+
+        }
+        .vitaSerum__note{
+            margin: 0 auto 52px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        &--img{
+            width: 450px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                height: auto;
+                border: solid 1px var.$vitaSerum;
+                border-radius: 20px;
+            }
+        }
+    }
+    &__intro11{
+        font-size: 0;
+        position: relative;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        &--img{
+            width: 350px;
+            margin: 0 auto;
+            position: absolute;
+            top: 100px;
+            left: 85px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    &__intro12{
+        font-size: 0;
+        position: relative;
+        padding-left: 10px;
+        width: 100%;
+        background: var.$vitaSerum;
+        &--inner{   
+            background: #FFF;
+            padding: 60px 75px 85px;
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .vitaSerum__txt01{
+            margin: 0 auto 28px;
+        }
+        .vitaSerum__txt02{
+            margin: 0 auto 50px;
+        }
+        .vitaSerum__note{
+            text-align: left;
+        }
+
+        &--img{
+            width: 350px;
+            margin: 0 auto 28px;
+            display: block;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+
+
+    @media screen and (max-width: var.$BP) {
+        margin: 0 auto 20vw;
+        border-bottom: solid 1px #DFDFDF;
+        &__inner{
+            width: 100%;
+            margin: 0 auto;
+            &--fv{
+            }
+        }
+        &__txt01{
+            font-size: 1.4rem;
+            line-height: 1.66;
+        }
+        &__txt02{
+            font-size: 1.3rem;
+            line-height: 2;
+        }
+        &__subttl{
+            width: 56vw;
+            height: 22.6vw;
+            margin: 0 auto 20px;
+        }
+        &__ttl{
+            @include var.bgimg('ttl_serumb.svg');
+   
+            position: absolute;
+            top: 12.8vw;
+            left: 8.93vw;
+            width: 52.8vw;
+            height: 19vw;
+            margin: 0;
+        }
+        &__subttl{
+            position: absolute;
+            color: #FFF;
+            font-size: 1.2rem;
+            top: 35.06vw;
+            left: 8.93vw;
+
+            margin: 0;
+        }
+        &__intro{
+            padding: 18.66vw 0 17.33vw;
+            &--ttl{
+                line-height: 1.68;
+                font-size: 1.6rem;
+                margin: 0 auto 9vw;
+            }
+            &--txt{
+                line-height: 1.84;
+                font-size: 1.3rem;
+                margin: 0 auto 8.5vw;
+            }
+            &--img{
+                width: 39.7vw;
+                margin: 0 auto;
+
+            }
+        }
+        &__intro2{
+            &--txt{
+                width: 22vw;
+                height: 22.8vw;
+                position: absolute;
+                right: 5.5vw;
+                bottom: 8.53vw;
+            }
+        }
+        &__intro04{
+            width: 100%;
+            padding: 5vw 0 25.6vw;
+            background-size: 1px 13vw;
+            &--txt01{
+                width: 89vw;
+                margin: 0 auto 22.5vw;
+                text-align: center;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            &--txt02{
+                width: 61vw;
+                margin: 0 auto 10vw;
+                text-align: center;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            
+            &--txt03{
+                width: 24.4vw;
+                margin: 0 auto 10vw;
+                text-align: center;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            &--txt04{
+                width: 74.66 vw;
+                margin: 0 auto;
+                text-align: center;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+    
+        }
+        &__intro05{
+            position: relative;
+            font-size: 0;
+            width: 100%;
+            img{
+                width: 100%;
+                height: auto;
+            }
+            &--txt01{
+                width: 24vw;
+                position: absolute;
+                left: 7vw;
+                bottom: 45.4vw;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            &--txt02{
+                width: 65vw;
+                position: absolute;
+                left: 6.66vw;
+                bottom: 10vw;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        &__intro06{
+            padding: 18.1vw 0 16.5vw;
+            background: #FFF;
+            .vitaSerum__txt01{
+                margin: 0 auto 10vw;
+            }
+            .vitaSerum__txt02{
+                margin: 13.46vw auto 0;
+            }
+            &--img{
+                width: 46.6vw;
+                margin: 0 auto;
+
+            }
+        }
+        &__intro08{
+            font-size: 0;
+            position: relative;
+            &--txt{
+                position: absolute;
+                width: 12.26vw;
+                height: auto;
+                bottom: 67.2vw;
+                right:25.5vw;
+            }
+
+            .vitaSerum__txt02{
+                width: 100%;
+                margin: 0 auto;
+                position: absolute;
+                top:  99.3vw;
+            }
+        }
+        &__intro09{
+
+            &--txt{
+                position: absolute;
+                width: 83.6vw;
+                height: auto;
+                bottom: 25vw;
+                left: 8vw;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+    
+        }
+        &__intro10{
+            padding: 14.1vw 0 18.88vw;
+
+            .vitaSerum__txt01{
+                margin: 0 auto 8.66vw;
+            }
+            .vitaSerum__txt01{
+                margin: 0 auto 4.4vw;
+            }
+            .vitaSerum__note{
+                margin: 0 auto 12vw;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+            &--img{
+                width: 88.4vw;
+                margin: 0 auto;
+
+            }
+        }
+        &__intro11{
+
+            &--img{
+                width: 67.2vw;
+                margin: 0 auto;
+                position: absolute;
+                top: 19.3vw;
+                left: 16vw;
+
+            }
+        }
+        &__intro12{
+            padding-left: 2vw;
+
+            &--inner{   
+                padding: 14.1vw 7.6vw 13.8vw;
+     
+            }
+
+            .vitaSerum__txt01{
+                margin: 0 auto 10.6vw;
+            }
+            .vitaSerum__txt02{
+                margin: 0 auto 14.5vw;
+            }
+ 
+    
+            &--img{
+                width: 100%;
+                margin: 0 auto 10vw;
+                display: block;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+
+
+    }
+}
+
+
+.vitaSerumFeture{
+    padding: 48px 0 58px;
+    width: 450px;
+    margin: 0 auto 86px;
+    border-top: solid 1px #DFDFDF;
+    border-bottom: solid 1px #DFDFDF;
+    .vitaSerum__txt02{
+        margin: 0 auto;
+    }
+    &__img{
+        width: 240px;
+        margin: 0 auto 43px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    @media screen and (max-width: var.$BP) {
+        padding: 9vw 0 10.66vw;
+        width: 76vw;
+        margin: 0 auto 16.8vw;
+        &__img{
+            width: 45.33vw;
+            margin: 0 auto 8vw;
+        }
+    }
+
+}
+
+
+.vitaSerumHowto{
+    width: 486px;
+    margin: 0 auto 120px;
+    font-size: 0;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    &__blc{
+        background: var.$vitaSerum;
+        padding: 62px 0 66px;
+        &--txt{
+            text-align: center;
+            color: #FFF;
+            font-size: 1.6rem;
+            line-height: 2;
+            margin: 0 auto 42px;
+
+        }
+        &--txt2{
+            text-align: center;
+            color: #FFF;
+            font-size: 1.4rem;
+            line-height: 1.9;
+        }
+    }
+    @media screen and (max-width: var.$BP) {
+        width: 93.3vw;
+        margin: 0 auto 26.6vw;
+        &__blc{
+            padding: 12vw 0 13vw;
+            &--txt{
+
+                font-size: 1.4rem;
+                line-height: 1.85;
+                margin: 0 auto 9.5vw;
+            }
+            &--txt2{
+                font-size: 1.1rem;
+                line-height: 1.7;
+                margin: 0;
+            }
+        }
+    }
+}
+
+//tablet　画面サイズが750pxからはこのスタイルを読む
+@media screen and (min-width: var.$BP+1) {}
+
+//sp
+@media screen and (max-width: var.$BP) {}
+
+
+//PCTablet 画面サイズが990pxからはこのスタイルを読む
+@media screen and (min-width: 990px) {}
+
+
+// @include var.('.aboutRn__swiper', var.$assets_path + 'bg_aboutRn-sweipe');
+@include var.webpBg('.vitaTone__bblc--chekpoint', var.$assets_path+'bg_explain-toneup03', 'png');
+@include var.webpBg('.vitaTone__bblc--chekpoint-txt', var.$assets_path+'subttl_explain-toneup03', 'png');
+
+
+@media screen and (max-width: var.$BP) {
+    // @include var.webpBg('.aboutRn__swiper', var.$assets_path + 'bg_aboutRn-sweipe-sp');
+
+    // @include var.webpBg('.upthome__fv', var.$imgpath +'fv_sp');
+    // @include var.webpBg('.upthome__set--img-in', var.$imgpath +'home_setimg-sp', 'png');
+    // @include var.webpBg('.upthome__producer', var.$imgpath +'bg_yumi-sp02');
+
+}

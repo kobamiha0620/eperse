@@ -1,0 +1,128 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "disabled": true,
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "stacked",
+        "media_size": "large",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "16810474041366e26f": {
+      "type": "apps",
+      "blocks": {
+        "7947ecca-1d40-4915-8322-06499bf9fbce": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": "<div class=\"footer__insta--wrap\">\n<p class=\"footer__insta--ttl2\">Instagram<\/p>\n<p class=\"footer__insta--txt2\">@perseofficial<\/p>\n<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "7947ecca-1d40-4915-8322-06499bf9fbce"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "6072b650-442f-496f-bee7-88f5c2a31faf": {
+      "type": "instafeed",
+      "disabled": true,
+      "settings": {
+        "heading_font": "helvetica_n4",
+        "heading_size": 20,
+        "feed_width": 100,
+        "html_area": ""
+      }
+    },
+    "6696f7e4-c312-4e88-b3ef-64470aee1e7d": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"footer__insta\">\n\n    <div class=\"footer__icon\">\n      <a href=\"https:\/\/www.instagram.com\/perseofficial\/\" target=\"_blank\" class=\"footer__insta--link\">follow us on Instagram<\/a>\n      <div class=\"footer__icon--scroll\">\n        <span class=\"footer__icon--left\" id=\"js-left\"><\/span>\n        <span class=\"footer__icon--right\" id=\"js-right\"><\/span>\n      <\/div>\n    <\/div>\n    <\/div>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations",
+    "16810474041366e26f",
+    "6072b650-442f-496f-bee7-88f5c2a31faf",
+    "6696f7e4-c312-4e88-b3ef-64470aee1e7d"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1646297629f1553bf8": {
+      "type": "contact-form_new",
+      "disabled": true,
+      "settings": {
+        "heading": "Contact form"
+      }
+    },
+    "1680932985c2e44d21": {
+      "type": "apps",
+      "blocks": {
+        "c974980a-2585-45a1-bf90-4d7db917e2a1": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": "<div class=\"footer__insta--wrap\">\n<p class=\"footer__insta--ttl2\">Instagram<\/p>\n<p class=\"footer__insta--txt2\">@perseofficial<\/p>\n<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "c974980a-2585-45a1-bf90-4d7db917e2a1"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "9cb45bd7-6d50-44eb-b286-1f84f7d0ec64": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"footer__insta\">\n\n    <div class=\"footer__icon\">\n      <a href=\"https:\/\/www.instagram.com\/perseofficial\/\" target=\"_blank\" class=\"footer__insta--link\">follow us on Instagram<\/a>\n      <div class=\"footer__icon--scroll\">\n        <span class=\"footer__icon--left\" id=\"js-left\"><\/span>\n        <span class=\"footer__icon--right\" id=\"js-right\"><\/span>\n      <\/div>\n    <\/div>\n    <\/div>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1646297629f1553bf8",
+    "1680932985c2e44d21",
+    "9cb45bd7-6d50-44eb-b286-1f84f7d0ec64"
+  ]
+}

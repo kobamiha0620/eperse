@@ -1,0 +1,193 @@
+@charset "utf-8";
+@use './reset.scss'as var;
+.cormorant {
+    font-family: "cormorant-garamond", serif;
+}
+.ninbus {
+    font-family: "nimbus-sans", sans-serif;
+}
+
+
+.befriend {
+    width: 100%;
+    background: var.$nW;
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    &__inner{
+        width: 520px;
+        margin: 0 auto;
+    }
+    &__picture{
+        font-size: 0;
+        position: relative;
+    }
+    &__ttl{
+        @include var.bgimg('ttl_fv_bfriend.svg');
+        width: 245px;
+        height: 11px;
+        margin: 0 auto;
+        position: absolute;
+        top: 62px;
+        left: 135px;
+    }
+    &__ttl02{
+        @include var.bgimg('ttl2_fv_bfriend.svg');
+        width: 278px;
+        height: 129px;
+        margin: 0 auto;
+        position: absolute;
+        top: 110px;
+        left: 119px;
+    }
+    @media screen and (max-width: var.$BP) {
+        &__inner{
+            width: 100%;
+        }
+        &__ttl{
+            width: 47.2vw;
+            height: 2vw;
+            margin: 0 auto;
+            position: absolute;
+            top: 11.72vw;
+            left: 26vw;
+        }
+        &__ttl02{
+            width: 53.6vw;
+            height: 25vw;
+            margin: 0 auto;
+            position: absolute;
+            top: 22.2vw;
+            left: 23vw;
+        }
+
+    }
+}
+
+
+.befriend02{
+    background: #DFD134;
+    padding: 66px 45px;
+
+    &__ttl{
+        color: #FFF;
+        font-size: 1.9rem;
+        line-height: 1.78;
+        text-align: center;
+        margin: 0 auto 38px;
+        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+
+    }
+    &__txt{
+        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+
+        color: #FFF;
+        font-size: 1.6rem;
+        line-height: 1.78;
+        text-align: center;
+        margin: 0 auto 38px;
+        font-weight: lighter;
+        sup{
+            font-size: 0.6em;
+        }
+    }
+    &__note{
+        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+
+        color: #FFF;
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin-top: 58px;
+        margin-bottom: 0;
+        font-weight: lighter;
+
+    }
+    @media screen and (max-width: var.$BP) {
+        padding: 15vw 8.6vw 18.9vw;
+        &__ttl{
+            font-size: 1.6rem;
+            line-height: 2;
+            margin: 0 auto 11.2vw;
+        }
+        &__txt{
+            font-size: 1.3rem;
+            line-height: 1.78;
+            margin: 0 auto 7vw;
+        }
+        &__note{
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-top: 13.3vw;
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+.befriend03{
+    padding: 75px 0;
+    &__ttl{
+        @include var.bgimg('ttl_bfriend03.svg');
+        width: 265px;
+        height: 12px;
+        margin: 0 auto 50px;
+        font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+
+    }
+    &__imglink{
+        display: block;
+        font-size: 0;
+        margin: 0 auto 34px;
+        &:hover{
+            opacity: .7;
+        }
+    }
+    @media screen and (max-width: var.$BP) {
+        padding: 13.33vw 6.6vw;
+        &__ttl{
+            @include var.bgimg('ttl_bfriend03.svg');
+            width: 51vw;
+            height: 2.2vw;
+            margin: 0 auto 9.7vw;
+        }
+        &__imglink{
+            display: block;
+            font-size: 0;
+            margin: 0 auto 6.4vw;
+            &:hover{
+                opacity: 1;
+            }
+        }
+
+    }
+
+}
+
+//tablet　画面サイズが750pxからはこのスタイルを読む
+@media screen and (min-width: var.$BP+1) {}
+
+//sp
+@media screen and (max-width: var.$BP) {}
+
+
+//PCTablet 画面サイズが990pxからはこのスタイルを読む
+@media screen and (min-width: 990px) {
+
+}
+
+
+// @include var.webpBg('.aboutRn__swiper', var.$assets_path + 'bg_aboutRn-sweipe');
+// @include var.webpBg('.phome__slicktop--name01', var.$assets_path+'bg_pallete01', 'png');
+// @include var.webpBg('.phome__slicktop--name02', var.$assets_path+'bg_pallete02', 'png');
+
+
+@media screen and (max-width: var.$BP) {
+    // @include var.webpBg('.aboutRn__swiper', var.$assets_path + 'bg_aboutRn-sweipe-sp');
+
+    // @include var.webpBg('.upthome__fv', var.$imgpath +'fv_sp');
+    // @include var.webpBg('.upthome__set--img-in', var.$imgpath +'home_setimg-sp', 'png');
+    // @include var.webpBg('.upthome__producer', var.$imgpath +'bg_yumi-sp02');
+
+}

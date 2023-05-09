@@ -1,5 +1,5 @@
 @charset "utf-8";
-@use './reset.scss' as var;
+@use './reset.scss'as var;
 @use 'parts/policy.scss';
 @use 'parts/contact.scss';
 @use 'parts/footer.scss';
@@ -8,6 +8,19 @@
 @use 'parts/product01.scss';
 @use 'parts/eyeshadow.scss';
 
+//リニューアル
+@use 'parts/top_renew.scss';
+@use 'parts/top_gmenu.scss';
+@use 'parts/renew_index.scss';
+@use 'parts/renew_about.scss';
+@use 'parts/renew_rnVigan.scss';
+@use 'parts/vita_fv.scss';
+@use 'parts/vita_bfriend.scss';
+@use 'parts/vita_tone.scss';
+@use 'parts/vita_serum.scss';
+@use 'parts/vita_powder.scss';
+@use 'parts/sly.scss';
+@use 'parts/riprenew.scss';
 
 body {
     background: var.$BG;
@@ -18,6 +31,7 @@ body {
         display: none;
     }
 }
+
 .home {
     #homeTop {
         display: block !important;
@@ -40,9 +54,11 @@ body {
     height: 80px;
     top: 50px;
     display: block;
-    &.fixed{
+
+    &.fixed {
         display: none;
     }
+
     &.active {
         top: 0px;
         border-bottom: solid 1px #E8E3DD;
@@ -74,13 +90,14 @@ body {
 @media screen and (max-width: var.$BP) {
 
 
-    body.homePerse{
-        .active{
+    body.homePerse {
+        .active {
             .header-wrapper {
                 top: 33px;
                 height: 85px;
             }
-            .pereseLogo {          
+
+            .pereseLogo {
                 margin-top: 1vw;
                 top: 0px;
                 width: 26.66vw;
@@ -89,8 +106,9 @@ body {
                 margin-bottom: 0
             }
         }
-        #MainContent{
-            padding: 88px 0 60px!important;
+
+        #MainContent {
+            padding: 88px 0 60px !important;
         }
 
         .pereseLogo {
@@ -101,13 +119,15 @@ body {
             margin-top: 3vw;
         }
     }
-    #MainContent{
+
+    #MainContent {
         padding: 65px 0 60px;
     }
 
     .header-wrapper {
         top: 33px;
         height: 64px;
+
         .pereseLogo {
             margin-top: 1vw;
             top: 0px;
@@ -116,8 +136,9 @@ body {
             margin-left: 1vw;
             margin-bottom: 0
         }
-        .active{
-            .pereseLogo{
+
+        .active {
+            .pereseLogo {
                 margin-top: 1vw;
                 top: 0px;
                 width: 26.66vw;
@@ -153,7 +174,7 @@ body {
 
 //PCTablet 画面サイズが990pxからはこのスタイルを読む
 @media screen and (min-width: 990px) {
-    #MainContent{
+    #MainContent {
         padding-top: 90px;
     }
 }
@@ -191,7 +212,7 @@ body {
 
 header-drawer {
     position: absolute;
-    right: 50px;
+    right: 45px;
 }
 
 .header-wrapper--border-bottom {
@@ -221,29 +242,31 @@ header-drawer {
 }
 
 .menu-drawer-close {
-    font-family: 'Outfit', sans-serif;
-    text-align: center;
-    color: var.$CR;
-    font-size: 1rem;
-    width: 34px;
-    height: 38px;
+    // font-family: 'Outfit', sans-serif;
+    // text-align: center;
+    // color: var.$CR;
+    // font-size: 1rem;
+    // width: 34px;
+    // height: 38px;
     margin: 0 0 0 auto;
-    padding: 0;
+    // padding: 0;
     cursor: pointer;
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
 
     span {
         display: inline-block;
-        padding: 10px 0;
-        margin: 0 auto;
         width: 20px;
         height: 20px;
+        padding: 10px 0;
 
         &::before {
             display: block;
             content: "";
             width: 20px !important;
             height: 1px;
-            background: var.$CR;
+            background: #FFF;
             transform: rotate(-45deg);
         }
 
@@ -252,37 +275,59 @@ header-drawer {
             content: "";
             width: 20px !important;
             height: 1px;
-            background: var.$CR;
+            background: #FFF;
             transform: rotate(45deg);
         }
 
     }
 }
 
-#nudie-beige, #teddy-brown, #air-gray, #palm-green{
+#nudie-beige,
+#teddy-brown,
+#air-gray,
+#palm-green {
 
     .menu-drawer-close {
-        color: var.$cColor;    
+        color: var.$cColor;
+        color: #FFF;
         span {
             &::before {
                 background: var.$cColor;
+                background: #FFF;
             }
-    
+
             &::after {
                 background: var.$cColor;
+                background: #FFF;
 
             }
-    
+
         }
     }
+    #menu-drawer{
+        .cart-count-bubble{
+            background: #FFF!important;
+    
+        }
+        
+    }
+    
+}
+
+#menu-drawer{
+    .cart-count-bubble{
+        background: #FFF;
+
+    }
+    
 }
 
 
 .menu-drawer__navWrap {
-    height: 67px;
-    padding: 22px;
-    width: 100%;
-    text-align: right;
+    // height: 67px;
+    // padding: 22px;
+    // width: 100%;
+    // text-align: right;
 }
 
 .menu-drawer__inner-container {
@@ -295,20 +340,19 @@ header-drawer {
     letter-spacing: 0.1em;
 }
 
-.header-wrapper.gradient {
-}
+.header-wrapper.gradient {}
 
 .header__icon {
-    color: #F08984;
+    color: #FFF;
 
     svg {
-        color: #F08984 !important;
-        fill: #F08984 !important;
+        color: #FFF;
+        fill: #FFF;
     }
 }
 
 .st0 {
-    fill: #F08984;
+    fill: #FFF;
 }
 
 .announcement-bar {
@@ -321,10 +365,11 @@ header-drawer {
     }
 }
 
-#MainContent { 
-    width: 100vw;    
+#MainContent {
+    width: 100%;
     margin: 0 auto;
     padding-bottom: 60px;
+
     &.adjustment {
         padding-top: 0;
     }
@@ -344,9 +389,11 @@ header-drawer {
             width: 22px;
             height: 224px;
             display: block;
-            &.fixed{
+            z-index: 2;
+            &.fixed {
                 display: none;
             }
+
             a {
                 display: block;
                 white-space: nowrap;
@@ -354,8 +401,9 @@ header-drawer {
                 width: 22px;
                 height: 22px;
                 margin-bottom: 35px;
-               
+
             }
+
             &--tw {
                 background: url('https://cdn.shopify.com/s/files/1/0618/4593/0220/files/icon_twitter.svg') no-repeat 0 0;
                 background-size: 100% auto;
@@ -378,7 +426,8 @@ header-drawer {
                 margin-bottom: 0;
             }
         }
-        &__logo{
+
+        &__logo {
             display: inline-block;
             text-indent: -9999px;
             white-space: nowrap;
@@ -390,40 +439,45 @@ header-drawer {
             left: 46px;
             top: 50%;
             transform: translateY(-50%);
-            &.fixed{
-                display: none; 
+
+            &.fixed {
+                display: none;
             }
         }
     }
 }
 
-#nudie-beige, #teddy-brown, #air-gray, #palm-green{
+#nudie-beige,
+#teddy-brown,
+#air-gray,
+#palm-green {
 
     #MainContent {
         .main {
-            &__sns{
+            &__sns {
                 &--tw {
                     background: url('#{var.$assets_path}icon_twitter2.svg') no-repeat 0 0;
                     background-size: 100% auto;
-    
+
                 }
-    
+
                 &--insta {
                     background: url('#{var.$assets_path}icon_insta2.svg') no-repeat 0 0;
                     background-size: 100% auto;
                 }
-    
+
                 &--line {
                     background: url('#{var.$assets_path}icon_line2.svg') no-repeat 0 0;
                     background-size: 100% auto;
                 }
-    
+
                 &--youtube {
                     background: url('#{var.$assets_path}icon_youtube2.svg') no-repeat 0 0;
                     background-size: 100% auto;
                 }
             }
-            &__logo{
+
+            &__logo {
                 background: url('#{var.$assets_path}mainlog.svg') no-repeat 0 0;
                 background-size: 100% auto;
 
@@ -443,47 +497,51 @@ header-drawer {
             text-align: center;
         }
     }
+
     #wrapper {
         width: 100vw;
     }
 
-    #MainContent{
-        .main__logo{
+    #MainContent {
+        .main__logo {
             display: none;
         }
-        .main__sns{
+
+        .main__sns {
             display: none;
         }
-        
+
     }
 
 }
 
 
-.cart-count-bubble{
-    width: 8px;
-    height: 8px;
-    left :27px;
+.cart-count-bubble {
+    width: 10px;
+    height: 10px;
+    left: 32px;
     bottom: 10px;
-    span{
+    background-color: #ddb76b;
+    span {
         font-size: 0;
     }
 }
 
-#perseCart{
+#perseCart {
     display: none;
 }
 
-.ImgBox-Img{
+.ImgBox-Img {
     transition-duration: 0.6s;
 }
-.ImgBox-Img:hover{
+
+.ImgBox-Img:hover {
     transform: scale(1.1);
     transition-duration: 0.6s;
 }
 
 
-@keyframes fadeLeftAnime0{
+@keyframes fadeLeftAnime0 {
     from {
         opacity: 0;
     }
@@ -492,7 +550,8 @@ header-drawer {
         opacity: 1;
     }
 }
-@keyframes fadeLeftAnime02{
+
+@keyframes fadeLeftAnime02 {
     from {
         opacity: 0;
         transform: translateX(-100px);
@@ -505,7 +564,7 @@ header-drawer {
 }
 
 
-@keyframes fadeRtAnime{
+@keyframes fadeRtAnime {
     from {
         opacity: 0;
         transform: translateX(100px);
@@ -516,19 +575,22 @@ header-drawer {
         opacity: 1;
     }
 }
-#MainContent{
-    .shopify-policy__container{
+
+#MainContent {
+    .shopify-policy__container {
         display: none;
     }
 }
 
 //告知バー
-#shopify-section-announcement-bar{
+#shopify-section-announcement-bar {
     position: relative;
     width: 100%;
-    .announcement-bar{
+
+    .announcement-bar {
         border: none;
-        &+ .announcement-bar{
+
+        &+.announcement-bar {
             position: absolute;
             height: 50px;
             top: 0;
@@ -538,14 +600,15 @@ header-drawer {
             width: 100%;
             animation-name: fadeTopBar;
             animation-duration: 7s;
-            animation-delay: 150ms; 
+            animation-delay: 150ms;
             animation-timing-function: linear;
             animation-iteration-count: infinite;
         }
     }
+
     @media screen and (max-width: var.$BP) {
-        .announcement-bar{
-            &+ .announcement-bar{
+        .announcement-bar {
+            &+.announcement-bar {
                 height: 33px;
             }
 
@@ -553,31 +616,36 @@ header-drawer {
     }
 }
 
-@keyframes fadeTopBar{
+@keyframes fadeTopBar {
     0% {
         opacity: 0;
         transform: translateY(-100px);
     }
+
     20% {
         opacity: 0;
 
         transform: translateY(-100px);
     }
+
     30% {
         opacity: 1;
 
         transform: translateY(0);
-    }   
+    }
+
     80% {
         opacity: 1;
         transform: translateY(0);
     }
+
     90% {
         opacity: 0;
 
         transform: translateY(-100px);
     }
-    100%{
+
+    100% {
         opacity: 0;
 
         transform: translateY(-100px);
@@ -586,16 +654,18 @@ header-drawer {
 
 //時々二段
 
-#shopify-section-announcement-bar-nidan{
+#shopify-section-announcement-bar-nidan {
     padding: 0 0;
     padding-top: 3px;
     background: #f08984;
     height: 72px;
     position: relative;
     width: 100%;
-    .announcement-bar{
+
+    .announcement-bar {
         border: none;
-        &+ .announcement-bar{
+
+        &+.announcement-bar {
             position: absolute;
             height: 72px;
             top: 0;
@@ -604,32 +674,35 @@ header-drawer {
             align-items: center;
             animation-name: fadeTopBar;
             animation-duration: 7s;
-            animation-delay: 150ms; 
+            animation-delay: 150ms;
             animation-timing-function: linear;
             animation-iteration-count: infinite;
         }
     }
 
-    span{
+    span {
         display: block;
-        font-size: 14px!important;
-        line-height: 1!important;
+        font-size: 14px !important;
+        line-height: 1 !important;
     }
-    .announcement__link{
-        padding: 0 0 0!important;
-        margin: 0 40px!important;
+
+    .announcement__link {
+        padding: 0 0 0 !important;
+        margin: 0 40px !important;
         display: block;
         line-height: 0;
         margin: 0 auto;
 
         border-bottom: solid 1px rgba(246, 241, 249, 0.6);
-        +.announcement__link{
+
+        +.announcement__link {
             border-bottom: none;
-            padding: 0!important;
+            padding: 0 !important;
 
         }
-        .announcement-bar__link{
-            span{
+
+        .announcement-bar__link {
+            span {
                 display: inline;
                 line-height: 0;
                 letter-spacing: 0.1em;
@@ -637,38 +710,42 @@ header-drawer {
             }
         }
     }
+
     @media screen and (max-width: var.$BP) {
         height: 70px;
 
-        .announcement-bar{
-            &+ .announcement-bar{
-            }
+        .announcement-bar {
+            &+.announcement-bar {}
 
         }
-        .announcement-bar__link{
+
+        .announcement-bar__link {
             position: relative;
-            margin: 0 10px!important;
+            margin: 0 10px !important;
 
         }
-        .announcement-bar{
 
-            a{
+        .announcement-bar {
+
+            a {
                 height: 33px;
                 display: block;
                 line-height: 1;
             }
         }
     }
-    .announcement-bar{
+
+    .announcement-bar {
         height: auto;
         display: block;
-        font-size: 14px!important;
-        line-height: 1.2!important;
+        font-size: 14px !important;
+        line-height: 1.2 !important;
 
     }
-    .announcement-bar__link{
-        padding-right: 5px!important;
-        padding-left: 5px!important;
+
+    .announcement-bar__link {
+        padding-right: 5px !important;
+        padding-left: 5px !important;
     }
 }
 
@@ -677,9 +754,12 @@ header-drawer {
 #teddy-brown,
 #air-gray,
 #palm-green {
-#shopify-section-announcement-bar-nidan{
-    background: #82B1BB;
-}
+    #shopify-section-announcement-bar-nidan {
+        background: #82B1BB;
+    }
+    .header-wrapper{
+        background-color: transparent!important;
+    }
 }
 
 // .header-wrapper{
@@ -691,39 +771,43 @@ header-drawer {
 // }
 
 
-.announcement__link{
+.announcement__link {
     padding-top: 6px;
-    a{
+
+    a {
         display: block;
     }
 
 }
+
 @media screen and (max-width: var.$BP) {
 
-#shopify-section-announcement-bar-nidan .announcement__link {
-    margin: 0 30px!important;
-}
-#shopify-section-announcement-bar-nidan .announcement__link a{
-    font-size: 12px;
+    #shopify-section-announcement-bar-nidan .announcement__link {
+        margin: 0 30px !important;
+    }
 
-}
-.announcement-bar p{
-    
-}
-.announcement__link{
-    &.miharu{
-        padding-top: 0;
+    #shopify-section-announcement-bar-nidan .announcement__link a {
+        font-size: 12px;
+
+    }
+
+    .announcement-bar p {}
+
+    .announcement__link {
+        &.miharu {
+            padding-top: 0;
+        }
+    }
+
+    #shopify-section-announcement-bar-nidan span {
+        font-size: 12px !important;
     }
 }
-#shopify-section-announcement-bar-nidan span{
-    font-size: 12px!important;
-}
-}
 
 
-@media screen and (min-width: 750px){
-   .slider-mobile-gutter .grid__item {
-        max-width: 20%!important;
+@media screen and (min-width: 750px) {
+    .slider-mobile-gutter .grid__item {
+        max-width: 20% !important;
     }
 }
 
@@ -731,104 +815,514 @@ header-drawer {
 
 @media screen and (min-width: var.$BP) {
 
-    .modal-window0803{
+    .modal-window0803 {
         width: 594px;
-    
-        img{
-            max-width: 594px;
-            width: 594px;
+
+        img {
+
             width: 100%;
+            height: auto;
         }
     }
 
-.js-close0803{
-    width: 594px;
-    display: block;
-
-    img{
-        max-width: 594px;
-        width: 100%;
-        display: block;
-
-    }
-
-    
-}
-.js-nextlink0803{
-    width: 594px;
-    display: block;
-    img{
+    .js-close0803 {
         width: 594px;
-        width: 100%;
-
         display: block;
+
+        img {
+            max-width: 594px;
+            width: 100%;
+            display: block;
+
+        }
+
+
     }
 
+    .js-nextlink0803 {
+        width: 594px;
+        display: block;
+
+        img {
+            width: 594px;
+            width: 100%;
+
+            display: block;
+        }
+
+    }
 }
-}
 
 
 
-.pc{
+.pc {
     display: block;
 }
-.sp{
+
+.sp {
     display: none;
 }
 
 @media screen and (max-width: var.$BP) {
-    .pc{
+    .pc {
         display: none;
     }
-    .sp{
+
+    .sp {
         display: block;
     }
-    
+
 }
-.homePerse .modal-window{
-    background:none;
+
+.homePerse .modal-window {
+    background: none;
     padding: 0;
     width: auto;
     box-shadow: none;
 }
 
-.announcement-bar__message{
-    letter-spacing: 0.2rem;
+.announcement-bar__message {
+    letter-spacing: 0.1rem;
 }
 
-.spmodalblc{
+.spmodalblc {
     width: 80vw;
-    img{
+
+    img {
         width: 100%;
     }
 }
 
 //eyeshadow追加 ---2302
-.header-wrapper{    
+.header-wrapper {
     height: auto;
-    background-color:rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 
 }
 
-.header{
+.header {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-#MainContent{
+
+#MainContent {
     padding-top: 66px;
 }
-.header-wrapper.active{
+
+.header-wrapper.active {
     background: var.$BG;
 }
-.cart__note label{
+
+.cart__note label {
     margin-bottom: 1rem;
     font-size: 1.3rem;
-    line-height: 1.2!important;
-    height: auto!important;
-    margin-bottom: 8px!important;
-    color: var.$CR!important;
+    line-height: 1.2 !important;
+    height: auto !important;
+    margin-bottom: 8px !important;
+    color: var.$CR !important;
 }
-.text-area{
-    color: var.$CR!important;
+
+.text-area {
+    color: var.$CR !important;
 
 }
+
+//フェイドイン
+.scroll-up,
+.scroll-up02,
+.scroll-up03, 
+.scroll-up04 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 1s;
+
+    &.showup {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+    }
+}
+
+
+//追記 --------------------リニューアル
+
+.rnsns {
+    width: 21px;
+    overflow: hidden;
+    position: fixed;
+    right: 37px;
+    z-index: 30;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    z-index: 1;
+    visibility: hidden;
+    transition: all 1s;
+
+    &.is-show {
+        opacity: 1;
+        visibility: visible;
+        transition: all 1s;
+    }
+
+    a {
+        display: block;
+        margin-bottom: 20px;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    &__tw {
+        background: url(var.$assets_path + 'rnsns_twitter.svg') no-repeat 0 0;
+        background-size: 100% auto;
+        width: 21px;
+        height: 46px;
+        white-space: nowrap;
+        text-indent: -9999px;
+        display: block;
+    }
+
+    &__insta {
+        background: url(var.$assets_path + 'rnsns_insta.svg') no-repeat 0 0;
+        background-size: 100% auto;
+        width: 21px;
+        height: 65px;
+        white-space: nowrap;
+        text-indent: -9999px;
+        display: block;
+    }
+
+    &__youtube {
+        background: url(var.$assets_path + 'rnsns_youtube.svg') no-repeat 0 0;
+        background-size: 100% auto;
+        width: 21px;
+        height: 50px;
+        white-space: nowrap;
+        text-indent: -9999px;
+        display: block;
+    }
+
+    &__line {
+        background: url(var.$assets_path + 'rnsns_line.svg') no-repeat 0 0;
+        background-size: 100% auto;
+        width: 21px;
+        height: 28px;
+        white-space: nowrap;
+        text-indent: -9999px;
+        display: block;
+    }
+}
+
+.header-wrapper {
+    background: transparent !important;
+    border-bottom: none;
+}
+
+#MainContent #wrapper {
+    margin-top: -80px;
+}
+
+#header-wrapper {
+    position: relative;
+    top: auto;
+
+    &.fixed {
+        top: 0px;
+        position: fixed;
+        border-bottom: none;
+        width: 100vw;
+        display: block;
+        top: 0;
+    }
+}
+
+.announcement-bar {
+    height: 40px;
+}
+
+#MainContent {
+    padding-top: 0;
+}
+.header__icon {
+    color:  #615243;
+    svg {
+        color:  #615243;
+
+        .st0 {
+            fill: #615243;
+        }
+
+    }
+}
+
+#headerIcons{
+    .header__icon {
+        svg {
+            color:  #615243;
+
+            .st0 {
+                fill: #615243;
+            }
+
+        }
+    }
+
+}
+
+#rnLogo {
+
+    svg {
+        width: 144px;
+        height: 42px;
+        .st0 {
+            fill: #615243;
+        }
+
+    }
+
+    .header__icon {
+        color:  #615243;
+        svg {
+            color:  #615243;
+
+            .st0 {
+                fill: #615243;
+            }
+
+        }
+    }
+
+
+
+}   
+
+//topページ
+body.homePerse #MainContent{
+    padding-top: 0!important;
+    
+}
+#MainContent{
+    padding-top: 81px;
+    @media screen and (max-width: var.$BP) {
+        padding-top: 17.8vw;
+    }
+}
+.homePerse {
+    .header__icon {
+        color:  #FFF;
+        svg {
+            color:  #FFF;
+
+            .st0 {
+                fill: #FFF;
+            }
+
+        }
+    }
+    #rnLogo {
+        svg {
+            width: 144px;
+            height: 42px;
+
+            .st0 {
+                fill: #FFFFFF;
+            }
+
+        }
+
+        .header__icon {
+            svg {
+                .st0 {
+                    fill: #FFFFFF;
+                }
+
+            }
+        }
+
+        &.origin {
+            svg {
+                .st0 {
+                    fill: #615243;
+                }
+            }
+
+            .header__icon {
+                svg {
+                    color: #615243;
+
+                }
+            }
+        }
+
+    }
+
+    #header-wrapper {
+
+        .header__icon {
+            svg {
+                color: #FFF;
+                fill: #FFF;
+
+            }
+        }
+
+        &.origin {
+            .header__icon {
+                svg {
+                    color: #615243;
+                    .st0 {
+                        fill: #615243;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+#menu-drawer{
+    .header__icon {
+        svg {
+            color: #FFF!important;
+            .st0 {
+                fill: #FFF;
+            }
+        }
+    }
+}
+
+//header
+.header {
+    padding-bottom: 0;
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+}
+
+.page-width {
+    padding-left: 4.5rem;
+}
+
+.announcement-bar__message {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#shopify-section-announcement-bar {
+    line-height: 1;
+    height: 40px;
+    overflow: hidden;
+}
+//sp
+@media screen and (max-width: var.$BP) {
+
+    #MainContent #wrapper {
+        margin-top: -17.7vw;
+    }
+    
+    //topページ
+    .homePerse {
+        #rnLogo {
+            svg {
+                width: 26.66vw;
+                height: 7.8vw;
+    
+            }
+    
+        }
+        
+    }
+    #rnLogo {
+        svg {
+            width: 26.66vw;
+            height: 7.8vw;
+
+        }
+
+    }
+    .header {
+        padding-bottom: 0;
+        height: 17.7vw;
+        align-items: center!important;
+        background-color: transparent;
+    }
+    
+    .page-width {
+
+        padding-left: 0;
+        padding-right: 0;
+        padding-left: 6vw;
+        padding-right: 2.2rem;
+    }
+    
+    .announcement-bar__message {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+}
+
+//VITA追記
+.announcement-bar__message{
+    margin: 0 auto;
+    padding-right: 0;
+    padding-left: 0;
+}
+#vegan-vita-tone-up-base,
+#vegan-vita-filter-powder,
+#vegan-vita-sun-serum,
+#michixsly-velvet-fix-lip-balm,
+#off-michixsly-velvet-fix-lip-balm{
+    background: #FFF;
+    .footer{
+        background: #FFF;
+
+    }
+}
+
+
+.othersRn{
+    &__ttl{
+        @include var.bgimg('otheritems_new.svg');
+        width: 178px;
+        height: 28px;
+        margin: 0 auto 57px;
+    }
+
+    @media screen and (max-width: var.$BP) {
+        &__ttl{
+            @include var.bgimg('otheritems_new.svg');
+            width: 34.2vw;
+            height: 5.46vw;
+            margin: 0 auto 11vw;
+        }
+
+    }
+}
+
+.product__others--name, .product__others--price{
+    color: var.$nBr;
+}
+//クソ追記
+#shopify-section-announcement-bar{
+    border-top: solid 1px #FFF!important;
+}
+.announcement-bar{
+    background: #615243!important;
+}
+#nudie-beige,
+#teddy-brown,
+#air-gray,
+#palm-green {
+    svg {
+        .st0 {
+            fill: #82B1BC;
+        }
+    }
+}    

@@ -107,7 +107,7 @@
             <div class="product__de--color">
                 <ul class="product__deLink">
                     <li>
-                        <a href="{{ routes.root_url }}products/off-skineyeshadow-01rosymood/">
+                        <a href="{{ routes.root_url }}products/skineyeshadow-01rosymood">
                         <img src="{{ 'slick_eye01_dot.svg' | file_url }}" alt="02 AMBER MOOD" loading="eager" width="auto" height="auto"></li>
                         </a>
 
@@ -295,7 +295,7 @@
                 <p class="product__cartbtn--note">あと払いpaidy対応</p>
             </div>
 
-            <a href="{{ routes.root_url }}products/off-skineyeshadow-01rosymood/" class="intro06__bnrlink">
+            <a href="{{ routes.root_url }}products/skineyeshadow-01rosymood" class="intro06__bnrlink">
                 <picture>
                     <source srcset="{{ 'bnr_01eyeshadow.webp' | file_url }}" type="image/webp">
                     <img src="{{ 'bnr_01eyeshadow.jpg' | file_url }}" alt="02 AMBER MOOD" width="568" height="202" loading="eager" class="">
@@ -328,7 +328,7 @@
             <div class="product__others--scroll">
                 <ul class="product__others--list">	
                     <li class="product__others--list-wide">
-                        <a href="{{ routes.root_url }}products/off-skineyeshadow-01rosymood/">
+                        <a href="{{ routes.root_url }}products/skineyeshadow-01rosymood">
                             <div class="product__others--list-rel">
                                 <picture>
                                     <source srcset="{{ 'prdocut_otherimte-eye01.webp' | file_url }}" type="image/webp">

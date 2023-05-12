@@ -102,13 +102,13 @@
         <section class="product__de">
             <h1 class="product__de--en">The Skin Eyeshadow Palette</h1>
             <h2 class="product__de--jp">ザ スキン アイシャドウ パレット</h2>
-            <h3 class="product__de--price"><p class="dashed">¥2,490</p>¥1,992<span> ( inc.tax )</span></h3> 
+            {% comment %} <h3 class="product__de--price"><p class="dashed">¥2,490</p>¥1,992<span> ( inc.tax )</span></h3>  {% endcomment %}
 
-            {% comment %} <h3 class="product__de--price">¥2,490<span> ( inc.tax )</span></h3> {% endcomment %}
+            <h3 class="product__de--price">¥2,490<span> ( inc.tax )</span></h3>
             <div class="product__de--color">
                 <ul class="product__deLink">
                     <li>
-                        <a href="{{ routes.root_url }}products/off-skineyeshadow-01rosymood/">
+                        <a href="{{ routes.root_url }}products/skineyeshadow-01rosymood">
                         <img src="{{ 'slick_eye01_dot.svg' | file_url }}" alt="02 AMBER MOOD" loading="eager" width="auto" height="auto"></li>
                         </a>
 
@@ -270,8 +270,8 @@
                     Eyeshadow Palette</h2>
                 <p class="intro06__name">02 AMBER MOOD</p>
             </div>
-            {% comment %} <p class="intro06__price">¥2,490<span>( inc.tax )</span></p> {% endcomment %}
-            <p class="intro06__price"><span class="dashed">¥2,490</span>¥1,992<span>( inc.tax )</span></p>
+         <p class="intro06__price">¥2,490<span>( inc.tax )</span></p> 
+            {% comment %} <p class="intro06__price"><span class="dashed">¥2,490</span>¥1,992<span>( inc.tax )</span></p> {% endcomment %}
 
             {% comment %} <div class="product__cartbtn--disable" style="overflow: hidden; display: block; margin-bottom :100px;">
                 COMING SOON <br>
@@ -279,7 +279,7 @@
             </div> {% endcomment %}
              {% render 'kessai' %} 
 
-            <a href="{{ routes.root_url }}products/off-skineyeshadow-01rosymood/" class="intro06__bnrlink">
+            <a href="{{ routes.root_url }}products/skineyeshadow-01rosymood" class="intro06__bnrlink">
                 <picture>
                     <source srcset="{{ 'bnr_01eyeshadow.webp' | file_url }}" type="image/webp">
                     <img src="{{ 'bnr_01eyeshadow.jpg' | file_url }}" alt="02 AMBER MOOD" width="568" height="202" loading="eager" class="">
@@ -314,7 +314,7 @@
             <div class="product__others--scroll">
                 <ul class="product__others--list">	
                     <li class="product__others--list-wide">
-                        <a href="{{ routes.root_url }}products/off-skineyeshadow-01rosymood/">
+                        <a href="{{ routes.root_url }}products/skineyeshadow-01rosymood">
                             <div class="product__others--list-rel">
                                 <picture>
                                     <source srcset="{{ 'prdocut_otherimte-eye01.webp' | file_url }}" type="image/webp">
@@ -386,7 +386,6 @@
     </div>
 
 
-    </div>
 </div>
     
 <script src="{{ 'clenz.js' | asset_url }}" defer="defer"></script>

@@ -104,7 +104,9 @@
         <section class="product__de">
             <h1 class="product__de--en">The Skin Eyeshadow Palette</h1>
             <h2 class="product__de--jp">ザ スキン アイシャドウ パレット</h2>
-            <h3 class="product__de--price">¥2,490<span> ( inc.tax )</span></h3>
+            <h3 class="product__de--price"><p class="dashed">¥2,490</p>¥1,992<span> ( inc.tax )</span></h3> 
+
+            {% comment %} <h3 class="product__de--price">¥2,490<span> ( inc.tax )</span></h3> {% endcomment %}
             <div class="product__de--color">
                 <ul class="product__deLink">
                     <li><img src="{{ 'slick_eye01_dot-active.svg' | file_url }}" alt="01 ROSY MOOD" loading="eager" width="auto" height="auto"></li>
@@ -125,11 +127,8 @@
             <p class="eyeshadow__ptxt--txt2">新しくて頼もしい究極のベーシックアイパレット<br>
                 ひとつのパレットで洗練された上質な⽬元に</p>
         </section>
-        <div class="product__cartbtn--disable" style="overflow: hidden; display: block; margin-bottom :100px;">
-            COMING SOON <br>
-            <span>2023.5.12(FRI)12:00〜</span>
-        </div>
-        {% comment %} {% render 'kessai' %} {% endcomment %}
+
+        {% render 'kessai' %}
 
 
         {% comment %} <div class="product__review">
@@ -268,12 +267,14 @@
                 <p class="intro06__ttljp">ザ スキン アイシャドウ パレット</p>
                 <p class="intro06__name">01 ROSY MOOD</p>
             </div>
-            <p class="intro06__price">¥2,490<span>( inc.tax )</span></p>
-            <div class="product__cartbtn--disable" style="overflow: hidden; display: block; margin-bottom :100px;">
+            <p class="intro06__price"><span class="dashed">¥2,490</span>¥1,992<span>( inc.tax )</span></p>
+
+            {% comment %} <p class="intro06__price">¥2,490<span>( inc.tax )</span></p> {% endcomment %}
+            {% comment %} <div class="product__cartbtn--disable" style="overflow: hidden; display: block; margin-bottom :100px;">
                 COMING SOON <br>
                 <span>2023.5.12(FRI)12:00〜</span>
-            </div>
-            {% comment %} {% render 'kessai' %} {% endcomment %}
+            </div> {% endcomment %}
+            {% render 'kessai' %} 
 
             <a href="{{ routes.root_url }}products/off-skineyeshadow-02ambermood/" class="intro06__bnrlink">
                 <picture>

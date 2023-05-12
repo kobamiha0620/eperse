@@ -104,15 +104,14 @@
         <section class="product__de">
             <h1 class="product__de--en">The Skin Eyeshadow Palette</h1>
             <h2 class="product__de--jp">ザ スキン アイシャドウ パレット</h2>
-            <h3 class="product__de--price"><p class="dashed">¥2,490</p>¥1,992<span> ( inc.tax )</span></h3> 
-
-            {% comment %} <h3 class="product__de--price">¥2,490<span> ( inc.tax )</span></h3> {% endcomment %}
+            {% comment %} <h3 class="product__de--price"><p class="dashed">¥2,490</p>¥1,992<span> ( inc.tax )</span></h3>  {% endcomment %}
+            <h3 class="product__de--price">¥2,490<span> ( inc.tax )</span></h3>
             <div class="product__de--color">
                 <ul class="product__deLink">
                     <li><img src="{{ 'slick_eye01_dot-active.svg' | file_url }}" alt="01 ROSY MOOD" loading="eager" width="auto" height="auto"></li>
 
                     <li>
-                        <a href="{{ routes.root_url }}products/off-skineyeshadow-02ambermood/">
+                        <a href="{{ routes.root_url }}products/skineyeshadow-02ambermood/">
                             <img src="{{ 'slick_eye02_dot.svg' | file_url }}" alt="01" loading="eager" width="auto" height="auto">
                         </a>
                     </li> 
@@ -267,16 +266,16 @@
                 <p class="intro06__ttljp">ザ スキン アイシャドウ パレット</p>
                 <p class="intro06__name">01 ROSY MOOD</p>
             </div>
-            <p class="intro06__price"><span class="dashed">¥2,490</span>¥1,992<span>( inc.tax )</span></p>
+            {% comment %} <p class="intro06__price"><span class="dashed">¥2,490</span>¥1,992<span>( inc.tax )</span></p> {% endcomment %}
 
-            {% comment %} <p class="intro06__price">¥2,490<span>( inc.tax )</span></p> {% endcomment %}
+           <p class="intro06__price">¥2,490<span>( inc.tax )</span></p>
             {% comment %} <div class="product__cartbtn--disable" style="overflow: hidden; display: block; margin-bottom :100px;">
                 COMING SOON <br>
                 <span>2023.5.12(FRI)12:00〜</span>
             </div> {% endcomment %}
             {% render 'kessai' %} 
 
-            <a href="{{ routes.root_url }}products/off-skineyeshadow-02ambermood/" class="intro06__bnrlink">
+            <a href="{{ routes.root_url }}products/skineyeshadow-02ambermood/" class="intro06__bnrlink">
                 <picture>
                     <source srcset="{{ 'bnr_02eyeshadow.webp' | file_url }}" type="image/webp">
                     <img src="{{ 'bnr_02eyeshadow.jpg' | file_url }}" alt="" width="568" height="202" loading="eager" class="">
@@ -311,7 +310,7 @@
             <div class="product__others--scroll">
                 <ul class="product__others--list">	
                     <li class="product__others--list-wide">
-                        <a href="{{ routes.root_url }}products/off-skineyeshadow-02ambermood/">
+                        <a href="{{ routes.root_url }}products/skineyeshadow-02ambermood/">
                             <div class="product__others--list-rel">
                                 <picture>
                                     <source srcset="{{ 'prdocut_otherimte-eye02.webp' | file_url }}" type="image/webp">
@@ -352,17 +351,10 @@
                 </ul>
             </div>
         </div>
-    </div>
 
 
     </div>
 </div>
     
-{% comment %} <div class="footer__fluid" style="margin: 0 0 60px;">
-    <p class="footer__fluid--txt">
-        <img src="https://cdn.shopify.com/s/files/1/0618/4593/0220/files/fluid_txt.svg?v=1647228464" alt="Tomorrow, you will be better than you are" width="2637" height="30" loading="eager">
-        <img src="https://cdn.shopify.com/s/files/1/0618/4593/0220/files/fluid_txt.svg?v=1647228464" alt="Tomorrow, you will be better than you are" width="2637" height="30" loading="eager">
-    </p>
-</div> {% endcomment %}
 
 <script src="{{ 'clenz.js' | asset_url }}" defer="defer"></script>

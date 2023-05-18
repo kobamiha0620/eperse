@@ -46,6 +46,24 @@ async function supportsWebp() {
       }
     }
   }
+    //フェイドイン
+    function scroll_effect00() {
+      var element = document.getElementsByClassName('scroll-up10');
+      if(!element) return;
+                          
+      var scrollY = window.pageYOffset;
+      var windowH = window.innerHeight;
+      var showTiming = 300; // 要素を表示するタイミング
+
+      for(var i = 0; i < element.length; i++) { 
+        var elemClientRect = element[i].getBoundingClientRect(); 
+        var elemY = scrollY + elemClientRect.top; 
+        if(scrollY > elemY - (windowH + showTiming)) {
+          element[i].classList.add('showup');
+        }
+      }
+    }
+    
   
   function scroll_effect02() {
     var element = document.getElementsByClassName('scroll-up02');
@@ -105,6 +123,7 @@ async function supportsWebp() {
   }
   
   window.addEventListener('scroll', scroll_effect); // スクロール時に実行
+  window.addEventListener('scroll', scroll_effect00); // スクロール時に実行
   window.addEventListener('scroll', scroll_effect02); // スクロール時に実行
   window.addEventListener('scroll', scroll_effect03); // スクロール時に実行
   window.addEventListener('scroll', scroll_effect04); // スクロール時に実行

@@ -173,6 +173,32 @@ var swiperVita02 = new Swiper(".vita__fv .mySwiper2", {
   }
 });
 
+var swiperVitasBeige = new Swiper("#vitaPowder02 .mySwiper", {
+  // デフォルトの設定
+  loop: false,
+  spaceBetween: 3.5,
+  slidesPerView: 4.5,
+  slidesPerGroup: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  }
+});
+
+//fv
+var swiperVitasBeige02 = new Swiper("#vitaPowder02 .mySwiper2", {
+  loop: true,
+  spaceBetween: 0,
+  slidesPerView: 1,
+  thumbs: {
+    swiper: swiperVitasBeige,
+  }
+});
+
+
+
 
 
 //thumb

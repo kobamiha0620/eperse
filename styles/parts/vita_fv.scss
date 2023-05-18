@@ -173,7 +173,80 @@
         }
 
     }
+    &__fv02 {
+        width: 500px;
+        margin: 0 auto;
+        padding: 0 0 50px;
 
+
+        .swiper-slide {
+            background: var.$BG;
+        }
+
+        .clenz__disablebtn {
+            margin: 0;
+        }
+
+        .clenz__btn {
+            margin: 0;
+        }
+
+        .mySwiper__wrapper {
+            margin: 0 0 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .mySwiper {
+
+            margin: 0;
+            padding: 0 38px;
+        }
+
+        .mySwiper .swiper-slide-thumb-active {
+            border-bottom: solid 2px var.$nBr;
+        }
+
+        .swiper__arrow {
+            width: 500px;
+            position: relative;
+            margin: -120px 0 120px;
+
+            .swiper-button-next {
+                @include var.bgimg('arrow_vita.svg');
+                width: 43px;
+                height: 130px;
+                position: absolute;
+                right: 0px;
+                top: 15px;
+                z-index: 1;
+                background-color: var.$nW;
+                background-size: 43px 130px;
+            }
+
+            .swiper-button-prev {
+                  transform: scale(-1, 1);
+
+                @include var.bgimg('arrow_vita.svg');
+                width: 42px;
+                height: 130px;
+                position: absolute;
+                left: 0;
+                top: 15px;
+                z-index: 1;
+                background-color: var.$nW;
+                background-size: 43px 130px;
+            }
+        }
+
+        .swiper-button-next.swiper-button-disabled,
+        .swiper-button-prev.swiper-button-disabled {
+            opacity: 1 !important;
+            z-index: 1;
+            background-image: none;
+        }
+
+    }
 
     //NewText
     &__ptxt {
@@ -267,6 +340,34 @@
                 margin: 0 0 3.4vw 5.3vw;
             }
 
+            .mySwiper__wrapper {
+                margin: 0 0 0 5.3vw;
+            }
+
+            .mySwiper {
+                margin: 0 0 0;
+                padding: 0;
+            }
+
+            .swiper__arrow {
+                display: none;
+            }
+        }
+        &__fv02 {
+            width: 100%;
+            margin: 0 auto 0;
+
+            .clenz__disablebtn {
+                margin: 0;
+            }
+
+            .clenz__btn {
+                margin: 0;
+            }
+
+
+            
+            
             .mySwiper__wrapper {
                 margin: 0 0 0 5.3vw;
             }

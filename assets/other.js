@@ -8,7 +8,6 @@ function load_effect() {
   element.classList.add('is-show');
  }
 setTimeout(load_effect, 800); // 600ミリ秒経過後に実行
-
 scrollingtoFooter();
 
 
@@ -56,6 +55,7 @@ vitaAcccordion();
 
 //バリエーション
 function validation(){
+  const powder = document.getElementById('powder');
 
   let radio_btns = document.querySelectorAll(`input[type='radio'][name='powder']`);
   // const validationName = document.getElementById('js-validastionname');
@@ -65,16 +65,41 @@ function validation(){
       let val = radio.value;
       let text = radio.parentElement.innerText;
       document.querySelector(`#js-validastionname`).innerHTML = `${target.value} `;
-      document.querySelector(`#js-cartlink`).setAttribute('href', `${target.dataset.url} `);
+      // document.querySelector(`#js-cartlink`).setAttribute('href', `${target.dataset.url} `);
       // document.querySelector(`#js-cartlink`).classList.toggle('change');
 
-      
+      if(powder.classList.contains("powderBeige")){
+        powder.classList.remove('powderBeige');
+      }else{
+        powder.classList.add('powderBeige');
+      }
     });
   }
   
 }
 
-validation();
+//POWDER/type=embed/gi
+$(function(){
+  var val = location.search.match(variant=43771979563244);
+    if(val) {
+      const main = $('#powder');
+      main.addClass('powderBeige');
+      $("#js-validastionname").text("02 SKIN BEIGE");
+      // $('#js-cartlink').attr('href', 'https://perseperse.myshopify.com/cart/add?id=43784364523756&quantity=1');
+
+      $('#01clear').prop('checked', false);
+      $('#02beige').prop('checked', true);
+
+      validation();
+
+    }else{
+      validation();
+  }
+
+});
+
+
+
 
 
 //バリエーション
@@ -124,9 +149,6 @@ $(function(){
     }else{
       slyvalidation();
   }
-
-
-
 
 });
 

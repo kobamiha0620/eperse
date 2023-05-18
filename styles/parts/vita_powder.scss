@@ -952,6 +952,24 @@
             }
         }
     }
+        //追記
+
+    .vita__fv{
+        display: block;
+    }
+    .vita__fv02{
+        display: none;
+    }
+    &.powderBeige {
+        .vita__fv{
+            display: none;
+        }
+        .vita__fv02{
+            display: block;
+        }
+
+    
+    }
 }
 
 // .product__cartbtn {

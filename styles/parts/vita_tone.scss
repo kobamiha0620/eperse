@@ -462,7 +462,7 @@
             &--point01{
     
                 &-contxt{
-                    padding: 13.7vw 9.4vw 11.7vw;
+                    padding: 13.7vw 7vw 11.7vw 8vw;
                     .vitaTone__txt01{
                         margin: 0 auto 6vw;
                     }
@@ -499,7 +499,11 @@
     
             }
             &--point03{
-    
+                .vitaTone__txt02{
+                    br{
+                        display: none;
+                    }
+                }
                 &-last{
                     padding: 60px 40px 65px 50px;
                     &img{
@@ -544,9 +548,13 @@
             }
             &--point04{
 
-
+                .vitaTone__txt02{
+                    br{
+                        display: none;
+                    }
+                }
                 &-contxt{
-                    padding: 13.6vw 10vw 20vw 9.6vw;
+                    padding: 13.6vw 8vw 20vw 8vw;
                     .vitaTone__txt01{
                         margin: 0 auto 7.3vw;
                         text-align: left;

@@ -232,12 +232,15 @@
         }
         &04{
             position: relative;
-            margin: 0 auto ;
+            margin: 0 auto;
+            font-size: 0;
+            line-height: 0;
             &--img{
                 font-size: 0;
-                border: solid 1px var.$vitaPowder;
+                // border: solid 1px var.$vitaPowder;
                 img{
                     width: 100%;
+                    font-size: 0;
                     height: auto;
                 }
             }
@@ -293,6 +296,7 @@
                 line-height: 1.6;
                 margin: 0 auto 34px;
                 sup{
+                    font-size: 0.6em;
                     font-family:"ＭＳ Ｐゴシック",arial,sans-serif;
                 }
             }
@@ -412,7 +416,7 @@
                 color: #FFF;
                 text-align: center;
                 font-weight: bold;
-                font-size: 1.8rem;
+                font-size: 1.6rem;
                 line-height: 1.6;
                 margin: 0 auto 34px;
                 sup{
@@ -590,7 +594,9 @@
             }
             &02{
                 position: relative;
-
+                &--img{
+                    border: none;
+                }
                 &--ttl{
                     width: 71.5vw;
                     height: 28vw;
@@ -690,17 +696,17 @@
             width: 100%;
             &--point03{
                 padding: 12.2vw 0 14.4vw;
-                &--ttl{
+                &-ttl{
                     width: 20.5vw;
                     height: 8vw;
                     margin: 0 auto 7vw;
                 }
-                &--subttl{
+                &-subttl{
                     font-size: 1.6rem;
                     line-height: 1.8;
                     margin: 0 auto 8.4vw;
                 }
-                &--txt{
+                &-txt{
                     font-size: 1.3rem;
                     line-height: 1.6;
                     margin: 0 auto 4.6vw;

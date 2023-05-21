@@ -85,6 +85,7 @@
 
         color: #FFF;
         font-size: 1.6rem;
+
         line-height: 1.78;
         text-align: center;
         margin: 0 auto 38px;
@@ -105,18 +106,21 @@
 
     }
     @media screen and (max-width: var.$BP) {
-        padding: 15vw 8.6vw 18.9vw;
+        padding: 15vw 7vw 18.9vw;
         &__ttl{
             font-size: 1.6rem;
             line-height: 2;
             margin: 0 auto 11.2vw;
         }
         &__txt{
-            font-size: 1.3rem;
+            font-size: 1.24rem;
             line-height: 1.78;
             margin: 0 auto 7vw;
+            sup{
+            }
         }
         &__note{
+            padding: 0 1vw;
             font-size: 1rem;
             line-height: 1.7;
             margin-top: 13.3vw;

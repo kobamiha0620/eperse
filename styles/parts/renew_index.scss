@@ -1071,9 +1071,8 @@
                 opacity: 1;
                 &::before{
                     background: #FFF;
-    
                     animation-name: countingBar;
-                    animation-duration: 2.4s;
+                    animation-duration: 4s;
                     animation-timing-function: ease-in;
                     animation-iteration-count: 1;
                     animation-direction: alternate;

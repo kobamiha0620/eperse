@@ -77,7 +77,7 @@ const topSwiper = new Swiper('.fvRnslick', {
   // Optional parameters
   loop: true,
   autoplay: {
-    delay: 2400,
+    delay: 4000,
 },
   slidesPerView: 1,
   spaceBetween: 30,

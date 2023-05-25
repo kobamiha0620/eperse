@@ -6,7 +6,26 @@
 
             <div class="mySwiper fvRnslick" style="position: relative;">
                 <div class="swiper-wrapper" style="height: auto;background: #E5D7AA;">
-
+                    <div class="fvRnSlick__blc swiper-slide"  style="position: relative;">
+                        <div class="pc">
+                            <picture>
+                                <source srcset="{{ 'fv_new03-pcmod02.webp' | file_url }}" type="image/webp">
+                                <img src="{{ 'fv_new03-pcmod02.jpg' | file_url }}" alt="The Skin Eyeshadow Palette"
+                                    width="2560" height="1672" loading="eager">
+                            </picture>
+                        </div>
+                        <div class="sp">
+                            <picture>
+                                <source srcset="{{ 'fv_new03-spmod03.webp' | file_url }}" type="image/webp">
+                                <img src="{{ 'fv_new03-spmod03.jpg' | file_url }}" alt="The Skin Eyeshadow Palette"
+                                    width="1500" height="2310" loading="eager">
+                            </picture>
+                        </div>
+                        <p class="fvRnSlick__vita">Vegan Vita Collection</p>
+                        <p class="fvRnSlick__txt">9種類のビタミンを配合した<br>新⽣ビタミンベースメイク</p>
+                        <a href="{{ routes.root_url }}products/vegan-vita-sun-serum"
+                            class="fvRnSlick__more">MORE</a>
+                    </div>
                     <div class="fvRnSlick__blc swiper-slide"  style="position: relative;">
                         <div class="pc">
                             <picture>
@@ -49,26 +68,7 @@
                             class="fvRnSlick__more">MORE</a>
 
                     </div>
-                    <div class="fvRnSlick__blc swiper-slide"  style="position: relative;">
-                        <div class="pc">
-                            <picture>
-                                <source srcset="{{ 'fv_new03-pcmod02.webp' | file_url }}" type="image/webp">
-                                <img src="{{ 'fv_new03-pcmod02.jpg' | file_url }}" alt="The Skin Eyeshadow Palette"
-                                    width="2560" height="1672" loading="eager">
-                            </picture>
-                        </div>
-                        <div class="sp">
-                            <picture>
-                                <source srcset="{{ 'fv_new03-spmod03.webp' | file_url }}" type="image/webp">
-                                <img src="{{ 'fv_new03-spmod03.jpg' | file_url }}" alt="The Skin Eyeshadow Palette"
-                                    width="1500" height="2310" loading="eager">
-                            </picture>
-                        </div>
-                        <p class="fvRnSlick__vita">Vegan Vita Collection</p>
-                        <p class="fvRnSlick__txt">9種類のビタミンを配合した<br>新⽣ビタミンベースメイク</p>
-                        <a href="{{ routes.root_url }}products/vegan-vita-sun-serum"
-                            class="fvRnSlick__more">MORE</a>
-                    </div>
+
                 </div>
                 <div class="swiper-pagination fvRnslickpagenation" style=""></div>
 

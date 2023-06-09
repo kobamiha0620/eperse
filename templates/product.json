@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "main-product",
+      "disabled": true,
       "blocks": {
         "vendor": {
           "type": "text",
@@ -76,6 +77,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "image_ratio": "adapt",
@@ -85,10 +87,37 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "1686290785de9e3bd2": {
+      "type": "apps",
+      "blocks": {
+        "2600ac72-7742-47b3-8dbd-20781fff91fd": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": "<div class=\"footer__insta--wrap\">\n<p class=\"footer__insta--ttl2\">Instagram<\/p>\n<p class=\"footer__insta--txt2\">@perseofficial<\/p>\n<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "2600ac72-7742-47b3-8dbd-20781fff91fd"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "e7c4e7b9-345e-4e14-82ae-60afb30294b1": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"footer__insta\">\n\n    <div class=\"footer__icon\">\n      <a href=\"https:\/\/www.instagram.com\/perseofficial\/\" target=\"_blank\" class=\"footer__insta--link\">follow us on Instagram<\/a>\n      <div class=\"footer__icon--scroll\">\n        <span class=\"footer__icon--left\" id=\"js-left\"><\/span>\n        <span class=\"footer__icon--right\" id=\"js-right\"><\/span>\n      <\/div>\n    <\/div>\n    <\/div>"
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "1686290785de9e3bd2",
+    "e7c4e7b9-345e-4e14-82ae-60afb30294b1"
   ]
 }

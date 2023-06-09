@@ -223,6 +223,10 @@
         {% render 'michixsly' %}
       {%- endif -%}
 
+      {% if request.path contains '/vitaLimitedset' %}
+        {% render 'vitaset' %}
+      {%- endif -%}
+      
       {% comment %} 商品ページ {% endcomment %}
 
       {%- if page.handle == 'about' -%}

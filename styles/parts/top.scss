@@ -791,6 +791,15 @@
         transform: translate(-50%, -50%);
         img{
             width: 100%;
+            height: auto;
+        }
+        .pcmodal{
+            display: block;
+            width: 309px;
+            img{
+                width: 100%;
+                height: auto;
+            }
         }
         &.active {
             opacity: 1;
@@ -866,8 +875,17 @@
         }
     }
 }
+.modal__frame--popup02{
 
-
+    .pcmodal{
+        display: block;
+        width: 460px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
 @keyframes slidePopup0803a {
 0% {
     opacity: 0;

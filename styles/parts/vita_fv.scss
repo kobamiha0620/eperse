@@ -13,14 +13,9 @@
 #vegan-vita-filter-powder,
 #michixsly-velvet-fix-lip-balm,
 #off-michixsly-velvet-fix-lip-balm,
+#vitaLimitedset,
 #vegan-vita-sun-serum{
-    .product__de--en{
-        font-family: "nimbus-sans", sans-serif;
 
-    }
-    .mySwiper{
-        background-color: transparent;
-    }
     #shopify-section-header{
         background: var.$nW;
         font-size: 0;
@@ -35,6 +30,14 @@
     }
     .product{
         padding-bottom: 5rem;
+    }
+}
+#vita{
+    .product__de--en{
+        font-family: "nimbus-sans", sans-serif;
+    }
+    .mySwiper{
+        background-color: transparent;
     }
 }
 @media screen and (min-width: var.$BP+1) {

@@ -966,6 +966,12 @@
     .vita__fv02{
         display: none;
     }
+    .vitaset__clear{
+        display: block;
+    }
+    .vitaset__beige{
+        display: none;
+    }
     &.powderBeige {
         .vita__fv{
             display: none;
@@ -973,9 +979,15 @@
         .vita__fv02{
             display: block;
         }
-
+        .vitaset__clear{
+            display: none;
+        }
+        .vitaset__beige{
+            display: block
+        }
     
     }
+    
 }
 
 // .product__cartbtn {

@@ -53,7 +53,7 @@ function vitaAcccordion(){
 vitaAcccordion();
 
 
-//バリエーション
+//バリエーションパウダー
 function validation(){
   const powder = document.getElementById('powder');
 
@@ -78,6 +78,8 @@ function validation(){
   
 }
 
+
+
 //POWDER/type=embed/gi
 $(function(){
   var val = location.search.match(variant=43771979563244);
@@ -97,6 +99,7 @@ $(function(){
   }
 
 });
+
 
 
 

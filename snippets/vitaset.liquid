@@ -9,7 +9,7 @@
                                 height="2480" loading="eager" class="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ 'vitaset_swipe-02.jpg' | file_url }}" alt="VITA TONE UP" width="2000"
+                            <img src="{{ 'vitaset_swipe-clear.jpg' | file_url }}" alt="VITA TONE UP" width="2000"
                                 height="2480" loading="eager" class="">
                         </div>
                         <div class="swiper-slide">
@@ -46,7 +46,7 @@
                                 height="2480" loading="eager" class="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ 'vitaset_swipe-02.jpg' | file_url }}" alt="VITA TONE UP" width="2000"
+                            <img src="{{ 'vitaset_swipe-clear.jpg' | file_url }}" alt="VITA TONE UP" width="2000"
                                 height="2480" loading="eager" class="">
                         </div>
                         <div class="swiper-slide">
@@ -79,7 +79,7 @@
                                 height="2480" loading="eager" class="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ 'vitaset_swipe-02.jpg' | file_url }}" alt="VITA TONE UP" width="2000"
+                            <img src="{{ 'vitaset_swipe-beige.jpg' | file_url }}" alt="VITA TONE UP" width="2000"
                                 height="2480" loading="eager" class="">
                         </div>
                         <div class="swiper-slide">
@@ -116,7 +116,7 @@
                                 height="2480" loading="eager" class="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ 'vitaset_swipe-02.jpg' | file_url }}" alt="VITA TONE UP" width="2000"
+                            <img src="{{ 'vitaset_swipe-beige.jpg' | file_url }}" alt="VITA TONE UP" width="2000"
                                 height="2480" loading="eager" class="">
                         </div>
                         <div class="swiper-slide">
@@ -143,7 +143,9 @@
         <section class="product__de">
             <h1 class="product__de--en">Vegan Vita Collection Limited Set</h1>
             <h2 class="product__de--jp">ヴィーガンビタコレクション 限定企画セット</h2>
-            <h3 class="product__de--price">¥5,872<span> ( inc.tax )</span></h3>
+           <h3 class="product__de--price"><p class="dashed">¥7,340</p>¥5,872<span> ( inc.tax )</span></h3>  
+
+            <!-- <h3 class="product__de--price">¥5,872<span> ( inc.tax )</span></h3> -->
         </section>
 
         <section class="rnCartbtn">
@@ -186,7 +188,7 @@
 
 
         <!-- ViganVitaSerum説明 -->
-        <div class="vitaSerum">
+        {% comment %} <div class="vitaSerum">
             <div class="vitaSerum__inner">
                 <div class="vitaSerum__inner--fv">
 
@@ -224,11 +226,11 @@
 
 
             </div>
-        </div>
+        </div> {% endcomment %}
         <!-- ViganVitaSerum説明 -->
 
         <!-- ViganVitaToneUP説明 -->
-        <div class="vitaTone">
+        {% comment %} <div class="vitaTone">
             <div class="vitaTone__inner">
                 <div class="vitaTone__inner--fv">
                     <div class="vita__picture">
@@ -263,10 +265,10 @@
 
 
             </div>
-        </div>
+        </div> {% endcomment %}
         <!-- ViganVita ToneUP 説明 -->
         <!-- ViganVita説明 -->
-        <div class="vitaPowder">
+        {% comment %} <div class="vitaPowder">
             <div class="vitaPowder__inner">
                 <div class="vitaPowder__inner--fv">
 
@@ -319,10 +321,10 @@
                 </div>
 
             </div>
-        </div>
+        </div> {% endcomment %}
         <!--- ViganVita説明 -->
 
-        {% render 'befriend' %}
+        {% comment %} {% render 'befriend' %}
         {% render 'rNvigan' %}
 
         <section class="seibunrN">
@@ -346,8 +348,63 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> {% endcomment %}
 
+        <section class="vitaset__feature">
+            <div class="vitaset__feature--ttl">
+                Vegan Vita Collection 限定企画セット
+            </div>
+            <p class="vitaset__feature--txt">VEGAN VITA COLLECTIONの発売を記念して<br>
+                オリジナルのポーチがついた100個限定の<br>
+                スペシャル企画セットが特別価格で登場</p>
+
+            <p class="vitaset__feature--subttl">Set Item</p>
+
+            <ul class="vitaset__lists">
+                <li>
+                    <a href="{{ routes.root_url }}products/vegan-vita-sun-serum">
+
+                    <img src="{{ 'vitaset__p01.jpg' | file_url }}" alt="OtherItems01" width="1005"
+                    height="524" loading="eager">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ routes.root_url }}products/vegan-vita-tone-up-base/">
+
+                    <img src="{{ 'vitaset__p02.jpg' | file_url }}" alt="OtherItems01" width="1005"
+                    height="524" loading="eager">
+                </a>
+
+                </li>
+                <li>
+                    <div class="vitaset__clear">
+                        <a href="{{ routes.root_url }}products/vegan-vita-filter-powder">
+
+                        <img src="{{ 'vitaset__p03.jpg' | file_url }}" alt="OtherItems01" width="1005"
+                        height="524" loading="eager">
+                        </a>
+                    </div>
+                    <div class="vitaset__beige">
+                        <a href="{{ routes.root_url }}products/vegan-vita-filter-powder?variant=43771979563244">
+
+                        <img src="{{ 'vitaset__p03-b.jpg' | file_url }}" alt="OtherItems01" width="1005"
+                        height="524" loading="eager">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="vitaset__clear">
+                        <img src="{{ 'vitaset__p04.jpg' | file_url }}" alt="OtherItems01" width="1005"
+                        height="524" loading="eager">
+                    </div>
+                    <div class="vitaset__beige">
+                        <img src="{{ 'vitaset__p04-b.jpg' | file_url }}" alt="OtherItems01" width="1005"
+                        height="524" loading="eager">
+                    </div>
+                </li>
+            </ul>
+        </section>
+        
 
         <section class="vitaOthers">
             <h2 class="vitaOthers__ttl">OTHERS</h2>
@@ -355,22 +412,16 @@
             <div class="vitaOthers__inner">
                 <div class="vitaOthers__blc">
                     <a href="{{ routes.root_url }}products/vegan-vita-sun-serum">
-                        <picture>
-                            <source srcset="{{ 'img_other-vita01.webp' | file_url }}" type="image/webp">
-                            <img src="{{ 'img_other-vita01.png' | file_url }}" alt="OtherItems01" width="520"
-                                height="672" loading="eager">
-                        </picture>
+                        <img src="{{ 'img_other-vita01.png' | file_url }}" alt="OtherItems01" width="520"
+                        height="672" loading="eager">
                     </a>
                     <p class="vitaOthers__name">ヴィーガンビタ<br>サンセラム</p>
                     <p class="vitaOthers__price">¥2,680<span> ( inc.tax )</span></p>
                 </div>
                 <div class="vitaOthers__blc">
                     <a href="{{ routes.root_url }}products/vegan-vita-tone-up-base/">
-                        <picture>
-                            <source srcset="{{ 'img_other-vita01a.webp' | file_url }}" type="image/webp">
-                            <img src="{{ 'img_other-vita01a.png' | file_url }}" alt="OtherItems01" width="520"
-                                height="672" loading="eager">
-                        </picture>
+                        <img src="{{ 'img_other-vita01a.png' | file_url }}" alt="OtherItems01" width="520"
+                        height="672" loading="eager">
                     </a>
                     <p class="vitaOthers__name">ヴィーガンビタ<br>トーンアップベース</p>
                     <p class="vitaOthers__price">¥2,480<span> ( inc.tax )</span></p>
@@ -378,11 +429,8 @@
 
                 <div class="vitaOthers__blc">
                     <a href="{{ routes.root_url }}products/vegan-vita-filter-powder">
-                        <picture>
-                            <source srcset="{{ 'img_other-vita02.webp' | file_url }}" type="image/webp">
-                            <img src="{{ 'img_other-vita02.png' | file_url }}" alt="OtherItems01" width="520"
-                                height="672" loading="eager">
-                        </picture>
+                        <img src="{{ 'img_other-vita02.png' | file_url }}" alt="OtherItems01" width="520"
+                        height="672" loading="eager">
                     </a>
                     <p class="vitaOthers__name">ヴィーガンビタ<br>フィルターパウダー<br>01 クリア</p>
                     <p class="vitaOthers__price">¥2,180<span> ( inc.tax )</span></p>

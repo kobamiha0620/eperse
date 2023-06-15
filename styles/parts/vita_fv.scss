@@ -413,3 +413,68 @@
     // @include var.webpBg('.upthome__producer', var.$imgpath +'bg_yumi-sp02');
 
 }
+
+//vitase
+
+.vitaset{
+    &__lists{
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        li{
+            font-size: 0;
+            margin: 0 auto 10px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__feature{
+        max-width: 600px;
+        margin: 0 auto;
+        padding-bottom: 100px;
+        &--ttl{
+            @include var.bgimg('vitaset__feature.svg');
+            width: 301px;
+            height: 206px;
+            margin: 0 auto 52px;
+        }
+        &--txt{
+            text-align: center;
+            font-size: 1.6rem;
+            font-family: "dnp-shuei-gothic-gin-std", sans-serif;
+            line-height: 2;
+            margin: 0 auto 96px;
+        }
+        &--subttl{
+            @include var.bgimg('vitaset__feature--subttl.svg');
+            width: 194px;
+            height: 44px;
+            margin: 0 auto 50px;
+        }
+        @media screen and (max-width: var.$BP) {
+            max-width: 100%;
+            margin: 0 auto;
+            padding-bottom: 46vw;
+            &--ttl{
+                width: 62.6vw;
+                height: 43vw;
+                margin: 0 auto 11vw;
+            }
+            &--txt{
+                text-align: center;
+                font-size: 1.3rem;
+                line-height: 1.9;
+                margin: 0 auto 15vw;
+            }
+            &--subttl{
+                @include var.bgimg('vitaset__feature--subttl.svg');
+                width: 42.8vw;
+                height: 9.6vw;
+                margin: 0 auto 11.6vw;
+            }
+        }
+
+    }
+}

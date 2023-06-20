@@ -972,6 +972,12 @@
     .vitaset__beige{
         display: none;
     }
+    .set43846756958444{
+        display: block;
+    }
+    .set43846756991212{
+        display: none;
+    }
     &.powderBeige {
         .vita__fv{
             display: none;
@@ -985,9 +991,16 @@
         .vitaset__beige{
             display: block
         }
-    
+        .set43846756958444{
+            display: none;
+        }
+        .set43846756991212{
+            display: block;
+        }
     }
-    
+    #vitasetBtn{
+        margin-bottom: 100px;
+    }
 }
 
 // .product__cartbtn {

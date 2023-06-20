@@ -65,7 +65,7 @@ function validation(){
       let val = radio.value;
       let text = radio.parentElement.innerText;
       document.querySelector(`#js-validastionname`).innerHTML = `${target.value} `;
-      // document.querySelector(`#js-cartlink`).setAttribute('href', `${target.dataset.url} `);
+      document.querySelector(`#js-cartlink`).setAttribute('href', `${target.dataset.url} `);
       // document.querySelector(`#js-cartlink`).classList.toggle('change');
 
       if(powder.classList.contains("powderBeige")){
@@ -87,7 +87,7 @@ $(function(){
       const main = $('#powder');
       main.addClass('powderBeige');
       $("#js-validastionname").text("02 SKIN BEIGE");
-      // $('#js-cartlink').attr('href', 'https://perseperse.myshopify.com/cart/add?id=43784364523756&quantity=1');
+      $('#js-cartlink').attr('href', 'https://perseperse.myshopify.com/cart/add?id=43771979563244&quantity=1');
 
       $('#01clear').prop('checked', false);
       $('#02beige').prop('checked', true);

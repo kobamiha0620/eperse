@@ -208,8 +208,8 @@
         <section class="product__de">
             <h1 class="product__de--en">Vegan Vita Filter Powder</h1>
             <h2 class="product__de--jp">ヴィーガンビタ フィルターパウダー</h2>
-            <h3 class="product__de--price">¥2,180<span> ( inc.tax )</span></h3>
-            {% comment %} <h3 class="product__de--price"><p class="dashed">¥2,280</p>¥1,744<span> ( inc.tax )</span></h3> {% endcomment %}
+            {% comment %} <h3 class="product__de--price">{{ product.price | money }}<span> ( inc.tax )</span></h3> {% endcomment %}
+            <h3 class="product__de--price"><p class="dashed">¥2,280</p>{{ product.price | money }}<span> ( inc.tax )</span></h3>
 
         </section>
 
@@ -235,17 +235,17 @@
                     <p class="rnCartbtn__name" id="js-validastionname">01 CLEAR</p>
 
                 </div>
-                <!-- <a class="product__cartbtn"
+               <a class="product__cartbtn"
                     href="https://perseperse.myshopify.com/cart/add?id=43771979530476&quantity=1" id="js-cartlink">
                     <p>BUY</p>
                     <span class="product__cartbtn--img">cartimg<span>
-                </a> -->
+                </a> 
 
-            <div class="product__cartbtn--disable"
+            {% comment %} <div class="product__cartbtn--disable"
                 style="overflow: hidden; display: block; margin-bottom :100px;">
                 COMING SOON <br>
                 <span>2023.6.21(WED)12:00〜</span>
-            </div>
+            </div> {% endcomment %}
             
         </section>
 

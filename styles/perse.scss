@@ -361,7 +361,7 @@ header-drawer {
     display: flex;
 
     p {
-        text-align: left;
+        text-align: center;
     }
 }
 
@@ -592,7 +592,7 @@ header-drawer {
 
         &+.announcement-bar {
             position: absolute;
-            height: 50px;
+            // height: 50px;
             top: 0;
             left: 0;
             display: flex;
@@ -702,6 +702,8 @@ header-drawer {
         }
 
         .announcement-bar__link {
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
             span {
                 display: inline;
                 line-height: 0;
@@ -791,7 +793,9 @@ header-drawer {
 
     }
 
-    .announcement-bar p {}
+    .announcement-bar p {
+        text-align: center;
+    }
 
     .announcement__link {
         &.miharu {

@@ -32,11 +32,11 @@
       {%- if section.settings.show_cart_note -%}
         <cart-note class="cart__note field">
           {% comment %} <label for="Cart-note">{{ 'sections.cart.note' | t }}</label> {% endcomment %}
-          <label for="Cart-note">DAY3キャンペーン（カラコン4色セットを抽選でプレゼント）をご希望の方は、左右のカラコン度数をご記入ください0.00D、-0.50D～-10.00D（-6.50D以上は0.50D刻み）</label> 
+          <label for="Cart-note">DAY3キャンペーン：ヨントンに参加ご希望の方は、InstagramもしくはTwitterのアカウント名をご記入ください</label> 
     {% comment %} <label for="Cart-note">DAY5キャンペーンに参加希望のお客様は①と②を必ずご記入ください。<br>①InstagramもしくはTwitterのアカウント名
       <br>②左右のカラコン度数<br>
       0.00D、-0.50D～-10.00D（-6.50D以上は0.50D刻み）</label>  {% endcomment %}
-        <textarea class="text-area text-area--resize-vertical field__input" name="note" form="cart" id="Cart-note" placeholder="">左）度数：　右）度数：</textarea>
+        <textarea class="text-area text-area--resize-vertical field__input" name="note" form="cart" id="Cart-note" placeholder="">InstagramもしくはTwitterのアカウント：</textarea>
           {% comment %} <textarea class="text-area text-area--resize-vertical field__input" name="note" form="cart" id="Cart-note" placeholder="">{{ cart.note }}</textarea> {% endcomment %}
 
         </cart-note>

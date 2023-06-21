@@ -123,6 +123,20 @@
                 </div>
                 <div class="rnRecom__prob">
                     <a
+                        href="{{ routes.root_url }}products/skineyeshadow-01rosymood/">
+                        <picture class="rnRecom__prob--img">
+                            <img src="{{ 'img_nRec01eye.png' | file_url }}" alt="アイシャドウ"
+                                width="296" height="296" loading="eager">
+                        </picture>
+                        <div class="rnRecom__pro--name-wrapper">
+                            <p class="rnRecom__pro--name">The Skin Eyeshadow<br>Palette<br>
+                            01 ROSY MOOD</p>
+                        </div>
+                        <p class="rnRecom__pro--price"><span>BUY</span></p>
+                    </a>
+                </div>
+                {% comment %} <div class="rnRecom__prob">
+                    <a
                         href="{{ routes.root_url }}products/vitaLimitedset/">
                         <picture class="rnRecom__prob--img">
                             <img src="{{ 'img_home-vitaset.png' | file_url }}" alt="ヴィーガンビタ コレクション 限定セット"
@@ -134,7 +148,7 @@
                         </div>
                         <p class="rnRecom__pro--price"><span>BUY</span></p>
                     </a>
-                </div>
+                </div> {% endcomment %}
 
 
             </div>
@@ -463,7 +477,7 @@
 
 
                 <!-- 限定セット -->
-                <div class="allproRn__cr--ch tag tagbtm">
+                {% comment %} <div class="allproRn__cr--ch tag tagbtm">
                     <h3 class="allproRn__cr--ttl-new">NEW</h3>  
                     <div class="swiper-slide">
                         <span style="display: block;">
@@ -484,7 +498,7 @@
 
 
 
-                </div>
+                </div> {% endcomment %}
             </div>
 
             <!-- コンタクト -->

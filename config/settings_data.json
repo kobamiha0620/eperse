@@ -25,6 +25,7 @@
           },
           "83c23dc0-af02-4dce-ace1-9093e716aed2": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "送料改定のお知らせ",
               "color_scheme": "accent-1",
@@ -39,12 +40,21 @@
               "color_scheme": "accent-1",
               "link": "shopify:\/\/blogs\/ニュース\/campaign"
             }
+          },
+          "94b6b6e2-bb7a-4fe0-a5e3-a878cc19c318": {
+            "type": "announcement",
+            "settings": {
+              "text": "夏季休業のお知らせ",
+              "color_scheme": "accent-1",
+              "link": "shopify:\/\/blogs\/ニュース\/お知らせ-夏季休業中の配送とお問合せ対応について"
+            }
           }
         },
         "block_order": [
           "announcement-bar-0",
           "83c23dc0-af02-4dce-ace1-9093e716aed2",
-          "aa1ea613-c85a-46c5-827c-605421b67b3c"
+          "aa1ea613-c85a-46c5-827c-605421b67b3c",
+          "94b6b6e2-bb7a-4fe0-a5e3-a878cc19c318"
         ],
         "settings": {
         }

@@ -43,6 +43,7 @@
           },
           "94b6b6e2-bb7a-4fe0-a5e3-a878cc19c318": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "夏季休業のお知らせ",
               "color_scheme": "accent-1",

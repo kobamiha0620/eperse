@@ -18,9 +18,9 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "2023.6.21(WED)12:00~ VEGAN VITA COLLECTION発売開始",
+              "text": "<能登半島地震の影響によるお届け遅延および見合わせについて>",
               "color_scheme": "accent-1",
-              "link": ""
+              "link": "shopify:\/\/blogs\/ニュース\/能登半島地震の影響によるお届け遅延および見合わせについて"
             }
           },
           "83c23dc0-af02-4dce-ace1-9093e716aed2": {
